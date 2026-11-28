@@ -7,12 +7,12 @@ proof: formalized
 
 # Lagrange Interpolation
 
-`CompPoly.Univariate.Lagrange`, in [CompPoly/Univariate/Lagrange.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean), by Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Katerina Hristova, Julian Sutherland.
+`CompPoly.Univariate.Lagrange`, in [CompPoly/Univariate/Lagrange.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean), by Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Katerina Hristova, Julian Sutherland.
 
 > This file defines computable Lagrange interpolation
 > for univariate polynomials, i.e. `CPolynomial`s.
 
-`CompPoly.CPolynomial.CLagrange.basisDivisor` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L32))
+`CompPoly.CPolynomial.CLagrange.basisDivisor` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L32))
 
 > `basisDivisor xᵢ xⱼ` is the unique linear or constant computable polynomial such that
 > when evaluated at `xᵢ` it gives `1` and `xⱼ` it gives `0` (where when `xᵢ = xⱼ` it is
@@ -22,7 +22,7 @@ proof: formalized
 def basisDivisor (xᵢ xⱼ : R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.CLagrange.cbasisDivisor_eq_basisDivisor` (lemma, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L35))
+`CompPoly.CPolynomial.CLagrange.cbasisDivisor_eq_basisDivisor` (lemma, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L35))
 
 ```lean
 lemma cbasisDivisor_eq_basisDivisor {xᵢ xⱼ : R} :
@@ -38,7 +38,7 @@ lemma cbasisDivisor_eq_basisDivisor {xᵢ xⱼ : R} :
 > go through `Quotient.liftOn` on the underlying multiset with a permutation-invariance
 > proof routed through `toPoly`.
 
-`CompPoly.CPolynomial.CLagrange.basisListRaw` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L51))
+`CompPoly.CPolynomial.CLagrange.basisListRaw` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L51))
 
 > `basisDivisor`-product fold over a list, combining factors with the untrimmed
 > `Raw.mulRaw`. The wrapping `basis` definition trims this once.
@@ -48,7 +48,7 @@ def basisListRaw {ι : Type*} (x : ι → R) (i : ι) (l : List ι) :
     CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.CLagrange.basisListRaw_trim_perm` (lemma, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L72))
+`CompPoly.CPolynomial.CLagrange.basisListRaw_trim_perm` (lemma, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L72))
 
 ```lean
 lemma basisListRaw_trim_perm {ι : Type*} (x : ι → R) (i : ι)
@@ -56,7 +56,7 @@ lemma basisListRaw_trim_perm {ι : Type*} (x : ι → R) (i : ι)
     (basisListRaw x i l₁).trim = (basisListRaw x i l₂).trim
 ```
 
-`CompPoly.CPolynomial.CLagrange.basis` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L89))
+`CompPoly.CPolynomial.CLagrange.basis` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L89))
 
 > Computable Lagrange basis polynomials indexed by `s : Finset ι`, defined at nodes `x i` for a
 > map `x : ι → F`. For `i, j ∈ s`, `basis s x i` evaluates to `0` at `x j` for `i ≠ j`. When
@@ -71,7 +71,7 @@ def basis {ι : Type*} [DecidableEq ι] (s : Finset ι) (x : ι → R) (i : ι) 
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.CLagrange.cbasis_eq_basis` (lemma, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L95))
+`CompPoly.CPolynomial.CLagrange.cbasis_eq_basis` (lemma, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L95))
 
 ```lean
 lemma cbasis_eq_basis {ι : Type*} [DecidableEq ι] (s : Finset ι) (x : ι → R) (i : ι) :
@@ -84,14 +84,14 @@ lemma cbasis_eq_basis {ι : Type*} [DecidableEq ι] (s : Finset ι) (x : ι → 
 > formed by `Raw.mulRaw (Raw.C (y i)) (basis s x i).val` (also untrimmed). One `trim` runs
 > at the end of the entire fold.
 
-`CompPoly.CPolynomial.CLagrange.interpolateListRaw` (definition, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L115))
+`CompPoly.CPolynomial.CLagrange.interpolateListRaw` (definition, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L115))
 
 ```lean
 def interpolateListRaw {ι : Type*} [DecidableEq ι]
     (s : Finset ι) (x : ι → R) (y : ι → R) (l : List ι) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolateListRaw_trim_perm` (lemma, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L143))
+`CompPoly.CPolynomial.CLagrange.interpolateListRaw_trim_perm` (lemma, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L143))
 
 ```lean
 lemma interpolateListRaw_trim_perm {ι : Type*} [DecidableEq ι]
@@ -99,7 +99,7 @@ lemma interpolateListRaw_trim_perm {ι : Type*} [DecidableEq ι]
     (interpolateListRaw s x y l₁).trim = (interpolateListRaw s x y l₂).trim
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolateRaw` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L155))
+`CompPoly.CPolynomial.CLagrange.interpolateRaw` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L155))
 
 > Computable raw-fold form of the interpolation polynomial: defer trimming to the
 > end of the `Finset.sum`.
@@ -109,7 +109,7 @@ def interpolateRaw {ι : Type*} [DecidableEq ι]
     (s : Finset ι) (x : ι → R) (y : ι → R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolate` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L195))
+`CompPoly.CPolynomial.CLagrange.interpolate` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L195))
 
 > Computable Lagrange interpolation: given a finset `s : Finset ι`, a nodal map `x : ι → F`
 > injective on `s` and a value function `y : ι → F`, `interpolate s x y` is the unique computable
@@ -120,7 +120,7 @@ def interpolate {ι : Type*} [DecidableEq ι] (s : Finset ι) (x : ι → R) :
     (ι → R) →ₗ[R] CPolynomial R
 ```
 
-`CompPoly.CPolynomial.CLagrange.cinterpolate_eq_interpolate` (lemma, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L226))
+`CompPoly.CPolynomial.CLagrange.cinterpolate_eq_interpolate` (lemma, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L226))
 
 ```lean
 lemma cinterpolate_eq_interpolate
@@ -128,7 +128,7 @@ lemma cinterpolate_eq_interpolate
       (interpolate s x y).toPoly = Lagrange.interpolate s x y
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolatePow` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L237))
+`CompPoly.CPolynomial.CLagrange.interpolatePow` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L237))
 
 > Produces the unique polynomial of degree at most n-1 that equals r[i] at ω^i
 > for i = 0, 1, ..., n-1.
@@ -141,14 +141,14 @@ def interpolatePow {n : ℕ} (ω : R) (r : Vector R n) :
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.CLagrange.eq_of_pow_eq_pow_of_lt_orderOf` (theorem, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L243))
+`CompPoly.CPolynomial.CLagrange.eq_of_pow_eq_pow_of_lt_orderOf` (theorem, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L243))
 
 ```lean
 theorem eq_of_pow_eq_pow_of_lt_orderOf {G : Type*} [Group G] {ω : G} {n : ℕ}
     (h_order : n ≤ orderOf ω) (a b : Fin n) (h_pow : ω ^ (a : ℕ) = ω ^ (b : ℕ)) : a = b
 ```
 
-`CompPoly.CPolynomial.CLagrange.eval_interpolatePow_at_node` (lemma, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean#L255))
+`CompPoly.CPolynomial.CLagrange.eval_interpolatePow_at_node` (lemma, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean#L255))
 
 > Key correctness theorem for `interpolatePow`.
 
@@ -167,5 +167,5 @@ lemma eval_interpolatePow_at_node {n : ℕ} {ω : Rˣ} {r : Vector R n} : n ≤ 
 
 ## Sources
 
-- [CompPoly/Univariate/Lagrange.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Lagrange.lean)
+- [CompPoly/Univariate/Lagrange.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Lagrange.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Lagrange.json)

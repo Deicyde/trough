@@ -7,7 +7,7 @@ proof: formalized
 
 # Root sets of products of distinct linear factors
 
-`CompPoly.ToMathlib.Polynomial.Roots`, in [CompPoly/ToMathlib/Polynomial/Roots.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Roots.lean), by Juan Conejero.
+`CompPoly.ToMathlib.Polynomial.Roots`, in [CompPoly/ToMathlib/Polynomial/Roots.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Polynomial/Roots.lean), by Juan Conejero.
 
 > - `∏ i ∈ s, (X - C (a i))` over injectively indexed points: it divides every polynomial
 > vanishing on the points (`prod_X_sub_C_dvd`)
@@ -15,7 +15,7 @@ proof: formalized
 > - The product divides `(∏ i ∈ E, (X - C (a i))) * (f - b)` whenever `f` and `b` agree off `E`
 > (`prod_X_sub_C_dvd_prod_mul_sub`).
 
-`Polynomial.prod_X_sub_C_dvd` (lemma, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Roots.lean#L27))
+`Polynomial.prod_X_sub_C_dvd` (lemma, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Polynomial/Roots.lean#L27))
 
 > `∏ i ∈ s, (X - aᵢ)` divides `p` when the distinct `aᵢ` are all roots of `p`.
 
@@ -26,7 +26,7 @@ lemma prod_X_sub_C_dvd [Field R]
     (∏ i ∈ s, (X - C (a i))) ∣ p
 ```
 
-`Polynomial.card_eval_zero_le_natDegree` (lemma, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Roots.lean#L37))
+`Polynomial.card_eval_zero_le_natDegree` (lemma, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Polynomial/Roots.lean#L37))
 
 > A nonzero `v` vanishes at at most `v.natDegree` of the distinct points.
 
@@ -37,7 +37,7 @@ lemma card_eval_zero_le_natDegree [CommRing R] [IsDomain R]
     {i ∈ s | v.eval (a i) = 0}.card ≤ v.natDegree
 ```
 
-`Polynomial.prod_X_sub_C_dvd_prod_mul_sub` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Roots.lean#L48))
+`Polynomial.prod_X_sub_C_dvd_prod_mul_sub` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Polynomial/Roots.lean#L48))
 
 > When `f, b` agree off `E ⊆ s`, the product `∏_{i∈s}(X−aᵢ)` divides
 > `(∏_{i∈E}(X−aᵢ))·(f − b)`.
@@ -55,5 +55,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/ToMathlib/Polynomial/Roots.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Roots.lean)
+- [CompPoly/ToMathlib/Polynomial/Roots.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Polynomial/Roots.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.Polynomial.Roots.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # `Ext6` as a computable model of `GaloisField KoalaBear.fieldSize 6`
 
-`CompPoly.Fields.KoalaBear.Ext6.GaloisField`, in [CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean), by Derek Sorensen.
+`CompPoly.Fields.KoalaBear.Ext6.GaloisField`, in [CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean), by Derek Sorensen.
 
 > Mathlib's `GaloisField p n` is the abstract field of order `p^n`, defined as a splitting field and
 > therefore noncomputable. Downstream developments that only need "the field of order `p^6`" state
@@ -33,7 +33,7 @@ proof: formalized
 > The same one-liner works for any `Ext P` with a cardinality lemma in hand; `card_ext` in
 > `CompPoly/Fields/Extension/Field.lean` supplies it generically.
 
-`KoalaBear.ext6AlgEquivGaloisField` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean#L50))
+`KoalaBear.ext6AlgEquivGaloisField` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean#L50))
 
 > **`Ext6` is a computable model of `GaloisField KoalaBear.fieldSize 6`**, the abstract field of
 > order `p^6 ≈ 2^186`.
@@ -52,5 +52,5 @@ noncomputable def ext6AlgEquivGaloisField :
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean)
+- [CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/GaloisField.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Ext6.GaloisField.json)

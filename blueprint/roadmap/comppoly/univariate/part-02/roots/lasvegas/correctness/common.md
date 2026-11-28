@@ -7,12 +7,12 @@ proof: formalized
 
 # Shared Correctness Lemmas for Las Vegas Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Correctness.Common`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Correctness.Common`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean), by Valerii Huhnin.
 
 > Shared algebraic, root-preservation, degree, and work-measure lemmas used by
 > the Las Vegas splitter correctness modules.
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_lasVegasSplitterInput` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L34))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_lasVegasSplitterInput` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L34))
 
 ```lean
 theorem finiteFieldRootProductWith_lasVegasSplitterInput {F : Type*}
@@ -22,7 +22,7 @@ theorem finiteFieldRootProductWith_lasVegasSplitterInput {F : Type*}
     lasVegasSplitterInput ctx.q (finiteFieldRootProductWith M D ctx p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_lasVegasSplitterInput` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L43))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_lasVegasSplitterInput` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L43))
 
 > Default-backend field-root products satisfy the Las Vegas splitter input predicate.
 
@@ -33,7 +33,7 @@ theorem finiteFieldRootProduct_lasVegasSplitterInput {F : Type*}
     lasVegasSplitterInput ctx.q (finiteFieldRootProduct ctx p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_reduceModWith_eq_self_of_root` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L50))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_reduceModWith_eq_self_of_root` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L50))
 
 ```lean
 theorem eval_reduceModWith_eq_self_of_root {F : Type*}
@@ -44,7 +44,7 @@ theorem eval_reduceModWith_eq_self_of_root {F : Type*}
     CPolynomial.eval a (reduceModWith D modulus h) = CPolynomial.eval a h
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_powModWith_eq_pow` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L72))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_powModWith_eq_pow` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L72))
 
 ```lean
 theorem eval_powModWith_eq_pow {F : Type*}
@@ -55,7 +55,7 @@ theorem eval_powModWith_eq_pow {F : Type*}
     CPolynomial.eval a (powModWith M D modulus base n) = CPolynomial.eval a base ^ n
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.nontrivialProperChildren_mem_of_mem` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L86))
+`CompPoly.CPolynomial.Roots.FiniteField.nontrivialProperChildren_mem_of_mem` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L86))
 
 ```lean
 theorem nontrivialProperChildren_mem_of_mem {F : Type*}
@@ -66,7 +66,7 @@ theorem nontrivialProperChildren_mem_of_mem {F : Type*}
     child ∈ (nontrivialProperChildren parent children).toList
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.proper_of_mem_nontrivialProperChildren` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L95))
+`CompPoly.CPolynomial.Roots.FiniteField.proper_of_mem_nontrivialProperChildren` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L95))
 
 ```lean
 theorem proper_of_mem_nontrivialProperChildren {F : Type*}
@@ -76,7 +76,7 @@ theorem proper_of_mem_nontrivialProperChildren {F : Type*}
     isNontrivialProperChild parent child = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_fold` (lemma, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L105))
+`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_fold` (lemma, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L105))
 
 ```lean
 lemma mem_eraseDups_fold {α : Type*} [BEq α] [LawfulBEq α]
@@ -85,14 +85,14 @@ lemma mem_eraseDups_fold {α : Type*} [BEq α] [LawfulBEq α]
         a ∈ out ∨ a ∈ xs
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.mem_of_mem_eraseDups` (lemma, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L131))
+`CompPoly.CPolynomial.Roots.FiniteField.mem_of_mem_eraseDups` (lemma, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L131))
 
 ```lean
 lemma mem_of_mem_eraseDups {α : Type*} [BEq α] [LawfulBEq α]
     {xs : Array α} {a : α} (h : a ∈ xs.eraseDups) : a ∈ xs
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_fold_of_mem` (lemma, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L139))
+`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_fold_of_mem` (lemma, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L139))
 
 ```lean
 lemma mem_eraseDups_fold_of_mem {α : Type*} [BEq α] [LawfulBEq α]
@@ -101,14 +101,14 @@ lemma mem_eraseDups_fold_of_mem {α : Type*} [BEq α] [LawfulBEq α]
         a ∈ List.foldl (fun out x ↦ if x ∈ out then out else out.push x) out xs
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_of_mem` (lemma, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L171))
+`CompPoly.CPolynomial.Roots.FiniteField.mem_eraseDups_of_mem` (lemma, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L171))
 
 ```lean
 lemma mem_eraseDups_of_mem {α : Type*} [BEq α] [LawfulBEq α]
     {xs : Array α} {a : α} (h : a ∈ xs) : a ∈ xs.eraseDups
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.middle_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left` (theorem, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L178))
+`CompPoly.CPolynomial.Roots.FiniteField.middle_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left` (theorem, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L178))
 
 ```lean
 theorem middle_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left {F : Type*}
@@ -119,7 +119,7 @@ theorem middle_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left {F : Ty
     isNontrivialProperChild parent middle = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L190))
+`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L190))
 
 ```lean
 theorem right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left {F : Type*}
@@ -130,7 +130,7 @@ theorem right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_left {F : Typ
     isNontrivialProperChild parent right = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_middle` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L204))
+`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_middle` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L204))
 
 ```lean
 theorem right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_middle {F : Type*}
@@ -141,7 +141,7 @@ theorem right_proper_of_triple_eraseDups_filter_size_ge_two_of_not_middle {F : T
     isNontrivialProperChild parent right = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.left_proper_of_pair_filter_size_ge_two` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L218))
+`CompPoly.CPolynomial.Roots.FiniteField.left_proper_of_pair_filter_size_ge_two` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L218))
 
 ```lean
 theorem left_proper_of_pair_filter_size_ge_two {F : Type*}
@@ -151,7 +151,7 @@ theorem left_proper_of_pair_filter_size_ge_two {F : Type*}
     isNontrivialProperChild parent left = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_pair_filter_size_ge_two` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L229))
+`CompPoly.CPolynomial.Roots.FiniteField.right_proper_of_pair_filter_size_ge_two` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L229))
 
 ```lean
 theorem right_proper_of_pair_filter_size_ge_two {F : Type*}
@@ -161,7 +161,7 @@ theorem right_proper_of_pair_filter_size_ge_two {F : Type*}
     isNontrivialProperChild parent right = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.third_proper_of_triple_filter_size_ge_two_of_not_left` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L242))
+`CompPoly.CPolynomial.Roots.FiniteField.third_proper_of_triple_filter_size_ge_two_of_not_left` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L242))
 
 ```lean
 theorem third_proper_of_triple_filter_size_ge_two_of_not_left {F : Type*}
@@ -172,7 +172,7 @@ theorem third_proper_of_triple_filter_size_ge_two_of_not_left {F : Type*}
     isNontrivialProperChild parent right = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_root_of_not_child_root` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L256))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_root_of_not_child_root` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L256))
 
 ```lean
 theorem quotientAfterChild_root_of_not_child_root {F : Type*}
@@ -184,7 +184,7 @@ theorem quotientAfterChild_root_of_not_child_root {F : Type*}
     CPolynomial.eval a (quotientAfterChild parent child) = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.val_size_eq_natDegree_add_one_of_ne_zero` (theorem, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L270))
+`CompPoly.CPolynomial.Roots.FiniteField.val_size_eq_natDegree_add_one_of_ne_zero` (theorem, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L270))
 
 ```lean
 theorem val_size_eq_natDegree_add_one_of_ne_zero {F : Type*}
@@ -193,7 +193,7 @@ theorem val_size_eq_natDegree_add_one_of_ne_zero {F : Type*}
     p.val.size = p.natDegree + 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.val_size_le_of_toPoly_natDegree_le` (theorem, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L283))
+`CompPoly.CPolynomial.Roots.FiniteField.val_size_le_of_toPoly_natDegree_le` (theorem, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L283))
 
 ```lean
 theorem val_size_le_of_toPoly_natDegree_le {F : Type*}
@@ -203,7 +203,7 @@ theorem val_size_le_of_toPoly_natDegree_le {F : Type*}
     p.val.size ≤ q.val.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.val_size_lt_of_toPoly_degree_lt` (theorem, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L297))
+`CompPoly.CPolynomial.Roots.FiniteField.val_size_lt_of_toPoly_degree_lt` (theorem, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L297))
 
 ```lean
 theorem val_size_lt_of_toPoly_degree_lt {F : Type*}
@@ -213,7 +213,7 @@ theorem val_size_lt_of_toPoly_degree_lt {F : Type*}
     p.val.size < q.val.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_size_le_self` (theorem, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L323))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_size_le_self` (theorem, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L323))
 
 ```lean
 theorem monicNormalize_size_le_self {F : Type*}
@@ -221,7 +221,7 @@ theorem monicNormalize_size_le_self {F : Type*}
     (CPolynomial.monicNormalize p).val.size ≤ p.val.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.polynomial_natDegree_le_of_degree_le` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L351))
+`CompPoly.CPolynomial.Roots.FiniteField.polynomial_natDegree_le_of_degree_le` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L351))
 
 ```lean
 theorem polynomial_natDegree_le_of_degree_le {F : Type*} [Field F]
@@ -229,7 +229,7 @@ theorem polynomial_natDegree_le_of_degree_le {F : Type*} [Field F]
     p.natDegree ≤ q.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_size_le_parent` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L360))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_size_le_parent` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L360))
 
 ```lean
 theorem quotientAfterChild_size_le_parent {F : Type*}
@@ -238,7 +238,7 @@ theorem quotientAfterChild_size_le_parent {F : Type*}
     (quotientAfterChild parent child).val.size ≤ parent.val.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.toPoly_ne_one_of_ne_one` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L379))
+`CompPoly.CPolynomial.Roots.FiniteField.toPoly_ne_one_of_ne_one` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L379))
 
 ```lean
 theorem toPoly_ne_one_of_ne_one {F : Type*}
@@ -247,7 +247,7 @@ theorem toPoly_ne_one_of_ne_one {F : Type*}
     p.toPoly ≠ 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eq_of_toPoly_eq` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L389))
+`CompPoly.CPolynomial.Roots.FiniteField.eq_of_toPoly_eq` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L389))
 
 ```lean
 theorem eq_of_toPoly_eq {F : Type*}
@@ -255,7 +255,7 @@ theorem eq_of_toPoly_eq {F : Type*}
     (hpoly : p.toPoly = q.toPoly) : p = q
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eq_of_monic_toPoly_dvd_of_natDegree_le` (theorem, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L396))
+`CompPoly.CPolynomial.Roots.FiniteField.eq_of_monic_toPoly_dvd_of_natDegree_le` (theorem, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L396))
 
 ```lean
 theorem eq_of_monic_toPoly_dvd_of_natDegree_le {F : Type*}
@@ -266,7 +266,7 @@ theorem eq_of_monic_toPoly_dvd_of_natDegree_le {F : Type*}
     q = p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_degree_pos_of_proper` (theorem, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L405))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_degree_pos_of_proper` (theorem, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L405))
 
 ```lean
 theorem monicNormalize_toPoly_degree_pos_of_proper {F : Type*}
@@ -276,7 +276,7 @@ theorem monicNormalize_toPoly_degree_pos_of_proper {F : Type*}
     0 < (CPolynomial.monicNormalize p).toPoly.degree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_size_lt_parent_of_monicNormalize_proper` (theorem, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L426))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_size_lt_parent_of_monicNormalize_proper` (theorem, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L426))
 
 ```lean
 theorem quotientAfterChild_size_lt_parent_of_monicNormalize_proper {F : Type*}
@@ -288,7 +288,7 @@ theorem quotientAfterChild_size_lt_parent_of_monicNormalize_proper {F : Type*}
       parent.val.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.div_ne_zero_of_dvd_of_ne_zero` (theorem, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L447))
+`CompPoly.CPolynomial.Roots.FiniteField.div_ne_zero_of_dvd_of_ne_zero` (theorem, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L447))
 
 ```lean
 theorem div_ne_zero_of_dvd_of_ne_zero {F : Type*}
@@ -299,7 +299,7 @@ theorem div_ne_zero_of_dvd_of_ne_zero {F : Type*}
     CPolynomial.div parent child ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_ne_zero_of_dvd` (theorem, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L476))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_ne_zero_of_dvd` (theorem, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L476))
 
 ```lean
 theorem quotientAfterChild_ne_zero_of_dvd {F : Type*}
@@ -309,7 +309,7 @@ theorem quotientAfterChild_ne_zero_of_dvd {F : Type*}
     quotientAfterChild parent child ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_toPoly_dvd_parent` (theorem, [line 493](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L493))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_toPoly_dvd_parent` (theorem, [line 493](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L493))
 
 ```lean
 theorem quotientAfterChild_toPoly_dvd_parent {F : Type*}
@@ -319,7 +319,7 @@ theorem quotientAfterChild_toPoly_dvd_parent {F : Type*}
     (quotientAfterChild parent child).toPoly ∣ parent.toPoly
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.child_quotient_natDegree_le_parent` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L521))
+`CompPoly.CPolynomial.Roots.FiniteField.child_quotient_natDegree_le_parent` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L521))
 
 ```lean
 theorem child_quotient_natDegree_le_parent {F : Type*}
@@ -331,35 +331,35 @@ theorem child_quotient_natDegree_le_parent {F : Type*}
       parent.toPoly.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork` (definition, [line 575](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L575))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork` (definition, [line 575](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L575))
 
 ```lean
 noncomputable def splitWork {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (p : CPolynomial F) : Nat
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork` (definition, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L579))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork` (definition, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L579))
 
 ```lean
 noncomputable def stackWork {F : Type*} [Field F] [BEq F] [LawfulBEq F] :
     List (CPolynomial F) → Nat
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork` (definition, [line 584](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L584))
+`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork` (definition, [line 584](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L584))
 
 ```lean
 noncomputable def normSplitWork {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (p : CPolynomial F) : Nat
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork` (definition, [line 588](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L588))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork` (definition, [line 588](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L588))
 
 ```lean
 noncomputable def normStackWork {F : Type*} [Field F] [BEq F] [LawfulBEq F] :
     List (CPolynomial F) → Nat
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_append` (theorem, [line 593](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L593))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_append` (theorem, [line 593](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L593))
 
 ```lean
 theorem stackWork_append {F : Type*}
@@ -368,7 +368,7 @@ theorem stackWork_append {F : Type*}
       stackWork (xs ++ ys) = stackWork xs + stackWork ys
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_push` (theorem, [line 606](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L606))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_push` (theorem, [line 606](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L606))
 
 ```lean
 theorem stackWork_push {F : Type*}
@@ -377,7 +377,7 @@ theorem stackWork_push {F : Type*}
     stackWork (out.push x).toList = stackWork out.toList + splitWork x
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_fold_le` (theorem, [line 614](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L614))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_fold_le` (theorem, [line 614](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L614))
 
 ```lean
 theorem stackWork_eraseDups_fold_le {F : Type*}
@@ -388,7 +388,7 @@ theorem stackWork_eraseDups_fold_le {F : Type*}
         stackWork out.toList + stackWork xs
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_le` (theorem, [line 637](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L637))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_le` (theorem, [line 637](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L637))
 
 ```lean
 theorem stackWork_eraseDups_le {F : Type*}
@@ -397,7 +397,7 @@ theorem stackWork_eraseDups_le {F : Type*}
     stackWork xs.eraseDups.toList ≤ stackWork xs.toList
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_triple_dup_right_le` (theorem, [line 646](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L646))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eraseDups_triple_dup_right_le` (theorem, [line 646](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L646))
 
 ```lean
 theorem stackWork_eraseDups_triple_dup_right_le {F : Type*}
@@ -406,7 +406,7 @@ theorem stackWork_eraseDups_triple_dup_right_le {F : Type*}
     stackWork (#[x, y, y].eraseDups).toList ≤ splitWork x + splitWork y
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_append` (theorem, [line 658](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L658))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_append` (theorem, [line 658](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L658))
 
 ```lean
 theorem normStackWork_append {F : Type*}
@@ -415,7 +415,7 @@ theorem normStackWork_append {F : Type*}
       normStackWork (xs ++ ys) = normStackWork xs + normStackWork ys
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_natDegree_eq` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L671))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_natDegree_eq` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L671))
 
 ```lean
 theorem monicNormalize_toPoly_natDegree_eq {F : Type*}
@@ -423,7 +423,7 @@ theorem monicNormalize_toPoly_natDegree_eq {F : Type*}
     (CPolynomial.monicNormalize p).toPoly.natDegree = p.toPoly.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_zero` (theorem, [line 691](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L691))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_zero` (theorem, [line 691](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L691))
 
 ```lean
 theorem monicNormalize_zero {F : Type*}
@@ -431,7 +431,7 @@ theorem monicNormalize_zero {F : Type*}
     CPolynomial.monicNormalize (0 : CPolynomial F) = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_monicNormalize_eq` (theorem, [line 698](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L698))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_monicNormalize_eq` (theorem, [line 698](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L698))
 
 ```lean
 theorem splitWork_monicNormalize_eq {F : Type*}
@@ -439,7 +439,7 @@ theorem splitWork_monicNormalize_eq {F : Type*}
     splitWork (CPolynomial.monicNormalize p) = splitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_eq_splitWork` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L704))
+`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_eq_splitWork` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L704))
 
 ```lean
 theorem normSplitWork_eq_splitWork {F : Type*}
@@ -447,7 +447,7 @@ theorem normSplitWork_eq_splitWork {F : Type*}
     normSplitWork p = splitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_eq_stackWork` (theorem, [line 710](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L710))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_eq_stackWork` (theorem, [line 710](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L710))
 
 ```lean
 theorem normStackWork_eq_stackWork {F : Type*}
@@ -455,7 +455,7 @@ theorem normStackWork_eq_stackWork {F : Type*}
     ∀ xs : List (CPolynomial F), normStackWork xs = stackWork xs
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pos_of_natDegree_pos` (theorem, [line 720](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L720))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pos_of_natDegree_pos` (theorem, [line 720](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L720))
 
 ```lean
 theorem splitWork_pos_of_natDegree_pos {F : Type*}
@@ -464,7 +464,7 @@ theorem splitWork_pos_of_natDegree_pos {F : Type*}
     1 ≤ splitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_of_monicNormalize_ne_zero_ne_one` (theorem, [line 727](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L727))
+`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_of_monicNormalize_ne_zero_ne_one` (theorem, [line 727](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L727))
 
 ```lean
 theorem normSplitWork_pos_of_monicNormalize_ne_zero_ne_one {F : Type*}
@@ -475,7 +475,7 @@ theorem normSplitWork_pos_of_monicNormalize_ne_zero_ne_one {F : Type*}
     1 ≤ normSplitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_monic_of_ne_zero` (theorem, [line 748](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L748))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_monic_of_ne_zero` (theorem, [line 748](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L748))
 
 ```lean
 theorem monicNormalize_toPoly_monic_of_ne_zero {F : Type*}
@@ -483,7 +483,7 @@ theorem monicNormalize_toPoly_monic_of_ne_zero {F : Type*}
     (CPolynomial.monicNormalize p).toPoly.Monic
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pos_of_monic_ne_zero_ne_one` (theorem, [line 755](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L755))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pos_of_monic_ne_zero_ne_one` (theorem, [line 755](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L755))
 
 ```lean
 theorem splitWork_pos_of_monic_ne_zero_ne_one {F : Type*}
@@ -493,7 +493,7 @@ theorem splitWork_pos_of_monic_ne_zero_ne_one {F : Type*}
     1 ≤ splitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.toPoly_natDegree_pos_of_monic_ne_zero_ne_one` (theorem, [line 764](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L764))
+`CompPoly.CPolynomial.Roots.FiniteField.toPoly_natDegree_pos_of_monic_ne_zero_ne_one` (theorem, [line 764](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L764))
 
 ```lean
 theorem toPoly_natDegree_pos_of_monic_ne_zero_ne_one {F : Type*}
@@ -503,7 +503,7 @@ theorem toPoly_natDegree_pos_of_monic_ne_zero_ne_one {F : Type*}
     0 < p.toPoly.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_of_monic_ne_zero_ne_one` (theorem, [line 772](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L772))
+`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_of_monic_ne_zero_ne_one` (theorem, [line 772](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L772))
 
 ```lean
 theorem normSplitWork_pos_of_monic_ne_zero_ne_one {F : Type*}
@@ -513,7 +513,7 @@ theorem normSplitWork_pos_of_monic_ne_zero_ne_one {F : Type*}
     1 ≤ normSplitWork p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_toPoly_monic_of_dvd` (theorem, [line 780](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L780))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild_toPoly_monic_of_dvd` (theorem, [line 780](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L780))
 
 ```lean
 theorem quotientAfterChild_toPoly_monic_of_dvd {F : Type*}
@@ -524,7 +524,7 @@ theorem quotientAfterChild_toPoly_monic_of_dvd {F : Type*}
     (quotientAfterChild parent child).toPoly.Monic
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eq_of_monic_dvd_of_val_size_le` (theorem, [line 798](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L798))
+`CompPoly.CPolynomial.Roots.FiniteField.eq_of_monic_dvd_of_val_size_le` (theorem, [line 798](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L798))
 
 ```lean
 theorem eq_of_monic_dvd_of_val_size_le {F : Type*}
@@ -537,7 +537,7 @@ theorem eq_of_monic_dvd_of_val_size_le {F : Type*}
     parent = divisor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eq_of_not_proper_of_monic_dvd` (theorem, [line 812](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L812))
+`CompPoly.CPolynomial.Roots.FiniteField.eq_of_not_proper_of_monic_dvd` (theorem, [line 812](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L812))
 
 ```lean
 theorem eq_of_not_proper_of_monic_dvd {F : Type*}
@@ -550,14 +550,14 @@ theorem eq_of_not_proper_of_monic_dvd {F : Type*}
     parent = child
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackReady` (definition, [line 828](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L828))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackReady` (definition, [line 828](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L828))
 
 ```lean
 def normStackReady {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (stack : List (CPolynomial F)) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackReady_tail` (theorem, [line 832](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L832))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackReady_tail` (theorem, [line 832](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L832))
 
 ```lean
 theorem normStackReady_tail {F : Type*}
@@ -567,7 +567,7 @@ theorem normStackReady_tail {F : Type*}
     normStackReady stack
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackReady_append` (theorem, [line 840](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L840))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackReady_append` (theorem, [line 840](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L840))
 
 ```lean
 theorem normStackReady_append {F : Type*}
@@ -577,7 +577,7 @@ theorem normStackReady_append {F : Type*}
     normStackReady (xs ++ ys)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_pos_of_mem` (theorem, [line 851](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L851))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_pos_of_mem` (theorem, [line 851](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L851))
 
 ```lean
 theorem normStackWork_pos_of_mem {F : Type*}
@@ -587,7 +587,7 @@ theorem normStackWork_pos_of_mem {F : Type*}
     1 ≤ normStackWork stack
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_ready` (theorem, [line 872](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L872))
+`CompPoly.CPolynomial.Roots.FiniteField.normSplitWork_pos_ready` (theorem, [line 872](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L872))
 
 ```lean
 theorem normSplitWork_pos_ready {F : Type*}
@@ -596,7 +596,7 @@ theorem normSplitWork_pos_ready {F : Type*}
     CPolynomial.monicNormalize p ≠ 0 ∧ CPolynomial.monicNormalize p ≠ 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_tail_le_of_cons_le` (theorem, [line 886](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L886))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_tail_le_of_cons_le` (theorem, [line 886](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L886))
 
 ```lean
 theorem normStackWork_tail_le_of_cons_le {F : Type*}
@@ -607,7 +607,7 @@ theorem normStackWork_tail_le_of_cons_le {F : Type*}
     normStackWork stack ≤ fuel
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_split_stack_le` (theorem, [line 895](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L895))
+`CompPoly.CPolynomial.Roots.FiniteField.normStackWork_split_stack_le` (theorem, [line 895](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L895))
 
 ```lean
 theorem normStackWork_split_stack_le {F : Type*}
@@ -620,7 +620,7 @@ theorem normStackWork_split_stack_le {F : Type*}
     normStackWork (children.toList ++ stack) ≤ fuel
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_natDegree_pos_of_proper` (theorem, [line 908](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L908))
+`CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_toPoly_natDegree_pos_of_proper` (theorem, [line 908](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L908))
 
 ```lean
 theorem monicNormalize_toPoly_natDegree_pos_of_proper {F : Type*}
@@ -630,7 +630,7 @@ theorem monicNormalize_toPoly_natDegree_pos_of_proper {F : Type*}
     0 < (CPolynomial.monicNormalize p).toPoly.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pair_le_of_natDegree_sum_le` (theorem, [line 916](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L916))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_pair_le_of_natDegree_sum_le` (theorem, [line 916](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L916))
 
 ```lean
 theorem splitWork_pair_le_of_natDegree_sum_le {F : Type*}
@@ -643,7 +643,7 @@ theorem splitWork_pair_le_of_natDegree_sum_le {F : Type*}
     splitWork left + splitWork right ≤ splitWork parent - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_triple_le_of_natDegree_sum_le` (theorem, [line 927](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L927))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_triple_le_of_natDegree_sum_le` (theorem, [line 927](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L927))
 
 ```lean
 theorem splitWork_triple_le_of_natDegree_sum_le {F : Type*}
@@ -658,7 +658,7 @@ theorem splitWork_triple_le_of_natDegree_sum_le {F : Type*}
       splitWork parent - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.splitWork_triple_le_of_first_two_pos_natDegree_sum_le` (theorem, [line 940](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L940))
+`CompPoly.CPolynomial.Roots.FiniteField.splitWork_triple_le_of_first_two_pos_natDegree_sum_le` (theorem, [line 940](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L940))
 
 ```lean
 theorem splitWork_triple_le_of_first_two_pos_natDegree_sum_le {F : Type*}
@@ -672,7 +672,7 @@ theorem splitWork_triple_le_of_first_two_pos_natDegree_sum_le {F : Type*}
       splitWork parent - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.proper_child_of_proper_intermediate` (theorem, [line 955](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L955))
+`CompPoly.CPolynomial.Roots.FiniteField.proper_child_of_proper_intermediate` (theorem, [line 955](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L955))
 
 ```lean
 theorem proper_child_of_proper_intermediate {F : Type*}
@@ -683,7 +683,7 @@ theorem proper_child_of_proper_intermediate {F : Type*}
     isNontrivialProperChild parent child = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.child_ne_zero_of_proper` (theorem, [line 965](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L965))
+`CompPoly.CPolynomial.Roots.FiniteField.child_ne_zero_of_proper` (theorem, [line 965](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L965))
 
 ```lean
 theorem child_ne_zero_of_proper {F : Type*}
@@ -693,7 +693,7 @@ theorem child_ne_zero_of_proper {F : Type*}
     child ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.child_ne_one_of_root` (theorem, [line 974](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L974))
+`CompPoly.CPolynomial.Roots.FiniteField.child_ne_one_of_root` (theorem, [line 974](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L974))
 
 ```lean
 theorem child_ne_one_of_root {F : Type*}
@@ -702,7 +702,7 @@ theorem child_ne_one_of_root {F : Type*}
   child ≠ 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.proper_child_of_ne_zero_root_size_lt` (theorem, [line 983](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L983))
+`CompPoly.CPolynomial.Roots.FiniteField.proper_child_of_ne_zero_root_size_lt` (theorem, [line 983](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L983))
 
 ```lean
 theorem proper_child_of_ne_zero_root_size_lt {F : Type*}
@@ -713,7 +713,7 @@ theorem proper_child_of_ne_zero_root_size_lt {F : Type*}
     isNontrivialProperChild parent child = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.child_size_le_fuel_of_proper_of_parent_size_le_succ` (theorem, [line 992](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L992))
+`CompPoly.CPolynomial.Roots.FiniteField.child_size_le_fuel_of_proper_of_parent_size_le_succ` (theorem, [line 992](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L992))
 
 ```lean
 theorem child_size_le_fuel_of_proper_of_parent_size_le_succ {F : Type*}
@@ -724,7 +724,7 @@ theorem child_size_le_fuel_of_proper_of_parent_size_le_succ {F : Type*}
     child.val.size ≤ fuel
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.split_child_or_quotient_root` (theorem, [line 1002](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1002))
+`CompPoly.CPolynomial.Roots.FiniteField.split_child_or_quotient_root` (theorem, [line 1002](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1002))
 
 ```lean
 theorem split_child_or_quotient_root {F : Type*}
@@ -736,7 +736,7 @@ theorem split_child_or_quotient_root {F : Type*}
       CPolynomial.eval a (quotientAfterChild parent child) = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.gcdMonic_ne_zero_left` (theorem, [line 1020](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1020))
+`CompPoly.CPolynomial.Roots.FiniteField.gcdMonic_ne_zero_left` (theorem, [line 1020](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1020))
 
 > The monic gcd with a nonzero left argument is nonzero.
 
@@ -747,7 +747,7 @@ theorem gcdMonic_ne_zero_left {F : Type*}
     CPolynomial.gcdMonic p r ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_monicNormalize_gcdMonic_eq_zero_iff` (theorem, [line 1032](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1032))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_monicNormalize_gcdMonic_eq_zero_iff` (theorem, [line 1032](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean#L1032))
 
 > A root of the monic gcd is exactly a common root of both arguments.
 
@@ -766,5 +766,5 @@ theorem eval_monicNormalize_gcdMonic_eq_zero_iff {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Common.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Correctness.Common.json)

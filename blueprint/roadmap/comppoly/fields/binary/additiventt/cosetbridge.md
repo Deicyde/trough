@@ -7,7 +7,7 @@ proof: formalized
 
 # The coset transform agrees with the existing additive NTT
 
-`CompPoly.Fields.Binary.AdditiveNTT.CosetBridge`, in [CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean), by Thomas Coratger.
+`CompPoly.Fields.Binary.AdditiveNTT.CosetBridge`, in [CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean), by Thomas Coratger.
 
 > The coset file indexes the basis by natural numbers and evaluates at points.
 >
@@ -29,7 +29,7 @@ proof: formalized
 
 > ## The polynomials
 
-`AdditiveNTT.Coset.point_eq_sum_getBit` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L47))
+`AdditiveNTT.Coset.point_eq_sum_getBit` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L47))
 
 > Point k below 2^i is the sum the existing code forms from the bits of k.
 
@@ -38,7 +38,7 @@ theorem point_eq_sum_getBit (hb : ∀ i : Fin r, b i = β i) (i : Fin r) (k : Fi
     point b k = ∑ j : Fin i, if Nat.getBit j k == 1 then β ⟨j, by omega⟩ else 0
 ```
 
-`AdditiveNTT.Coset.vanishing_eq_eval_W` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L56))
+`AdditiveNTT.Coset.vanishing_eq_eval_W` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L56))
 
 > The point-indexed W_i is the evaluation of the polynomial W_i.
 
@@ -47,7 +47,7 @@ theorem vanishing_eq_eval_W [Fact (LinearIndependent 𝔽q β)] (hb : ∀ i : Fi
     (i : Fin r) (x : L) : vanishing b i x = (W 𝔽q β i).eval x
 ```
 
-`AdditiveNTT.Coset.normalized_eq_eval_normalizedW` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L63))
+`AdditiveNTT.Coset.normalized_eq_eval_normalizedW` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L63))
 
 > The point-indexed W^_i is the evaluation of the polynomial W^_i.
 
@@ -57,7 +57,7 @@ theorem normalized_eq_eval_normalizedW [Fact (LinearIndependent 𝔽q β)]
     normalized b i x = (normalizedW 𝔽q β i).eval x
 ```
 
-`AdditiveNTT.Coset.novel_eq_eval_Xⱼ` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L70))
+`AdditiveNTT.Coset.novel_eq_eval_Xⱼ` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L70))
 
 > The point-indexed X_j is the evaluation of the novel basis polynomial X_j.
 
@@ -67,7 +67,7 @@ theorem novel_eq_eval_Xⱼ [Fact (LinearIndependent 𝔽q β)] [Fact (Nat.Prime 
     novel b ℓ j x = (Xⱼ 𝔽q β ℓ h_ℓ j).eval x
 ```
 
-`AdditiveNTT.Coset.novelEval_eq_eval_polynomialFromNovelCoeffs` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L81))
+`AdditiveNTT.Coset.novelEval_eq_eval_polynomialFromNovelCoeffs` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L81))
 
 > A polynomial in the novel basis has the same value in both presentations.
 
@@ -78,7 +78,7 @@ theorem novelEval_eq_eval_polynomialFromNovelCoeffs [Fact (LinearIndependent �
     novelEval b ℓ d x = (polynomialFromNovelCoeffs 𝔽q β ℓ h_ℓ a).eval x
 ```
 
-`AdditiveNTT.Coset.independent_of_linearIndependent` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L90))
+`AdditiveNTT.Coset.independent_of_linearIndependent` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L90))
 
 > A linearly independent basis is independent in the sense of the coset file.
 
@@ -89,7 +89,7 @@ theorem independent_of_linearIndependent [Fact (LinearIndependent 𝔽q β)]
 
 > ## The transforms
 
-`AdditiveNTT.Coset.evaluationPointω_eq_point` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L101))
+`AdditiveNTT.Coset.evaluationPointω_eq_point` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L101))
 
 > With beta_0 = 1, the evaluation points of the existing transform are the points of S.
 
@@ -99,7 +99,7 @@ theorem evaluationPointω_eq_point [Fact (β 0 = 1)] {ℓ R_rate : ℕ} (hb : �
     evaluationPointω 𝔽q β h (i := ⟨0, by omega⟩) (h_i := Nat.zero_le ℓ) j = point b j
 ```
 
-`AdditiveNTT.Coset.additiveNTT_eq_ntt` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L122))
+`AdditiveNTT.Coset.additiveNTT_eq_ntt` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L122))
 
 > The existing transform is the coset transform with zero shift.
 >
@@ -112,7 +112,7 @@ theorem additiveNTT_eq_ntt (hb : ∀ i : Fin r, b i = β i) (h : ℓ + R_rate < 
     additiveNTT 𝔽q β h a j = ntt b ℓ 0 d j
 ```
 
-`AdditiveNTT.Coset.inetwork_additiveNTT` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L133))
+`AdditiveNTT.Coset.inetwork_additiveNTT` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean#L133))
 
 > The inverse network undoes the existing transform.
 >
@@ -136,5 +136,5 @@ theorem inetwork_additiveNTT (hb : ∀ i : Fin r, b i = β i) (h : ℓ + R_rate 
 
 ## Sources
 
-- [CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean)
+- [CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.AdditiveNTT.CosetBridge.json)

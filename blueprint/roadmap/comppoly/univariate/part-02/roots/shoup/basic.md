@@ -7,7 +7,7 @@ proof: formalized
 
 # Shoup-Style Small-Characteristic Linear-Factor Splitting
 
-`CompPoly.Univariate.Roots.Shoup.Basic`, in [CompPoly/Univariate/Roots/Shoup/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Shoup.Basic`, in [CompPoly/Univariate/Roots/Shoup/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean), by Valerii Huhnin.
 
 > Executable trace-coordinate splitter for finite-field root products over fields
 > presented as `GF(p^k)` with small base characteristic `p`. The splitter refines a
@@ -20,7 +20,7 @@ proof: formalized
 > * [J. von zur Gathen and Victor Shoup, *Computing Frobenius maps and factoring
 >     polynomials*, Computational Complexity 2, 187-224, 1992][vzGS92]
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L39))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L39))
 
 > Trace power sum `z + z^p + ... + z^(p^(k-1))`.
 
@@ -28,7 +28,7 @@ proof: formalized
 def tracePowerSum {F : Type*} [Field F] (p k : Nat) (z : F) : F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_eq_sum_range` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L43))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_eq_sum_range` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L43))
 
 > The list-fold trace power sum is the corresponding finite range sum.
 
@@ -37,7 +37,7 @@ theorem tracePowerSum_eq_sum_range {F : Type*} [Field F] (p k : Nat) (z : F) :
     tracePowerSum p k z = ∑ i ∈ Finset.range k, z ^ (p ^ i)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.SmallPrimeTraceContext` (structure, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L60))
+`CompPoly.CPolynomial.Roots.FiniteField.SmallPrimeTraceContext` (structure, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L60))
 
 > Executable and proof data for a Shoup-style small-characteristic trace splitter.
 >
@@ -64,7 +64,7 @@ structure SmallPrimeTraceContext (F : Type*) [Field F] [BEq F] [LawfulBEq F]
       ∃ beta, beta ∈ basis.toList ∧ traceValue (beta * (a - b)) ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitterInput` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L84))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitterInput` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L84))
 
 > Input predicate for the Shoup splitter.
 >
@@ -77,7 +77,7 @@ def shoupSplitterInput {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (ctx : SmallPrimeTraceContext F) (p : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.modularXPowersWith` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L90))
+`CompPoly.CPolynomial.Roots.FiniteField.modularXPowersWith` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L90))
 
 > Modular powers `X^(p^i) mod modulus` for `0 ≤ i < k`.
 
@@ -87,7 +87,7 @@ def modularXPowersWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (modulus : CPolynomial F) (p k : Nat) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceCoordinatePolynomialFromPowers` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L96))
+`CompPoly.CPolynomial.Roots.FiniteField.traceCoordinatePolynomialFromPowers` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L96))
 
 > `Trace(beta * X) mod modulus`, using precomputed modular Frobenius powers.
 
@@ -99,7 +99,7 @@ def traceCoordinatePolynomialFromPowers {F : Type*}
     CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceCoordinatePolynomialWith` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L107))
+`CompPoly.CPolynomial.Roots.FiniteField.traceCoordinatePolynomialWith` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L107))
 
 > `Trace(beta * X) mod modulus`, built from the modular Frobenius powers.
 
@@ -111,7 +111,7 @@ def traceCoordinatePolynomialWith {F : Type*}
     CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.pushNontrivialChild` (definition, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L166))
+`CompPoly.CPolynomial.Roots.FiniteField.pushNontrivialChild` (definition, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L166))
 
 > Drop zero/unit children and keep the remaining monic gcd child.
 
@@ -121,7 +121,7 @@ def pushNontrivialChild {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorWith` (definition, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L172))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorWith` (definition, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L172))
 
 > Refine one current factor by one trace coordinate and all base constants.
 
@@ -133,7 +133,7 @@ def shoupRefineFactorWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsWith` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L192))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsWith` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L192))
 
 > Refine all current factors by one trace coordinate.
 
@@ -145,7 +145,7 @@ def shoupRefineFactorsWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache` (abbreviation, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L202))
+`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache` (abbreviation, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L202))
 
 > Modular Frobenius powers `X^(p^i) mod u` already computed, keyed by the modulus `u`.
 
@@ -153,7 +153,7 @@ def shoupRefineFactorsWith {F : Type*}
 abbrev ShoupTracePowerCache (F : Type*) [Field F] [BEq F] [LawfulBEq F]
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lookupTracePowers` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L206))
+`CompPoly.CPolynomial.Roots.FiniteField.lookupTracePowers` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L206))
 
 > The cached Frobenius powers for `u`, if present.
 
@@ -163,7 +163,7 @@ def lookupTracePowers {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     ShoupTracePowerCache F → Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowersWithCache` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L217))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowersWithCache` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L217))
 
 > The Frobenius powers for `u`, from the cache or computed and added to it.
 
@@ -175,7 +175,7 @@ def tracePowersWithCache {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Array (CPolynomial F) × ShoupTracePowerCache F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorCachedWith` (definition, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L229))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorCachedWith` (definition, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L229))
 
 > `shoupRefineFactorWith` reading and extending a Frobenius-power cache.
 
@@ -188,7 +188,7 @@ def shoupRefineFactorCachedWith {F : Type*}
     ShoupTracePowerCache F × Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsCachedWith` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L253))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsCachedWith` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L253))
 
 > `shoupRefineFactorsWith` threading a Frobenius-power cache.
 
@@ -201,7 +201,7 @@ def shoupRefineFactorsCachedWith {F : Type*}
     ShoupTracePowerCache F × Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineBasisCachedWith` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L267))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineBasisCachedWith` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L267))
 
 > Refine by every trace coordinate in `basis`, threading a Frobenius-power cache.
 
@@ -214,7 +214,7 @@ def shoupRefineBasisCachedWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesCachedWith` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L284))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesCachedWith` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L284))
 
 > Compiled form of `shoupSplitCandidatesWith`. A factor that survives a refinement
 > round unchanged reuses its Frobenius powers from the cache instead of recomputing
@@ -228,7 +228,7 @@ def shoupSplitCandidatesCachedWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly` (definition, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L298))
+`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly` (definition, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L298))
 
 > Final linear-only filter for the splitter interface's unconditional soundness field.
 
@@ -237,7 +237,7 @@ def representedLinearFactorsOnly {F : Type*} [Field F] [BEq F]
     (factors : Array (CPolynomial F)) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly_sound` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L337))
+`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly_sound` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L337))
 
 > The final Shoup filter only keeps represented linear factors.
 
@@ -249,7 +249,7 @@ theorem representedLinearFactorsOnly_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly_mem_of_mem` (theorem, [line 404](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L404))
+`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorsOnly_mem_of_mem` (theorem, [line 404](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L404))
 
 > The final linear-factor filter keeps represented factors that were already present.
 
@@ -262,7 +262,7 @@ theorem representedLinearFactorsOnly_mem_of_mem {F : Type*}
     factor ∈ (representedLinearFactorsOnly factors).toList
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith` (definition, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L415))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith` (definition, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L415))
 
 > Trace-coordinate refinement candidates before the final linear-only filter.
 
@@ -274,7 +274,7 @@ def shoupSplitCandidatesWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache.Valid` (definition, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L431))
+`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache.Valid` (definition, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L431))
 
 > Every cache entry holds the Frobenius powers of its own key.
 
@@ -284,7 +284,7 @@ def ShoupTracePowerCache.Valid {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (ctx : SmallPrimeTraceContext F) (cache : ShoupTracePowerCache F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache.valid_nil` (theorem, [line 437](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L437))
+`CompPoly.CPolynomial.Roots.FiniteField.ShoupTracePowerCache.valid_nil` (theorem, [line 437](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L437))
 
 > The empty cache is valid.
 
@@ -295,7 +295,7 @@ theorem ShoupTracePowerCache.valid_nil {F : Type*} [Field F] [BEq F] [LawfulBEq 
     ShoupTracePowerCache.Valid M D ctx []
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lookupTracePowers_eq` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L445))
+`CompPoly.CPolynomial.Roots.FiniteField.lookupTracePowers_eq` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L445))
 
 > A hit in a valid cache returns the Frobenius powers of the queried modulus.
 
@@ -315,7 +315,7 @@ theorem lookupTracePowers_eq {F : Type*} [Field F] [BEq F] [LawfulBEq F]
         obtain rfl
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowersWithCache_spec` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L463))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowersWithCache_spec` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L463))
 
 > Reading through a valid cache returns the Frobenius powers and keeps the cache valid.
 
@@ -328,7 +328,7 @@ theorem tracePowersWithCache_spec {F : Type*} [Field F] [BEq F] [LawfulBEq F]
       (tracePowersWithCache M D ctx u cache).2.Valid M D ctx
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorCachedWith_spec` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L481))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorCachedWith_spec` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L481))
 
 > The cached single-factor refinement matches `shoupRefineFactorWith`.
 
@@ -343,7 +343,7 @@ theorem shoupRefineFactorCachedWith_spec {F : Type*}
       (shoupRefineFactorCachedWith M D ctx beta cache u).1.Valid M D ctx
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsCachedWith_spec` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L506))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineFactorsCachedWith_spec` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L506))
 
 > The cached refinement of a factor array matches `shoupRefineFactorsWith`.
 
@@ -358,7 +358,7 @@ theorem shoupRefineFactorsCachedWith_spec {F : Type*}
       (shoupRefineFactorsCachedWith M D ctx beta cache factors).1.Valid M D ctx
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineBasisCachedWith_eq` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L546))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupRefineBasisCachedWith_eq` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L546))
 
 > From a valid cache, the cached basis loop is the uncached fold over the basis.
 
@@ -376,7 +376,7 @@ theorem shoupRefineBasisCachedWith_eq {F : Type*}
       obtain ⟨hfactors, hvalid'⟩
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_eq_cached` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L568))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_eq_cached` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L568))
 
 > The cached splitter computes the specification; compiled code runs the cached one.
 
@@ -385,7 +385,7 @@ theorem shoupSplitCandidatesWith_eq_cached :
     @shoupSplitCandidatesWith = @shoupSplitCandidatesCachedWith
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith` (definition, [line 581](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L581))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith` (definition, [line 581](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L581))
 
 > Shoup trace-coordinate splitting, returning only represented linear factors.
 
@@ -397,7 +397,7 @@ def shoupSplitLinearFactorsWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith_sound` (theorem, [line 589](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean#L589))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith_sound` (theorem, [line 589](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean#L589))
 
 > Soundness of the final Shoup linear-factor array.
 
@@ -417,5 +417,5 @@ theorem shoupSplitLinearFactorsWith_sound {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Shoup/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Basic.lean)
+- [CompPoly/Univariate/Roots/Shoup/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.Roots.Shoup.Basic.json)

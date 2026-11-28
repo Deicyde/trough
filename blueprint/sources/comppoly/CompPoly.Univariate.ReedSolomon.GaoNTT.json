@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CompPoly",
  "repo": "Verified-zkEVM/CompPoly",
- "rev": "c72a765272497b4c52201be11be47af5718c7488",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
  "module": "CompPoly.Univariate.ReedSolomon.GaoNTT",
  "file": "CompPoly/Univariate/ReedSolomon/GaoNTT.lean",
  "public": [

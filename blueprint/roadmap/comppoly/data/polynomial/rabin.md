@@ -7,7 +7,7 @@ proof: formalized
 
 # Rabin's irreducibility test
 
-`CompPoly.Data.Polynomial.Rabin`, in [CompPoly/Data/Polynomial/Rabin.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean), by Derek Sorensen.
+`CompPoly.Data.Polynomial.Rabin`, in [CompPoly/Data/Polynomial/Rabin.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean), by Derek Sorensen.
 
 > A polynomial `f` of degree `d` over a finite field `F` with `q = |F|` elements is irreducible
 > exactly when
@@ -39,7 +39,7 @@ proof: formalized
 > * [Rabin80] Michael O. Rabin, *Probabilistic Algorithms in Finite Fields*,
 >   SIAM Journal on Computing 9(2), 1980.
 
-`Nat.exists_primeFactor_dvd_div_of_dvd` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean#L57))
+`Nat.exists_primeFactor_dvd_div_of_dvd` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean#L57))
 
 > If `m` is a proper divisor of a nonzero `d`, then `m` divides `d / ℓ` for some prime factor `ℓ`
 > of `d`.
@@ -68,7 +68,7 @@ theorem exists_primeFactor_dvd_div_of_dvd {m d : ℕ} (hd : d ≠ 0) (hmd : m �
 > `docs/wiki/field-extensions.md` records the history, and
 > `CompPoly/Data/Polynomial/RabinCertificate.lean` packages these tests at concrete degrees.
 
-`Polynomial.irreducible_of_rabin` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean#L111))
+`Polynomial.irreducible_of_rabin` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean#L111))
 
 > **Rabin's irreducibility test (soundness).**
 >
@@ -83,7 +83,7 @@ theorem irreducible_of_rabin {f : F[X]} {d q : ℕ} (hcard : Fintype.card F = q)
     Irreducible f
 ```
 
-`Polynomial.rabin_of_irreducible` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean#L139))
+`Polynomial.rabin_of_irreducible` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean#L139))
 
 > **Rabin's irreducibility test (completeness).**
 >
@@ -96,7 +96,7 @@ theorem rabin_of_irreducible {f : F[X]} {d q : ℕ} (hcard : Fintype.card F = q)
       ∀ ℓ ∈ d.primeFactors, IsCoprime f (X ^ (q ^ (d / ℓ)) - X)
 ```
 
-`Polynomial.irreducible_iff_rabin` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean#L160))
+`Polynomial.irreducible_iff_rabin` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean#L160))
 
 > **Rabin's irreducibility test.** For a polynomial of positive degree `d` over a finite field
 > with `q` elements, irreducibility is equivalent to the two Rabin conditions.
@@ -120,5 +120,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Polynomial/Rabin.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Rabin.lean)
+- [CompPoly/Data/Polynomial/Rabin.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Rabin.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Polynomial.Rabin.json)

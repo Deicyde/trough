@@ -7,9 +7,9 @@ proof: formalized
 
 # Shifted Degrees for Polynomial Rows
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Shifted`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Shifted`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean), by Valerii Huhnin.
 
-`CompPoly.PolynomialMatrix.ShiftedLeadingTerm` (structure, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L23))
+`CompPoly.PolynomialMatrix.ShiftedLeadingTerm` (structure, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L23))
 
 > Shifted leading term metadata for a nonzero row.
 
@@ -22,7 +22,7 @@ structure ShiftedLeadingTerm (F : Type*) where
 deriving Repr
 ```
 
-`CompPoly.PolynomialMatrix.maxOption` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L31))
+`CompPoly.PolynomialMatrix.maxOption` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L31))
 
 > Insert a natural number into an optional running maximum.
 
@@ -30,7 +30,7 @@ deriving Repr
 def maxOption : Option Nat → Nat → Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.shiftedEntryDegree?` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L36))
+`CompPoly.PolynomialMatrix.shiftedEntryDegree?` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L36))
 
 > Shifted degree of one row entry. Zero entries have no degree.
 
@@ -39,7 +39,7 @@ def shiftedEntryDegree? [Zero F] [BEq F]
     (row : PolynomialRow F) (shift : Array Nat) (j : Nat) : Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedDegree?` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L42))
+`CompPoly.PolynomialMatrix.rowShiftedDegree?` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L42))
 
 > Shifted degree of a row, with `none` exactly for zero rows.
 
@@ -48,7 +48,7 @@ def rowShiftedDegree? [Zero F] [BEq F]
     (row : PolynomialRow F) (shift : Array Nat) : Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L52))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L52))
 
 > Shifted leading position of a nonzero row. Ties use the largest column index.
 
@@ -57,7 +57,7 @@ def rowShiftedLeadingPosition? [Zero F] [BEq F]
     (row : PolynomialRow F) (shift : Array Nat) : Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L63))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L63))
 
 > Shifted leading term metadata for a nonzero row.
 
@@ -67,7 +67,7 @@ def rowShiftedLeadingTerm? [Zero F] [BEq F]
     Option (ShiftedLeadingTerm F)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_iff` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L86))
+`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_iff` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L86))
 
 > A row entry has shifted degree `d` exactly when it is nonzero and `d` is its shifted degree.
 
@@ -78,7 +78,7 @@ theorem shiftedEntryDegree?_eq_some_iff [Zero F] [BEq F] [LawfulBEq F]
       rowGet row j ≠ 0 ∧ (rowGet row j).natDegree + shift.getD j 0 = d
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedDegree?_eq_none_iff` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L238))
+`CompPoly.PolynomialMatrix.rowShiftedDegree?_eq_none_iff` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L238))
 
 > Nonzero rows are exactly the rows with a shifted degree.
 
@@ -88,7 +88,7 @@ theorem rowShiftedDegree?_eq_none_iff [Zero F] [BEq F] [LawfulBEq F]
     rowShiftedDegree? row shift = none ↔ RowIsZero row
 ```
 
-`CompPoly.PolynomialMatrix.shiftedEntryDegree?_le_of_rowShiftedDegree?_eq_some` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L252))
+`CompPoly.PolynomialMatrix.shiftedEntryDegree?_le_of_rowShiftedDegree?_eq_some` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L252))
 
 > A returned shifted row degree bounds every nonzero shifted entry degree.
 
@@ -102,7 +102,7 @@ theorem shiftedEntryDegree?_le_of_rowShiftedDegree?_eq_some
     e ≤ d
 ```
 
-`CompPoly.PolynomialMatrix.exists_shiftedEntryDegree?_eq_of_rowShiftedDegree?_eq_some` (theorem, [line 263](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L263))
+`CompPoly.PolynomialMatrix.exists_shiftedEntryDegree?_eq_of_rowShiftedDegree?_eq_some` (theorem, [line 263](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L263))
 
 > A returned shifted row degree is attained by some row entry.
 
@@ -114,7 +114,7 @@ theorem exists_shiftedEntryDegree?_eq_of_rowShiftedDegree?_eq_some
     ∃ j, j < row.size ∧ shiftedEntryDegree? row shift j = some d
 ```
 
-`CompPoly.PolynomialMatrix.ShiftedWeakPopov` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L276))
+`CompPoly.PolynomialMatrix.ShiftedWeakPopov` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean#L276))
 
 > A shifted weak-Popov matrix has distinct leading positions among nonzero rows.
 
@@ -129,5 +129,5 @@ def ShiftedWeakPopov [Zero F] [BEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Shifted.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Correctness of Hybrid Guruswami-Sudan Interpolation
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean), by Valerii Huhnin.
 
 > The hybrid's fuel/fallback dispatch affects performance only: its result
 > always coincides with the result of one of the two verified backends
@@ -21,7 +21,7 @@ proof: formalized
 > the same matrix as the full reduction, so the kept Lee branch is literally the
 > Lee-O'Sullivan backend run with the fast reducer context.
 
-`CompPoly.GuruswamiSudan.Hybrid.hybridPositiveInterpolate_eq_lee_or_approximant` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L64))
+`CompPoly.GuruswamiSudan.Hybrid.hybridPositiveInterpolate_eq_lee_or_approximant` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L64))
 
 > The hybrid branch result always coincides with one of the two verified
 > backends.
@@ -41,7 +41,7 @@ theorem hybridPositiveInterpolate_eq_lee_or_approximant
           points params
 ```
 
-`CompPoly.GuruswamiSudan.Hybrid.hybridInterpolate_eq_lee_or_approximant` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L95))
+`CompPoly.GuruswamiSudan.Hybrid.hybridInterpolate_eq_lee_or_approximant` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L95))
 
 > The hybrid result always coincides with one of the two verified
 > backends.
@@ -60,7 +60,7 @@ theorem hybridInterpolate_eq_lee_or_approximant
         ApproximantBasis.approximantBasisInterpolate V E solver points params
 ```
 
-`CompPoly.GuruswamiSudan.Hybrid.hybridInterpContext` (definition, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L117))
+`CompPoly.GuruswamiSudan.Hybrid.hybridInterpContext` (definition, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean#L117))
 
 > Public hybrid interpolation backend context: adaptive Lee-O'Sullivan
 > reduction under a step budget with an approximant-basis fallback.
@@ -85,5 +85,5 @@ def hybridInterpContext
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness.json)

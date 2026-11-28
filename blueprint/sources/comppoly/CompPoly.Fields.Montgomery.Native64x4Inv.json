@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
+ "module": "CompPoly.Fields.Montgomery.Native64x4Inv",
+ "file": "CompPoly/Fields/Montgomery/Native64x4Inv.lean",
+ "public": [
+  {"name": "Montgomery.Native64x4.subLimbs_borrow_eq_one_iff", "kind": "theorem", "line": 29},
+  {"name": "Montgomery.Native64x4.mulWord_spec", "kind": "theorem", "line": 42},
+  {"name": "Montgomery.Native64x4.add5_spec", "kind": "theorem", "line": 56},
+  {"name": "Montgomery.Native64x4.lincombTail_lt", "kind": "theorem", "line": 79},
+  {"name": "Montgomery.Native64x4.gcdLinearCombMontyRed_lt", "kind": "theorem", "line": 119},
+  {"name": "Montgomery.Native64x4.gcdMainLoop_bounded", "kind": "theorem", "line": 149},
+  {"name": "Montgomery.Native64x4.gcdFinalChunks_lt", "kind": "theorem", "line": 199},
+  {"name": "Montgomery.Native64x4.gcdInvCandidate_lt", "kind": "theorem", "line": 227},
+  {"name": "Montgomery.Native64x4.gcdInvCandidate_lt_modulus", "kind": "theorem", "line": 251},
+  {"name": "Montgomery.Native64x4.montPow_eq_mul_pow", "kind": "theorem", "line": 271},
+  {"name": "Montgomery.Native64x4.montPow_eq_inv", "kind": "theorem", "line": 298},
+  {"name": "Montgomery.Native64x4.invGcdRaw_eq_inv", "kind": "theorem", "line": 342},
+  {"name": "Montgomery.Native64x4.FastField.invGcd", "kind": "def", "line": 357},
+  {"name": "Montgomery.Native64x4.FastField.invGcd_eq_inv", "kind": "theorem", "line": 364}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

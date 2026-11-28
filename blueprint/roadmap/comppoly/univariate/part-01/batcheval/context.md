@@ -7,11 +7,11 @@ proof: formalized
 
 # Batch-Evaluation Contexts
 
-`CompPoly.Univariate.BatchEval.Context`, in [CompPoly/Univariate/BatchEval/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Context.lean), by Valerii Huhnin.
+`CompPoly.Univariate.BatchEval.Context`, in [CompPoly/Univariate/BatchEval/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Context.lean), by Valerii Huhnin.
 
 > Explicit context wrappers for reusable univariate batch-evaluation backends.
 
-`CompPoly.CPolynomial.BatchEvalContext` (structure, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Context.lean#L23))
+`CompPoly.CPolynomial.BatchEvalContext` (structure, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Context.lean#L23))
 
 > Contract wrapper for batch evaluation backends.
 
@@ -21,7 +21,7 @@ structure BatchEvalContext (R : Type*) [Semiring R] where
   correct : ∀ p xs, evalBatchWith p xs = CPolynomial.evalBatch p xs
 ```
 
-`CompPoly.CPolynomial.BatchEvalContext.horner` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Context.lean#L30))
+`CompPoly.CPolynomial.BatchEvalContext.horner` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Context.lean#L30))
 
 > Horner-backed batch evaluation context.
 
@@ -29,7 +29,7 @@ structure BatchEvalContext (R : Type*) [Semiring R] where
 def horner (R : Type*) [Semiring R] : BatchEvalContext R
 ```
 
-`CompPoly.CPolynomial.BatchEvalContext.subproduct` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Context.lean#L37))
+`CompPoly.CPolynomial.BatchEvalContext.subproduct` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Context.lean#L37))
 
 > Subproduct-tree-backed batch evaluation context.
 
@@ -50,5 +50,5 @@ def subproduct (R : Type*) [Field R] [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/BatchEval/Context.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Context.lean)
+- [CompPoly/Univariate/BatchEval/Context.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Context.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.BatchEval.Context.json)

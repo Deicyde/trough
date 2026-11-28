@@ -7,7 +7,7 @@ proof: formalized
 
 # Bases from adjacent tower coordinates
 
-`CompPoly.Data.RingTheory.AlgebraTower.Basis`, in [CompPoly/Data/RingTheory/AlgebraTower/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean), by CompPoly Contributors.
+`CompPoly.Data.RingTheory.AlgebraTower.Basis`, in [CompPoly/Data/RingTheory/AlgebraTower/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean), by CompPoly Contributors.
 
 > `AlgebraTower.natBasis` is the basis determined by the executable equivalence
 > `AlgebraTower.natCoordinates`. Its `repr` is the coordinate map, and its vectors equal the
@@ -25,7 +25,7 @@ proof: formalized
 > The construction uses `Module.Basis.ofEquivFun` and the scalar-tower basis equations from
 > Mathlib's `Mathlib.RingTheory.AlgebraTower` module.
 
-`AlgebraTower.natBasis` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L42))
+`AlgebraTower.natBasis` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L42))
 
 > The basis whose coordinates are `natCoordinates`, over the action of the given tower map.
 
@@ -35,7 +35,7 @@ noncomputable def natBasis (i n : ℕ) :
     Module.Basis (Fin (coordinateSize d i n)) (A i) (A (i + n))
 ```
 
-`AlgebraTower.natBasis_repr` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L50))
+`AlgebraTower.natBasis_repr` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L50))
 
 > The mathematical basis representation is the executable coordinate map.
 
@@ -45,7 +45,7 @@ theorem natBasis_repr (i n : ℕ) (x : A (i + n)) (j : Fin (coordinateSize d i n
     (natBasis step i n).repr x j = natCoordinates step i n x j
 ```
 
-`AlgebraTower.natBasisVector_eq_natBasis` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L56))
+`AlgebraTower.natBasisVector_eq_natBasis` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L56))
 
 > Packing a unit coordinate vector gives the corresponding mathematical basis vector.
 
@@ -54,7 +54,7 @@ theorem natBasisVector_eq_natBasis (i n : ℕ) (j : Fin (coordinateSize d i n)) 
     natBasisVector step i n j = natBasis step i n j
 ```
 
-`AlgebraTower.natBasis_succ` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L67))
+`AlgebraTower.natBasis_succ` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L67))
 
 > The next relative basis is the scalar-tower composition of the previous basis and the
 > next successor basis, with the old index varying fastest.
@@ -70,7 +70,7 @@ theorem natBasis_succ (i n : ℕ) :
         finProdFinEquiv
 ```
 
-`AlgebraTower.natBasisVector_succ` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L85))
+`AlgebraTower.natBasisVector_succ` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L85))
 
 > At flattened index `oldIndex + oldSize * newIndex`, the vector is the embedded old
 > vector multiplied by the new successor vector.
@@ -83,7 +83,7 @@ theorem natBasisVector_succ (i n : ℕ) (b : Fin (d (i + n)))
         (step (i + n)).symm (Pi.single b 1)
 ```
 
-`AlgebraTower.natBasisOfLE` (definition, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L100))
+`AlgebraTower.natBasisOfLE` (definition, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L100))
 
 > The basis at arbitrary comparable endpoints, over the action of the given tower map.
 
@@ -93,7 +93,7 @@ noncomputable def natBasisOfLE {i j : ℕ} (h : i ≤ j) :
     Module.Basis (Fin (coordinateSize d i (j - i))) (A i) (A j)
 ```
 
-`AlgebraTower.natBasisOfLE_repr` (theorem, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L108))
+`AlgebraTower.natBasisOfLE_repr` (theorem, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L108))
 
 > The endpoint basis representation is the executable endpoint coordinate map.
 
@@ -104,7 +104,7 @@ theorem natBasisOfLE_repr {i j : ℕ} (h : i ≤ j) (x : A j)
     (natBasisOfLE step h).repr x idx = natCoordinatesOfLE step h x idx
 ```
 
-`AlgebraTower.natBasisVectorOfLE_eq_natBasisOfLE` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L115))
+`AlgebraTower.natBasisVectorOfLE_eq_natBasisOfLE` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L115))
 
 > Packing a unit coordinate vector computes the corresponding endpoint basis vector.
 
@@ -114,7 +114,7 @@ theorem natBasisVectorOfLE_eq_natBasisOfLE {i j : ℕ} (h : i ≤ j)
     natBasisVectorOfLE step h idx = natBasisOfLE step h idx
 ```
 
-`AlgebraTower.natBasisOfLE_apply` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L126))
+`AlgebraTower.natBasisOfLE_apply` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L126))
 
 > Endpoint basis vectors agree with the height-indexed basis after identifying the endpoints.
 
@@ -125,7 +125,7 @@ theorem natBasisOfLE_apply {i j : ℕ} (h : i ≤ j)
       cast (congrArg A (Nat.add_sub_of_le h)) (natBasis step i (j - i) idx)
 ```
 
-`AlgebraTower.natBasisOfLE_self` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L135))
+`AlgebraTower.natBasisOfLE_self` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean#L135))
 
 > At equal endpoints the unique basis vector is one.
 
@@ -140,5 +140,5 @@ theorem natBasisOfLE_self (i : ℕ) (idx : Fin (coordinateSize d i (i - i))) :
 
 ## Sources
 
-- [CompPoly/Data/RingTheory/AlgebraTower/Basis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean)
+- [CompPoly/Data/RingTheory/AlgebraTower/Basis.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/AlgebraTower/Basis.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Data.RingTheory.AlgebraTower.Basis.json)

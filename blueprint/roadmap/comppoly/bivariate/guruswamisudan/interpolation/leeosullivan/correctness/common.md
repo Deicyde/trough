@@ -7,11 +7,11 @@ proof: formalized
 
 # Lee-O'Sullivan Correctness Common Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean), by Valerii Huhnin.
 
 > Basic facts shared by Lee-O'Sullivan soundness and completeness proofs.
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.distinctXCoordinatesBool_iff` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L30))
+`CompPoly.GuruswamiSudan.LeeOSullivan.distinctXCoordinatesBool_iff` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L30))
 
 > Executable distinct-`x` check agrees with the semantic predicate.
 
@@ -20,7 +20,7 @@ theorem distinctXCoordinatesBool_iff {points : Array (F × F)} :
     distinctXCoordinatesBool points = true ↔ DistinctXCoordinates points
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeCoefficientForm_eval_point` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L48))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeCoefficientForm_eval_point` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L48))
 
 > The coefficient-form `R` used by Lee evaluates to the packed values at distinct nodes.
 
@@ -35,7 +35,7 @@ theorem leeCoefficientForm_eval_point
       point.2
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeVanishing_eval_point` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L60))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeVanishing_eval_point` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L60))
 
 > The vanishing `G` used by Lee vanishes on every listed `x`.
 
@@ -46,7 +46,7 @@ theorem leeVanishing_eval_point
     CPolynomial.eval point.1 (V.vanishingPolynomial (points.map fun p ↦ p.1)) = 0
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_size` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L70))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_size` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L70))
 
 > Lee basis rows have exactly `ell + 1` rows.
 
@@ -58,7 +58,7 @@ theorem leeOSullivanBasisRows_size
     (leeOSullivanBasisRows V E points params).size = leeOSullivanWidth params
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_wellFormed` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L78))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_wellFormed` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L78))
 
 > Lee basis rows built from fixed `R` and `G` are rectangular.
 
@@ -68,7 +68,7 @@ theorem leeOSullivanBasisRowsWithRG_wellFormed
     WellFormed (leeOSullivanBasisRowsWithRG R G params)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_width` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L94))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_width` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L94))
 
 > The executable Lee basis matrix has width `ell + 1`.
 
@@ -79,7 +79,7 @@ theorem leeOSullivanBasisRowsWithRG_width
       leeOSullivanWidth params
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_wellFormed` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L102))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_wellFormed` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L102))
 
 > Lee basis rows built from packed points are rectangular.
 
@@ -91,7 +91,7 @@ theorem leeOSullivanBasisRows_wellFormed
     WellFormed (leeOSullivanBasisRows V E points params)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L111))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L111))
 
 > The Lee basis as bivariate polynomials, parallel to the executable row matrix.
 
@@ -100,7 +100,7 @@ def leeOSullivanBasisPolynomials
     (R G : CPolynomial F) (params : GSInterpParams) : Array (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_size` (theorem, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L117))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_size` (theorem, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L117))
 
 > The bivariate Lee basis has the same length as the row basis.
 
@@ -111,7 +111,7 @@ theorem leeOSullivanBasisPolynomials_size
       leeOSullivanWidth params
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_getD_of_lt` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L124))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_getD_of_lt` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L124))
 
 > In-bounds reads from the bivariate Lee basis return the corresponding basis polynomial.
 
@@ -123,7 +123,7 @@ theorem leeOSullivanBasisPolynomials_getD_of_lt
       leeOSullivanBasisPolynomial R G params i
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.rowGet_leeOSullivanBasisRowsWithRG_getD` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L133))
+`CompPoly.GuruswamiSudan.LeeOSullivan.rowGet_leeOSullivanBasisRowsWithRG_getD` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean#L133))
 
 > In-bounds row entries of the executable Lee basis are the `Y` coefficients
 > of the corresponding bivariate basis polynomial.
@@ -143,5 +143,5 @@ theorem rowGet_leeOSullivanBasisRowsWithRG_getD
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common.json)

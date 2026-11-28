@@ -7,7 +7,7 @@ proof: formalized
 
 # Reducing a carry-less product modulo the `GF(2^64)` modulus
 
-`CompPoly.Fields.Binary.BF64.Reduce`, in [CompPoly/Fields/Binary/BF64/Reduce.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean), by Nicolas Schleicher.
+`CompPoly.Fields.Binary.BF64.Reduce`, in [CompPoly/Fields/Binary/BF64/Reduce.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean), by Nicolas Schleicher.
 
 > A product of two 64-bit values occupies 128 bits. Because `x^64 ≡ x^4 + x^3 + x + 1`
 > (`BF64.mul_pow_reduce`), the high half can be folded back down by a single carry-less
@@ -33,7 +33,7 @@ proof: formalized
 
 > ## Halves of a double-width value
 
-`BF64.highHalf` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L46))
+`BF64.highHalf` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L46))
 
 > The high 64 bits of a 128-bit value.
 
@@ -41,7 +41,7 @@ proof: formalized
 def highHalf (x : BitVec 128) : BitVec 64
 ```
 
-`BF64.lowHalf` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L49))
+`BF64.lowHalf` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L49))
 
 > The low 64 bits of a 128-bit value.
 
@@ -49,7 +49,7 @@ def highHalf (x : BitVec 128) : BitVec 64
 def lowHalf (x : BitVec 128) : BitVec 64
 ```
 
-`BF64.highHalf_testBit` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L52))
+`BF64.highHalf_testBit` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L52))
 
 > Bit `i` of the high half is bit `64 + i` of the whole.
 
@@ -58,7 +58,7 @@ theorem highHalf_testBit (x : BitVec 128) (i : ℕ) (h : i < 64) :
     (highHalf x).toNat.testBit i = x.toNat.testBit (64 + i)
 ```
 
-`BF64.lowHalf_testBit` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L59))
+`BF64.lowHalf_testBit` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L59))
 
 > Bit `i` of the low half is bit `i` of the whole.
 
@@ -67,7 +67,7 @@ theorem lowHalf_testBit (x : BitVec 128) (i : ℕ) (h : i < 64) :
     (lowHalf x).toNat.testBit i = x.toNat.testBit i
 ```
 
-`BF64.toPoly_halves` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L66))
+`BF64.toPoly_halves` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L66))
 
 > Splitting a 128-bit value into `high * x^64 + low`.
 
@@ -76,7 +76,7 @@ theorem toPoly_halves (x : BitVec 128) :
     toPoly x = toPoly (highHalf x) * X ^ 64 + toPoly (lowHalf x)
 ```
 
-`BF64.highHalf_lt` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L84))
+`BF64.highHalf_lt` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L84))
 
 > If `x < 2 ^ (64 + d)` then its high half is below `2 ^ d`.
 
@@ -85,7 +85,7 @@ theorem highHalf_lt (x : BitVec 128) {d : ℕ} (hx : x.toNat < 2 ^ (64 + d)) :
     (highHalf x).toNat < 2 ^ d
 ```
 
-`BF64.lowHalf_lt` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L93))
+`BF64.lowHalf_lt` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L93))
 
 > The low half is always below `2 ^ 64`, being 64 bits wide.
 
@@ -93,7 +93,7 @@ theorem highHalf_lt (x : BitVec 128) {d : ℕ} (hx : x.toNat < 2 ^ (64 + d)) :
 theorem lowHalf_lt (x : BitVec 128) : (lowHalf x).toNat < 2 ^ 64
 ```
 
-`BF64.carryLessMul_lt` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L96))
+`BF64.carryLessMul_lt` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L96))
 
 > A carry-less product of values below `2 ^ p` and `2 ^ q` is below `2 ^ (p + q)`.
 
@@ -105,7 +105,7 @@ theorem carryLessMul_lt {v w : ℕ} (a b : BitVec v) {p q : ℕ}
 
 > ## The reduction fold
 
-`BF64.reductionConstant` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L116))
+`BF64.reductionConstant` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L116))
 
 > The reduction constant `0x1B`: the modulus below its leading term,
 > `x^4 + x^3 + x + 1`.
@@ -114,7 +114,7 @@ theorem carryLessMul_lt {v w : ℕ} (a b : BitVec v) {p q : ℕ}
 def reductionConstant : BitVec 64
 ```
 
-`BF64.toPoly_reductionConstant` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L122))
+`BF64.toPoly_reductionConstant` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L122))
 
 > **The reduction constant is the right one**: `0x1B` denotes `x^4 + x^3 + x + 1`.
 >
@@ -125,7 +125,7 @@ def reductionConstant : BitVec 64
 theorem toPoly_reductionConstant : toPoly reductionConstant = baseTail
 ```
 
-`BF64.reductionConstant_lt` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L134))
+`BF64.reductionConstant_lt` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L134))
 
 > The reduction constant fits in five bits, which bounds how much a fold can grow.
 
@@ -133,7 +133,7 @@ theorem toPoly_reductionConstant : toPoly reductionConstant = baseTail
 theorem reductionConstant_lt : reductionConstant.toNat < 2 ^ 5
 ```
 
-`BF64.foldStep` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L137))
+`BF64.foldStep` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L137))
 
 > One reduction fold: replace the high half's factor of `x^64` by `baseTail`.
 
@@ -141,7 +141,7 @@ theorem reductionConstant_lt : reductionConstant.toNat < 2 ^ 5
 def foldStep (x : BitVec 128) : BitVec 128
 ```
 
-`BF64.foldStep_mod` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L141))
+`BF64.foldStep_mod` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L141))
 
 > A fold preserves the residue modulo the modulus.
 
@@ -150,7 +150,7 @@ theorem foldStep_mod (x : BitVec 128) :
     toPoly (foldStep x) % basePoly = toPoly x % basePoly
 ```
 
-`BF64.foldStep_lt` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L151))
+`BF64.foldStep_lt` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L151))
 
 > A fold of a value below `2 ^ (64 + d)` lands below `2 ^ (max 64 (d + 5))`.
 
@@ -161,7 +161,7 @@ theorem foldStep_lt (x : BitVec 128) {d : ℕ} (hx : x.toNat < 2 ^ (64 + d)) :
 
 > ## Full reduction
 
-`BF64.reduce` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L167))
+`BF64.reduce` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L167))
 
 > Reduce a 128-bit carry-less product into the base field: two folds, then truncate.
 
@@ -169,7 +169,7 @@ theorem foldStep_lt (x : BitVec 128) {d : ℕ} (hx : x.toNat < 2 ^ (64 + d)) :
 def reduce (x : BitVec 128) : BitVec 64
 ```
 
-`BF64.foldStep_foldStep_lt` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L170))
+`BF64.foldStep_foldStep_lt` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L170))
 
 > Two folds bring any 128-bit value below `2 ^ 64`.
 
@@ -177,7 +177,7 @@ def reduce (x : BitVec 128) : BitVec 64
 theorem foldStep_foldStep_lt (x : BitVec 128) : (foldStep (foldStep x)).toNat < 2 ^ 64
 ```
 
-`BF64.toPoly_lowHalf_of_lt` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L176))
+`BF64.toPoly_lowHalf_of_lt` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L176))
 
 > Truncation is faithful on values already below `2 ^ 64`.
 
@@ -186,7 +186,7 @@ theorem toPoly_lowHalf_of_lt (x : BitVec 128) (h : x.toNat < 2 ^ 64) :
     toPoly (lowHalf x) = toPoly x
 ```
 
-`BF64.toPoly_reduce` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean#L186))
+`BF64.toPoly_reduce` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean#L186))
 
 > `reduce` computes the remainder of the denoted polynomial modulo the modulus.
 
@@ -202,5 +202,5 @@ theorem toPoly_reduce (x : BitVec 128) :
 
 ## Sources
 
-- [CompPoly/Fields/Binary/BF64/Reduce.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Reduce.lean)
+- [CompPoly/Fields/Binary/BF64/Reduce.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Reduce.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.BF64.Reduce.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Alekhnovich Bivariate Bounded Root Search
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean), by Valerii Huhnin.
 
 > Executable batched `X`-adic root lifting for the Guruswami-Sudan bivariate root
 > phase. The public output is exactly filtered against `Q(X, p(X)) = 0` and
@@ -20,7 +20,7 @@ proof: formalized
 >     Decoding of Reed-Solomon Codes*, IEEE Transactions on Information Theory
 >     51(7), 2257-2265, 2005][Ale05]
 
-`CompPoly.GuruswamiSudan.RootPrefix` (structure, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L34))
+`CompPoly.GuruswamiSudan.RootPrefix` (structure, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L34))
 
 > A prefix coset `prefixPoly + X^precision * g(X)`.
 
@@ -31,7 +31,7 @@ structure RootPrefix (F : Type*) [Zero F] where
 deriving BEq, DecidableEq
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichPrecisionBound` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L43))
+`CompPoly.GuruswamiSudan.alekhnovichPrecisionBound` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L43))
 
 > Precision requested by the Alekhnovich top-level root search.
 >
@@ -43,7 +43,7 @@ def alekhnovichPrecisionBound {F : Type*} [Zero F] [BEq F]
     (Q : CBivariate F) (k : Nat) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.AlekhnovichResidual` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L51))
+`CompPoly.GuruswamiSudan.AlekhnovichResidual` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L51))
 
 > Normalized shifted residual and its stripped `X`-adic valuation.
 
@@ -54,7 +54,7 @@ structure AlekhnovichResidual (F : Type*) [Zero F] where
 deriving BEq, DecidableEq
 ```
 
-`CompPoly.GuruswamiSudan.shiftedResidualUpTo` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L57))
+`CompPoly.GuruswamiSudan.shiftedResidualUpTo` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L57))
 
 > Shift, truncate, strip the visible `X`-adic factor, and report the residual.
 
@@ -65,7 +65,7 @@ def shiftedResidualUpTo {F : Type*}
     AlekhnovichResidual F
 ```
 
-`CompPoly.GuruswamiSudan.composeRootPrefixes` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L71))
+`CompPoly.GuruswamiSudan.composeRootPrefixes` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L71))
 
 > Compose an outer prefix with a suffix prefix returned by a residual call.
 
@@ -75,7 +75,7 @@ def composeRootPrefixes {F : Type*}
     (outer suffix : RootPrefix F) : RootPrefix F
 ```
 
-`CompPoly.GuruswamiSudan.normalizeAlekhnovichInput` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L80))
+`CompPoly.GuruswamiSudan.normalizeAlekhnovichInput` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L80))
 
 > Normalize a residual by stripping an initial common `X` factor only up to the
 > requested precision. Returning `none` means the current equation is
@@ -87,7 +87,7 @@ def normalizeAlekhnovichInput {F : Type*}
     (Q : CBivariate F) (N : Nat) : Option (CBivariate F × Nat)
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichRootPrefixesWithFuel` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L92))
+`CompPoly.GuruswamiSudan.alekhnovichRootPrefixesWithFuel` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L92))
 
 > Alekhnovich root prefixes with explicit fuel.
 
@@ -98,7 +98,7 @@ def alekhnovichRootPrefixesWithFuel {F : Type*}
     Nat → CBivariate F → Nat → Array (RootPrefix F)
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichRootPrefixes` (definition, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L128))
+`CompPoly.GuruswamiSudan.alekhnovichRootPrefixes` (definition, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L128))
 
 > Alekhnovich root prefixes through the requested precision.
 
@@ -109,7 +109,7 @@ def alekhnovichRootPrefixes {F : Type*}
     Array (RootPrefix F)
 ```
 
-`CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovichWithFuel` (definition, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L147))
+`CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovichWithFuel` (definition, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L147))
 
 > Finish one Alekhnovich prefix with Alekhnovich-only recursive suffix
 > completion. Prefixes already at precision `k` are simply truncated to the final
@@ -122,7 +122,7 @@ def finishAlekhnovichPrefixWithAlekhnovichWithFuel {F : Type*}
     Nat → CBivariate F → Nat → RootPrefix F → Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichRootCandidatesWithFuel` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L168))
+`CompPoly.GuruswamiSudan.alekhnovichRootCandidatesWithFuel` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L168))
 
 > Materialize bounded-degree candidates from Alekhnovich prefixes.
 
@@ -133,7 +133,7 @@ def alekhnovichRootCandidatesWithFuel {F : Type*}
     Nat → CBivariate F → Nat → Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovich` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L192))
+`CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovich` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L192))
 
 > Finish one Alekhnovich prefix with Alekhnovich-only suffix completion.
 
@@ -144,7 +144,7 @@ def finishAlekhnovichPrefixWithAlekhnovich {F : Type*}
     (rootPrefix : RootPrefix F) : Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichRootCandidates` (definition, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L199))
+`CompPoly.GuruswamiSudan.alekhnovichRootCandidates` (definition, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L199))
 
 > Materialize bounded-degree candidates from Alekhnovich prefixes.
 
@@ -155,7 +155,7 @@ def alekhnovichRootCandidates {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L208))
+`CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean#L208))
 
 > Alekhnovich bounded-degree roots, with exact final filtering and
 > deduplication. The zero bivariate input follows the finite-output convention
@@ -175,5 +175,5 @@ def alekhnovichRootsYDegreeLt {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm.json)

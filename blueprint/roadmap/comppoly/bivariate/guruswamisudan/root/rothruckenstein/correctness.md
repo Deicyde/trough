@@ -7,11 +7,11 @@ proof: formalized
 
 # Roth-Ruckenstein Root Correctness
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean), by Valerii Huhnin.
 
 > Correctness statements for the Roth-Ruckenstein root backend.
 
-`CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_sound` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L24))
+`CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_sound` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L24))
 
 > Soundness of Roth-Ruckenstein root filtering.
 
@@ -24,7 +24,7 @@ theorem rothRuckensteinRootsYDegreeLt_sound {F : Type*}
     degreeLt p k ∧ CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_stripXAdicFactor_ne_zero` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L36))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_stripXAdicFactor_ne_zero` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L36))
 
 > Normalizing a nonzero bivariate polynomial exposes a nonzero initial
 > coefficient equation for the residual-transform RR step.
@@ -36,7 +36,7 @@ theorem initialCoefficientPolynomial_stripXAdicFactor_ne_zero {F : Type*}
     initialCoefficientPolynomial (CBivariate.stripXAdicFactor Q) ≠ 0
 ```
 
-`CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_complete` (theorem, [line 870](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L870))
+`CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_complete` (theorem, [line 870](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L870))
 
 > Completeness of Roth-Ruckenstein root finding from a complete field-root backend.
 >
@@ -52,7 +52,7 @@ theorem rothRuckensteinRootsYDegreeLt_complete {F : Type*}
     p ∈ (rothRuckensteinRootsYDegreeLt fieldRoots Q k).toList
 ```
 
-`CompPoly.GuruswamiSudan.rothRuckensteinRootContext` (definition, [line 888](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L888))
+`CompPoly.GuruswamiSudan.rothRuckensteinRootContext` (definition, [line 888](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L888))
 
 > Roth-Ruckenstein roots packaged with an explicit univariate field-root backend.
 
@@ -62,7 +62,7 @@ def rothRuckensteinRootContext (F : Type*)
     (fieldRoots : FieldRootContext F) : GSRootContext F
 ```
 
-`CompPoly.GuruswamiSudan.transformedRothRuckensteinRootContext` (definition, [line 901](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L901))
+`CompPoly.GuruswamiSudan.transformedRothRuckensteinRootContext` (definition, [line 901](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean#L901))
 
 > Residual-transform Roth-Ruckenstein roots packaged as a backend.
 
@@ -83,5 +83,5 @@ def transformedRothRuckensteinRootContext (F : Type*)
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness.json)

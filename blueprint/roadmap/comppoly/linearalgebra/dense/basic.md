@@ -7,12 +7,12 @@ proof: formalized
 
 # Dense Row-Major Matrices
 
-`CompPoly.LinearAlgebra.Dense.Basic`, in [CompPoly/LinearAlgebra/Dense/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.Basic`, in [CompPoly/LinearAlgebra/Dense/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean), by Valerii Huhnin.
 
 > Basic dense row-major matrix storage, indexing, and homogeneous-system
 > predicates.
 
-`CompPoly.DenseMatrix.setD` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L24))
+`CompPoly.DenseMatrix.setD` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L24))
 
 > Set an array entry when the index is in bounds; otherwise leave the array unchanged.
 
@@ -20,7 +20,7 @@ proof: formalized
 def setD (xs : Array alpha) (i : Nat) (a : alpha) : Array alpha
 ```
 
-`CompPoly.DenseMatrix` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L30))
+`CompPoly.DenseMatrix` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L30))
 
 > A dense row-major matrix with dimensions stored explicitly.
 
@@ -31,7 +31,7 @@ structure DenseMatrix (F : Type*) [Zero F] where
   data : Array F
 ```
 
-`CompPoly.DenseMatrix.WellFormed` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L40))
+`CompPoly.DenseMatrix.WellFormed` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L40))
 
 > A dense matrix stores exactly one row-major entry for every matrix coordinate.
 
@@ -39,7 +39,7 @@ structure DenseMatrix (F : Type*) [Zero F] where
 def WellFormed [Zero F] (M : DenseMatrix F) : Prop
 ```
 
-`CompPoly.DenseMatrix.index` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L44))
+`CompPoly.DenseMatrix.index` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L44))
 
 > Row-major index for the matrix entry `(row, col)`.
 
@@ -47,7 +47,7 @@ def WellFormed [Zero F] (M : DenseMatrix F) : Prop
 def index [Zero F] (M : DenseMatrix F) (row col : Nat) : Nat
 ```
 
-`CompPoly.DenseMatrix.get` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L48))
+`CompPoly.DenseMatrix.get` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L48))
 
 > Read a matrix entry, returning zero outside the stored data.
 
@@ -55,7 +55,7 @@ def index [Zero F] (M : DenseMatrix F) (row col : Nat) : Nat
 def get [Zero F] (M : DenseMatrix F) (row col : Nat) : F
 ```
 
-`CompPoly.DenseMatrix.set` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L52))
+`CompPoly.DenseMatrix.set` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L52))
 
 > Replace a matrix entry when the row-major slot is stored.
 
@@ -63,7 +63,7 @@ def get [Zero F] (M : DenseMatrix F) (row col : Nat) : F
 def set [Zero F] (M : DenseMatrix F) (row col : Nat) (value : F) : DenseMatrix F
 ```
 
-`CompPoly.DenseMatrix.ofFn` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L56))
+`CompPoly.DenseMatrix.ofFn` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L56))
 
 > Construct a dense matrix from an entry function.
 
@@ -71,7 +71,7 @@ def set [Zero F] (M : DenseMatrix F) (row col : Nat) (value : F) : DenseMatrix F
 def ofFn [Zero F] (rows cols : Nat) (f : Nat -> Nat -> F) : DenseMatrix F
 ```
 
-`CompPoly.DenseMatrix.dotRow` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L63))
+`CompPoly.DenseMatrix.dotRow` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L63))
 
 > Dot product of one matrix row with a vector.
 
@@ -79,7 +79,7 @@ def ofFn [Zero F] (rows cols : Nat) (f : Nat -> Nat -> F) : DenseMatrix F
 def dotRow [Semiring F] (M : DenseMatrix F) (row : Nat) (v : Array F) : F
 ```
 
-`CompPoly.DenseMatrix.mulVec` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L69))
+`CompPoly.DenseMatrix.mulVec` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L69))
 
 > Matrix-vector product.
 
@@ -87,7 +87,7 @@ def dotRow [Semiring F] (M : DenseMatrix F) (row : Nat) (v : Array F) : F
 def mulVec [Semiring F] (M : DenseMatrix F) (v : Array F) : Array F
 ```
 
-`CompPoly.DenseMatrix.VectorWidth` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L73))
+`CompPoly.DenseMatrix.VectorWidth` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L73))
 
 > A vector has the same width as the matrix column count.
 
@@ -95,7 +95,7 @@ def mulVec [Semiring F] (M : DenseMatrix F) (v : Array F) : Array F
 def VectorWidth [Zero F] (M : DenseMatrix F) (v : Array F) : Prop
 ```
 
-`CompPoly.DenseMatrix.NonzeroVector` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L77))
+`CompPoly.DenseMatrix.NonzeroVector` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L77))
 
 > A vector has at least one nonzero entry.
 
@@ -103,7 +103,7 @@ def VectorWidth [Zero F] (M : DenseMatrix F) (v : Array F) : Prop
 def NonzeroVector [Zero F] (v : Array F) : Prop
 ```
 
-`CompPoly.DenseMatrix.IsHomogeneousSolution` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean#L81))
+`CompPoly.DenseMatrix.IsHomogeneousSolution` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean#L81))
 
 > A vector solves the homogeneous system represented by `M`.
 
@@ -117,5 +117,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Basic.lean)
+- [CompPoly/LinearAlgebra/Dense/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Basic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.Basic.json)

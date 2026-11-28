@@ -7,7 +7,7 @@ proof: formalized
 
 # Filtered Modular Solver Completeness
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean), by Valerii Huhnin.
 
 > Completeness/minimality of the filtered PM-basis modular solver: every
 > nonzero in-width solution of a monic diagonal modular equation is dominated
@@ -28,7 +28,7 @@ proof: formalized
 
 > ### Generic access and summation helpers
 
-`CompPoly.PolynomialMatrix.Approximant.me_getD_mem_toList` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L77))
+`CompPoly.PolynomialMatrix.Approximant.me_getD_mem_toList` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L77))
 
 > In-bounds `getD` values are list members.
 
@@ -39,7 +39,7 @@ theorem me_getD_mem_toList {α : Type*} {xs : Array α} {i : Nat} (d : α)
 
 > ### Zero-row and shifted-degree helpers
 
-`CompPoly.PolynomialMatrix.Approximant.me_rowShiftedDegree_isSome` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L183))
+`CompPoly.PolynomialMatrix.Approximant.me_rowShiftedDegree_isSome` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L183))
 
 > Nonzero rows have a shifted degree.
 
@@ -55,7 +55,7 @@ theorem me_rowShiftedDegree_isSome {row : PolynomialRow F} {shift : Array Nat}
 
 > ### Membership plumbing for the pipeline filters
 
-`CompPoly.PolynomialMatrix.Approximant.me_filterModularSolutionRows_subset` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L414))
+`CompPoly.PolynomialMatrix.Approximant.me_filterModularSolutionRows_subset` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L414))
 
 > Filtered modular-solution rows come from the input rows.
 
@@ -68,7 +68,7 @@ theorem me_filterModularSolutionRows_subset
     row ∈ MatrixRows rows
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.me_principalSolutionRows_width` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L462))
+`CompPoly.PolynomialMatrix.Approximant.me_principalSolutionRows_width` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L462))
 
 > Principal solution rows keep the basis row width.
 
@@ -81,7 +81,7 @@ theorem me_principalSolutionRows_width {sW : Nat}
 
 > ### Width discipline of the adaptive pipeline
 
-`CompPoly.PolynomialMatrix.Approximant.me_adaptiveBasis_width` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L537))
+`CompPoly.PolynomialMatrix.Approximant.me_adaptiveBasis_width` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L537))
 
 > Every adaptive solution-basis row has the linearized width.
 
@@ -98,7 +98,7 @@ theorem me_adaptiveBasis_width
 
 > ### The fallback solution `e_p * prod(moduli)`
 
-`CompPoly.PolynomialMatrix.Approximant.me_prodRow_facts` (theorem, [line 551](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L551))
+`CompPoly.PolynomialMatrix.Approximant.me_prodRow_facts` (theorem, [line 551](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L551))
 
 > Structure of the fallback row `e_p * prod(moduli)`.
 
@@ -120,7 +120,7 @@ theorem me_prodRow_facts (mulCtx : CPolynomial.MulContext F)
 
 > ### The certified verification window
 
-`CompPoly.PolynomialMatrix.Approximant.me_verification_dominates` (theorem, [line 614](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L614))
+`CompPoly.PolynomialMatrix.Approximant.me_verification_dominates` (theorem, [line 614](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean#L614))
 
 > Certified-window domination: any nonzero in-width modular solution row
 > whose shifted degree fits inside the verification window `bound` is
@@ -159,5 +159,5 @@ theorem me_verification_dominates
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness.json)

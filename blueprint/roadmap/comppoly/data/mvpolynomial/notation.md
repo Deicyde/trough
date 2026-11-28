@@ -7,7 +7,7 @@ proof: formalized
 
 # Useful Notation
 
-`CompPoly.Data.MvPolynomial.Notation`, in [CompPoly/Data/MvPolynomial/Notation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/MvPolynomial/Notation.lean), by Quang Dao.
+`CompPoly.Data.MvPolynomial.Notation`, in [CompPoly/Data/MvPolynomial/Notation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/MvPolynomial/Notation.lean), by Quang Dao.
 
 > We define notation `R[X σ]` to be `MvPolynomial σ R`.
 >
@@ -15,7 +15,7 @@ proof: formalized
 >   `Fintype.piFinset (fun (_ : Fin n) => s)`. This matches the intuition that `s ^ᶠ n`
 >   is the set of all tuples of length `n` with elements in `s`.
 
-`MvPolynomial.finOneEquiv` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/MvPolynomial/Notation.lean#L33))
+`MvPolynomial.finOneEquiv` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/MvPolynomial/Notation.lean#L33))
 
 > Equivalence between `MvPolynomial (Fin 1) R` and `Polynomial R`
 
@@ -29,5 +29,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/MvPolynomial/Notation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/MvPolynomial/Notation.lean)
+- [CompPoly/Data/MvPolynomial/Notation.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/MvPolynomial/Notation.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.MvPolynomial.Notation.json)

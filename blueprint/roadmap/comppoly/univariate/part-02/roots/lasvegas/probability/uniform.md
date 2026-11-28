@@ -7,7 +7,7 @@ proof: formalized
 
 # Uniform Probe Distributions for Las Vegas Root Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Probability.Uniform`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Probability.Uniform`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean), by Valerii Huhnin.
 
 > Idealized uniform sources for the Las Vegas probability story: uniform field
 > elements induced by a lazy enumeration, independent uniform coefficient arrays,
@@ -17,7 +17,7 @@ proof: formalized
 > with at least two sampled coefficients evaluates at two distinct field points
 > to a uniform pair on `F × F`.
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldIndexPMF` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L41))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldIndexPMF` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L41))
 
 > Uniform sampling from enumeration indices.
 
@@ -27,7 +27,7 @@ noncomputable def uniformFieldIndexPMF {F : Type*} [Zero F]
     PMF (Fin enumeration.size)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L58))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L58))
 
 > Uniform field-element sampling induced by a lazy enumeration.
 
@@ -37,7 +37,7 @@ noncomputable def uniformFieldElementPMF {F : Type*} [Zero F]
     PMF F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_support_eq_univ` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L64))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_support_eq_univ` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L64))
 
 > Complete injective enumerations put every field element in the PMF support.
 
@@ -47,7 +47,7 @@ theorem uniformFieldElementPMF_support_eq_univ {F : Type*} [Zero F] {q : Nat}
     (uniformFieldElementPMF enumeration.toFieldEnumeration).support = Set.univ
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_apply` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L72))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_apply` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L72))
 
 > Every field element has probability `1 / q` under a uniform field enumeration.
 
@@ -57,7 +57,7 @@ theorem uniformFieldElementPMF_apply {F : Type*} [Zero F] {q : Nat}
     uniformFieldElementPMF enumeration.toFieldEnumeration a = (q : ℝ≥0∞)⁻¹
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformCoefficientArrayPMF` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L96))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformCoefficientArrayPMF` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L96))
 
 > Uniform PMF over coefficient arrays of fixed length, sampled independently from
 > the supplied field enumeration.
@@ -68,7 +68,7 @@ noncomputable def uniformCoefficientArrayPMF {F : Type*} [Zero F]
     Nat → PMF (Array F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L152))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L152))
 
 > Uniform probe polynomial of degree bounded by the supplied coefficient count.
 
@@ -78,7 +78,7 @@ noncomputable def uniformProbePMF {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     PMF (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_support_natDegree_lt` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L162))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_support_natDegree_lt` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L162))
 
 > Probes sampled with `coefficientCount` coefficients have degree below that
 > bound, unless zero.
@@ -92,7 +92,7 @@ theorem uniformProbePMF_support_natDegree_lt {F : Type*}
     CPolynomial.natDegree probe < coefficientCount ∨ probe = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_eval_pair_apply` (theorem, [line 418](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L418))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_eval_pair_apply` (theorem, [line 418](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L418))
 
 > Pair-evaluation uniformity: a uniform probe with at least two sampled
 > coefficients evaluates at two distinct points to a uniform pair on `F × F`.
@@ -114,7 +114,7 @@ theorem uniformProbePMF_eval_pair_apply {F : Type*}
       (q : ℝ≥0∞)⁻¹ * (q : ℝ≥0∞)⁻¹
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbeTablePMF` (definition, [line 434](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L434))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbeTablePMF` (definition, [line 434](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L434))
 
 > Independent uniform probe tables of a fixed length.
 
@@ -124,7 +124,7 @@ noncomputable def uniformProbeTablePMF {F : Type*} [Field F] [BEq F] [LawfulBEq 
     Nat → PMF (List (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_pair_apply` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L443))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_pair_apply` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L443))
 
 > Every pair of field elements is equally likely under two independent uniform draws.
 
@@ -136,7 +136,7 @@ theorem uniformFieldElementPMF_pair_apply {F : Type*} [Zero F] {q : Nat}
         fun y ↦ (x, y)) xy = (q : ℝ≥0∞)⁻¹ * (q : ℝ≥0∞)⁻¹
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_map_eval_pair` (theorem, [line 493](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L493))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_map_eval_pair` (theorem, [line 493](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L493))
 
 > The evaluation pair of a uniform probe at two distinct points pushes forward to
 > two independent uniform field elements.
@@ -153,7 +153,7 @@ theorem uniformProbePMF_map_eval_pair {F : Type*}
           fun y ↦ (x, y)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformPair_separated_probability_ge_half_of_fiber_card_le` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L520))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformPair_separated_probability_ge_half_of_fiber_card_le` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean#L520))
 
 > If every fiber of a classifier has at most `m` elements out of `q ≤ 2 * (q - m)`,
 > two independent uniform field values are separated by the classifier with
@@ -180,5 +180,5 @@ theorem uniformPair_separated_probability_ge_half_of_fiber_card_le {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Probability.Uniform.json)

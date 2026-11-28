@@ -7,7 +7,7 @@ proof: formalized
 
 # Additive NTT Algorithm
 
-`CompPoly.Fields.Binary.AdditiveNTT.Algorithm`, in [CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.AdditiveNTT.Algorithm`, in [CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Core Additive NTT data flow: evaluation points, twiddle factors, stage/update
 > definitions, coefficient tiling, and the stage invariant.
@@ -18,7 +18,7 @@ proof: formalized
 > the tiling of coefficients, the main loop invariant, and the final
 > correctness theorem for the Additive NTT algorithm.
 
-`AdditiveNTT.evaluationPointω` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L45))
+`AdditiveNTT.evaluationPointω` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L45))
 
 > Constructs an evaluation point in `sDomain i` from its Nat.getBit representation.
 >
@@ -29,7 +29,7 @@ noncomputable def evaluationPointω (i : Fin r) (h_i : i ≤ ℓ)
     (x : Fin (2 ^ (ℓ + R_rate - i))) : L
 ```
 
-`AdditiveNTT.twiddleFactor` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L60))
+`AdditiveNTT.twiddleFactor` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L60))
 
 > The twiddle factor at a strict NTT stage `i`.
 >
@@ -41,7 +41,7 @@ noncomputable def twiddleFactor (i : Fin r) (h_i : i < ℓ)
   (u : Fin (2 ^ (ℓ + R_rate - i - 1))) : L
 ```
 
-`AdditiveNTT.evaluationPointω_eq_twiddleFactor_of_div_2` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L75))
+`AdditiveNTT.evaluationPointω_eq_twiddleFactor_of_div_2` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L75))
 
 ```lean
 lemma evaluationPointω_eq_twiddleFactor_of_div_2 (i : Fin r) (h_i : i < ℓ)
@@ -56,7 +56,7 @@ lemma evaluationPointω_eq_twiddleFactor_of_div_2 (i : Fin r) (h_i : i < ℓ)
   ⟩ + (x.val % 2: ℕ) * eval (β ⟨i, by omega⟩) (normalizedW 𝔽q β ⟨i, by omega⟩)
 ```
 
-`AdditiveNTT.eval_point_ω_eq_next_twiddleFactor_comp_qmap` (lemma, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L127))
+`AdditiveNTT.eval_point_ω_eq_next_twiddleFactor_comp_qmap` (lemma, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L127))
 
 ```lean
 lemma eval_point_ω_eq_next_twiddleFactor_comp_qmap
@@ -69,7 +69,7 @@ lemma eval_point_ω_eq_next_twiddleFactor_comp_qmap
   ⟩)) (qMap 𝔽q β ⟨i, by omega⟩ (by change i.val + 1 < r; omega))
 ```
 
-`AdditiveNTT.tileCoeffs` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L191))
+`AdditiveNTT.tileCoeffs` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L191))
 
 > The `2^R_rate`-fold tiling of coefficients `a` into the initial buffer `b`.
 > `b(v) = aⱼ`, where `j` are the `ℓ` LSBs of `v`.
@@ -78,7 +78,7 @@ lemma eval_point_ω_eq_next_twiddleFactor_comp_qmap
 def tileCoeffs (a : Fin (2 ^ ℓ) → L) : Fin (2^(ℓ + R_rate)) → L
 ```
 
-`AdditiveNTT.NTTStage` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L198))
+`AdditiveNTT.NTTStage` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L198))
 
 > A single Additive-NTT stage.
 >
@@ -90,7 +90,7 @@ noncomputable def NTTStage (i : Fin r) (h_i : i < ℓ) (b : Fin (2 ^ (ℓ + R_ra
     Fin (2^(ℓ + R_rate)) → L
 ```
 
-`AdditiveNTT.additiveNTT` (definition, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L275))
+`AdditiveNTT.additiveNTT` (definition, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L275))
 
 > **The Additive NTT Algorithm (Algorithm 2)**
 >
@@ -101,7 +101,7 @@ noncomputable def NTTStage (i : Fin r) (h_i : i < ℓ) (b : Fin (2 ^ (ℓ + R_ra
 noncomputable def additiveNTT (a : Fin (2 ^ ℓ) → L) : Fin (2^(ℓ + R_rate)) → L
 ```
 
-`AdditiveNTT.coeffsBySuffix` (definition, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L285))
+`AdditiveNTT.coeffsBySuffix` (definition, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L285))
 
 > The coefficients of the level-`i` polynomial selected by the low-bit suffix `v`.
 >
@@ -113,7 +113,7 @@ def coeffsBySuffix (a : Fin (2 ^ ℓ) → L) (i : Fin r) (h_i : i ≤ ℓ) (v : 
     Fin (2 ^ (ℓ - i)) → L
 ```
 
-`AdditiveNTT.base_coeffsBySuffix` (lemma, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L298))
+`AdditiveNTT.base_coeffsBySuffix` (lemma, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L298))
 
 ```lean
 lemma base_coeffsBySuffix (a : Fin (2 ^ ℓ) → L) :
@@ -122,7 +122,7 @@ lemma base_coeffsBySuffix (a : Fin (2 ^ ℓ) → L) :
     Nat.zero_mod, zero_le]) 0 = a
 ```
 
-`AdditiveNTT.evenRefinement_eq_novel_poly_of_0_leading_suffix` (theorem, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L311))
+`AdditiveNTT.evenRefinement_eq_novel_poly_of_0_leading_suffix` (theorem, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L311))
 
 > `P₀, ₍ᵥ₎⁽ⁱ⁺¹⁾(X) = P₍₀ᵥ₎⁽ⁱ⁺¹⁾(X)`, where `v` consists of exactly `i` bits
 > Note that the even refinement `P₀, ₍ᵥ₎⁽ⁱ⁺¹⁾(X)` is constructed from the view of
@@ -136,7 +136,7 @@ theorem evenRefinement_eq_novel_poly_of_0_leading_suffix (i : Fin r) (h_i : i < 
       calc v.val < 2 ^ i.val
 ```
 
-`AdditiveNTT.oddRefinement_eq_novel_poly_of_1_leading_suffix` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L367))
+`AdditiveNTT.oddRefinement_eq_novel_poly_of_1_leading_suffix` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L367))
 
 > `P₁, ₍ᵥ₎⁽ⁱ⁺¹⁾(X) = P₍₁ᵥ₎⁽ⁱ⁺¹⁾(X)`, where `v` consists of exactly `i` bits
 > Note that the odd refinement `P₁,₍ᵥ₎⁽ⁱ⁺¹⁾(X)` is constructed from the view of stage `i`,
@@ -159,7 +159,7 @@ theorem oddRefinement_eq_novel_poly_of_1_leading_suffix (i : Fin r) (h_i : i < �
         ⟨v ||| (1 <<< i.val), h_v⟩)
 ```
 
-`AdditiveNTT.additiveNTTInvariant` (definition, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L472))
+`AdditiveNTT.additiveNTTInvariant` (definition, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean#L472))
 
 > The main loop invariant for the `additiveNTT` algorithm: the evaluation buffer `b`
 > at the end of level `i` (`i ∈ {0, ..., ℓ}`, `i=ℓ` means the initial tiled buffer)
@@ -203,5 +203,5 @@ def additiveNTTInvariant (evaluation_buffer : Fin (2 ^ (ℓ + R_rate)) → L)
 
 ## Sources
 
-- [CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean)
+- [CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.AdditiveNTT.Algorithm.json)

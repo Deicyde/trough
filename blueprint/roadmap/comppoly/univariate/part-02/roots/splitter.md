@@ -7,11 +7,11 @@ proof: formalized
 
 # Linear-Factor Splitter Helpers
 
-`CompPoly.Univariate.Roots.Splitter`, in [CompPoly/Univariate/Roots/Splitter.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Splitter`, in [CompPoly/Univariate/Roots/Splitter.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean), by Valerii Huhnin.
 
 > Shared executable helpers for finite-field linear-factor splitters.
 
-`CompPoly.CPolynomial.Roots.FiniteField.isRepresentedLinearFactor` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean#L29))
+`CompPoly.CPolynomial.Roots.FiniteField.isRepresentedLinearFactor` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean#L29))
 
 > Boolean recognizer for represented nonconstant linear factors.
 
@@ -20,7 +20,7 @@ def isRepresentedLinearFactor {F : Type*} [Field F] [BEq F]
     (p : CPolynomial F) : Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.isRepresentedLinearFactor_sound` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean#L34))
+`CompPoly.CPolynomial.Roots.FiniteField.isRepresentedLinearFactor_sound` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean#L34))
 
 > The represented-linear Boolean recognizer is sound.
 
@@ -31,7 +31,7 @@ theorem isRepresentedLinearFactor_sound {F : Type*}
     IsLinearFactor p
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorArray` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean#L43))
+`CompPoly.CPolynomial.Roots.FiniteField.representedLinearFactorArray` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean#L43))
 
 > Return `p` as a singleton array if it is represented as a nonconstant linear factor.
 
@@ -40,7 +40,7 @@ def representedLinearFactorArray {F : Type*} [Field F] [BEq F]
     (p : CPolynomial F) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.xPowModWith` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean#L48))
+`CompPoly.CPolynomial.Roots.FiniteField.xPowModWith` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean#L48))
 
 > `X^exponent mod modulus`, lifted back to canonical polynomials.
 
@@ -57,5 +57,5 @@ def xPowModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Splitter.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Splitter.lean)
+- [CompPoly/Univariate/Roots/Splitter.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Splitter.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Roots.Splitter.json)

@@ -7,9 +7,9 @@ proof: formalized
 
 # Monomial basis for algebra extensions
 
-`CompPoly.Data.Polynomial.MonomialBasis`, in [CompPoly/Data/Polynomial/MonomialBasis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Data.Polynomial.MonomialBasis`, in [CompPoly/Data/Polynomial/MonomialBasis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean), by Chung Thai Nguyen, Quang Dao.
 
-`Polynomial.sum_degreeLT_monomial_eq_subtype` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean#L35))
+`Polynomial.sum_degreeLT_monomial_eq_subtype` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean#L35))
 
 ```lean
 theorem sum_degreeLT_monomial_eq_subtype {n : ℕ} (p : L⦃< n⦄[X]) :
@@ -20,19 +20,19 @@ theorem sum_degreeLT_monomial_eq_subtype {n : ℕ} (p : L⦃< n⦄[X]) :
   ⟩ : L⦃< n⦄[X]) = p
 ```
 
-`Polynomial.monomialBasisOfDegreeLT` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean#L44))
+`Polynomial.monomialBasisOfDegreeLT` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean#L44))
 
 ```lean
 noncomputable def monomialBasisOfDegreeLT {n : ℕ} : Basis (Fin n) L (L⦃< n⦄[X])
 ```
 
-`Polynomial.finrank_degreeLT_n` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean#L129))
+`Polynomial.finrank_degreeLT_n` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean#L129))
 
 ```lean
 theorem finrank_degreeLT_n (n : ℕ) : Module.finrank L (L⦃< n⦄[X]) = n
 ```
 
-`Polynomial.finiteDimensional_degreeLT` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean#L134))
+`Polynomial.finiteDimensional_degreeLT` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean#L134))
 
 ```lean
 theorem finiteDimensional_degreeLT {n : ℕ} (h_n_pos : 0 < n) :
@@ -45,5 +45,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Polynomial/MonomialBasis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/MonomialBasis.lean)
+- [CompPoly/Data/Polynomial/MonomialBasis.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/MonomialBasis.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Polynomial.MonomialBasis.json)

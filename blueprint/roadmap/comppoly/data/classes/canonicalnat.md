@@ -7,7 +7,7 @@ proof: formalized
 
 # Canonical naturals
 
-`CompPoly.Data.Classes.CanonicalNat`, in [CompPoly/Data/Classes/CanonicalNat.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean), by Derek Sorensen.
+`CompPoly.Data.Classes.CanonicalNat`, in [CompPoly/Data/Classes/CanonicalNat.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean), by Derek Sorensen.
 
 > `CanonicalNat F` says that every element of `F` has a canonical natural number below a fixed
 > `bound`, and that every natural reduces to an element by `ofNat`, with `ofNat` acting as
@@ -24,7 +24,7 @@ proof: formalized
 > is `ofNat` of the string's integer, which is uniform up to a bound proved in `Nat` terms.
 > Two carriers of the same field agree on `toNat`, so they agree on every derived encoding.
 
-`CompPoly.CanonicalNat` (class, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L38))
+`CompPoly.CanonicalNat` (class, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L38))
 
 > `F` has a canonical natural below `bound` for every element, and every natural reduces to
 > an element of `F` modulo `bound`. The laws make `toNat` a bijection `F ≃ Fin bound`.
@@ -43,31 +43,31 @@ class CanonicalNat (F : Type u) where
   ofNat_mod (n : ℕ) : ofNat (n % bound) = ofNat n
 ```
 
-`CompPoly.CanonicalNat.bound_pos` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L56))
+`CompPoly.CanonicalNat.bound_pos` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L56))
 
 ```lean
 theorem bound_pos : 0 < bound F
 ```
 
-`CompPoly.CanonicalNat.toNat_injective` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L59))
+`CompPoly.CanonicalNat.toNat_injective` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L59))
 
 ```lean
 theorem toNat_injective : Function.Injective (toNat : F → ℕ)
 ```
 
-`CompPoly.CanonicalNat.toNat_inj` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L63))
+`CompPoly.CanonicalNat.toNat_inj` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L63))
 
 ```lean
 theorem toNat_inj {x y : F} : toNat x = toNat y ↔ x = y
 ```
 
-`CompPoly.CanonicalNat.toNat_ofNat` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L67))
+`CompPoly.CanonicalNat.toNat_ofNat` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L67))
 
 ```lean
 theorem toNat_ofNat (n : ℕ) : toNat (ofNat (F := F) n) = n % bound F
 ```
 
-`CompPoly.CanonicalNat.ofNat?` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L71))
+`CompPoly.CanonicalNat.ofNat?` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L71))
 
 > Decode a natural as an element, failing when it is not a canonical natural.
 
@@ -75,25 +75,25 @@ theorem toNat_ofNat (n : ℕ) : toNat (ofNat (F := F) n) = n % bound F
 def ofNat? (n : ℕ) : Option F
 ```
 
-`CompPoly.CanonicalNat.ofNat?_toNat` (theorem, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L75))
+`CompPoly.CanonicalNat.ofNat?_toNat` (theorem, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L75))
 
 ```lean
 theorem ofNat?_toNat (x : F) : ofNat? (toNat x) = some x
 ```
 
-`CompPoly.CanonicalNat.ofNat?_eq_some_iff` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L78))
+`CompPoly.CanonicalNat.ofNat?_eq_some_iff` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L78))
 
 ```lean
 theorem ofNat?_eq_some_iff {n : ℕ} {x : F} : ofNat? n = some x ↔ n < bound F ∧ toNat x = n
 ```
 
-`CompPoly.CanonicalNat.ofNat?_eq_none_iff` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L92))
+`CompPoly.CanonicalNat.ofNat?_eq_none_iff` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L92))
 
 ```lean
 theorem ofNat?_eq_none_iff {n : ℕ} : ofNat? (F := F) n = none ↔ bound F ≤ n
 ```
 
-`CompPoly.CanonicalNat.equivFin` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L98))
+`CompPoly.CanonicalNat.equivFin` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L98))
 
 > The canonical natural as an equivalence with `Fin (bound F)`.
 
@@ -101,7 +101,7 @@ theorem ofNat?_eq_none_iff {n : ℕ} : ofNat? (F := F) n = none ↔ bound F ≤ 
 def equivFin : F ≃ Fin (bound F)
 ```
 
-`CompPoly.CanonicalNat.card_eq` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L105))
+`CompPoly.CanonicalNat.card_eq` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L105))
 
 > The bound is the cardinality of `F`.
 
@@ -116,7 +116,7 @@ theorem card_eq [Fintype F] : Fintype.card F = bound F
 > pattern. Both are `@[instance_reducible]` definitions so an instance can be
 > `CanonicalNat.ofToField …` or `CanonicalNat.ofBitVec …` directly.
 
-`CompPoly.CanonicalNat.ofToField` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L119))
+`CompPoly.CanonicalNat.ofToField` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L119))
 
 > The canonical-natural structure of a carrier of `ZMod p`: the carrier's own `toNat`, with
 > `ofField` as the way back. The hypothesis `toNat_ofField` is the carrier-agreement law, so
@@ -128,7 +128,7 @@ def ofToField {p : ℕ} [NeZero p] (toNat : F → ℕ) (ofField : ZMod p → F)
     (toNat_ofField : ∀ n : ZMod p, toNat (ofField n) = n.val) : CanonicalNat F
 ```
 
-`CompPoly.CanonicalNat.ofBitVec` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L133))
+`CompPoly.CanonicalNat.ofBitVec` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L133))
 
 > The canonical-natural structure of a type presented as `k`-bit patterns: the bit pattern
 > read as an integer, with `bound = 2 ^ k`.
@@ -139,7 +139,7 @@ def ofBitVec {k : ℕ} (toBitVec : F → BitVec k) (ofBitVec : BitVec k → F)
     (toBitVec_ofBitVec : ∀ b, toBitVec (ofBitVec b) = b) : CanonicalNat F
 ```
 
-`CompPoly.instCanonicalNatZMod` (instance, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L149))
+`CompPoly.instCanonicalNatZMod` (instance, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L149))
 
 > `ZMod p` with the residue in `[0, p)` as canonical natural.
 
@@ -147,20 +147,20 @@ def ofBitVec {k : ℕ} (toBitVec : F → BitVec k) (ofBitVec : BitVec k → F)
 instance instCanonicalNatZMod (p : ℕ) [NeZero p] : CanonicalNat (ZMod p)
 ```
 
-`CompPoly.CanonicalNat.bound_zmod` (theorem, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L158))
+`CompPoly.CanonicalNat.bound_zmod` (theorem, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L158))
 
 ```lean
 theorem CanonicalNat.bound_zmod (p : ℕ) [NeZero p] : CanonicalNat.bound (ZMod p) = p
 ```
 
-`CompPoly.CanonicalNat.toNat_zmod` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L160))
+`CompPoly.CanonicalNat.toNat_zmod` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L160))
 
 ```lean
 theorem CanonicalNat.toNat_zmod {p : ℕ} [NeZero p] (x : ZMod p) :
     CanonicalNat.toNat x = x.val
 ```
 
-`CompPoly.CanonicalNat.ofNat_zmod` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean#L163))
+`CompPoly.CanonicalNat.ofNat_zmod` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean#L163))
 
 ```lean
 theorem CanonicalNat.ofNat_zmod {p : ℕ} [NeZero p] (n : ℕ) :
@@ -173,5 +173,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Classes/CanonicalNat.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/CanonicalNat.lean)
+- [CompPoly/Data/Classes/CanonicalNat.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/CanonicalNat.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Classes.CanonicalNat.json)

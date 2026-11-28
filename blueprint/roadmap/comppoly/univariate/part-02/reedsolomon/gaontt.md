@@ -7,7 +7,7 @@ proof: formalized
 
 # Gao Decoding on an NTT Domain
 
-`CompPoly.Univariate.ReedSolomon.GaoNTT`, in [CompPoly/Univariate/ReedSolomon/GaoNTT.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean), by Derek Sorensen.
+`CompPoly.Univariate.ReedSolomon.GaoNTT`, in [CompPoly/Univariate/ReedSolomon/GaoNTT.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean), by Derek Sorensen.
 
 > `Gao.decode` builds its two Euclidean inputs by definition: the nodal polynomial as a fold of
 > `n` linear factors, and the received interpolant by Lagrange's formula, `O(n²)` per basis
@@ -29,7 +29,7 @@ proof: formalized
 > * `Gao.receivedInterpolant_nttDomainToRS`: the received interpolant is the inverse NTT.
 > * `Gao.decodeNTT_eq_decode`, `Gao.decodePlan_eq_decode`: the fast decoders are `decode`.
 
-`CompPoly.ReedSolomon.Gao.decodeFrom` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L48))
+`CompPoly.ReedSolomon.Gao.decodeFrom` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L48))
 
 > The Euclidean stage of Gao's decoder on the inputs `(g₀, g₁)`, for block length `n`.
 
@@ -37,7 +37,7 @@ proof: formalized
 def decodeFrom (k n : ℕ) (g₀ g₁ : CPolynomial F) : Option (CPolynomial F)
 ```
 
-`CompPoly.ReedSolomon.Gao.decode_eq_decodeFrom` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L56))
+`CompPoly.ReedSolomon.Gao.decode_eq_decodeFrom` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L56))
 
 > `decode` is its Euclidean stage applied to the nodal polynomial and the interpolant.
 
@@ -46,7 +46,7 @@ theorem decode_eq_decodeFrom (k : ℕ) (D : Domain F) (r : Vector F D.n) :
     decode k D r = decodeFrom k D.n (nodalPoly D) (receivedInterpolant D r)
 ```
 
-`CompPoly.ReedSolomon.Gao.vanishingRaw` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L61))
+`CompPoly.ReedSolomon.Gao.vanishingRaw` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L61))
 
 > The coefficient array `#[-1, 0, …, 0, 1]` of `Xⁿ - 1`, for `n ≥ 1`.
 
@@ -54,7 +54,7 @@ theorem decode_eq_decodeFrom (k : ℕ) (D : Domain F) (r : Vector F D.n) :
 def vanishingRaw (n : ℕ) : CPolynomial.Raw F
 ```
 
-`CompPoly.ReedSolomon.Gao.vanishingNTT` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L66))
+`CompPoly.ReedSolomon.Gao.vanishingNTT` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L66))
 
 > The vanishing polynomial `Xⁿ - 1` of an NTT domain, written down coefficient by
 > coefficient rather than multiplied out of `n` linear factors.
@@ -63,14 +63,14 @@ def vanishingRaw (n : ℕ) : CPolynomial.Raw F
 def vanishingNTT (D : NTT.Domain F) : CPolynomial F
 ```
 
-`CompPoly.ReedSolomon.Gao.toPoly_vanishingNTT` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L70))
+`CompPoly.ReedSolomon.Gao.toPoly_vanishingNTT` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L70))
 
 ```lean
 theorem toPoly_vanishingNTT (D : NTT.Domain F) :
     (vanishingNTT D).toPoly = Polynomial.X ^ D.n - 1
 ```
 
-`CompPoly.ReedSolomon.Gao.castToRS` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L89))
+`CompPoly.ReedSolomon.Gao.castToRS` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L89))
 
 > Transport a received word over the NTT domain to the induced Reed-Solomon domain.
 
@@ -78,7 +78,7 @@ theorem toPoly_vanishingNTT (D : NTT.Domain F) :
 def castToRS (D : NTT.Domain F) (r : Vector F D.n) : Vector F (nttDomainToRS D).n
 ```
 
-`CompPoly.ReedSolomon.Gao.nodalPoly_nttDomainToRS` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L100))
+`CompPoly.ReedSolomon.Gao.nodalPoly_nttDomainToRS` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L100))
 
 > The nodal polynomial of the Reed-Solomon domain induced by an NTT domain is `Xⁿ - 1`.
 
@@ -87,7 +87,7 @@ theorem nodalPoly_nttDomainToRS (D : NTT.Domain F) :
     nodalPoly (nttDomainToRS D) = vanishingNTT D
 ```
 
-`CompPoly.ReedSolomon.Gao.receivedInterpolant_nttDomainToRS` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L109))
+`CompPoly.ReedSolomon.Gao.receivedInterpolant_nttDomainToRS` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L109))
 
 > The received interpolant on the induced domain is the inverse NTT of the word.
 
@@ -96,7 +96,7 @@ theorem receivedInterpolant_nttDomainToRS (D : NTT.Domain F) (r : Vector F D.n) 
     receivedInterpolant (nttDomainToRS D) (castToRS D r) = NTT.interpolate D r
 ```
 
-`CompPoly.ReedSolomon.Gao.decodeNTT` (definition, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L130))
+`CompPoly.ReedSolomon.Gao.decodeNTT` (definition, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L130))
 
 > Gao's decoder on an NTT domain, with `Xⁿ - 1` as the nodal polynomial and the inverse
 > NTT as the interpolant.
@@ -106,7 +106,7 @@ def decodeNTT (k : ℕ) (D : NTT.Domain F) (r : Vector F D.n) :
     Option (CPolynomial F)
 ```
 
-`CompPoly.ReedSolomon.Gao.decodeNTT_eq_decode` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L135))
+`CompPoly.ReedSolomon.Gao.decodeNTT_eq_decode` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L135))
 
 > The NTT decoder is Gao's decoder on the induced Reed-Solomon domain.
 
@@ -115,7 +115,7 @@ theorem decodeNTT_eq_decode (k : ℕ) (D : NTT.Domain F) (r : Vector F D.n) :
     decodeNTT k D r = decode k (nttDomainToRS D) (castToRS D r)
 ```
 
-`CompPoly.ReedSolomon.Gao.decodePlan` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L142))
+`CompPoly.ReedSolomon.Gao.decodePlan` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L142))
 
 > Gao's decoder through a reusable NTT plan.
 
@@ -124,7 +124,7 @@ def decodePlan (k : ℕ) (P : NTTFast.Plan F) (r : Vector F P.domain.n) :
     Option (CPolynomial F)
 ```
 
-`CompPoly.ReedSolomon.Gao.decodePlan_eq_decode` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L147))
+`CompPoly.ReedSolomon.Gao.decodePlan_eq_decode` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean#L147))
 
 > A well-formed plan decodes as Gao's decoder on the induced Reed-Solomon domain.
 
@@ -148,5 +148,5 @@ theorem decodePlan_eq_decode (k : ℕ) (P : NTTFast.Plan F)
 
 ## Sources
 
-- [CompPoly/Univariate/ReedSolomon/GaoNTT.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoNTT.lean)
+- [CompPoly/Univariate/ReedSolomon/GaoNTT.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoNTT.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ReedSolomon.GaoNTT.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Divisibility-Based Interpolation Witness Checking
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean), by Valerii Huhnin.
 
 > A fast full recognizer for the Guruswami-Sudan multiplicity constraints.
 >
@@ -31,7 +31,7 @@ proof: formalized
 > check with the nonzero and weighted-degree witness conditions, mirroring
 > `interpolationWitnessIsValidBool`.
 
-`CompPoly.CBivariate.divByLinearYWith` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L52))
+`CompPoly.CBivariate.divByLinearYWith` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L52))
 
 > `divByLinearY` with the inner univariate products supplied by an explicit
 > multiplication context, for callers that want NTT-backed Horner steps.
@@ -42,7 +42,7 @@ def divByLinearYWith {R : Type*} [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial 
     CBivariate R × CPolynomial R
 ```
 
-`CompPoly.CBivariate.divByLinearYWith_eq_divByLinearY` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L70))
+`CompPoly.CBivariate.divByLinearYWith_eq_divByLinearY` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L70))
 
 > The context-parametric synthetic division agrees with `divByLinearY`.
 
@@ -53,7 +53,7 @@ theorem divByLinearYWith_eq_divByLinearY {R : Type*}
     divByLinearYWith M Q f = divByLinearY Q f
 ```
 
-`CompPoly.GuruswamiSudan.satisfiesMultiplicityConstraintsViaDivisibilityBool` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L90))
+`CompPoly.GuruswamiSudan.satisfiesMultiplicityConstraintsViaDivisibilityBool` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L90))
 
 > Divisibility form of the multiplicity constraints: the digit `c_t` of the
 > base-`(Y - R)` expansion of `Q` must be divisible by `G^(m - t)` for every
@@ -72,7 +72,7 @@ def satisfiesMultiplicityConstraintsViaDivisibilityBool {F : Type*}
     (G R : CPolynomial F) : Nat → CBivariate F → Bool
 ```
 
-`CompPoly.GuruswamiSudan.interpolationWitnessIsValidViaDivisibilityBool` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L103))
+`CompPoly.GuruswamiSudan.interpolationWitnessIsValidViaDivisibilityBool` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean#L103))
 
 > Divisibility-based recognizer for the semantic interpolation witness
 > contract, agreeing with `interpolationWitnessIsValidBool` on point sets with
@@ -95,5 +95,5 @@ def interpolationWitnessIsValidViaDivisibilityBool {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility.json)

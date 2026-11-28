@@ -7,11 +7,11 @@ proof: formalized
 
 # Guruswami-Sudan Executable Decoder
 
-`CompPoly.Bivariate.GuruswamiSudan.Executable`, in [CompPoly/Bivariate/GuruswamiSudan/Executable.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Executable`, in [CompPoly/Bivariate/GuruswamiSudan/Executable.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean), by Valerii Huhnin.
 
 > Top-level executable API for the packed CompPoly Guruswami-Sudan decoder.
 
-`CompPoly.GuruswamiSudan.GSFilteredCoreContext` (structure, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L26))
+`CompPoly.GuruswamiSudan.GSFilteredCoreContext` (structure, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L26))
 
 > Backend-parametric filtered core exposed as a reusable executable context.
 >
@@ -45,7 +45,7 @@ structure GSFilteredCoreContext
         p ∈ (run points params radius).toList
 ```
 
-`CompPoly.GuruswamiSudan.filteredCoreContextOfInterpRootContexts` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L52))
+`CompPoly.GuruswamiSudan.filteredCoreContextOfInterpRootContexts` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L52))
 
 > Filtered-core context assembled from CompPoly interpolation and root backends.
 
@@ -57,7 +57,7 @@ def filteredCoreContextOfInterpRootContexts
     GSFilteredCoreContext F
 ```
 
-`CompPoly.GuruswamiSudan.GSReceivedWord` (structure, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L77))
+`CompPoly.GuruswamiSudan.GSReceivedWord` (structure, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L77))
 
 > Packed received word accepted by the executable decoder.
 
@@ -67,7 +67,7 @@ structure GSReceivedWord (F : Type*) where
 deriving Repr
 ```
 
-`CompPoly.GuruswamiSudan.GSReceivedWord.length` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L82))
+`CompPoly.GuruswamiSudan.GSReceivedWord.length` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L82))
 
 > Runtime length of a packed received word.
 
@@ -75,7 +75,7 @@ deriving Repr
 def GSReceivedWord.length {F : Type*} (w : GSReceivedWord F) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.GSExecParams` (structure, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L86))
+`CompPoly.GuruswamiSudan.GSExecParams` (structure, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L86))
 
 > Explicit executable parameters for the parameterized decoder.
 
@@ -86,7 +86,7 @@ structure GSExecParams where
 deriving Repr, BEq, DecidableEq
 ```
 
-`CompPoly.GuruswamiSudan.decodeWithParams` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L92))
+`CompPoly.GuruswamiSudan.decodeWithParams` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L92))
 
 > Computable executable decoder with caller-supplied parameters.
 
@@ -99,7 +99,7 @@ def decodeWithParams
     Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.GSParamSelector` (structure, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L101))
+`CompPoly.GuruswamiSudan.GSParamSelector` (structure, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L101))
 
 > Parameter selector for the selector-backed executable decoder.
 
@@ -108,7 +108,7 @@ structure GSParamSelector where
   choose : Nat → Nat → Nat → Option GSExecParams
 ```
 
-`CompPoly.GuruswamiSudan.decode` (definition, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L105))
+`CompPoly.GuruswamiSudan.decode` (definition, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean#L105))
 
 > Selector-backed executable decoder with parameters selected from `(k, w.length, e)`.
 
@@ -132,5 +132,5 @@ def decode
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Executable.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Executable.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Executable.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Executable.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Executable.json)

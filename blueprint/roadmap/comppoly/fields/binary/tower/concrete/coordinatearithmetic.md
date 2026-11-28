@@ -7,7 +7,7 @@ proof: formalized
 
 # Quadratic arithmetic in concrete successor coordinates
 
-`CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic`, in [CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean), by CompPoly Contributors.
+`CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic`, in [CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean), by CompPoly Contributors.
 
 > At level `k + 1`, write an element as `lo + hi * Z (k + 1)` using the chosen embedding
 > from level `k`. The relation
@@ -22,7 +22,7 @@ proof: formalized
 >
 > * [Diamond, B. E. and Posen, J., *Succinct arguments over towers of binary fields*][DP23]
 
-`ConcreteBinaryTower.Coordinates.joinSucc_mul_joinSucc` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L33))
+`ConcreteBinaryTower.Coordinates.joinSucc_mul_joinSucc` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L33))
 
 > Multiplication in constant-first successor coordinates follows the quadratic relation
 > with linear coefficient `Z k` and constant coefficient one.
@@ -34,7 +34,7 @@ theorem joinSucc_mul_joinSucc (k : ℕ) (a₀ a₁ b₀ b₁ : ConcreteBTField k
         (a₀ * b₁ + b₀ * a₁ + (a₁ * b₁) * Z k)
 ```
 
-`ConcreteBinaryTower.Coordinates.low_mul` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L43))
+`ConcreteBinaryTower.Coordinates.low_mul` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L43))
 
 > The constant coefficient of a product is the sum of the two diagonal products.
 
@@ -43,7 +43,7 @@ theorem low_mul (k : ℕ) (x y : ConcreteBTField (k + 1)) :
     low k (x * y) = low k x * low k y + high k x * high k y
 ```
 
-`ConcreteBinaryTower.Coordinates.high_mul` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L49))
+`ConcreteBinaryTower.Coordinates.high_mul` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L49))
 
 > The generator coefficient of a product includes the quadratic linear-coefficient term.
 
@@ -53,7 +53,7 @@ theorem high_mul (k : ℕ) (x y : ConcreteBTField (k + 1)) :
       (high k x * high k y) * Z k
 ```
 
-`ConcreteBinaryTower.Coordinates.conjugate` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L56))
+`ConcreteBinaryTower.Coordinates.conjugate` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L56))
 
 > Quadratic conjugation replaces the generator by itself plus the embedded `Z k`.
 
@@ -61,7 +61,7 @@ theorem high_mul (k : ℕ) (x y : ConcreteBTField (k + 1)) :
 def conjugate (k : ℕ) (x : ConcreteBTField (k + 1)) : ConcreteBTField (k + 1)
 ```
 
-`ConcreteBinaryTower.Coordinates.norm` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L60))
+`ConcreteBinaryTower.Coordinates.norm` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L60))
 
 > The predecessor-field norm in low/high coordinates.
 
@@ -69,7 +69,7 @@ def conjugate (k : ℕ) (x : ConcreteBTField (k + 1)) : ConcreteBTField (k + 1)
 def norm (k : ℕ) (x : ConcreteBTField (k + 1)) : ConcreteBTField k
 ```
 
-`ConcreteBinaryTower.Coordinates.conjugate_eq_joinSucc` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L64))
+`ConcreteBinaryTower.Coordinates.conjugate_eq_joinSucc` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L64))
 
 > The conjugate keeps the high coefficient and adds `high * Z k` to the low coefficient.
 
@@ -78,7 +78,7 @@ theorem conjugate_eq_joinSucc (k : ℕ) (x : ConcreteBTField (k + 1)) :
     conjugate k x = joinSucc k (low k x + high k x * Z k) (high k x)
 ```
 
-`ConcreteBinaryTower.Coordinates.norm_eq` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L68))
+`ConcreteBinaryTower.Coordinates.norm_eq` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L68))
 
 > The norm is `lo * (lo + hi * Z k) + hi * hi` in the predecessor field.
 
@@ -87,7 +87,7 @@ theorem norm_eq (k : ℕ) (x : ConcreteBTField (k + 1)) :
     norm k x = low k x * (low k x + high k x * Z k) + high k x * high k x
 ```
 
-`ConcreteBinaryTower.Coordinates.mul_conjugate` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L72))
+`ConcreteBinaryTower.Coordinates.mul_conjugate` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L72))
 
 > Multiplication by the quadratic conjugate is the embedded predecessor-field norm.
 
@@ -96,7 +96,7 @@ theorem mul_conjugate (k : ℕ) (x : ConcreteBTField (k + 1)) :
     x * conjugate k x = canonicalAlgMap k (norm k x)
 ```
 
-`ConcreteBinaryTower.Coordinates.conjugate_conjugate` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L86))
+`ConcreteBinaryTower.Coordinates.conjugate_conjugate` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L86))
 
 > Conjugating twice recovers the original successor-field element.
 
@@ -105,7 +105,7 @@ theorem conjugate_conjugate (k : ℕ) (x : ConcreteBTField (k + 1)) :
     conjugate k (conjugate k x) = x
 ```
 
-`ConcreteBinaryTower.Coordinates.norm_ne_zero` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L92))
+`ConcreteBinaryTower.Coordinates.norm_ne_zero` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L92))
 
 > A nonzero successor-field element has nonzero predecessor-field norm.
 
@@ -114,7 +114,7 @@ theorem norm_ne_zero (k : ℕ) (x : ConcreteBTField (k + 1)) (hx : x ≠ 0) :
     norm k x ≠ 0
 ```
 
-`ConcreteBinaryTower.Coordinates.inv_eq_joinSucc` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L97))
+`ConcreteBinaryTower.Coordinates.inv_eq_joinSucc` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean#L97))
 
 > The canonical inverse has conjugate coordinates divided by the norm, including at zero.
 
@@ -130,5 +130,5 @@ theorem inv_eq_joinSucc (k : ℕ) (x : ConcreteBTField (k + 1)) :
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean)
+- [CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic.json)

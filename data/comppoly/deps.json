@@ -1,14 +1,14 @@
 {"stats":
- {"theorems_with_proof": 13045,
-  "theorems": 13045,
-  "statement_edges": 1413,
-  "requested": 7346,
-  "proof_edges": 688,
+ {"theorems_with_proof": 12982,
+  "theorems": 12982,
+  "statement_edges": 1415,
+  "requested": 7327,
+  "proof_edges": 690,
   "private": 0,
-  "modules": 401,
+  "modules": 402,
   "missing": 0},
  "schema": "trough-library-deps/v1",
- "rev": "c72a765272497b4c52201be11be47af5718c7488",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
  "private": [],
  "modules":
  {"CompPoly.Univariate.Vanishing":
@@ -1426,49 +1426,54 @@
   "CompPoly.LinearAlgebra.Dense": {"statement": [], "proof": []},
   "CompPoly.Fields.Secp256k1.Fast":
   {"statement":
-   ["CompPoly.Fields.Montgomery.Native64x8Field",
-    "CompPoly.Fields.Montgomery.Native64x8InvDefs",
+   ["CompPoly.Fields.Montgomery.Native64x4Field",
+    "CompPoly.Fields.Montgomery.Native64x4InvDefs",
     "CompPoly.Fields.Secp256k1.Basic"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+   "proof": ["CompPoly.Fields.Montgomery.Native64x4Defs"]},
   "CompPoly.Fields.Secp256k1.Basic":
   {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
   "CompPoly.Fields.Secp256k1": {"statement": [], "proof": []},
   "CompPoly.Fields.PrattCertificate": {"statement": [], "proof": []},
   "CompPoly.Fields.Pasta.Fast":
-  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Field", "CompPoly.Fields.Pasta.Basic"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x4Field", "CompPoly.Fields.Pasta.Basic"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x4Defs"]},
   "CompPoly.Fields.Pasta.Basic": {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
   "CompPoly.Fields.Pasta": {"statement": [], "proof": []},
-  "CompPoly.Fields.Montgomery.ScalarFft":
-  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
-  "CompPoly.Fields.Montgomery.Native64x8Mul":
-  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"],
-   "proof": ["CompPoly.Fields.Montgomery.Basic", "CompPoly.Fields.Montgomery.Native64x8"]},
-  "CompPoly.Fields.Montgomery.Native64x8InvDefs":
-  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
-  "CompPoly.Fields.Montgomery.Native64x8Inv":
+  "CompPoly.Fields.Montgomery.Native64x4Mul":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x4Defs"],
+   "proof": ["CompPoly.Fields.Montgomery.Basic", "CompPoly.Fields.Montgomery.Native64x4"]},
+  "CompPoly.Fields.Montgomery.Native64x4InvDefs":
   {"statement":
-   ["CompPoly.Fields.Montgomery.Native64x8Defs",
-    "CompPoly.Fields.Montgomery.Native64x8Field",
-    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8", "CompPoly.Fields.Montgomery.Native64x8Mul"]},
-  "CompPoly.Fields.Montgomery.Native64x8Field":
-  {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Montgomery.Native64x8Defs"],
+   ["CompPoly.Fields.Montgomery.DivstepDefs", "CompPoly.Fields.Montgomery.Native64x4Defs"],
+   "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x4Inv":
+  {"statement":
+   ["CompPoly.Fields.Montgomery.DivstepDefs",
+    "CompPoly.Fields.Montgomery.Native64x4Defs",
+    "CompPoly.Fields.Montgomery.Native64x4Field",
+    "CompPoly.Fields.Montgomery.Native64x4InvDefs"],
    "proof":
    ["CompPoly.Fields.Montgomery.Basic",
-    "CompPoly.Fields.Montgomery.Native64x8",
-    "CompPoly.Fields.Montgomery.Native64x8Mul"]},
-  "CompPoly.Fields.Montgomery.Native64x8Defs": {"statement": [], "proof": []},
-  "CompPoly.Fields.Montgomery.Native64x8Bytes":
+    "CompPoly.Fields.Montgomery.Divstep",
+    "CompPoly.Fields.Montgomery.Native64x4",
+    "CompPoly.Fields.Montgomery.Native64x4Mul"]},
+  "CompPoly.Fields.Montgomery.Native64x4Field":
+  {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Montgomery.Native64x4Defs"],
+   "proof":
+   ["CompPoly.Fields.Montgomery.Basic",
+    "CompPoly.Fields.Montgomery.Native64x4",
+    "CompPoly.Fields.Montgomery.Native64x4Mul"]},
+  "CompPoly.Fields.Montgomery.Native64x4Defs": {"statement": [], "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x4Bytes":
   {"statement":
    ["CompPoly.Data.Bytes.CanonicalNat",
     "CompPoly.Data.Bytes.Codec",
     "CompPoly.Data.Bytes.LittleEndian",
     "CompPoly.Data.Classes.CanonicalNat",
-    "CompPoly.Fields.Montgomery.Native64x8Field"],
+    "CompPoly.Fields.Montgomery.Native64x4Field"],
    "proof": []},
-  "CompPoly.Fields.Montgomery.Native64x8":
-  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x4":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x4Defs"], "proof": []},
   "CompPoly.Fields.Montgomery.Native32Field":
   {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Montgomery.Native32"],
    "proof": ["CompPoly.Fields.Montgomery.Basic"]},
@@ -1482,6 +1487,9 @@
    "proof": []},
   "CompPoly.Fields.Montgomery.Native32":
   {"statement": ["CompPoly.Fields.Montgomery.Basic"], "proof": []},
+  "CompPoly.Fields.Montgomery.DivstepDefs": {"statement": [], "proof": []},
+  "CompPoly.Fields.Montgomery.Divstep":
+  {"statement": ["CompPoly.Fields.Montgomery.DivstepDefs"], "proof": []},
   "CompPoly.Fields.Montgomery.Basic": {"statement": [], "proof": []},
   "CompPoly.Fields.Mersenne31.Fast":
   {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Mersenne31.Basic"], "proof": []},
@@ -1962,26 +1970,26 @@
   "CompPoly.Fields.BN254.Fast":
   {"statement":
    ["CompPoly.Fields.BN254.Basic",
-    "CompPoly.Fields.Montgomery.Native64x8Field",
-    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+    "CompPoly.Fields.Montgomery.Native64x4Field",
+    "CompPoly.Fields.Montgomery.Native64x4InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x4Defs"]},
   "CompPoly.Fields.BN254.Basic": {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
   "CompPoly.Fields.BN254": {"statement": [], "proof": []},
   "CompPoly.Fields.BLS12_381.Fast":
   {"statement":
    ["CompPoly.Fields.BLS12_381.Basic",
-    "CompPoly.Fields.Montgomery.Native64x8Field",
-    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+    "CompPoly.Fields.Montgomery.Native64x4Field",
+    "CompPoly.Fields.Montgomery.Native64x4InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x4Defs"]},
   "CompPoly.Fields.BLS12_381.Basic":
   {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
   "CompPoly.Fields.BLS12_381": {"statement": [], "proof": []},
   "CompPoly.Fields.BLS12_377.Fast":
   {"statement":
    ["CompPoly.Fields.BLS12_377.Basic",
-    "CompPoly.Fields.Montgomery.Native64x8Field",
-    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
-   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+    "CompPoly.Fields.Montgomery.Native64x4Field",
+    "CompPoly.Fields.Montgomery.Native64x4InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x4Defs"]},
   "CompPoly.Fields.BLS12_377.Basic":
   {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
   "CompPoly.Fields.BLS12_377": {"statement": [], "proof": []},
@@ -3026,17 +3034,18 @@
   "CompPoly.Fields.Mersenne31.Circle",
   "CompPoly.Fields.Mersenne31.Fast",
   "CompPoly.Fields.Montgomery.Basic",
+  "CompPoly.Fields.Montgomery.Divstep",
+  "CompPoly.Fields.Montgomery.DivstepDefs",
   "CompPoly.Fields.Montgomery.Native32",
   "CompPoly.Fields.Montgomery.Native32Bytes",
   "CompPoly.Fields.Montgomery.Native32Field",
-  "CompPoly.Fields.Montgomery.Native64x8",
-  "CompPoly.Fields.Montgomery.Native64x8Bytes",
-  "CompPoly.Fields.Montgomery.Native64x8Defs",
-  "CompPoly.Fields.Montgomery.Native64x8Field",
-  "CompPoly.Fields.Montgomery.Native64x8Inv",
-  "CompPoly.Fields.Montgomery.Native64x8InvDefs",
-  "CompPoly.Fields.Montgomery.Native64x8Mul",
-  "CompPoly.Fields.Montgomery.ScalarFft",
+  "CompPoly.Fields.Montgomery.Native64x4",
+  "CompPoly.Fields.Montgomery.Native64x4Bytes",
+  "CompPoly.Fields.Montgomery.Native64x4Defs",
+  "CompPoly.Fields.Montgomery.Native64x4Field",
+  "CompPoly.Fields.Montgomery.Native64x4Inv",
+  "CompPoly.Fields.Montgomery.Native64x4InvDefs",
+  "CompPoly.Fields.Montgomery.Native64x4Mul",
   "CompPoly.Fields.Pasta",
   "CompPoly.Fields.Pasta.Basic",
   "CompPoly.Fields.Pasta.Fast",

@@ -7,7 +7,7 @@ proof: formalized
 
 # Lemmas for `CMvPolynomial.restrictBy`, `restrictTotalDegreeOf`, and `restrictDegreeOf`
 
-`CompPoly.Multivariate.Restrict`, in [CompPoly/Multivariate/Restrict.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean), by Fawad Haider, Pablo Martin.
+`CompPoly.Multivariate.Restrict`, in [CompPoly/Multivariate/Restrict.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean), by Fawad Haider, Pablo Martin.
 
 > Degree-bounded restriction of multivariate polynomials: filtering monomials by total degree
 > or per-variable degree bounds.
@@ -15,7 +15,7 @@ proof: formalized
 > Also proves correctness against Mathlib: transporting these restrictions across
 > `fromCMvPolynomial` lands in Mathlib's degree-bounded submodules.
 
-`CPoly.coeff_restrictBy` (lemma, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L31))
+`CPoly.coeff_restrictBy` (lemma, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L31))
 
 > Coefficient of `restrictBy keep p` at `m`: `p.coeff m` if `keep m`, else `0`.
 
@@ -25,7 +25,7 @@ lemma coeff_restrictBy (keep : CMvMonomial n → Prop) [DecidablePred keep]
     (CMvPolynomial.restrictBy keep p).coeff m = if keep m then p.coeff m else 0
 ```
 
-`CPoly.coeff_restrictTotalDegreeOf` (lemma, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L59))
+`CPoly.coeff_restrictTotalDegreeOf` (lemma, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L59))
 
 > Coeff at `m`: `p.coeff m` if `m.totalDegree ≤ d`, else `0`.
 
@@ -35,7 +35,7 @@ lemma coeff_restrictTotalDegreeOf (d : ℕ) (m : CMvMonomial n) (p : CMvPolynomi
       if m.totalDegree ≤ d then p.coeff m else 0
 ```
 
-`CPoly.coeff_restrictDegreeOf` (lemma, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L68))
+`CPoly.coeff_restrictDegreeOf` (lemma, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L68))
 
 > Coefficient of `restrictDegreeOf d p` at `m`: `p.coeff m` if `∀ i, m.degreeOf i ≤ d`,
 > else `0`.
@@ -46,7 +46,7 @@ lemma coeff_restrictDegreeOf (d : ℕ) (m : CMvMonomial n) (p : CMvPolynomial n 
       if ∀ i : Fin n, m.degreeOf i ≤ d then p.coeff m else 0
 ```
 
-`CPoly.coeff_restrictTotalDegreeOf_eq_self_of_le` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L75))
+`CPoly.coeff_restrictTotalDegreeOf_eq_self_of_le` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L75))
 
 > When `m.totalDegree ≤ d`, coeff at `m` is unchanged by `restrictTotalDegreeOf d`.
 
@@ -56,7 +56,7 @@ lemma coeff_restrictTotalDegreeOf_eq_self_of_le {d : ℕ} {m : CMvMonomial n}
     (restrictTotalDegreeOf d p).coeff m = p.coeff m
 ```
 
-`CPoly.coeff_restrictTotalDegreeOf_eq_zero_of_lt` (lemma, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L81))
+`CPoly.coeff_restrictTotalDegreeOf_eq_zero_of_lt` (lemma, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L81))
 
 > When `d < m.totalDegree`, coeff at `m` is `0` in `restrictTotalDegreeOf d p`.
 
@@ -66,7 +66,7 @@ lemma coeff_restrictTotalDegreeOf_eq_zero_of_lt {d : ℕ} {m : CMvMonomial n}
     (restrictTotalDegreeOf d p).coeff m = 0
 ```
 
-`CPoly.coeff_restrictDegreeOf_eq_self_of_le` (lemma, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L87))
+`CPoly.coeff_restrictDegreeOf_eq_self_of_le` (lemma, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L87))
 
 > When `∀ i, m.degreeOf i ≤ d`, coeff at `m` is unchanged by `restrictDegreeOf d`.
 
@@ -76,7 +76,7 @@ lemma coeff_restrictDegreeOf_eq_self_of_le {d : ℕ} {m : CMvMonomial n}
     (restrictDegreeOf d p).coeff m = p.coeff m
 ```
 
-`CPoly.coeff_restrictDegreeOf_eq_zero_of_not_le` (lemma, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L93))
+`CPoly.coeff_restrictDegreeOf_eq_zero_of_not_le` (lemma, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L93))
 
 > When `¬(∀ i, m.degreeOf i ≤ d)`, coeff at `m` is `0` in `restrictDegreeOf d p`.
 
@@ -86,7 +86,7 @@ lemma coeff_restrictDegreeOf_eq_zero_of_not_le {d : ℕ} {m : CMvMonomial n}
     (restrictDegreeOf d p).coeff m = 0
 ```
 
-`CPoly.totalDegree_le_of_mem_monomials_restrictTotalDegreeOf` (lemma, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L99))
+`CPoly.totalDegree_le_of_mem_monomials_restrictTotalDegreeOf` (lemma, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L99))
 
 > Monomials in `restrictTotalDegreeOf d p` have `totalDegree ≤ d`.
 
@@ -97,7 +97,7 @@ lemma totalDegree_le_of_mem_monomials_restrictTotalDegreeOf {d : ℕ} {m : CMvMo
     m.totalDegree ≤ d
 ```
 
-`CPoly.degreeOf_le_of_mem_monomials_restrictDegreeOf` (lemma, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L115))
+`CPoly.degreeOf_le_of_mem_monomials_restrictDegreeOf` (lemma, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L115))
 
 > Monomials in `restrictDegreeOf d p` have `degreeOf i ≤ d` for each variable `i`.
 
@@ -108,7 +108,7 @@ lemma degreeOf_le_of_mem_monomials_restrictDegreeOf {d : ℕ} {m : CMvMonomial n
     ∀ i : Fin n, m.degreeOf i ≤ d
 ```
 
-`CPoly.totalDegree_restrictTotalDegreeOf_le` (lemma, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L180))
+`CPoly.totalDegree_restrictTotalDegreeOf_le` (lemma, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L180))
 
 > `restrictTotalDegreeOf d p` has `totalDegree ≤ d`.
 
@@ -119,7 +119,7 @@ lemma totalDegree_restrictTotalDegreeOf_le
     (restrictTotalDegreeOf d p).totalDegree ≤ d
 ```
 
-`CPoly.degreeOf_restrictDegreeOf_le` (lemma, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L197))
+`CPoly.degreeOf_restrictDegreeOf_le` (lemma, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L197))
 
 > `restrictDegreeOf d p` has `degreeOf i ≤ d` for each variable `i`.
 
@@ -128,7 +128,7 @@ lemma degreeOf_restrictDegreeOf_le (d : ℕ) (p : CMvPolynomial n R) (i : Fin n)
     (restrictDegreeOf d p).degreeOf i ≤ d
 ```
 
-`CPoly.restrictTotalDegreeOf_zero` (lemma, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L207))
+`CPoly.restrictTotalDegreeOf_zero` (lemma, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L207))
 
 > `restrictTotalDegreeOf d 0 = 0`.
 
@@ -137,7 +137,7 @@ lemma restrictTotalDegreeOf_zero (d : ℕ) :
     restrictTotalDegreeOf d (0 : CMvPolynomial n R) = 0
 ```
 
-`CPoly.restrictDegreeOf_zero` (lemma, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L215))
+`CPoly.restrictDegreeOf_zero` (lemma, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L215))
 
 > `restrictDegreeOf d 0 = 0`.
 
@@ -146,7 +146,7 @@ lemma restrictDegreeOf_zero (d : ℕ) :
     restrictDegreeOf d (0 : CMvPolynomial n R) = 0
 ```
 
-`CPoly.restrictTotalDegreeOf_restrictTotalDegreeOf` (lemma, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L223))
+`CPoly.restrictTotalDegreeOf_restrictTotalDegreeOf` (lemma, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L223))
 
 > Double `restrictTotalDegreeOf` equals `restrictTotalDegreeOf (min d d')`.
 
@@ -156,7 +156,7 @@ lemma restrictTotalDegreeOf_restrictTotalDegreeOf (d d' : ℕ) (p : CMvPolynomia
       restrictTotalDegreeOf (min d d') p
 ```
 
-`CPoly.restrictDegreeOf_restrictDegreeOf` (lemma, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L232))
+`CPoly.restrictDegreeOf_restrictDegreeOf` (lemma, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L232))
 
 > Double `restrictDegreeOf` equals `restrictDegreeOf (min d d')`.
 
@@ -166,7 +166,7 @@ lemma restrictDegreeOf_restrictDegreeOf (d d' : ℕ) (p : CMvPolynomial n R) :
       restrictDegreeOf (min d d') p
 ```
 
-`CPoly.restrictTotalDegreeOf_restrictDegreeOf_comm` (lemma, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L256))
+`CPoly.restrictTotalDegreeOf_restrictDegreeOf_comm` (lemma, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L256))
 
 > `restrictTotalDegreeOf d` and `restrictDegreeOf d'` commute.
 
@@ -178,7 +178,7 @@ lemma restrictTotalDegreeOf_restrictDegreeOf_comm (d d' : ℕ) (p : CMvPolynomia
 
 > ### Correspondence with Mathlib's degree-bounded submodules
 
-`CPoly.fromCMvPolynomial_restrictTotalDegreeOf_mem` (theorem, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L267))
+`CPoly.fromCMvPolynomial_restrictTotalDegreeOf_mem` (theorem, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L267))
 
 > `fromCMvPolynomial (restrictTotalDegreeOf d p) ∈
 > MvPolynomial.restrictTotalDegree (Fin n) R d`.
@@ -190,7 +190,7 @@ theorem fromCMvPolynomial_restrictTotalDegreeOf_mem {R : Type*} [CommSemiring R]
       MvPolynomial.restrictTotalDegree (Fin n) R d
 ```
 
-`CPoly.fromCMvPolynomial_restrictDegreeOf_mem` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L275))
+`CPoly.fromCMvPolynomial_restrictDegreeOf_mem` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L275))
 
 > `fromCMvPolynomial (restrictDegreeOf d p) ∈ MvPolynomial.restrictDegree (Fin n) R d`.
 
@@ -201,7 +201,7 @@ theorem fromCMvPolynomial_restrictDegreeOf_mem {R : Type*} [CommSemiring R] [BEq
       MvPolynomial.restrictDegree (Fin n) R d
 ```
 
-`CPoly.restrictDegree` (definition, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L287))
+`CPoly.restrictDegree` (definition, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L287))
 
 > The `Submodule` of polynomials all of whose support monomials have every variable's
 > exponent at most `degree`.
@@ -211,7 +211,7 @@ def restrictDegree (R : Type v) [CommSemiring R] [BEq R] [LawfulBEq R] (n degree
     Submodule R (CMvPolynomial n R)
 ```
 
-`CPoly.restrictDegree_elem` (lemma, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean#L320))
+`CPoly.restrictDegree_elem` (lemma, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean#L320))
 
 > `p ∈ restrictDegree R n degree` iff every variable's exponent in every support
 > monomial of `p` is at most `degree`.
@@ -231,5 +231,5 @@ lemma restrictDegree_elem {R : Type v} [CommSemiring R] [BEq R] [LawfulBEq R] {n
 
 ## Sources
 
-- [CompPoly/Multivariate/Restrict.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Restrict.lean)
+- [CompPoly/Multivariate/Restrict.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Restrict.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.Restrict.json)

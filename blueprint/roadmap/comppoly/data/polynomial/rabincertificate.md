@@ -7,7 +7,7 @@ proof: formalized
 
 # Kernel-checkable Rabin irreducibility certificates over prime fields
 
-`CompPoly.Data.Polynomial.RabinCertificate`, in [CompPoly/Data/Polynomial/RabinCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean), by Derek Sorensen.
+`CompPoly.Data.Polynomial.RabinCertificate`, in [CompPoly/Data/Polynomial/RabinCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean), by Derek Sorensen.
 
 > Rabin's test (`CompPoly/Data/Polynomial/Rabin.lean`) reduces irreducibility of a degree-`d`
 > polynomial `f` over `ZMod p` to divisibility and coprimality conditions against `X^(p^k) - X`.
@@ -45,7 +45,7 @@ proof: formalized
 > stay below `d² · p²`, comfortably inside GMP range — and comparisons reduce mod `p` at the
 > end (`eqModP`), so no subtraction (and hence no truncation) occurs anywhere.
 
-`CompPoly.RabinCert.addNat` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L60))
+`CompPoly.RabinCert.addNat` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L60))
 
 > Coefficientwise addition of little-endian coefficient lists.
 
@@ -53,7 +53,7 @@ proof: formalized
 def addNat : List ℕ → List ℕ → List ℕ
 ```
 
-`CompPoly.RabinCert.scaleNat` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L66))
+`CompPoly.RabinCert.scaleNat` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L66))
 
 > Scale a coefficient list by a constant.
 
@@ -61,7 +61,7 @@ def addNat : List ℕ → List ℕ → List ℕ
 def scaleNat (c : ℕ) (l : List ℕ) : List ℕ
 ```
 
-`CompPoly.RabinCert.mulNat` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L69))
+`CompPoly.RabinCert.mulNat` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L69))
 
 > Schoolbook product of little-endian coefficient lists.
 
@@ -69,7 +69,7 @@ def scaleNat (c : ℕ) (l : List ℕ) : List ℕ
 def mulNat : List ℕ → List ℕ → List ℕ
 ```
 
-`CompPoly.RabinCert.eqModP` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L74))
+`CompPoly.RabinCert.eqModP` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L74))
 
 > Coefficientwise equality modulo `p`, treating entries beyond a list's end as `0`.
 
@@ -79,7 +79,7 @@ def eqModP (p : ℕ) : List ℕ → List ℕ → Bool
 
 > ### The specification bridge
 
-`CompPoly.RabinCert.toPoly` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L83))
+`CompPoly.RabinCert.toPoly` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L83))
 
 > Interpret a little-endian coefficient list in `(ZMod p)[X]`, Horner-style. Specification
 > only; certificate checking never evaluates it.
@@ -88,13 +88,13 @@ def eqModP (p : ℕ) : List ℕ → List ℕ → Bool
 noncomputable def toPoly (p : ℕ) : List ℕ → (ZMod p)[X]
 ```
 
-`CompPoly.RabinCert.toPoly_nil` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L87))
+`CompPoly.RabinCert.toPoly_nil` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L87))
 
 ```lean
 theorem toPoly_nil {p : ℕ} : toPoly p [] = 0
 ```
 
-`CompPoly.RabinCert.toPoly_cons` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L91))
+`CompPoly.RabinCert.toPoly_cons` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L91))
 
 > The defining Horner step of `toPoly`, as a rewrite rule: a head coefficient contributes a
 > constant and the tail is multiplied by `X`.
@@ -104,19 +104,19 @@ theorem toPoly_cons {p : ℕ} (c : ℕ) (cs : List ℕ) :
     toPoly p (c :: cs) = C (c : ZMod p) + X * toPoly p cs
 ```
 
-`CompPoly.RabinCert.toPoly_X` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L94))
+`CompPoly.RabinCert.toPoly_X` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L94))
 
 ```lean
 theorem toPoly_X {p : ℕ} : toPoly p [0, 1] = X
 ```
 
-`CompPoly.RabinCert.toPoly_one` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L98))
+`CompPoly.RabinCert.toPoly_one` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L98))
 
 ```lean
 theorem toPoly_one {p : ℕ} : toPoly p [1] = 1
 ```
 
-`CompPoly.RabinCert.toPoly_addNat` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L104))
+`CompPoly.RabinCert.toPoly_addNat` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L104))
 
 > `addNat` denotes addition: the coefficientwise sum of two lists is the sum of the
 > polynomials they denote. One of the three specification bridges that make the `ℕ`-list
@@ -127,7 +127,7 @@ theorem toPoly_addNat {p : ℕ} : ∀ a b : List ℕ,
     toPoly p (addNat a b) = toPoly p a + toPoly p b
 ```
 
-`CompPoly.RabinCert.toPoly_scaleNat` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L114))
+`CompPoly.RabinCert.toPoly_scaleNat` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L114))
 
 > `scaleNat` denotes multiplication by a constant.
 
@@ -136,7 +136,7 @@ theorem toPoly_scaleNat {p : ℕ} (c : ℕ) : ∀ l : List ℕ,
     toPoly p (scaleNat c l) = C (c : ZMod p) * toPoly p l
 ```
 
-`CompPoly.RabinCert.toPoly_mulNat` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L125))
+`CompPoly.RabinCert.toPoly_mulNat` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L125))
 
 > `mulNat` denotes multiplication: schoolbook convolution of the coefficient lists is the
 > product of the polynomials they denote. Proved from `toPoly_addNat` and `toPoly_scaleNat`,
@@ -147,7 +147,7 @@ theorem toPoly_mulNat {p : ℕ} : ∀ a b : List ℕ,
     toPoly p (mulNat a b) = toPoly p a * toPoly p b
 ```
 
-`CompPoly.RabinCert.cast_eq_cast_of_mod_eq` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L135))
+`CompPoly.RabinCert.cast_eq_cast_of_mod_eq` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L135))
 
 > Two naturals equal mod `p` cast to the same element of `ZMod p`.
 
@@ -156,7 +156,7 @@ theorem cast_eq_cast_of_mod_eq {p a b : ℕ} (h : a % p = b % p) :
     (a : ZMod p) = (b : ZMod p)
 ```
 
-`CompPoly.RabinCert.toPoly_eq_zero_of_all_mod_eq_zero` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L142))
+`CompPoly.RabinCert.toPoly_eq_zero_of_all_mod_eq_zero` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L142))
 
 > A list whose every coefficient is `0` mod `p` denotes the zero polynomial. This is the base
 > case behind `toPoly_eq_of_eqModP`, which is how a `eqModP` kernel check becomes an equation
@@ -167,7 +167,7 @@ theorem toPoly_eq_zero_of_all_mod_eq_zero {p : ℕ} : ∀ {l : List ℕ},
     l.all (· % p == 0) = true → toPoly p l = 0
 ```
 
-`CompPoly.RabinCert.toPoly_eq_of_eqModP` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L151))
+`CompPoly.RabinCert.toPoly_eq_of_eqModP` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L151))
 
 > Soundness of the coefficientwise checker: `eqModP` lists denote the same polynomial.
 
@@ -176,7 +176,7 @@ theorem toPoly_eq_of_eqModP {p : ℕ} : ∀ {a b : List ℕ},
     eqModP p a b = true → toPoly p a = toPoly p b
 ```
 
-`CompPoly.RabinCert.verify_mulAdd` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L167))
+`CompPoly.RabinCert.verify_mulAdd` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L167))
 
 > Lift a checked `ℕ`-level identity `a·b ≡ q·f + r (mod p)` to `(ZMod p)[X]`.
 
@@ -188,7 +188,7 @@ theorem verify_mulAdd {p : ℕ} {a b q fL r : List ℕ}
 
 > ### Square-and-multiply chains
 
-`CompPoly.RabinCert.Step` (structure, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L181))
+`CompPoly.RabinCert.Step` (structure, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L181))
 
 > One step of a square-and-multiply chain modulo `f`: from the current residue `cur`, either
 > square it (`mulX = false`) or multiply it by `X` (`mulX = true`), and divide by `f` to get
@@ -205,7 +205,7 @@ structure Step where
   r : List ℕ
 ```
 
-`CompPoly.RabinCert.checkStep` (definition, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L190))
+`CompPoly.RabinCert.checkStep` (definition, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L190))
 
 > Check one chain step: `cur² = q·f + r` (or `X·cur = q·f + r`), coefficientwise mod `p`.
 
@@ -213,7 +213,7 @@ structure Step where
 def checkStep (p : ℕ) (fL cur : List ℕ) (s : Step) : Bool
 ```
 
-`CompPoly.RabinCert.runChain` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L195))
+`CompPoly.RabinCert.runChain` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L195))
 
 > Fold a chain of steps from the residue `cur`, checking each; returns the final residue,
 > or `none` if any check fails. One kernel reduction of `runChain` verifies a whole chain.
@@ -222,7 +222,7 @@ def checkStep (p : ℕ) (fL cur : List ℕ) (s : Step) : Bool
 def runChain (p : ℕ) (fL : List ℕ) : List ℕ → List Step → Option (List ℕ)
 ```
 
-`CompPoly.RabinCert.chainExp` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L200))
+`CompPoly.RabinCert.chainExp` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L200))
 
 > The exponent a chain computes: squaring doubles it, multiply-by-`X` adds one.
 
@@ -230,7 +230,7 @@ def runChain (p : ℕ) (fL : List ℕ) : List ℕ → List Step → Option (List
 def chainExp : ℕ → List Step → ℕ
 ```
 
-`CompPoly.RabinCert.step_sound` (theorem, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L211))
+`CompPoly.RabinCert.step_sound` (theorem, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L211))
 
 > Soundness of one chain step.
 
@@ -242,7 +242,7 @@ theorem step_sound {p : ℕ} [Fact p.Prime] {fL cur : List ℕ} {f : (ZMod p)[X]
     (X : (ZMod p)[X]) ^ (cond s.mulX (e + 1) (2 * e)) % f = toPoly p s.r % f
 ```
 
-`CompPoly.RabinCert.runChain_sound` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L248))
+`CompPoly.RabinCert.runChain_sound` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L248))
 
 > **Soundness of a whole chain**: a checked chain starting at the residue of `X^e` ends at
 > the residue of `X^(chainExp e steps)`.
@@ -256,7 +256,7 @@ theorem runChain_sound {p : ℕ} [Fact p.Prime] {fL : List ℕ} {f : (ZMod p)[X]
       (X : (ZMod p)[X]) ^ chainExp e steps % f = toPoly p out % f
 ```
 
-`CompPoly.RabinCert.xpow_mod_of_runChain` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L268))
+`CompPoly.RabinCert.xpow_mod_of_runChain` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L268))
 
 > A chain started at `[0, 1]` (the residue of `X¹`) computes `X^N % f`.
 
@@ -270,7 +270,7 @@ theorem xpow_mod_of_runChain {p : ℕ} [Fact p.Prime] {fL : List ℕ} {f : (ZMod
 
 > ### The two Rabin conditions from certificates
 
-`CompPoly.RabinCert.dvd_sub_of_mod_eq` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L280))
+`CompPoly.RabinCert.dvd_sub_of_mod_eq` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L280))
 
 > Equal remainders mean the divisor divides the difference.
 
@@ -279,7 +279,7 @@ theorem dvd_sub_of_mod_eq {R : Type*} [EuclideanDomain R] {a b n : R} (h : a % n
     n ∣ a - b
 ```
 
-`CompPoly.RabinCert.dvd_X_pow_sub_X_of_runChain` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L290))
+`CompPoly.RabinCert.dvd_X_pow_sub_X_of_runChain` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L290))
 
 > **The trace condition from a chain.** A checked chain for `X^N` ending back at `[0, 1]`
 > (the residue `X`) proves `f ∣ X^N - X`.
@@ -292,7 +292,7 @@ theorem dvd_X_pow_sub_X_of_runChain {p : ℕ} [Fact p.Prime] {fL : List ℕ} {f 
     f ∣ (X : (ZMod p)[X]) ^ N - X
 ```
 
-`CompPoly.RabinCert.isCoprime_X_pow_sub_X_of_runChain` (theorem, [line 306](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L306))
+`CompPoly.RabinCert.isCoprime_X_pow_sub_X_of_runChain` (theorem, [line 306](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L306))
 
 > **The coprimality condition from a chain plus a Bézout certificate.**
 >
@@ -325,7 +325,7 @@ theorem isCoprime_X_pow_sub_X_of_runChain {p : ℕ} [Fact p.Prime] {fL : List �
 > factors divides `X^(q^d) - X` and is coprime to `X^q - X`, so it would pass.
 > `irreducible_of_rabin_prime_power` is the collapse that *is* sound at `d = ℓ ^ k`.
 
-`CompPoly.RabinCert.irreducible_of_rabin_prime_degree` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L351))
+`CompPoly.RabinCert.irreducible_of_rabin_prime_degree` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L351))
 
 > **Rabin's test for prime degree.** For `f` of *prime* degree `d` over a finite field with `q`
 > elements, the per-prime-factor conditions collapse to a single coprimality check at exponent `q`:
@@ -340,13 +340,13 @@ theorem irreducible_of_rabin_prime_degree {F : Type*} [Field F] [Fintype F] {f :
     Irreducible f
 ```
 
-`CompPoly.RabinCert.irreducible_of_rabin_prime_degree_of_card` (alias, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L364))
+`CompPoly.RabinCert.irreducible_of_rabin_prime_degree_of_card` (alias, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L364))
 
 ```lean
 alias irreducible_of_rabin_prime_degree_of_card
 ```
 
-`CompPoly.RabinCert.irreducible_of_rabin_prime_power` (theorem, [line 378](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L378))
+`CompPoly.RabinCert.irreducible_of_rabin_prime_power` (theorem, [line 378](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L378))
 
 > **Rabin's test for a prime-power degree**, such as `d = 8`, `64` or `128`.
 >
@@ -369,7 +369,7 @@ theorem irreducible_of_rabin_prime_power {F : Type*} [Field F] [Fintype F] {f : 
     Irreducible f
 ```
 
-`CompPoly.RabinCert.irreducible_of_rabin_two_prime_factors` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L402))
+`CompPoly.RabinCert.irreducible_of_rabin_two_prime_factors` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L402))
 
 > **Rabin's test for a degree with exactly two prime factors**, such as `d = 6`.
 >
@@ -391,7 +391,7 @@ theorem irreducible_of_rabin_two_prime_factors {F : Type*} [Field F] [Fintype F]
     Irreducible f
 ```
 
-`CompPoly.RabinCert.irreducible_of_rabin_degree_six` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L436))
+`CompPoly.RabinCert.irreducible_of_rabin_degree_six` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L436))
 
 > **Rabin's test at degree 6.** `f` of degree 6 over a finite field with `q` elements is irreducible
 > provided `f ∣ X^(q^6) - X`, `IsCoprime f (X^(q^3) - X)`, and `IsCoprime f (X^(q^2) - X)`.
@@ -413,7 +413,7 @@ theorem irreducible_of_rabin_degree_six {F : Type*} [Field F] [Fintype F] {f : F
     Irreducible f
 ```
 
-`CompPoly.RabinCert.irreducible_of_rabin_degree_six_of_card` (alias, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean#L447))
+`CompPoly.RabinCert.irreducible_of_rabin_degree_six_of_card` (alias, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean#L447))
 
 ```lean
 alias irreducible_of_rabin_degree_six_of_card
@@ -430,5 +430,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Polynomial/RabinCertificate.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/RabinCertificate.lean)
+- [CompPoly/Data/Polynomial/RabinCertificate.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/RabinCertificate.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Polynomial.RabinCertificate.json)

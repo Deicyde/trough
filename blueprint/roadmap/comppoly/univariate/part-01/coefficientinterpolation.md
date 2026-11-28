@@ -7,13 +7,13 @@ proof: formalized
 
 # Coefficient-Form Interpolation from a Vanishing Polynomial
 
-`CompPoly.Univariate.CoefficientInterpolation`, in [CompPoly/Univariate/CoefficientInterpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean), by Valerii Huhnin.
+`CompPoly.Univariate.CoefficientInterpolation`, in [CompPoly/Univariate/CoefficientInterpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean), by Valerii Huhnin.
 
 > Build the coefficient polynomial interpolating packed points from the node
 > vanishing polynomial `G = ∏ᵢ (X - xᵢ)` using the formula
 > `R = ∑ᵢ yᵢ / G'(xᵢ) * G / (X - xᵢ)`.
 
-`CompPoly.CPolynomial.divByLinearFactor` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L50))
+`CompPoly.CPolynomial.divByLinearFactor` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L50))
 
 > Synthetic quotient by the monic linear factor `X - x`.
 >
@@ -24,7 +24,7 @@ proof: formalized
 def divByLinearFactor (p : CPolynomial F) (x : F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.divByLinearFactor_eq_divByMonic` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L176))
+`CompPoly.CPolynomial.divByLinearFactor_eq_divByMonic` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L176))
 
 > Synthetic division by `X - x` agrees with generic monic division.
 
@@ -33,7 +33,7 @@ theorem divByLinearFactor_eq_divByMonic (p : CPolynomial F) (x : F) :
     divByLinearFactor p x = p.divByMonic (linearFactor x)
 ```
 
-`CompPoly.CPolynomial.interpolationTermWithVanishing` (definition, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L371))
+`CompPoly.CPolynomial.interpolationTermWithVanishing` (definition, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L371))
 
 > One coefficient-form interpolation term from a packed point and `G'(xᵢ)`.
 
@@ -42,7 +42,7 @@ def interpolationTermWithVanishing
     (G : CPolynomial F) (point : F × F) (derivativeValue : F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.interpolateCoefficientFormWithVanishing` (definition, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L379))
+`CompPoly.CPolynomial.interpolateCoefficientFormWithVanishing` (definition, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L379))
 
 > Coefficient-form interpolation from packed points and an already-built node
 > vanishing polynomial. The supplied batch evaluator is used only for the
@@ -54,7 +54,7 @@ def interpolateCoefficientFormWithVanishing
     (G : CPolynomial F) (points : Array (F × F)) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.interpolateCoefficientForm` (definition, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L392))
+`CompPoly.CPolynomial.interpolateCoefficientForm` (definition, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L392))
 
 > Coefficient-form interpolation from packed points using a vanishing-polynomial
 > context and a batch-evaluation context.
@@ -66,7 +66,7 @@ def interpolateCoefficientForm
     (points : Array (F × F)) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.interpolateCoefficientForm_eval_point` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean#L400))
+`CompPoly.CPolynomial.interpolateCoefficientForm_eval_point` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean#L400))
 
 > Coefficient-form interpolation evaluates to the packed values at distinct nodes.
 
@@ -89,5 +89,5 @@ theorem interpolateCoefficientForm_eval_point [DecidableEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/CoefficientInterpolation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CoefficientInterpolation.lean)
+- [CompPoly/Univariate/CoefficientInterpolation.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CoefficientInterpolation.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.CoefficientInterpolation.json)

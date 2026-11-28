@@ -7,11 +7,11 @@ proof: formalized
 
 # NTTFast multiplication correctness
 
-`CompPoly.Univariate.NTTFast.Correctness.Pipeline`, in [CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Correctness.Pipeline`, in [CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean), by Valerii Huhnin.
 
 > Plan-level and one-shot correctness theorems for `NTTFast` multiplication.
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_correct` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L29))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_correct` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L29))
 
 > A well-formed plan's forward transform computes the bit-reversed forward NTT.
 
@@ -21,7 +21,7 @@ theorem forwardImpl_correct (P : Plan R) (hP : WellFormed P) (p : CPolynomial.Ra
       NTT.Transform.bitRevPermute P.domain (NTT.Forward.forwardSpec P.domain p)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_ofDomain_correct` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L36))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_ofDomain_correct` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L36))
 
 > A plan built from a domain has a correct forward transform.
 
@@ -31,7 +31,7 @@ theorem forwardImpl_ofDomain_correct (D : NTT.Domain R) (p : CPolynomial.Raw R) 
       NTT.Transform.bitRevPermute D (NTT.Forward.forwardSpec D p)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_eq_pair` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L42))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_eq_pair` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L42))
 
 > The paired forward transform equals the pair of individual forward transforms.
 
@@ -41,7 +41,7 @@ theorem forwardPairImpl_eq_pair
     forwardPairImpl P p q = (forwardImpl P p, forwardImpl P q)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_correct` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L50))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_correct` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L50))
 
 > The paired forward transform computes the two bit-reversed forward NTT outputs.
 
@@ -53,7 +53,7 @@ theorem forwardPairImpl_correct
         NTT.Transform.bitRevPermute P.domain (NTT.Forward.forwardSpec P.domain q))
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.normalize_eq_ntt_normalize` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L59))
+`CompPoly.CPolynomial.NTTFast.Plan.normalize_eq_ntt_normalize` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L59))
 
 > Plan normalization agrees with `NTT.Inverse.normalize` for the same domain.
 
@@ -62,7 +62,7 @@ theorem normalize_eq_ntt_normalize (P : Plan R) (hP : WellFormed P) (a : Array R
     normalize P a = NTT.Inverse.normalize P.domain a
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_correct` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L65))
+`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_correct` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L65))
 
 > A well-formed plan's inverse transform computes the inverse NTT spec.
 
@@ -72,7 +72,7 @@ theorem inverseImpl_correct (P : Plan R) (hP : WellFormed P) (v : Array R) :
       NTT.Inverse.inverseSpec P.domain v
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.pointwiseMul_bitRevPermute_forwardSpec_eq` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L84))
+`CompPoly.CPolynomial.NTTFast.Plan.pointwiseMul_bitRevPermute_forwardSpec_eq` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L84))
 
 > Pointwise multiplication commutes with applying the bit-reversal permutation.
 
@@ -87,7 +87,7 @@ theorem pointwiseMul_bitRevPermute_forwardSpec_eq
           (NTT.Forward.forwardSpec D p) (NTT.Forward.forwardSpec D q))
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_correct` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L105))
+`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_correct` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L105))
 
 > …
 
@@ -97,7 +97,7 @@ theorem fastMulImpl_correct [BEq R] [LawfulBEq R]
     fastMulImpl P p q = NTT.FastMul.Raw.fastMulSpec P.domain p q
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L115))
+`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L115))
 
 > …
 
@@ -108,7 +108,7 @@ theorem fastMulImpl_trim_eq_mul [BEq R] [LawfulBEq R]
     (fastMulImpl P p q).trim = p * q
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_correct` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L125))
+`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_correct` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L125))
 
 > …
 
@@ -118,7 +118,7 @@ theorem fastMulImpl_correct [BEq R] [LawfulBEq R]
     fastMulImpl P p q = NTT.FastMul.fastMulSpec P.domain p q
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_eq_mul` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L132))
+`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_eq_mul` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L132))
 
 > …
 
@@ -129,7 +129,7 @@ theorem fastMulImpl_eq_mul [BEq R] [LawfulBEq R]
     fastMulImpl P p q = p * q
 ```
 
-`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_correct` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L144))
+`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_correct` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L144))
 
 > The one-shot raw multiplication implementation computes the raw NTT multiplication spec.
 
@@ -139,7 +139,7 @@ theorem fastMulImpl_correct [BEq R] [LawfulBEq R]
     fastMulImpl D p q = NTT.FastMul.Raw.fastMulSpec D p q
 ```
 
-`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L151))
+`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L151))
 
 > The one-shot raw multiplication implementation trims to ordinary multiplication.
 
@@ -150,7 +150,7 @@ theorem fastMulImpl_trim_eq_mul [BEq R] [LawfulBEq R]
     (fastMulImpl D p q).trim = p * q
 ```
 
-`CompPoly.CPolynomial.NTTFast.fastMulImpl_correct` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L161))
+`CompPoly.CPolynomial.NTTFast.fastMulImpl_correct` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L161))
 
 > The one-shot multiplication implementation computes the NTT multiplication spec.
 
@@ -160,7 +160,7 @@ theorem fastMulImpl_correct [BEq R] [LawfulBEq R]
     fastMulImpl D p q = NTT.FastMul.fastMulSpec D p q
 ```
 
-`CompPoly.CPolynomial.NTTFast.fastMulImpl_eq_mul` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L168))
+`CompPoly.CPolynomial.NTTFast.fastMulImpl_eq_mul` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L168))
 
 > The one-shot multiplication implementation agrees with ordinary multiplication.
 
@@ -171,7 +171,7 @@ theorem fastMulImpl_eq_mul [BEq R] [LawfulBEq R]
     fastMulImpl D p q = p * q
 ```
 
-`CompPoly.CPolynomial.NTTFast.safeFastMul_eq_mul` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L176))
+`CompPoly.CPolynomial.NTTFast.safeFastMul_eq_mul` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L176))
 
 > The safe one-shot wrapper agrees with ordinary multiplication.
 
@@ -182,7 +182,7 @@ theorem safeFastMul_eq_mul [BEq R] [LawfulBEq R]
     safeFastMul D p q hfit = p * q
 ```
 
-`CompPoly.CPolynomial.NTTFast.withFallback_eq_mul` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L183))
+`CompPoly.CPolynomial.NTTFast.withFallback_eq_mul` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean#L183))
 
 > `withFallback` agrees with canonical polynomial multiplication.
 
@@ -207,5 +207,5 @@ theorem withFallback_eq_mul [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean)
+- [CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Correctness.Pipeline.json)

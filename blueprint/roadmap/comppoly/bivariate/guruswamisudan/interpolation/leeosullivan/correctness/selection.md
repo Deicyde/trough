@@ -7,18 +7,18 @@ proof: formalized
 
 # Lee-O'Sullivan Row Selection Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean), by Valerii Huhnin.
 
 > Correctness facts for the least-shifted-degree row scan used by the executable backend.
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.RowChoiceValid` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L28))
+`CompPoly.GuruswamiSudan.LeeOSullivan.RowChoiceValid` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L28))
 
 ```lean
 def RowChoiceValid (M : PolynomialMatrix F) (shift : Array Nat)
     (choice : RowChoice F) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_some_valid` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L331))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_some_valid` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L331))
 
 ```lean
 theorem leastShiftedDegreeChoice?_some_valid
@@ -27,7 +27,7 @@ theorem leastShiftedDegreeChoice?_some_valid
     RowChoiceValid M shift choice
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_degree_le` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L343))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_degree_le` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L343))
 
 ```lean
 theorem leastShiftedDegreeChoice?_degree_le
@@ -39,7 +39,7 @@ theorem leastShiftedDegreeChoice?_degree_le
     choice.degree ≤ d
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_some_of_degree` (theorem, [line 358](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L358))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?_some_of_degree` (theorem, [line 358](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L358))
 
 ```lean
 theorem leastShiftedDegreeChoice?_some_of_degree
@@ -49,7 +49,7 @@ theorem leastShiftedDegreeChoice?_some_of_degree
     ∃ choice, leastShiftedDegreeChoice? M shift = some choice ∧ choice.degree ≤ d
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRow?_some_valid` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L379))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRow?_some_valid` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean#L379))
 
 ```lean
 theorem leastShiftedDegreeRow?_some_valid
@@ -66,5 +66,5 @@ theorem leastShiftedDegreeRow?_some_valid
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Selection.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection.json)

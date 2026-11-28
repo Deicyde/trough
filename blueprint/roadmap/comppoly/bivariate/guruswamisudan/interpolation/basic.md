@@ -7,12 +7,12 @@ proof: formalized
 
 # Guruswami-Sudan Interpolation Basics
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean), by Valerii Huhnin.
 
 > Dense interpolation constraints and normalized witness helpers shared by
 > concrete interpolation backends.
 
-`CompPoly.GuruswamiSudan.interpolationMonomials` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L28))
+`CompPoly.GuruswamiSudan.interpolationMonomials` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L28))
 
 > Weighted-degree monomial basis used by dense interpolation.
 
@@ -20,7 +20,7 @@ proof: formalized
 def interpolationMonomials (params : GSInterpParams) : Array CBivariate.Monomial
 ```
 
-`CompPoly.GuruswamiSudan.interpolationYCap` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L32))
+`CompPoly.GuruswamiSudan.interpolationYCap` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L32))
 
 > Finite `Y` cap used by positive-`Y`-weight interpolation backends.
 
@@ -28,7 +28,7 @@ def interpolationMonomials (params : GSInterpParams) : Array CBivariate.Monomial
 def interpolationYCap (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.interpolationWidth` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L36))
+`CompPoly.GuruswamiSudan.interpolationWidth` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L36))
 
 > Number of coefficient columns used by bounded-`Y` interpolation backends.
 
@@ -36,7 +36,7 @@ def interpolationYCap (params : GSInterpParams) : Nat
 def interpolationWidth (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.interpolationShifts` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L40))
+`CompPoly.GuruswamiSudan.interpolationShifts` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L40))
 
 > Guruswami-Sudan shifted-degree shifts, `shift[j] = j * yWeight params`.
 
@@ -44,7 +44,7 @@ def interpolationWidth (params : GSInterpParams) : Nat
 def interpolationShifts (params : GSInterpParams) : Array Nat
 ```
 
-`CompPoly.GuruswamiSudan.distinctXCoordinatesListBool` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L44))
+`CompPoly.GuruswamiSudan.distinctXCoordinatesListBool` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L44))
 
 > Executable duplicate-`x` detector for packed point lists.
 
@@ -52,7 +52,7 @@ def interpolationShifts (params : GSInterpParams) : Array Nat
 def distinctXCoordinatesListBool {F : Type*} [BEq F] : List (F × F) → Bool
 ```
 
-`CompPoly.GuruswamiSudan.distinctXCoordinatesBool` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L50))
+`CompPoly.GuruswamiSudan.distinctXCoordinatesBool` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L50))
 
 > Executable duplicate-`x` detector for packed points.
 
@@ -60,7 +60,7 @@ def distinctXCoordinatesListBool {F : Type*} [BEq F] : List (F × F) → Bool
 def distinctXCoordinatesBool {F : Type*} [BEq F] (points : Array (F × F)) : Bool
 ```
 
-`CompPoly.GuruswamiSudan.InterpolationConstraint` (structure, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L54))
+`CompPoly.GuruswamiSudan.InterpolationConstraint` (structure, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L54))
 
 > Packed interpolation constraint `(x, y, a, b)`.
 
@@ -73,7 +73,7 @@ structure InterpolationConstraint (F : Type*) where
 deriving Repr
 ```
 
-`CompPoly.GuruswamiSudan.interpolationConstraints` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L62))
+`CompPoly.GuruswamiSudan.interpolationConstraints` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L62))
 
 > Hasse-derivative constraints for every point and every order `a + b < m`.
 
@@ -83,7 +83,7 @@ def interpolationConstraints {F : Type*}
     Array (InterpolationConstraint F)
 ```
 
-`CompPoly.GuruswamiSudan.hasseMonomialEval` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L75))
+`CompPoly.GuruswamiSudan.hasseMonomialEval` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L75))
 
 > One interpolation-matrix entry contributed by one monomial and one Hasse constraint.
 
@@ -92,7 +92,7 @@ def hasseMonomialEval {F : Type*} [Semiring F]
     (monomial : CBivariate.Monomial) (constraint : InterpolationConstraint F) : F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationConstraintMatrixOnBasis` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L86))
+`CompPoly.GuruswamiSudan.interpolationConstraintMatrixOnBasis` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L86))
 
 > Dense Hasse-constraint matrix over an explicitly supplied monomial basis.
 
@@ -102,7 +102,7 @@ def interpolationConstraintMatrixOnBasis {F : Type*} [Semiring F]
     DenseMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationConstraintMatrix` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L96))
+`CompPoly.GuruswamiSudan.interpolationConstraintMatrix` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L96))
 
 > Dense Hasse-constraint matrix for the interpolation problem.
 
@@ -112,7 +112,7 @@ def interpolationConstraintMatrix {F : Type*} [Semiring F]
     DenseMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationMatrixOnBasis` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L102))
+`CompPoly.GuruswamiSudan.interpolationMatrixOnBasis` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L102))
 
 > Dense interpolation matrix for packed point pairs over an explicit basis.
 
@@ -122,7 +122,7 @@ def interpolationMatrixOnBasis {F : Type*} [Semiring F]
     (points : Array (Prod F F)) (params : GSInterpParams) : DenseMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationMatrix` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L109))
+`CompPoly.GuruswamiSudan.interpolationMatrix` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L109))
 
 > Dense interpolation matrix for packed point pairs.
 
@@ -131,7 +131,7 @@ def interpolationMatrix {F : Type*} [Semiring F]
     (points : Array (Prod F F)) (params : GSInterpParams) : DenseMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L114))
+`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L114))
 
 > Rebuild a bivariate polynomial from a dense coefficient vector over a supplied basis.
 
@@ -141,7 +141,7 @@ def interpolationPolynomialOnBasis {F : Type*}
     (basis : Array CBivariate.Monomial) (coeffs : Array F) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomial` (definition, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L120))
+`CompPoly.GuruswamiSudan.interpolationPolynomial` (definition, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L120))
 
 > Rebuild a bivariate polynomial from its dense interpolation coefficient vector.
 
@@ -151,7 +151,7 @@ def interpolationPolynomial {F : Type*}
     (params : GSInterpParams) (coeffs : Array F) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.lowMessageDegreeInterpolation` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L126))
+`CompPoly.GuruswamiSudan.lowMessageDegreeInterpolation` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L126))
 
 > Constructive interpolation witness for the `messageDegree ≤ 1` GS range.
 
@@ -161,7 +161,7 @@ def lowMessageDegreeInterpolation {F : Type*}
     (points : Array (Prod F F)) (multiplicity : Nat) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L135))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L135))
 
 > Coefficients of a bivariate polynomial in a supplied monomial order.
 
@@ -170,7 +170,7 @@ def interpolationCoefficientVectorOnBasis {F : Type*} [Zero F]
     (basis : Array CBivariate.Monomial) (Q : CBivariate F) : Array F
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVector` (definition, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L141))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVector` (definition, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L141))
 
 > Coefficients of a bivariate polynomial in the interpolation monomial order.
 
@@ -179,7 +179,7 @@ def interpolationCoefficientVector {F : Type*} [Zero F]
     (params : GSInterpParams) (Q : CBivariate F) : Array F
 ```
 
-`CompPoly.GuruswamiSudan.firstNonzeroIndex?` (definition, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L146))
+`CompPoly.GuruswamiSudan.firstNonzeroIndex?` (definition, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L146))
 
 > The first nonzero vector coordinate, if one exists.
 
@@ -187,7 +187,7 @@ def interpolationCoefficientVector {F : Type*} [Zero F]
 def firstNonzeroIndex? {F : Type*} [Zero F] [BEq F] (v : Array F) : Option Nat
 ```
 
-`CompPoly.GuruswamiSudan.normalizeVector?` (definition, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L150))
+`CompPoly.GuruswamiSudan.normalizeVector?` (definition, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L150))
 
 > Normalize a nonzero vector by making its first nonzero coordinate equal to `1`.
 
@@ -196,7 +196,7 @@ def normalizeVector? {F : Type*} [Field F] [BEq F] (v : Array F) :
     Option (Array F)
 ```
 
-`CompPoly.GuruswamiSudan.IsNormalizedInterpolationWitness` (definition, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L162))
+`CompPoly.GuruswamiSudan.IsNormalizedInterpolationWitness` (definition, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L162))
 
 > Predicate for the normalized interpolation-witness API.
 
@@ -205,7 +205,7 @@ def IsNormalizedInterpolationWitness {F : Type*} [Zero F] [One F] [BEq F]
     (coeffs : Array F) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.normalizeInterpolationPolynomialOnBasis?` (definition, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L169))
+`CompPoly.GuruswamiSudan.normalizeInterpolationPolynomialOnBasis?` (definition, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L169))
 
 > Convert a homogeneous-kernel vector into a normalized basis polynomial.
 
@@ -216,7 +216,7 @@ def normalizeInterpolationPolynomialOnBasis? {F : Type*}
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.normalizeInterpolationPolynomial?` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L178))
+`CompPoly.GuruswamiSudan.normalizeInterpolationPolynomial?` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L178))
 
 > Convert a homogeneous-kernel vector into a normalized interpolation polynomial.
 
@@ -227,7 +227,7 @@ def normalizeInterpolationPolynomial? {F : Type*}
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.HasInterpolationDimensionSlackOnBasis` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L185))
+`CompPoly.GuruswamiSudan.HasInterpolationDimensionSlackOnBasis` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L185))
 
 > Dimension slack for a supplied interpolation basis.
 
@@ -237,7 +237,7 @@ def HasInterpolationDimensionSlackOnBasis {F : Type*}
     (points : Array (Prod F F)) (params : GSInterpParams) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.HasInterpolationDimensionSlack` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L191))
+`CompPoly.GuruswamiSudan.HasInterpolationDimensionSlack` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L191))
 
 > Dimension slack condition that guarantees a nontrivial homogeneous kernel.
 
@@ -246,7 +246,7 @@ def HasInterpolationDimensionSlack {F : Type*}
     (points : Array (Prod F F)) (params : GSInterpParams) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.interpolationWitnessIsValidBool` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L196))
+`CompPoly.GuruswamiSudan.interpolationWitnessIsValidBool` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean#L196))
 
 > Executable recognizer for the semantic interpolation witness contract.
 
@@ -264,5 +264,5 @@ def interpolationWitnessIsValidBool {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Basic.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Guruswami-Sudan Core Correctness
 
-`CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean), by Valerii Huhnin.
 
 > Public correctness theorems for the backend-parametric CompPoly
 > Guruswami-Sudan core.
 
-`CompPoly.GuruswamiSudan.gsCore_sound` (theorem, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L28))
+`CompPoly.GuruswamiSudan.gsCore_sound` (theorem, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L28))
 
 > Every polynomial returned by `gsCore` is a bounded-degree root of the
 > interpolation polynomial produced by the interpolation backend.
@@ -32,7 +32,7 @@ theorem gsCore_sound {F : Type*}
             CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.gsCore_complete_of_interpolate` (theorem, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L51))
+`CompPoly.GuruswamiSudan.gsCore_complete_of_interpolate` (theorem, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L51))
 
 > Completeness for the concrete interpolation polynomial returned by the
 > interpolation backend.
@@ -50,7 +50,7 @@ theorem gsCore_complete_of_interpolate {F : Type*}
     p ∈ (gsCore points interpContext rootContext params).toList
 ```
 
-`CompPoly.GuruswamiSudan.gsCore_complete_of_roots_all_valid_witnesses` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L68))
+`CompPoly.GuruswamiSudan.gsCore_complete_of_roots_all_valid_witnesses` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L68))
 
 > Backend-parametric completeness for candidates that root every valid
 > interpolation witness.
@@ -72,7 +72,7 @@ theorem gsCore_complete_of_roots_all_valid_witnesses {F : Type*}
     p ∈ (gsCore points interpContext rootContext params).toList
 ```
 
-`CompPoly.GuruswamiSudan.composeY_eq_zero_of_enough_matching_multiplicity_points` (theorem, [line 510](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L510))
+`CompPoly.GuruswamiSudan.composeY_eq_zero_of_enough_matching_multiplicity_points` (theorem, [line 510](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L510))
 
 > If a bounded-degree candidate agrees with enough distinct packed
 > multiplicity-constrained points, it roots any valid interpolation witness.
@@ -91,7 +91,7 @@ theorem composeY_eq_zero_of_enough_matching_multiplicity_points {F : Type*}
     CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.gsCore_complete_of_enough_matches` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L570))
+`CompPoly.GuruswamiSudan.gsCore_complete_of_enough_matches` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean#L570))
 
 > Packed-point semantic completeness for the algebraic GS core.
 
@@ -123,5 +123,5 @@ theorem gsCore_complete_of_enough_matches {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/CoreCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness.json)

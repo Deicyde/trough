@@ -7,7 +7,7 @@ proof: formalized
 
 # Bias of the reduce-modulo-order decoder
 
-`CompPoly.Data.Bytes.Bias`, in [CompPoly/Data/Bytes/Bias.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean), by Derek Sorensen.
+`CompPoly.Data.Bytes.Bias`, in [CompPoly/Data/Bytes/Bias.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean), by Derek Sorensen.
 
 > A challenge squeezed from a byte sponge is `CanonicalNat.ofBytesModOrder`: `n` bytes read as a
 > little-endian integer and reduced modulo `bound`. Reducing the `256 ^ n` strings modulo `bound`
@@ -24,7 +24,7 @@ proof: formalized
 > `Deserialize.CloseToUniform` instance for `ZMod p` is derived from the last theorem by casting
 > into its `PMF` distance.
 
-`CompPoly.Bytes.equivFin` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L39))
+`CompPoly.Bytes.equivFin` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L39))
 
 > Little-endian byte strings of length `n` are the naturals below `256 ^ n`.
 
@@ -32,7 +32,7 @@ proof: formalized
 def equivFin (n : ℕ) : Vector UInt8 n ≃ Fin (256 ^ n)
 ```
 
-`CompPoly.Bytes.instFintypeVectorUInt8` (instance, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L46))
+`CompPoly.Bytes.instFintypeVectorUInt8` (instance, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L46))
 
 > `n`-byte strings are finite, through `equivFin`.
 
@@ -40,19 +40,19 @@ def equivFin (n : ℕ) : Vector UInt8 n ≃ Fin (256 ^ n)
 instance instFintypeVectorUInt8 (n : ℕ) : Fintype (Vector UInt8 n)
 ```
 
-`CompPoly.Bytes.card_vector_uint8` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L49))
+`CompPoly.Bytes.card_vector_uint8` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L49))
 
 ```lean
 theorem card_vector_uint8 (n : ℕ) : Fintype.card (Vector UInt8 n) = 256 ^ n
 ```
 
-`CompPoly.CanonicalNat.ofNat_eq_iff` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L60))
+`CompPoly.CanonicalNat.ofNat_eq_iff` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L60))
 
 ```lean
 theorem ofNat_eq_iff {m : ℕ} {x : F} : ofNat m = x ↔ m % bound F = toNat x
 ```
 
-`CompPoly.CanonicalNat.fiberEquiv` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L69))
+`CompPoly.CanonicalNat.fiberEquiv` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L69))
 
 > The `n`-byte strings decoding to `x` modulo the order, as the naturals below `256 ^ n`
 > congruent to `toNat x`.
@@ -63,14 +63,14 @@ def fiberEquiv (n : ℕ) (x : F) :
       ≃ {k : ℕ // k < 256 ^ n ∧ k ≡ toNat x [MOD bound F]}
 ```
 
-`CompPoly.CanonicalNat.instFintypeFiber` (instance, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L88))
+`CompPoly.CanonicalNat.instFintypeFiber` (instance, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L88))
 
 ```lean
 instance instFintypeFiber [DecidableEq F] (n : ℕ) (x : F) :
     Fintype {v : Vector UInt8 n // ofBytesModOrder v = x}
 ```
 
-`CompPoly.CanonicalNat.card_fiber_ofBytesModOrder` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L96))
+`CompPoly.CanonicalNat.card_fiber_ofBytesModOrder` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L96))
 
 > Exactly how many `n`-byte strings decode to `x` modulo the order: the quotient
 > `256 ^ n / bound`, plus one for the residues below the remainder.
@@ -81,7 +81,7 @@ theorem card_fiber_ofBytesModOrder (n : ℕ) (x : F) :
       = 256 ^ n / bound F + if toNat x < 256 ^ n % bound F then 1 else 0
 ```
 
-`CompPoly.CanonicalNat.abs_card_fiber_div_sub_le` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L105))
+`CompPoly.CanonicalNat.abs_card_fiber_div_sub_le` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L105))
 
 > Every fiber is within one of the ideal `256 ^ n / bound`, so each residue's probability is
 > within `1 / 256 ^ n` of uniform.
@@ -92,7 +92,7 @@ theorem abs_card_fiber_div_sub_le (n : ℕ) (x : F) :
       - 1 / bound F| ≤ 1 / 256 ^ n
 ```
 
-`CompPoly.CanonicalNat.tv_ofBytesModOrder_le` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean#L139))
+`CompPoly.CanonicalNat.tv_ofBytesModOrder_le` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean#L139))
 
 > The total-variation distance of `ofBytesModOrder` on `n` bytes from the uniform
 > distribution on `F` is at most `bound / 256 ^ n`: sixteen bytes beyond the width give
@@ -110,5 +110,5 @@ theorem tv_ofBytesModOrder_le [Fintype F] (n : ℕ) :
 
 ## Sources
 
-- [CompPoly/Data/Bytes/Bias.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/Bias.lean)
+- [CompPoly/Data/Bytes/Bias.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Bytes/Bias.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Bytes.Bias.json)

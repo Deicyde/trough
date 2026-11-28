@@ -7,7 +7,7 @@ proof: formalized
 
 # Las Vegas Linear-Factor Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Basic`, in [CompPoly/Univariate/Roots/LasVegas/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Basic`, in [CompPoly/Univariate/Roots/LasVegas/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean), by Valerii Huhnin.
 
 > Pure, bounded Las Vegas splitting for finite-field root products. The splitter
 > uses the odd-field Cantor-Zassenhaus branch for odd fields, the characteristic
@@ -15,7 +15,7 @@ proof: formalized
 > enumeration after the configured probe cutoff or when no randomized branch is
 > available.
 
-`CompPoly.CPolynomial.Roots.FiniteField.ProbeFamily` (structure, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L34))
+`CompPoly.CPolynomial.Roots.FiniteField.ProbeFamily` (structure, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L34))
 
 > Lazy pure probe source for deterministic Las Vegas splitting.
 
@@ -24,7 +24,7 @@ structure ProbeFamily (F : Type*) [Field F] [BEq F] [LawfulBEq F] where
   probe : Nat → CPolynomial F → Nat → CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.seededLinearProbeFamily` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L38))
+`CompPoly.CPolynomial.Roots.FiniteField.seededLinearProbeFamily` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L38))
 
 > A simple deterministic affine probe source derived from a natural seed.
 
@@ -33,7 +33,7 @@ def seededLinearProbeFamily {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (seed : Nat) : ProbeFamily F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tableProbeFamily` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L46))
+`CompPoly.CPolynomial.Roots.FiniteField.tableProbeFamily` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L46))
 
 > Probe family reading a finite table of probe polynomials by attempt index.
 
@@ -42,7 +42,7 @@ def tableProbeFamily {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (table : List (CPolynomial F)) : ProbeFamily F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.LasVegasConfig` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L51))
+`CompPoly.CPolynomial.Roots.FiniteField.LasVegasConfig` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L51))
 
 > Configuration for bounded Las Vegas splitting.
 
@@ -53,7 +53,7 @@ structure LasVegasConfig where
   tryEvenTraceSplitting : Bool := true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitterInput` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L57))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitterInput` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L57))
 
 > Root-product input predicate for the Las Vegas splitter.
 
@@ -62,7 +62,7 @@ def lasVegasSplitterInput {F : Type*} [Field F]
     (q : Nat) (p : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.reduceModWith` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L62))
+`CompPoly.CPolynomial.Roots.FiniteField.reduceModWith` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L62))
 
 > Reduce a canonical polynomial modulo a canonical modulus with the selected raw backend.
 
@@ -72,7 +72,7 @@ def reduceModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.powModWith` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L71))
+`CompPoly.CPolynomial.Roots.FiniteField.powModWith` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L71))
 
 > `base^exponent mod modulus`, lifted through the selected raw arithmetic backends.
 
@@ -83,7 +83,7 @@ def powModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSumPolynomialLoopWith` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L77))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSumPolynomialLoopWith` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L77))
 
 ```lean
 def tracePowerSumPolynomialLoopWith {F : Type*}
@@ -93,7 +93,7 @@ def tracePowerSumPolynomialLoopWith {F : Type*}
     Nat → CPolynomial F → CPolynomial F → CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSumPolynomialWith` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L89))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSumPolynomialWith` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L89))
 
 > Polynomial-residue analogue of Shoup's trace power sum.
 
@@ -105,7 +105,7 @@ def tracePowerSumPolynomialWith {F : Type*}
     CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceBasisProbeFamily` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L103))
+`CompPoly.CPolynomial.Roots.FiniteField.traceBasisProbeFamily` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L103))
 
 > Deterministic trace-coordinate probe family cycling through the Shoup basis.
 >
@@ -119,7 +119,7 @@ def traceBasisProbeFamily {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     ProbeFamily F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.isNontrivialProperChild` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L111))
+`CompPoly.CPolynomial.Roots.FiniteField.isNontrivialProperChild` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L111))
 
 > Keep only nonconstant children with strictly smaller representation size than the parent.
 
@@ -128,7 +128,7 @@ def isNontrivialProperChild {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (parent child : CPolynomial F) : Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.nontrivialProperChildren` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L116))
+`CompPoly.CPolynomial.Roots.FiniteField.nontrivialProperChildren` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L116))
 
 > Filter candidate children down to nonconstant, proper children.
 
@@ -138,14 +138,14 @@ def nontrivialProperChildren {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L121))
+`CompPoly.CPolynomial.Roots.FiniteField.quotientAfterChild` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L121))
 
 ```lean
 def quotientAfterChild {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (parent child : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith` (definition, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L136))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith` (definition, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L136))
 
 > One odd-field Cantor-Zassenhaus degree-one split attempt.
 >
@@ -162,7 +162,7 @@ def cantorZassenhausOddAttemptWith {F : Type*}
     Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L160))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L160))
 
 > One characteristic-two trace split attempt.
 >
@@ -180,7 +180,7 @@ def cantorZassenhausEvenTraceAttemptWith {F : Type*}
     Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L174))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L174))
 
 ```lean
 def tryOddSplitAttemptsWith {F : Type*}
@@ -190,7 +190,7 @@ def tryOddSplitAttemptsWith {F : Type*}
     Nat → Nat → Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L185))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L185))
 
 ```lean
 def tryEvenTraceSplitAttemptsWith {F : Type*}
@@ -201,14 +201,14 @@ def tryEvenTraceSplitAttemptsWith {F : Type*}
     Nat → Nat → Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceContextMatchesQ` (definition, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L197))
+`CompPoly.CPolynomial.Roots.FiniteField.traceContextMatchesQ` (definition, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L197))
 
 ```lean
 def traceContextMatchesQ {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (traceCtx : SmallPrimeTraceContext F) (q : Nat) : Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLoopWith` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L201))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLoopWith` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L201))
 
 ```lean
 def lasVegasSplitLoopWith {F : Type*}
@@ -220,7 +220,7 @@ def lasVegasSplitLoopWith {F : Type*}
     Nat → List (CPolynomial F) → Array (CPolynomial F) → Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWithTrace?` (definition, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L246))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWithTrace?` (definition, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L246))
 
 > Candidate linear factors from bounded Las Vegas splitting plus enumeration fallback.
 
@@ -234,7 +234,7 @@ def lasVegasSplitCandidatesWithTrace? {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWith` (definition, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L258))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWith` (definition, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L258))
 
 > Candidate linear factors using odd splitting only, plus enumeration fallback.
 
@@ -247,7 +247,7 @@ def lasVegasSplitCandidatesWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWithTrace` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L267))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitCandidatesWithTrace` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L267))
 
 > Candidate linear factors using supplied characteristic-two trace metadata when applicable.
 
@@ -260,7 +260,7 @@ def lasVegasSplitCandidatesWithTrace {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace?` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L276))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace?` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L276))
 
 > Las Vegas splitting with optional trace metadata, returning only represented linear factors.
 
@@ -274,7 +274,7 @@ def lasVegasSplitLinearFactorsWithTrace? {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith` (definition, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L287))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith` (definition, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L287))
 
 > Las Vegas splitting, returning only represented linear factors.
 
@@ -287,7 +287,7 @@ def lasVegasSplitLinearFactorsWith {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace` (definition, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L296))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace` (definition, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L296))
 
 > Las Vegas splitting using supplied characteristic-two trace metadata when applicable.
 
@@ -300,7 +300,7 @@ def lasVegasSplitLinearFactorsWithTrace {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith_sound` (theorem, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L305))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith_sound` (theorem, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L305))
 
 > The final Las Vegas filter only keeps represented linear factors.
 
@@ -315,7 +315,7 @@ theorem lasVegasSplitLinearFactorsWith_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace_sound` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L316))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace_sound` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean#L316))
 
 > The final Las Vegas filter with trace metadata only keeps represented linear factors.
 
@@ -337,5 +337,5 @@ theorem lasVegasSplitLinearFactorsWithTrace_sound {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Basic.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Basic.json)

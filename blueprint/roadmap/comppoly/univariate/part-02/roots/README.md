@@ -2,7 +2,7 @@
 
 30 modules under `CompPoly/Univariate/Roots/`, with 393 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.Roots.LasVegas`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas.lean), [`CompPoly.Univariate.Roots.Shoup`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup.lean) and [`CompPoly.Univariate.Roots.SmoothSubgroup`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup.lean).
+These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.Roots.LasVegas`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas.lean), [`CompPoly.Univariate.Roots.Shoup`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup.lean) and [`CompPoly.Univariate.Roots.SmoothSubgroup`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/SmoothSubgroup.lean).
 
 - [Finite-Field Root Backend](backend.md)
 - [Finite-Field Root Contexts](context.md)

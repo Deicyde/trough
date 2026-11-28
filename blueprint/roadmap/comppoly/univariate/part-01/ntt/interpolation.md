@@ -7,12 +7,12 @@ proof: formalized
 
 # NTT and Interpolation
 
-`CompPoly.Univariate.NTT.Interpolation`, in [CompPoly/Univariate/NTT/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTT.Interpolation`, in [CompPoly/Univariate/NTT/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean), by Valerii Huhnin.
 
 > Bridge theorem declarations connecting the NTT specification layer to power-domain
 > interpolation.
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_eval_node_eq` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L107))
+`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_eval_node_eq` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L107))
 
 > Pointwise form of `inverseSpec_interpolatePow_eq`.
 
@@ -21,7 +21,7 @@ theorem inverseSpec_eval_node_eq (D : Domain R) (values : Array R) (k : D.Idx) :
     CPolynomial.Raw.eval (D.node k) (inverseSpec D values) = values.getD k.1 0
 ```
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_evalOnDomain_eq` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L119))
+`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_evalOnDomain_eq` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L119))
 
 > The inverse NTT specification evaluates back to the input values on the NTT domain.
 
@@ -30,7 +30,7 @@ theorem inverseSpec_evalOnDomain_eq (D : Domain R) (values : Array R) :
     evalOnDomain D (inverseSpec D values) = loadNaturalArray D values
 ```
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_interpolatePow_eq` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L128))
+`CompPoly.CPolynomial.NTT.Inverse.inverseSpec_interpolatePow_eq` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L128))
 
 > The inverse NTT specification interpolates the input values on the NTT domain.
 
@@ -41,7 +41,7 @@ theorem inverseSpec_interpolatePow_eq [BEq R] [LawfulBEq R]
       (CLagrange.interpolatePow D.omega (loadNaturalVector D values)).val
 ```
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_interpolatePow_eq` (theorem, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L187))
+`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_interpolatePow_eq` (theorem, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L187))
 
 > The inverse NTT implementation interpolates the input values on the NTT domain.
 
@@ -52,7 +52,7 @@ theorem inverseImpl_interpolatePow_eq [BEq R] [LawfulBEq R]
       (CLagrange.interpolatePow D.omega (loadNaturalVector D values)).val
 ```
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_eval_node_eq` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L195))
+`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_eval_node_eq` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L195))
 
 > Pointwise form of `inverseImpl_interpolatePow_eq`.
 
@@ -61,7 +61,7 @@ theorem inverseImpl_eval_node_eq (D : Domain R) (values : Array R) (k : D.Idx) :
     CPolynomial.Raw.eval (D.node k) (inverseImpl D values) = values.getD k.1 0
 ```
 
-`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_evalOnDomain_eq` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L201))
+`CompPoly.CPolynomial.NTT.Inverse.inverseImpl_evalOnDomain_eq` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L201))
 
 > The inverse NTT implementation evaluates back to the input values on the NTT domain.
 
@@ -70,7 +70,7 @@ theorem inverseImpl_evalOnDomain_eq (D : Domain R) (values : Array R) :
     evalOnDomain D (inverseImpl D values) = loadNaturalArray D values
 ```
 
-`CompPoly.CPolynomial.NTT.loadNaturalVector_toArray` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L210))
+`CompPoly.CPolynomial.NTT.loadNaturalVector_toArray` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L210))
 
 > Loading a domain-sized vector back from its array is the identity.
 
@@ -79,7 +79,7 @@ theorem loadNaturalVector_toArray [Field R] (D : Domain R) (values : Vector R D.
     loadNaturalVector D values.toArray = values
 ```
 
-`CompPoly.CPolynomial.NTT.interpolate` (definition, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L220))
+`CompPoly.CPolynomial.NTT.interpolate` (definition, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L220))
 
 > Interpolate natural-order values on the NTT domain through the inverse transform.
 >
@@ -92,7 +92,7 @@ def interpolate [BEq R] [LawfulBEq R] (D : Domain R) (values : Vector R D.n) :
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTT.interpolate_eq_interpolatePow` (theorem, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L226))
+`CompPoly.CPolynomial.NTT.interpolate_eq_interpolatePow` (theorem, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L226))
 
 > NTT interpolation is Lagrange interpolation on the powers of the domain root.
 
@@ -102,7 +102,7 @@ theorem interpolate_eq_interpolatePow [BEq R] [LawfulBEq R]
     interpolate D values = CLagrange.interpolatePow D.omega values
 ```
 
-`CompPoly.CPolynomial.NTT.eval_interpolate_node` (theorem, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean#L233))
+`CompPoly.CPolynomial.NTT.eval_interpolate_node` (theorem, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean#L233))
 
 > NTT interpolation takes each value at its domain node.
 
@@ -124,5 +124,5 @@ theorem eval_interpolate_node [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/Interpolation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Interpolation.lean)
+- [CompPoly/Univariate/NTT/Interpolation.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Interpolation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.Interpolation.json)

@@ -7,18 +7,18 @@ proof: formalized
 
 # Dense Homogeneous-Kernel Correctness
 
-`CompPoly.LinearAlgebra.Dense.KernelCorrectness`, in [CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.KernelCorrectness`, in [CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean), by Valerii Huhnin.
 
 > Correctness contracts for executable dense homogeneous-kernel witnesses.
 
-`CompPoly.DenseMatrix.homogeneousWitness_eq_none_iff` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L99))
+`CompPoly.DenseMatrix.homogeneousWitness_eq_none_iff` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L99))
 
 ```lean
 theorem homogeneousWitness_eq_none_iff [Field F] [BEq F] (M : DenseMatrix F) :
     homogeneousWitness M = none ↔ (homogeneousKernelBasis M).size = 0
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness_exists_of_rows_lt_cols` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L107))
+`CompPoly.DenseMatrix.homogeneousWitness_exists_of_rows_lt_cols` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L107))
 
 > A matrix with more columns than rows has an executable homogeneous witness.
 
@@ -28,7 +28,7 @@ theorem homogeneousWitness_exists_of_rows_lt_cols [Field F] [BEq F] [LawfulBEq F
     ∃ v, homogeneousWitness M = some v
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness_width` (theorem, [line 560](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L560))
+`CompPoly.DenseMatrix.homogeneousWitness_width` (theorem, [line 560](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L560))
 
 > Any homogeneous witness returned by the executable kernel search has matrix-column width.
 
@@ -38,7 +38,7 @@ theorem homogeneousWitness_width [Field F] [BEq F]
     VectorWidth M v
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness_nonzero` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L570))
+`CompPoly.DenseMatrix.homogeneousWitness_nonzero` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L570))
 
 > Any homogeneous witness returned by the executable kernel search is nonzero.
 
@@ -48,7 +48,7 @@ theorem homogeneousWitness_nonzero [Field F] [BEq F]
     NonzeroVector v
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness_sound` (theorem, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L579))
+`CompPoly.DenseMatrix.homogeneousWitness_sound` (theorem, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L579))
 
 > Soundness of the homogeneous witness returned by Gaussian elimination.
 
@@ -59,7 +59,7 @@ theorem homogeneousWitness_sound [Field F] [BEq F] [LawfulBEq F]
     VectorWidth M v /\ IsHomogeneousSolution M v /\ NonzeroVector v
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness_none_complete` (theorem, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L616))
+`CompPoly.DenseMatrix.homogeneousWitness_none_complete` (theorem, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean#L616))
 
 > If no homogeneous witness is returned, the homogeneous kernel is trivial.
 
@@ -79,5 +79,5 @@ theorem homogeneousWitness_none_complete [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean)
+- [CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.KernelCorrectness.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization of field extensions
 
-`CompPoly.Fields.Extension.Bytes`, in [CompPoly/Fields/Extension/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bytes.lean), by Derek Sorensen.
+`CompPoly.Fields.Extension.Bytes`, in [CompPoly/Fields/Extension/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Bytes.lean), by Derek Sorensen.
 
 > An element of `Ext P` is its coefficient vector, ascending powers of the adjoined root, and it
 > encodes as the concatenation of the coefficient encodings: `P.d * width F` bytes. This is how
@@ -22,14 +22,14 @@ proof: formalized
 > `CompPoly.Data.Bytes.CanonicalNat` is imported so that an extension of a `ZMod` base field
 > serializes with no further imports.
 
-`CompPoly.Extension.Ext.byteCodec_width` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bytes.lean#L43))
+`CompPoly.Extension.Ext.byteCodec_width` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Bytes.lean#L43))
 
 ```lean
 theorem byteCodec_width [ByteCodec F] :
     ByteCodec.width (Ext P) = P.d * ByteCodec.width F
 ```
 
-`CompPoly.Extension.Ext.toBytes_eq` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bytes.lean#L46))
+`CompPoly.Extension.Ext.toBytes_eq` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Bytes.lean#L46))
 
 ```lean
 theorem toBytes_eq [ByteCodec F] (x : Ext P) : ByteCodec.toBytes x = ByteCodec.toBytes x.coeffs
@@ -42,5 +42,5 @@ theorem toBytes_eq [ByteCodec F] (x : Ext P) : ByteCodec.toBytes x = ByteCodec.t
 
 ## Sources
 
-- [CompPoly/Fields/Extension/Bytes.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bytes.lean)
+- [CompPoly/Fields/Extension/Bytes.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Bytes.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Extension.Bytes.json)

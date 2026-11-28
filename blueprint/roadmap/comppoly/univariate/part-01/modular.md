@@ -7,12 +7,12 @@ proof: formalized
 
 # Modular Operations on Univariate Polynomials
 
-`CompPoly.Univariate.Modular`, in [CompPoly/Univariate/Modular.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Modular`, in [CompPoly/Univariate/Modular.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean), by Valerii Huhnin.
 
 > Reusable executable modular arithmetic for canonical `CPolynomial`s over public
 > `CPolynomial.MulContext` and `CPolynomial.ModContext` backends.
 
-`CompPoly.CPolynomial.mulModWith` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean#L24))
+`CompPoly.CPolynomial.mulModWith` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean#L24))
 
 > Multiply modulo a polynomial, treating zero modulus as no reduction.
 
@@ -22,7 +22,7 @@ def mulModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (modulus p q : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.powModBinaryAuxWith` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean#L34))
+`CompPoly.CPolynomial.powModBinaryAuxWith` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean#L34))
 
 > Binary modular exponentiation accumulator.
 
@@ -33,7 +33,7 @@ def powModBinaryAuxWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Nat → CPolynomial F → CPolynomial F → CPolynomial F
 ```
 
-`CompPoly.CPolynomial.powModWith` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean#L52))
+`CompPoly.CPolynomial.powModWith` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean#L52))
 
 > Modular exponentiation by repeated squaring.
 
@@ -43,7 +43,7 @@ def powModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (modulus base : CPolynomial F) (exponent : Nat) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.xModWith` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean#L63))
+`CompPoly.CPolynomial.xModWith` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean#L63))
 
 > `X mod modulus`, with zero modulus treated as no reduction.
 
@@ -52,7 +52,7 @@ def xModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (D : ModContext F) : CPolynomial F → CPolynomial F
 ```
 
-`CompPoly.CPolynomial.xPowSubXModWith` (definition, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean#L72))
+`CompPoly.CPolynomial.xPowSubXModWith` (definition, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean#L72))
 
 > `(X^q mod modulus) - (X mod modulus)`, without materializing `X^q - X`.
 
@@ -68,5 +68,5 @@ def xPowSubXModWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/Modular.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Modular.lean)
+- [CompPoly/Univariate/Modular.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Modular.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Modular.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Irreducibility of `X^6 + X^3 + 1` over KoalaBear
 
-`CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible`, in [CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean), by Derek Sorensen.
+`CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible`, in [CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean), by Derek Sorensen.
 
 > The sextic `X^6 + X^3 + 1` is the ninth cyclotomic polynomial `Φ₉`, so it is irreducible over
 > `KoalaBear.Field` exactly because `p` has multiplicative order 6 modulo 9 (`p ≡ 2 mod 9`); its
@@ -41,7 +41,7 @@ proof: formalized
 > * `KoalaBear.sexticPoly_irreducible`, and the `Fact` instance consumed by
 >   `CompPoly.Extension.Ext.instField`.
 
-`KoalaBear.sexticPoly` (definition, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L55))
+`KoalaBear.sexticPoly` (definition, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L55))
 
 > The defining sextic `X^6 + X^3 + 1 = Φ₉` of the degree-6 KoalaBear extension.
 
@@ -49,7 +49,7 @@ proof: formalized
 noncomputable def sexticPoly : Polynomial Field
 ```
 
-`KoalaBear.sexticL` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L59))
+`KoalaBear.sexticL` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L59))
 
 > The sextic's little-endian `ℕ`-coefficient encoding. Every coefficient of `Φ₉` is `0` or `1`,
 > so unlike the quintic this needs no `p - 1` literal to spell a negative coefficient.
@@ -58,7 +58,7 @@ noncomputable def sexticPoly : Polynomial Field
 def sexticL : List ℕ
 ```
 
-`KoalaBear.toPoly_sexticL` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L62))
+`KoalaBear.toPoly_sexticL` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L62))
 
 > The `ℕ`-coefficient encoding denotes the sextic.
 
@@ -66,13 +66,13 @@ def sexticL : List ℕ
 theorem toPoly_sexticL : toPoly fieldSize sexticL = sexticPoly
 ```
 
-`KoalaBear.sexticPoly_natDegree` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L68))
+`KoalaBear.sexticPoly_natDegree` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L68))
 
 ```lean
 theorem sexticPoly_natDegree : sexticPoly.natDegree = 6
 ```
 
-`KoalaBear.sexticPoly_ne_zero` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L72))
+`KoalaBear.sexticPoly_ne_zero` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L72))
 
 ```lean
 theorem sexticPoly_ne_zero : sexticPoly ≠ 0
@@ -84,7 +84,7 @@ theorem sexticPoly_ne_zero : sexticPoly ≠ 0
 > chain (`cur² = q·f + r`, coefficientwise mod `p`), and `chainExp` recomputes the exponent the
 > chain reaches. `eqModP` checks the Bézout identities for coprimality.
 
-`KoalaBear.sextic_trace_chain` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L88))
+`KoalaBear.sextic_trace_chain` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L88))
 
 > The 258-step chain for `X^(p^6) mod f` verifies and ends at the residue `X`.
 
@@ -93,7 +93,7 @@ theorem sextic_trace_chain :
     runChain fieldSize sexticL [0, 1] SexticCert.traceSteps = some [0, 1]
 ```
 
-`KoalaBear.sextic_trace_exp` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L93))
+`KoalaBear.sextic_trace_exp` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L93))
 
 > The trace chain computes the exponent `p^6`.
 
@@ -103,7 +103,7 @@ theorem sextic_trace_exp : chainExp 1 SexticCert.traceSteps = fieldSize ^ 6
 
 > #### Coprimality with `X^(p^3) - X`, the check for the prime factor `2` of `6`
 
-`KoalaBear.sextic_cop3_chain` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L99))
+`KoalaBear.sextic_cop3_chain` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L99))
 
 > The 121-step chain for `X^(p^3) mod f` verifies and ends at the recorded residue.
 
@@ -112,7 +112,7 @@ theorem sextic_cop3_chain :
     runChain fieldSize sexticL [0, 1] SexticCert.cop3Steps = some SexticCert.cop3Rp
 ```
 
-`KoalaBear.sextic_cop3_exp` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L104))
+`KoalaBear.sextic_cop3_exp` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L104))
 
 > The chain computes the exponent `p^3`.
 
@@ -120,7 +120,7 @@ theorem sextic_cop3_chain :
 theorem sextic_cop3_exp : chainExp 1 SexticCert.cop3Steps = fieldSize ^ 3
 ```
 
-`KoalaBear.sextic_cop3_w_check` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L107))
+`KoalaBear.sextic_cop3_w_check` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L107))
 
 > The recorded residue satisfies `cop3Rp = cop3W + X`.
 
@@ -129,7 +129,7 @@ theorem sextic_cop3_w_check :
     eqModP fieldSize SexticCert.cop3Rp (addNat SexticCert.cop3W [0, 1]) = true
 ```
 
-`KoalaBear.sextic_cop3_bezout_check` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L111))
+`KoalaBear.sextic_cop3_bezout_check` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L111))
 
 > The Bézout identity `cop3U·f + cop3V·cop3W = 1` verifies.
 
@@ -142,7 +142,7 @@ theorem sextic_cop3_bezout_check :
 
 > #### Coprimality with `X^(p^2) - X`, the check for the prime factor `3` of `6`
 
-`KoalaBear.sextic_cop2_chain` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L120))
+`KoalaBear.sextic_cop2_chain` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L120))
 
 > The 75-step chain for `X^(p^2) mod f` verifies and ends at the recorded residue.
 
@@ -151,7 +151,7 @@ theorem sextic_cop2_chain :
     runChain fieldSize sexticL [0, 1] SexticCert.cop2Steps = some SexticCert.cop2Rp
 ```
 
-`KoalaBear.sextic_cop2_exp` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L125))
+`KoalaBear.sextic_cop2_exp` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L125))
 
 > The chain computes the exponent `p^2`.
 
@@ -159,7 +159,7 @@ theorem sextic_cop2_chain :
 theorem sextic_cop2_exp : chainExp 1 SexticCert.cop2Steps = fieldSize ^ 2
 ```
 
-`KoalaBear.sextic_cop2_w_check` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L128))
+`KoalaBear.sextic_cop2_w_check` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L128))
 
 > The recorded residue satisfies `cop2Rp = cop2W + X`.
 
@@ -168,7 +168,7 @@ theorem sextic_cop2_w_check :
     eqModP fieldSize SexticCert.cop2Rp (addNat SexticCert.cop2W [0, 1]) = true
 ```
 
-`KoalaBear.sextic_cop2_bezout_check` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L132))
+`KoalaBear.sextic_cop2_bezout_check` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L132))
 
 > The Bézout identity `cop2U·f + cop2V·cop2W = 1` verifies.
 
@@ -179,7 +179,7 @@ theorem sextic_cop2_bezout_check :
       = true
 ```
 
-`KoalaBear.sexticPoly_irreducible` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L144))
+`KoalaBear.sexticPoly_irreducible` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean#L144))
 
 > **`X^6 + X^3 + 1` is irreducible over KoalaBear**, by Rabin's test at a degree with two prime
 > factors, with kernel-checked certificates for all three conditions.
@@ -200,5 +200,5 @@ theorem sexticPoly_irreducible : Irreducible sexticPoly
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean)
+- [CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible.json)

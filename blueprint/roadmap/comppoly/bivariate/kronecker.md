@@ -7,7 +7,7 @@ proof: formalized
 
 # Kronecker substitution for bivariate polynomials
 
-`CompPoly.Bivariate.Kronecker`, in [CompPoly/Bivariate/Kronecker.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean), by Dimitris Mitsios.
+`CompPoly.Bivariate.Kronecker`, in [CompPoly/Bivariate/Kronecker.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean), by Dimitris Mitsios.
 
 > Kronecker substitution turns a bivariate multiplication into a univariate multiplication by
 > fixing a gap `D` and substituting `X ↦ t`, `Y ↦ t ^ D`. This sends a bivariate
@@ -36,7 +36,7 @@ proof: formalized
 > * `kroneckerUnpack_withFallback` / `kroneckerUnpack_withFallbackFast` — multiplication backed by
 >   the classic and recursive NTT.
 
-`CompPoly.CPolynomial.coeff_mul_X_pow` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L54))
+`CompPoly.CPolynomial.coeff_mul_X_pow` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L54))
 
 > Coefficient of `c * X ^ m`.
 
@@ -46,7 +46,7 @@ theorem coeff_mul_X_pow [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     coeff (c * X ^ m) n = if m ≤ n then coeff c (n - m) else 0
 ```
 
-`CompPoly.CPolynomial.shiftPow` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L70))
+`CompPoly.CPolynomial.shiftPow` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L70))
 
 > Multiplication by `X ^ m`, implemented as a coefficient shift.
 
@@ -54,7 +54,7 @@ theorem coeff_mul_X_pow [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
 def shiftPow [Zero R] [BEq R] [LawfulBEq R] (m : ℕ) (p : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.coeff_shiftPow` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L74))
+`CompPoly.CPolynomial.coeff_shiftPow` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L74))
 
 > Coefficient of `shiftPow m p`.
 
@@ -63,7 +63,7 @@ theorem coeff_shiftPow [Zero R] [BEq R] [LawfulBEq R] (m : ℕ) (p : CPolynomial
     coeff (shiftPow m p) n = if m ≤ n then coeff p (n - m) else 0
 ```
 
-`CompPoly.CPolynomial.shiftPow_eq_mul_X_pow` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L87))
+`CompPoly.CPolynomial.shiftPow_eq_mul_X_pow` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L87))
 
 > `shiftPow m p = p * X ^ m`.
 
@@ -72,7 +72,7 @@ theorem shiftPow_eq_mul_X_pow [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     (m : ℕ) (p : CPolynomial R) : shiftPow m p = p * X ^ m
 ```
 
-`CompPoly.CBivariate.kroneckerPack` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L116))
+`CompPoly.CBivariate.kroneckerPack` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L116))
 
 > Pack a bivariate polynomial into a univariate one with gap `D`.
 
@@ -81,7 +81,7 @@ def kroneckerPack [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     (D : ℕ) (p : CBivariate R) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.kroneckerUnpack` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L121))
+`CompPoly.CBivariate.kroneckerUnpack` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L121))
 
 > Unpack a univariate polynomial into a bivariate one with gap `D`.
 
@@ -90,7 +90,7 @@ def kroneckerUnpack [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [Decidable
     (D : ℕ) (P : CPolynomial R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.kroneckerPack_mul` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L127))
+`CompPoly.CBivariate.kroneckerPack_mul` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L127))
 
 > Packing is multiplicative.
 
@@ -100,7 +100,7 @@ theorem kroneckerPack_mul [CommSemiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     kroneckerPack D (p * q) = kroneckerPack D p * kroneckerPack D q
 ```
 
-`CompPoly.CBivariate.kroneckerPack_eq_sum` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L136))
+`CompPoly.CBivariate.kroneckerPack_eq_sum` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L136))
 
 > Packing written as a sum of shifted `Y`-coefficients.
 
@@ -112,7 +112,7 @@ theorem kroneckerPack_eq_sum [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
           (fun i => CPolynomial.coeff p i * CPolynomial.X ^ (D * i))
 ```
 
-`CompPoly.CBivariate.coeff_kroneckerPack` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L148))
+`CompPoly.CBivariate.coeff_kroneckerPack` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L148))
 
 > Coefficient of the packed polynomial, when the `X`-degree is below the gap.
 
@@ -122,7 +122,7 @@ theorem coeff_kroneckerPack [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     CPolynomial.coeff (kroneckerPack D p) n = coeff p (n % D) (n / D)
 ```
 
-`CompPoly.CBivariate.kroneckerPackFast` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L173))
+`CompPoly.CBivariate.kroneckerPackFast` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L173))
 
 > Efficient packing, linear in the output.
 
@@ -131,7 +131,7 @@ def kroneckerPackFast [Semiring R] [BEq R] [LawfulBEq R]
     (D : ℕ) (p : CBivariate R) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.kroneckerPackFast_eq` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L179))
+`CompPoly.CBivariate.kroneckerPackFast_eq` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L179))
 
 > `kroneckerPackFast` equals `kroneckerPack`.
 
@@ -140,7 +140,7 @@ theorem kroneckerPackFast_eq [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     (D : ℕ) (p : CBivariate R) : kroneckerPackFast D p = kroneckerPack D p
 ```
 
-`CompPoly.CBivariate.coeff_kroneckerUnpack_of_le` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L193))
+`CompPoly.CBivariate.coeff_kroneckerUnpack_of_le` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L193))
 
 > Unpacked coefficients with `X`-exponent at least `D` are zero.
 
@@ -150,7 +150,7 @@ theorem coeff_kroneckerUnpack_of_le [Semiring R] [BEq R] [LawfulBEq R] [Nontrivi
     coeff (kroneckerUnpack D P) i j = 0
 ```
 
-`CompPoly.CBivariate.coeff_kroneckerUnpack` (theorem, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L206))
+`CompPoly.CBivariate.coeff_kroneckerUnpack` (theorem, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L206))
 
 > Unpacked coefficient at `(i, j)` with `i < D`.
 
@@ -160,7 +160,7 @@ theorem coeff_kroneckerUnpack [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     coeff (kroneckerUnpack D P) i j = CPolynomial.coeff P (D * j + i)
 ```
 
-`CompPoly.CBivariate.window` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L227))
+`CompPoly.CBivariate.window` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L227))
 
 > The length-`D` slice of `P` holding column `j`.
 
@@ -168,7 +168,7 @@ theorem coeff_kroneckerUnpack [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
 def window [Zero R] [BEq R] [LawfulBEq R] (D j : ℕ) (P : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.coeff_window` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L232))
+`CompPoly.CBivariate.coeff_window` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L232))
 
 > Coefficient of a column slice.
 
@@ -178,7 +178,7 @@ theorem coeff_window [Zero R] [BEq R] [LawfulBEq R] (D j : ℕ) (P : CPolynomial
       if i < D then CPolynomial.coeff P (D * j + i) else 0
 ```
 
-`CompPoly.CBivariate.kroneckerUnpackFast` (definition, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L252))
+`CompPoly.CBivariate.kroneckerUnpackFast` (definition, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L252))
 
 > Efficient unpacking, assembling columns directly.
 
@@ -187,7 +187,7 @@ def kroneckerUnpackFast [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [Decid
     (D : ℕ) (P : CPolynomial R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.kroneckerUnpackFast_eq` (theorem, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L258))
+`CompPoly.CBivariate.kroneckerUnpackFast_eq` (theorem, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L258))
 
 > `kroneckerUnpackFast` equals `kroneckerUnpack`.
 
@@ -197,7 +197,7 @@ theorem kroneckerUnpackFast_eq [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R]
     kroneckerUnpackFast D P = kroneckerUnpack D P
 ```
 
-`CompPoly.CBivariate.kroneckerUnpack_kroneckerPack` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L287))
+`CompPoly.CBivariate.kroneckerUnpack_kroneckerPack` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L287))
 
 > Unpacking recovers a packed polynomial when its `X`-degree is below the gap.
 
@@ -207,7 +207,7 @@ theorem kroneckerUnpack_kroneckerPack [Semiring R] [BEq R] [LawfulBEq R] [Nontri
     kroneckerUnpack D (kroneckerPack D p) = p
 ```
 
-`CompPoly.CBivariate.kroneckerUnpack_mul` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L307))
+`CompPoly.CBivariate.kroneckerUnpack_mul` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L307))
 
 > Bivariate multiplication as pack, univariate multiply, unpack, when the product fits
 > the gap.
@@ -219,7 +219,7 @@ theorem kroneckerUnpack_mul [CommSemiring R] [BEq R] [LawfulBEq R] [Nontrivial R
     kroneckerUnpack D (kroneckerPack D p * kroneckerPack D q) = p * q
 ```
 
-`CompPoly.CBivariate.kroneckerUnpackFast_mul` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L315))
+`CompPoly.CBivariate.kroneckerUnpackFast_mul` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L315))
 
 > `kroneckerUnpack_mul` for the efficient `kroneckerPackFast` / `kroneckerUnpackFast`.
 
@@ -230,7 +230,7 @@ theorem kroneckerUnpackFast_mul [CommSemiring R] [BEq R] [LawfulBEq R] [Nontrivi
     kroneckerUnpackFast D (kroneckerPackFast D p * kroneckerPackFast D q) = p * q
 ```
 
-`CompPoly.CBivariate.kroneckerUnpack_withFallback` (theorem, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L323))
+`CompPoly.CBivariate.kroneckerUnpack_withFallback` (theorem, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L323))
 
 > Bivariate multiplication using the NTT (`withFallback`) as the univariate backend.
 
@@ -245,7 +245,7 @@ theorem kroneckerUnpack_withFallback [Field R] [BEq R] [LawfulBEq R] [DecidableE
       = p * q
 ```
 
-`CompPoly.CBivariate.kroneckerUnpack_withFallbackFast` (theorem, [line 336](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean#L336))
+`CompPoly.CBivariate.kroneckerUnpack_withFallbackFast` (theorem, [line 336](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean#L336))
 
 > Bivariate multiplication using the recursive NTT (`NTTFast.withFallback`) as the
 > univariate backend.
@@ -273,5 +273,5 @@ theorem kroneckerUnpack_withFallbackFast [Field R] [BEq R] [LawfulBEq R] [Decida
 
 ## Sources
 
-- [CompPoly/Bivariate/Kronecker.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Kronecker.lean)
+- [CompPoly/Bivariate/Kronecker.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/Kronecker.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Bivariate.Kronecker.json)

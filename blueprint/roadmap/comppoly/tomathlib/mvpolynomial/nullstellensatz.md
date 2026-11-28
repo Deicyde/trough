@@ -7,13 +7,13 @@ proof: formalized
 
 # Polynomials of degree at most one per variable
 
-`CompPoly.ToMathlib.MvPolynomial.Nullstellensatz`, in [CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean), by Thomas Coratger.
+`CompPoly.ToMathlib.MvPolynomial.Nullstellensatz`, in [CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean), by Thomas Coratger.
 
 > Such a polynomial is fixed by its values on the Boolean hypercube $\{0, 1\}^\sigma$.
 >
 > This is a corollary of the combinatorial Nullstellensatz.
 
-`MvPolynomial.eq_of_degreeOf_le_one_of_eval_zeroOne` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean#L30))
+`MvPolynomial.eq_of_degreeOf_le_one_of_eval_zeroOne` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean#L30))
 
 > Two polynomials of degree at most one per variable that agree on the hypercube are equal.
 >
@@ -31,5 +31,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean)
+- [CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/MvPolynomial/Nullstellensatz.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.MvPolynomial.Nullstellensatz.json)

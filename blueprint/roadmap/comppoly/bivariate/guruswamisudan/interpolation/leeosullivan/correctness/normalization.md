@@ -7,11 +7,11 @@ proof: formalized
 
 # Lee-O'Sullivan Candidate Normalization
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean), by Valerii Huhnin.
 
 > Soundness and existence facts for normalizing raw Lee-O'Sullivan candidates.
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?_sound_of_raw` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean#L31))
+`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?_sound_of_raw` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean#L31))
 
 > Normalizing a bounded raw Lee candidate preserves the interpolation witness
 > contract when the raw candidate already satisfies the multiplicity constraints.
@@ -30,7 +30,7 @@ theorem normalizeLeeCandidate?_sound_of_raw
     ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?_some_of_raw` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean#L101))
+`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?_some_of_raw` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean#L101))
 
 > A nonzero bounded raw Lee candidate can be normalized by the shared
 > coefficient-vector policy.
@@ -56,5 +56,5 @@ theorem normalizeLeeCandidate?_some_of_raw
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Normalization.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization.json)

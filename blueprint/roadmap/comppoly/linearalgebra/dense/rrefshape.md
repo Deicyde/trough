@@ -7,11 +7,11 @@ proof: formalized
 
 # Dense RREF Shape Correctness
 
-`CompPoly.LinearAlgebra.Dense.RrefShape`, in [CompPoly/LinearAlgebra/Dense/RrefShape.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.RrefShape`, in [CompPoly/LinearAlgebra/Dense/RrefShape.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean), by Valerii Huhnin.
 
 > Pivot-column and processed-column invariants for dense row reduction.
 
-`CompPoly.DenseMatrix.PivotColumnsShaped` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L23))
+`CompPoly.DenseMatrix.PivotColumnsShaped` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L23))
 
 > Recorded pivot columns have the reduced-column shape expected of RREF.
 
@@ -20,14 +20,14 @@ def PivotColumnsShaped [Zero F] [One F] (M : DenseMatrix F)
     (pivots : Array Nat) : Prop
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsShaped_empty` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L29))
+`CompPoly.DenseMatrix.pivotColumnsShaped_empty` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L29))
 
 ```lean
 theorem pivotColumnsShaped_empty [Zero F] [One F] (M : DenseMatrix F) :
     PivotColumnsShaped M #[]
 ```
 
-`CompPoly.DenseMatrix.swapRows_preserves_column_shape_of_ne` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L34))
+`CompPoly.DenseMatrix.swapRows_preserves_column_shape_of_ne` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L34))
 
 ```lean
 theorem swapRows_preserves_column_shape_of_ne [Zero F] [One F]
@@ -39,7 +39,7 @@ theorem swapRows_preserves_column_shape_of_ne [Zero F] [One F]
       (swapRows M rowA rowB).get row oldCol = if row = pivot then 1 else 0
 ```
 
-`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_of_not_mem` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L60))
+`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_of_not_mem` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L60))
 
 ```lean
 theorem list_forIn_addScaledRow_get_of_not_mem [Field F]
@@ -54,7 +54,7 @@ theorem list_forIn_addScaledRow_get_of_not_mem [Field F]
       Id (DenseMatrix F))).get row col = out.get row col
 ```
 
-`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_pivotRow` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L114))
+`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_pivotRow` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L114))
 
 ```lean
 theorem list_forIn_addScaledRow_get_pivotRow [Field F]
@@ -69,7 +69,7 @@ theorem list_forIn_addScaledRow_get_pivotRow [Field F]
       Id (DenseMatrix F))).get pivotRow pivotCol = 1
 ```
 
-`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_row_mem` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L143))
+`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_row_mem` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L143))
 
 ```lean
 theorem list_forIn_addScaledRow_get_row_mem [Field F]
@@ -87,7 +87,7 @@ theorem list_forIn_addScaledRow_get_row_mem [Field F]
       Id (DenseMatrix F))).get row pivotCol = 0
 ```
 
-`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_of_source_zero` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L242))
+`CompPoly.DenseMatrix.list_forIn_addScaledRow_get_of_source_zero` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L242))
 
 ```lean
 theorem list_forIn_addScaledRow_get_of_source_zero [Field F]
@@ -104,7 +104,7 @@ theorem list_forIn_addScaledRow_get_of_source_zero [Field F]
       Id (DenseMatrix F))).get row oldCol = out.get row oldCol
 ```
 
-`CompPoly.DenseMatrix.normalizeAndEliminate_get_pivot` (theorem, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L313))
+`CompPoly.DenseMatrix.normalizeAndEliminate_get_pivot` (theorem, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L313))
 
 ```lean
 theorem normalizeAndEliminate_get_pivot [Field F] [BEq F] [LawfulBEq F]
@@ -114,7 +114,7 @@ theorem normalizeAndEliminate_get_pivot [Field F] [BEq F] [LawfulBEq F]
     (normalizeAndEliminate M pivotRow pivotCol).get pivotRow pivotCol = 1
 ```
 
-`CompPoly.DenseMatrix.normalizeAndEliminate_get_row_pivot` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L337))
+`CompPoly.DenseMatrix.normalizeAndEliminate_get_row_pivot` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L337))
 
 ```lean
 theorem normalizeAndEliminate_get_row_pivot [Field F] [BEq F] [LawfulBEq F]
@@ -125,7 +125,7 @@ theorem normalizeAndEliminate_get_row_pivot [Field F] [BEq F] [LawfulBEq F]
     (normalizeAndEliminate M pivotRow pivotCol).get row pivotCol = 0
 ```
 
-`CompPoly.DenseMatrix.normalizeAndEliminate_get_of_pivotRow_zero` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L385))
+`CompPoly.DenseMatrix.normalizeAndEliminate_get_of_pivotRow_zero` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L385))
 
 ```lean
 theorem normalizeAndEliminate_get_of_pivotRow_zero [Field F] [BEq F] [LawfulBEq F]
@@ -135,7 +135,7 @@ theorem normalizeAndEliminate_get_of_pivotRow_zero [Field F] [BEq F] [LawfulBEq 
     (normalizeAndEliminate M pivotRow pivotCol).get row oldCol = M.get row oldCol
 ```
 
-`CompPoly.DenseMatrix.rrefLoop_pivots_size_le_rows` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L443))
+`CompPoly.DenseMatrix.rrefLoop_pivots_size_le_rows` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L443))
 
 ```lean
 theorem rrefLoop_pivots_size_le_rows [Field F] [BEq F] :
@@ -145,14 +145,14 @@ theorem rrefLoop_pivots_size_le_rows [Field F] [BEq F] :
           pivots.size + (M.rows - row)
 ```
 
-`CompPoly.DenseMatrix.rref_pivots_size_le_rows` (theorem, [line 483](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L483))
+`CompPoly.DenseMatrix.rref_pivots_size_le_rows` (theorem, [line 483](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L483))
 
 ```lean
 theorem rref_pivots_size_le_rows [Field F] [BEq F]
     (M : DenseMatrix F) : (rref M).pivots.size ≤ M.rows
 ```
 
-`CompPoly.DenseMatrix.PivotColumnsBefore` (definition, [line 490](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L490))
+`CompPoly.DenseMatrix.PivotColumnsBefore` (definition, [line 490](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L490))
 
 > All recorded pivot columns are strictly before the current scan column.
 
@@ -160,7 +160,7 @@ theorem rref_pivots_size_le_rows [Field F] [BEq F]
 def PivotColumnsBefore (pivots : Array Nat) (col : Nat) : Prop
 ```
 
-`CompPoly.DenseMatrix.PivotColumnsStrict` (definition, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L494))
+`CompPoly.DenseMatrix.PivotColumnsStrict` (definition, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L494))
 
 > Pivot columns are strictly increasing in pivot-row order.
 
@@ -168,20 +168,20 @@ def PivotColumnsBefore (pivots : Array Nat) (col : Nat) : Prop
 def PivotColumnsStrict (pivots : Array Nat) : Prop
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsBefore_empty` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L498))
+`CompPoly.DenseMatrix.pivotColumnsBefore_empty` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L498))
 
 ```lean
 theorem pivotColumnsBefore_empty (col : Nat) :
     PivotColumnsBefore #[] col
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsStrict_empty` (theorem, [line 503](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L503))
+`CompPoly.DenseMatrix.pivotColumnsStrict_empty` (theorem, [line 503](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L503))
 
 ```lean
 theorem pivotColumnsStrict_empty : PivotColumnsStrict #[]
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsBefore_mono` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L507))
+`CompPoly.DenseMatrix.pivotColumnsBefore_mono` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L507))
 
 ```lean
 theorem pivotColumnsBefore_mono {pivots : Array Nat} {col next : Nat}
@@ -189,7 +189,7 @@ theorem pivotColumnsBefore_mono {pivots : Array Nat} {col next : Nat}
     PivotColumnsBefore pivots next
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsBefore_push` (theorem, [line 513](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L513))
+`CompPoly.DenseMatrix.pivotColumnsBefore_push` (theorem, [line 513](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L513))
 
 ```lean
 theorem pivotColumnsBefore_push {pivots : Array Nat} {col next : Nat}
@@ -197,7 +197,7 @@ theorem pivotColumnsBefore_push {pivots : Array Nat} {col next : Nat}
     PivotColumnsBefore (pivots.push col) next
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsStrict_push` (theorem, [line 529](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L529))
+`CompPoly.DenseMatrix.pivotColumnsStrict_push` (theorem, [line 529](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L529))
 
 ```lean
 theorem pivotColumnsStrict_push {pivots : Array Nat} {col : Nat}
@@ -205,7 +205,7 @@ theorem pivotColumnsStrict_push {pivots : Array Nat} {col : Nat}
     PivotColumnsStrict (pivots.push col)
 ```
 
-`CompPoly.DenseMatrix.pivotColumnsStrict_getD_ne` (theorem, [line 555](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L555))
+`CompPoly.DenseMatrix.pivotColumnsStrict_getD_ne` (theorem, [line 555](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L555))
 
 ```lean
 theorem pivotColumnsStrict_getD_ne {pivots : Array Nat}
@@ -214,7 +214,7 @@ theorem pivotColumnsStrict_getD_ne {pivots : Array Nat}
     pivots.getD i 0 ≠ pivots.getD j 0
 ```
 
-`CompPoly.DenseMatrix.rrefLoop_pivots_getD_lt_cols` (theorem, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L569))
+`CompPoly.DenseMatrix.rrefLoop_pivots_getD_lt_cols` (theorem, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L569))
 
 ```lean
 theorem rrefLoop_pivots_getD_lt_cols [Field F] [BEq F] :
@@ -224,14 +224,14 @@ theorem rrefLoop_pivots_getD_lt_cols [Field F] [BEq F] :
           (rrefLoop fuel col row M pivots).pivots.getD i 0 < M.cols
 ```
 
-`CompPoly.DenseMatrix.rref_pivots_getD_lt_cols` (theorem, [line 620](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L620))
+`CompPoly.DenseMatrix.rref_pivots_getD_lt_cols` (theorem, [line 620](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L620))
 
 ```lean
 theorem rref_pivots_getD_lt_cols [Field F] [BEq F] (M : DenseMatrix F) :
     ∀ i, i < (rref M).pivots.size → (rref M).pivots.getD i 0 < M.cols
 ```
 
-`CompPoly.DenseMatrix.rrefLoop_pivotColumnsStrict` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L627))
+`CompPoly.DenseMatrix.rrefLoop_pivotColumnsStrict` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L627))
 
 ```lean
 theorem rrefLoop_pivotColumnsStrict [Field F] [BEq F] :
@@ -240,14 +240,14 @@ theorem rrefLoop_pivotColumnsStrict [Field F] [BEq F] :
         PivotColumnsStrict (rrefLoop fuel col row M pivots).pivots
 ```
 
-`CompPoly.DenseMatrix.rref_pivotColumnsStrict` (theorem, [line 654](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L654))
+`CompPoly.DenseMatrix.rref_pivotColumnsStrict` (theorem, [line 654](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L654))
 
 ```lean
 theorem rref_pivotColumnsStrict [Field F] [BEq F] (M : DenseMatrix F) :
     PivotColumnsStrict (rref M).pivots
 ```
 
-`CompPoly.DenseMatrix.rrefLoop_pivotColumnsShaped` (theorem, [line 660](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L660))
+`CompPoly.DenseMatrix.rrefLoop_pivotColumnsShaped` (theorem, [line 660](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L660))
 
 ```lean
 theorem rrefLoop_pivotColumnsShaped [Field F] [BEq F] [LawfulBEq F] :
@@ -260,7 +260,7 @@ theorem rrefLoop_pivotColumnsShaped [Field F] [BEq F] [LawfulBEq F] :
                 (rrefLoop fuel col row M pivots).pivots
 ```
 
-`CompPoly.DenseMatrix.rref_pivotColumnsShaped` (theorem, [line 796](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L796))
+`CompPoly.DenseMatrix.rref_pivotColumnsShaped` (theorem, [line 796](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L796))
 
 ```lean
 theorem rref_pivotColumnsShaped [Field F] [BEq F] [LawfulBEq F]
@@ -268,7 +268,7 @@ theorem rref_pivotColumnsShaped [Field F] [BEq F] [LawfulBEq F]
     PivotColumnsShaped (rref M).matrix (rref M).pivots
 ```
 
-`CompPoly.DenseMatrix.ProcessedColumnsZeroBelow` (definition, [line 804](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L804))
+`CompPoly.DenseMatrix.ProcessedColumnsZeroBelow` (definition, [line 804](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L804))
 
 > All rows at or below the active pivot row are zero in already-scanned columns.
 
@@ -277,7 +277,7 @@ def ProcessedColumnsZeroBelow [Zero F] (M : DenseMatrix F)
     (activeRow col : Nat) : Prop
 ```
 
-`CompPoly.DenseMatrix.processedColumnsZeroBelow_pivot_step` (theorem, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L808))
+`CompPoly.DenseMatrix.processedColumnsZeroBelow_pivot_step` (theorem, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L808))
 
 ```lean
 theorem processedColumnsZeroBelow_pivot_step
@@ -292,7 +292,7 @@ theorem processedColumnsZeroBelow_pivot_step
       (row + 1) (col + 1)
 ```
 
-`CompPoly.DenseMatrix.rrefLoop_processedColumnsZeroBelow` (theorem, [line 865](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L865))
+`CompPoly.DenseMatrix.rrefLoop_processedColumnsZeroBelow` (theorem, [line 865](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L865))
 
 ```lean
 theorem rrefLoop_processedColumnsZeroBelow
@@ -308,7 +308,7 @@ theorem rrefLoop_processedColumnsZeroBelow
                   (rrefLoop fuel col row M pivots).pivots.size M.cols
 ```
 
-`CompPoly.DenseMatrix.rref_processedColumnsZeroBelow` (theorem, [line 947](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L947))
+`CompPoly.DenseMatrix.rref_processedColumnsZeroBelow` (theorem, [line 947](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean#L947))
 
 ```lean
 theorem rref_processedColumnsZeroBelow
@@ -327,5 +327,5 @@ theorem rref_processedColumnsZeroBelow
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/RrefShape.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RrefShape.lean)
+- [CompPoly/LinearAlgebra/Dense/RrefShape.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/RrefShape.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.RrefShape.json)

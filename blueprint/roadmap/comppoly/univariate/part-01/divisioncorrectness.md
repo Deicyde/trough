@@ -7,11 +7,11 @@ proof: formalized
 
 # Univariate Division Correctness
 
-`CompPoly.Univariate.DivisionCorrectness`, in [CompPoly/Univariate/DivisionCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean), by Valerii Huhnin, Juan Conejero.
+`CompPoly.Univariate.DivisionCorrectness`, in [CompPoly/Univariate/DivisionCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean), by Valerii Huhnin, Juan Conejero.
 
 > Correctness theorems for division-style univariate polynomial algorithms.
 
-`CompPoly.CPolynomial.divByMonic_toPoly_eq_divByMonic` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L488))
+`CompPoly.CPolynomial.divByMonic_toPoly_eq_divByMonic` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L488))
 
 > CompPoly's `divByMonic` is correct w.r.t. Mathlib's `divByMonic`
 
@@ -21,7 +21,7 @@ theorem divByMonic_toPoly_eq_divByMonic (p q : CPolynomial R)
     (p.divByMonic q).toPoly = p.toPoly /ₘ q.toPoly
 ```
 
-`CompPoly.CPolynomial.modByMonic_toPoly_eq_modByMonic` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L494))
+`CompPoly.CPolynomial.modByMonic_toPoly_eq_modByMonic` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L494))
 
 > CompPoly's `modByMonic` is correct w.r.t. Mathlib's `modByMonic`
 
@@ -31,7 +31,7 @@ theorem modByMonic_toPoly_eq_modByMonic (p q : CPolynomial R)
     (p.modByMonic q).toPoly = p.toPoly %ₘ q.toPoly
 ```
 
-`CompPoly.CPolynomial.modByMonic_add_mul_divByMonic` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L506))
+`CompPoly.CPolynomial.modByMonic_add_mul_divByMonic` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L506))
 
 > Euclidean division identity for a monic divisor, stated directly on
 > `CPolynomial`: `p.modByMonic q + q * p.divByMonic q = p` whenever `q` is monic.
@@ -46,7 +46,7 @@ theorem modByMonic_add_mul_divByMonic (p q : CPolynomial R) (hmonic : q.monic) :
     p.modByMonic q + q * p.divByMonic q = p
 ```
 
-`CompPoly.CPolynomial.leadingCoeff_inv_smul_monic` (theorem, [line 524](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L524))
+`CompPoly.CPolynomial.leadingCoeff_inv_smul_monic` (theorem, [line 524](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L524))
 
 > Any nonzero polynomial scaled by the inverse of its leading
 > coefficient is monic.
@@ -56,7 +56,7 @@ theorem leadingCoeff_inv_smul_monic (p : CPolynomial R) (hp : p ≠ 0) :
     (p.leadingCoeff⁻¹ • p).monic
 ```
 
-`CompPoly.CPolynomial.div_toPoly_eq_divByMonic` (theorem, [line 530](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L530))
+`CompPoly.CPolynomial.div_toPoly_eq_divByMonic` (theorem, [line 530](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L530))
 
 > Equality between CompPoly's `div` and Mathlib's `divByMonic`
 
@@ -66,7 +66,7 @@ theorem div_toPoly_eq_divByMonic (p q : CPolynomial R) (hq : q ≠ 0) :
       q.leadingCoeff⁻¹ • p.toPoly /ₘ (q.leadingCoeff⁻¹ • q.toPoly)
 ```
 
-`CompPoly.CPolynomial.mod_toPoly_eq_modByMonic` (theorem, [line 538](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L538))
+`CompPoly.CPolynomial.mod_toPoly_eq_modByMonic` (theorem, [line 538](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L538))
 
 > Equality between CompPoly's `mod` and Mathlib's `modByMonic`
 
@@ -76,7 +76,7 @@ theorem mod_toPoly_eq_modByMonic (p q : CPolynomial R) (hq : q ≠ 0) :
       q.leadingCoeff⁻¹ • p.toPoly %ₘ (q.leadingCoeff⁻¹ • q.toPoly)
 ```
 
-`CompPoly.CPolynomial.div_toPoly_eq_div` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L546))
+`CompPoly.CPolynomial.div_toPoly_eq_div` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L546))
 
 > CompPoly's `div` is correct w.r.t. Mathlib's `div`.
 
@@ -85,7 +85,7 @@ theorem div_toPoly_eq_div (p q : CPolynomial R) :
     (p.div q).toPoly = p.toPoly / q.toPoly
 ```
 
-`CompPoly.CPolynomial.mod_toPoly_eq_smul_mod` (theorem, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L554))
+`CompPoly.CPolynomial.mod_toPoly_eq_smul_mod` (theorem, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L554))
 
 > CompPoly's `mod` is Mathlib's `%` scaled by `q.leadingCoeff⁻¹`.
 
@@ -94,7 +94,7 @@ theorem mod_toPoly_eq_smul_mod (p q : CPolynomial R) :
     (p.mod q).toPoly = q.leadingCoeff⁻¹ • (p.toPoly % q.toPoly)
 ```
 
-`CompPoly.CPolynomial.exactDiv_toPoly_iff` (theorem, [line 564](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L564))
+`CompPoly.CPolynomial.exactDiv_toPoly_iff` (theorem, [line 564](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L564))
 
 > Exact-division bridge: `G.toPoly` factors as `f.toPoly * V.toPoly` iff the computable
 > `mod` vanishes and the computable division recovers `f`.
@@ -104,7 +104,7 @@ theorem exactDiv_toPoly_iff (G V f : CPolynomial R) (hV : V.toPoly ≠ 0) :
     G.toPoly = f.toPoly * V.toPoly ↔ G.mod V = 0 ∧ (G / V).toPoly = f.toPoly
 ```
 
-`CompPoly.CPolynomial.modByMonicByReversal_eq_modByMonic` (theorem, [line 737](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean#L737))
+`CompPoly.CPolynomial.modByMonicByReversal_eq_modByMonic` (theorem, [line 737](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean#L737))
 
 > The reversal monic remainder agrees with the canonical monic remainder.
 
@@ -124,5 +124,5 @@ theorem modByMonicByReversal_eq_modByMonic
 
 ## Sources
 
-- [CompPoly/Univariate/DivisionCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/DivisionCorrectness.lean)
+- [CompPoly/Univariate/DivisionCorrectness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/DivisionCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.DivisionCorrectness.json)

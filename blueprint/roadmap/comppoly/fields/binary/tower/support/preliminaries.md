@@ -7,43 +7,43 @@ proof: formalized
 
 # Binary Tower Preliminaries
 
-`CompPoly.Fields.Binary.Tower.Support.Preliminaries`, in [CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Support.Preliminaries`, in [CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Shared finite-field and bitwise preliminaries for the binary tower development.
 
-`GF_2_fintype` (instance, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L30))
+`GF_2_fintype` (instance, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L30))
 
 ```lean
 instance GF_2_fintype : Fintype (GF(2))
 ```
 
-`GF_2_pow_card` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L33))
+`GF_2_pow_card` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L33))
 
 ```lean
 theorem GF_2_pow_card (x : GF(2)) : x ^ Fintype.card (GF(2)) = x
 ```
 
-`GF_2_card` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L37))
+`GF_2_card` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L37))
 
 ```lean
 theorem GF_2_card : Fintype.card (GF(2)) = 2^(2^0)
 ```
 
-`non_zero_divisors_iff` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L45))
+`non_zero_divisors_iff` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L45))
 
 ```lean
 theorem non_zero_divisors_iff (M₀ : Type*) [Mul M₀] [Zero M₀] :
     NoZeroDivisors M₀ ↔ ∀ {a b : M₀}, a * b = 0 → a = 0 ∨ b = 0
 ```
 
-`neZero_one_of_nontrivial_comm_monoid_zero` (instance, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L49))
+`neZero_one_of_nontrivial_comm_monoid_zero` (instance, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L49))
 
 ```lean
 instance neZero_one_of_nontrivial_comm_monoid_zero {M₀ : Type*}
   [CommMonoidWithZero M₀] [instNontrivial : Nontrivial M₀] : NeZero (1 : M₀)
 ```
 
-`unit_of_nontrivial_comm_monoid_with_zero_is_not_zero` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L72))
+`unit_of_nontrivial_comm_monoid_with_zero_is_not_zero` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L72))
 
 ```lean
 theorem unit_of_nontrivial_comm_monoid_with_zero_is_not_zero
@@ -51,7 +51,7 @@ theorem unit_of_nontrivial_comm_monoid_with_zero_is_not_zero
     (h_unit : IsUnit a) : NeZero a
 ```
 
-`GF_2_value_eq_zero_or_one` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L93))
+`GF_2_value_eq_zero_or_one` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L93))
 
 > Any element in `GF(2)` is either `0` or `1`.
 
@@ -59,25 +59,25 @@ theorem unit_of_nontrivial_comm_monoid_with_zero_is_not_zero
 theorem GF_2_value_eq_zero_or_one (x : GF(2)) : x = 0 ∨ x = 1
 ```
 
-`GF_2_one_add_one_eq_zero` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L114))
+`GF_2_one_add_one_eq_zero` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L114))
 
 ```lean
 theorem GF_2_one_add_one_eq_zero : (1 + 1 : GF(2)) = 0
 ```
 
-`withBot_lt_one_cases` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L146))
+`withBot_lt_one_cases` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L146))
 
 ```lean
 theorem withBot_lt_one_cases (x : WithBot ℕ) (h : x < (1 : ℕ)) : x = ⊥ ∨ x = (0 : ℕ)
 ```
 
-`is_unit_iff_deg_0` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L159))
+`is_unit_iff_deg_0` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L159))
 
 ```lean
 theorem is_unit_iff_deg_0 {R : Type*} [Field R] {p : R[X]} : p.degree = 0 ↔ IsUnit p
 ```
 
-`non_trivial_factors_of_non_trivial_poly_have_deg_ge_1` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L189))
+`non_trivial_factors_of_non_trivial_poly_have_deg_ge_1` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L189))
 
 ```lean
 theorem non_trivial_factors_of_non_trivial_poly_have_deg_ge_1 {R : Type*} [Field R]
@@ -89,14 +89,14 @@ theorem non_trivial_factors_of_non_trivial_poly_have_deg_ge_1 {R : Type*} [Field
     1 ≤ a.degree ∧ 1 ≤ b.degree
 ```
 
-`prod_univ_twos` (lemma, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L221))
+`prod_univ_twos` (lemma, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L221))
 
 ```lean
 lemma prod_univ_twos {M : Type*} [CommMonoid M] {n : ℕ} (hn : n = 2) (f : Fin n → M) :
     (∏ i, f i) = f (Fin.cast hn.symm 0) * f (Fin.cast hn.symm 1)
 ```
 
-`unique_repr` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L227))
+`unique_repr` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L227))
 
 ```lean
 theorem unique_repr {R : Type*} [CommRing R] {S : Type*} [CommRing S] [Algebra R S]
@@ -105,7 +105,7 @@ theorem unique_repr {R : Type*} [CommRing R] {S : Type*} [CommRing S] [Algebra R
     repr1 = repr2
 ```
 
-`linear_sum_repr` (theorem, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L261))
+`linear_sum_repr` (theorem, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L261))
 
 ```lean
 theorem linear_sum_repr (R : Type*) [CommRing R] (S : Type*) [CommRing S] [Algebra R S]
@@ -113,7 +113,7 @@ theorem linear_sum_repr (R : Type*) [CommRing R] (S : Type*) [CommRing S] [Algeb
     ∃ a b : R, s = a • pb.gen + algebraMap R S b
 ```
 
-`unique_linear_sum_repr` (theorem, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L308))
+`unique_linear_sum_repr` (theorem, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L308))
 
 ```lean
 theorem unique_linear_sum_repr (R : Type*) [CommRing R] (S : Type*) [CommRing S] [Algebra R S]
@@ -121,7 +121,7 @@ theorem unique_linear_sum_repr (R : Type*) [CommRing R] (S : Type*) [CommRing S]
     ∃! p : R × R, s = p.fst • pb.gen + algebraMap R S p.snd
 ```
 
-`linear_form_of_elements_in_adjoined_commring` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L395))
+`linear_form_of_elements_in_adjoined_commring` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L395))
 
 ```lean
 theorem linear_form_of_elements_in_adjoined_commring
@@ -130,7 +130,7 @@ theorem linear_form_of_elements_in_adjoined_commring
     ∃ a b : R, c1 = (AdjoinRoot.of f) a * root f + (AdjoinRoot.of f) b
 ```
 
-`unique_linear_form_of_elements_in_adjoined_commring` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L417))
+`unique_linear_form_of_elements_in_adjoined_commring` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L417))
 
 ```lean
 theorem unique_linear_form_of_elements_in_adjoined_commring
@@ -139,7 +139,7 @@ theorem unique_linear_form_of_elements_in_adjoined_commring
     ∃! p : R × R, c1 = (AdjoinRoot.of f) p.1 * root f + (AdjoinRoot.of f) p.2
 ```
 
-`GaloisAutomorphism` (structure, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L443))
+`GaloisAutomorphism` (structure, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L443))
 
 > Galois automorphism properties for a special element in a binary tower field.
 > Encapsulates the key relationship : u^(2^(2^k)) = u⁻¹ and (u⁻¹)^(2^(2^k)) = u
@@ -150,7 +150,7 @@ structure GaloisAutomorphism (F : Type*) [Field F] (u : F) (k : ℕ) : Prop wher
   reverse : (u⁻¹) ^ (2 ^ (2 ^ k)) = u
 ```
 
-`TraceMapProperty` (structure, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L451))
+`TraceMapProperty` (structure, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L451))
 
 > Trace map properties for elements in a binary tower field extension.
 > Asserts that the trace of both an element and its inverse equals 1.
@@ -161,7 +161,7 @@ structure TraceMapProperty (F : Type*) [Field F] (u : F) (k : ℕ) : Prop where
   inverse_trace : ∑ i ∈ Finset.range (2 ^ k), (u⁻¹) ^ (2 ^ i) = 1
 ```
 
-`SpecialElementRelation` (structure, [line 459](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L459))
+`SpecialElementRelation` (structure, [line 459](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L459))
 
 > Special element relationship in binary tower fields.
 > Captures the key equation : u + u⁻¹ = t₁ (lifted previous special element)
@@ -173,7 +173,7 @@ structure SpecialElementRelation {F_prev : Type*} [Field F_prev] (t1 : F_prev)
     h_u_square : u^2 = u * (algebraMap F_prev F_cur t1) + 1
 ```
 
-`two_eq_zero_in_char2_field` (theorem, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L466))
+`two_eq_zero_in_char2_field` (theorem, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L466))
 
 ```lean
 theorem two_eq_zero_in_char2_field {F : Type*} [Field F]
@@ -181,7 +181,7 @@ theorem two_eq_zero_in_char2_field {F : Type*} [Field F]
     (2 : F) = 0
 ```
 
-`sum_of_pow_exp_of_2` (theorem, [line 475](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L475))
+`sum_of_pow_exp_of_2` (theorem, [line 475](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L475))
 
 ```lean
 theorem sum_of_pow_exp_of_2 {F : Type*} [Field F]
@@ -189,7 +189,7 @@ theorem sum_of_pow_exp_of_2 {F : Type*} [Field F]
     (i : ℕ) : ∀ (a b c : F), a + b = c → a^(2^i) + b^(2^i) = c^(2^i)
 ```
 
-`sum_square_char2` (theorem, [line 518](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L518))
+`sum_square_char2` (theorem, [line 518](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L518))
 
 ```lean
 theorem sum_square_char2 {F : Type*} [Field F] (sumZeroIffEq : ∀ (x y : F), x + y = 0 ↔ x = y)
@@ -197,50 +197,50 @@ theorem sum_square_char2 {F : Type*} [Field F] (sumZeroIffEq : ∀ (x y : F), x 
     (∑ j ∈ s, f j)^2 = ∑ j ∈ s, (f j)^2
 ```
 
-`singleton_subset_Icc` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L537))
+`singleton_subset_Icc` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L537))
 
 ```lean
 theorem singleton_subset_Icc (n : ℕ) : {1} ⊆ Finset.Icc 1 (n + 1)
 ```
 
-`sum_Icc_shift` (theorem, [line 544](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L544))
+`sum_Icc_shift` (theorem, [line 544](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L544))
 
 ```lean
 theorem sum_Icc_shift {M : Type*} [AddCommMonoid M] (f : ℕ → M) (a b shift : ℕ) :
     ∑ j ∈ Finset.Icc a b, f (j + shift) = ∑ j ∈ Finset.Icc (a + shift) (b + shift), f j
 ```
 
-`two_le_two_pow_n_plus_1` (theorem, [line 556](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L556))
+`two_le_two_pow_n_plus_1` (theorem, [line 556](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L556))
 
 ```lean
 theorem two_le_two_pow_n_plus_1 (n : ℕ) : 2 ≤ 2 ^ (n + 1)
 ```
 
-`one_le_two_pow_n` (theorem, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L561))
+`one_le_two_pow_n` (theorem, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L561))
 
 ```lean
 theorem one_le_two_pow_n (n : ℕ) : 1 ≤ 2 ^ n
 ```
 
-`zero_lt_pow_n` (theorem, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L566))
+`zero_lt_pow_n` (theorem, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L566))
 
 ```lean
 theorem zero_lt_pow_n (m : ℕ) (n : ℕ) (h_m : m > 0): 0 < m^n
 ```
 
-`one_le_sub_consecutive_two_pow` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L570))
+`one_le_sub_consecutive_two_pow` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L570))
 
 ```lean
 theorem one_le_sub_consecutive_two_pow (n : ℕ): 1 ≤ 2^(n+1) - 2^n
 ```
 
-`two_pow_ne_zero` (theorem, [line 577](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L577))
+`two_pow_ne_zero` (theorem, [line 577](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L577))
 
 ```lean
 theorem two_pow_ne_zero (n : ℕ) : 2 ^ n ≠ 0
 ```
 
-`pow_exp_of_2_repr_given_x_square_repr` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L586))
+`pow_exp_of_2_repr_given_x_square_repr` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L586))
 
 > For any field element (x : F) where x^2 = x*z + 1, this theorem gives
 > a closed form for x^(2^i).
@@ -252,7 +252,7 @@ theorem pow_exp_of_2_repr_given_x_square_repr {F : Type*} [instField : Field F]
     ∀ i : ℕ, x^(2^i) = x * z^(2^i - 1) + ∑ j ∈ Finset.Icc 1 i, z^(2^i - 2^j)
 ```
 
-`inverse_is_root_of_prevPoly` (theorem, [line 784](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L784))
+`inverse_is_root_of_prevPoly` (theorem, [line 784](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L784))
 
 ```lean
 theorem inverse_is_root_of_prevPoly
@@ -267,7 +267,7 @@ theorem inverse_is_root_of_prevPoly
     eval₂ of_prev u⁻¹ (X ^ 2 + (C t1 * X + 1)) = 0
 ```
 
-`sum_of_root_and_inverse_is_t1` (theorem, [line 825](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L825))
+`sum_of_root_and_inverse_is_t1` (theorem, [line 825](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L825))
 
 ```lean
 theorem sum_of_root_and_inverse_is_t1
@@ -279,7 +279,7 @@ theorem sum_of_root_and_inverse_is_t1
     u + u⁻¹ = t1
 ```
 
-`self_sum_eq_zero` (theorem, [line 854](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L854))
+`self_sum_eq_zero` (theorem, [line 854](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L854))
 
 ```lean
 theorem self_sum_eq_zero
@@ -291,7 +291,7 @@ theorem self_sum_eq_zero
     ∀ (x : AdjoinRoot prevPoly), x + x = 0
 ```
 
-`sum_zero_iff_eq_of_self_sum_zero` (theorem, [line 883](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L883))
+`sum_zero_iff_eq_of_self_sum_zero` (theorem, [line 883](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L883))
 
 ```lean
 theorem sum_zero_iff_eq_of_self_sum_zero {F : Type*} [AddGroup F]
@@ -299,7 +299,7 @@ theorem sum_zero_iff_eq_of_self_sum_zero {F : Type*} [AddGroup F]
     ∀ (x y : F), x + y = 0 ↔ x = y
 ```
 
-`prod_mul_erase` (theorem, [line 903](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L903))
+`prod_mul_erase` (theorem, [line 903](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L903))
 
 > A variant of `Finset.mul_prod_erase` with the multiplication swapped.
 
@@ -309,7 +309,7 @@ theorem prod_mul_erase {α β : Type*} [CommMonoid β] [DecidableEq α] (s : Fin
     f a * (∏ x ∈ s.erase a, f x) = ∏ x ∈ s, f x
 ```
 
-`eval₂_quadratic_prevField_coeff` (theorem, [line 908](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L908))
+`eval₂_quadratic_prevField_coeff` (theorem, [line 908](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L908))
 
 ```lean
 theorem eval₂_quadratic_prevField_coeff
@@ -321,7 +321,7 @@ theorem eval₂_quadratic_prevField_coeff
     eval₂ of_prev x (X^2 + (C t1 * X + 1)) = x^2 + of_prev t1 * x + 1
 ```
 
-`galois_eval_in_BTField` (lemma, [line 920](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L920))
+`galois_eval_in_BTField` (lemma, [line 920](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L920))
 
 ```lean
 lemma galois_eval_in_BTField
@@ -339,7 +339,7 @@ lemma galois_eval_in_BTField
     u^(2^(2^k)) = u⁻¹
 ```
 
-`galois_automorphism_power` (theorem, [line 1011](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1011))
+`galois_automorphism_power` (theorem, [line 1011](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1011))
 
 ```lean
 theorem galois_automorphism_power
@@ -357,7 +357,7 @@ theorem galois_automorphism_power
     u^(2^(2^k)) = u⁻¹ ∧ (u⁻¹)^(2^(2^k)) = u
 ```
 
-`lifted_trace_map_eval_at_roots_prev_BTField` (lemma, [line 1077](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1077))
+`lifted_trace_map_eval_at_roots_prev_BTField` (lemma, [line 1077](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1077))
 
 ```lean
 lemma lifted_trace_map_eval_at_roots_prev_BTField
@@ -371,7 +371,7 @@ lemma lifted_trace_map_eval_at_roots_prev_BTField
     ∑ i ∈ Finset.range (2 ^ (k+1)), u ^ (2 ^ i) = 1
 ```
 
-`rsum_eq_t1_square_aux` (theorem, [line 1178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1178))
+`rsum_eq_t1_square_aux` (theorem, [line 1178](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1178))
 
 ```lean
 theorem rsum_eq_t1_square_aux
@@ -384,7 +384,7 @@ theorem rsum_eq_t1_square_aux
     ∑ j ∈ Finset.Icc 1 (2 ^ (k)), u ^ (2 ^ 2 ^ (k) - 2 ^ j) = u
 ```
 
-`charP_eq_2_of_add_self_eq_zero` (theorem, [line 1291](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1291))
+`charP_eq_2_of_add_self_eq_zero` (theorem, [line 1291](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean#L1291))
 
 ```lean
 theorem charP_eq_2_of_add_self_eq_zero {F : Type*} [Field F]
@@ -401,5 +401,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean)
+- [CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/Preliminaries.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Support.Preliminaries.json)

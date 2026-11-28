@@ -7,11 +7,11 @@ proof: formalized
 
 # KoalaBear Field `2^{31} - 2^{24} + 1`
 
-`CompPoly.Fields.KoalaBear.Basic`, in [CompPoly/Fields/KoalaBear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean), by Quang Dao, Valerii Huhnin.
+`CompPoly.Fields.KoalaBear.Basic`, in [CompPoly/Fields/KoalaBear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean), by Quang Dao, Valerii Huhnin.
 
 > This is the field used for lean Ethereum spec.
 
-`KoalaBear.fieldSize` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L26))
+`KoalaBear.fieldSize` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L26))
 
 > The KoalaBear field modulus, `2^31 - 2^24 + 1`.
 
@@ -19,7 +19,7 @@ proof: formalized
 def fieldSize : Nat
 ```
 
-`KoalaBear.Field` (abbreviation, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L32))
+`KoalaBear.Field` (abbreviation, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L32))
 
 > The KoalaBear prime field as a `ZMod`.
 
@@ -27,7 +27,7 @@ def fieldSize : Nat
 abbrev Field
 ```
 
-`KoalaBear.is_prime` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L35))
+`KoalaBear.is_prime` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L35))
 
 > The KoalaBear modulus is prime.
 
@@ -41,7 +41,7 @@ theorem is_prime : Nat.Prime fieldSize
 > - `pBits = 31`
 > - `twoAdicity = 24` with `fieldSize - 1 = 2^24 * 127`
 
-`KoalaBear.pBits` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L49))
+`KoalaBear.pBits` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L49))
 
 > Bit width of the KoalaBear modulus.
 
@@ -49,7 +49,7 @@ theorem is_prime : Nat.Prime fieldSize
 def pBits : Nat
 ```
 
-`KoalaBear.twoAdicity` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L53))
+`KoalaBear.twoAdicity` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L53))
 
 > The largest supported power-of-two root-of-unity exponent for KoalaBear.
 
@@ -65,7 +65,7 @@ def twoAdicity : Nat
 > We record the factorization of `fieldSize - 1` and provide a precomputed table
 > of `2^n`-th roots of unity for `0 ≤ n ≤ twoAdicity`.
 
-`KoalaBear.fieldSize_sub_one_factorization` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L78))
+`KoalaBear.fieldSize_sub_one_factorization` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L78))
 
 > The factorization `fieldSize - 1 = 2^twoAdicity * 127`.
 
@@ -78,7 +78,7 @@ lemma fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 127
 >
 > The first entry n = 0 is 1.
 
-`KoalaBear.twoAdicGenerators` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L89))
+`KoalaBear.twoAdicGenerators` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L89))
 
 > Precomputed generators for the KoalaBear two-adic subgroups.
 
@@ -86,20 +86,20 @@ lemma fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 127
 def twoAdicGenerators : List Field
 ```
 
-`KoalaBear.twoAdicGenerators_length` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L118))
+`KoalaBear.twoAdicGenerators_length` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L118))
 
 ```lean
 lemma twoAdicGenerators_length : twoAdicGenerators.length = twoAdicity + 1
 ```
 
-`KoalaBear.twoAdicGenerators_succ_square_eq'` (lemma, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L120))
+`KoalaBear.twoAdicGenerators_succ_square_eq'` (lemma, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L120))
 
 ```lean
 lemma twoAdicGenerators_succ_square_eq' (idx : Fin twoAdicity) :
     twoAdicGenerators[idx.val + 1] ^ 2 = twoAdicGenerators[idx]
 ```
 
-`KoalaBear.twoAdicGenerators_succ_square_eq` (lemma, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L125))
+`KoalaBear.twoAdicGenerators_succ_square_eq` (lemma, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L125))
 
 ```lean
 lemma twoAdicGenerators_succ_square_eq (idx : Nat) (h : idx < twoAdicity) :
@@ -109,7 +109,7 @@ lemma twoAdicGenerators_succ_square_eq (idx : Nat) (h : idx < twoAdicity) :
 
 > Statements requested by the Python spec translation.
 
-`KoalaBear.inv_eq_pow` (lemma, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L133))
+`KoalaBear.inv_eq_pow` (lemma, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L133))
 
 > Fermat-style inversion in `ZMod fieldSize`.
 
@@ -117,7 +117,7 @@ lemma twoAdicGenerators_succ_square_eq (idx : Nat) (h : idx < twoAdicity) :
 lemma inv_eq_pow (a : Field) (ha : a ≠ 0) : a⁻¹ = a ^ (fieldSize - 2)
 ```
 
-`KoalaBear.cube_map_bijective` (lemma, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L145))
+`KoalaBear.cube_map_bijective` (lemma, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L145))
 
 > Bijectivity of the cube map on the unit group, using `gcd(3, fieldSize-1)=1`.
 
@@ -129,7 +129,7 @@ lemma cube_map_bijective :
 > The cube map x ↦ x^3 is an automorphism on the multiplicative group because
 > `Nat.coprime 3 (fieldSize - 1)` holds. We record the coprimality here.
 
-`KoalaBear.coprime_three_fieldSize_sub_one` (lemma, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L155))
+`KoalaBear.coprime_three_fieldSize_sub_one` (lemma, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L155))
 
 ```lean
 lemma coprime_three_fieldSize_sub_one : Nat.Coprime 3 (fieldSize - 1)
@@ -137,7 +137,7 @@ lemma coprime_three_fieldSize_sub_one : Nat.Coprime 3 (fieldSize - 1)
 
 > Additional statements matching the Python spec API.
 
-`KoalaBear.twoAdicity_maximal` (lemma, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L165))
+`KoalaBear.twoAdicity_maximal` (lemma, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L165))
 
 > `twoAdicity` is maximal: `2^(twoAdicity+1)` does not divide `fieldSize - 1`.
 
@@ -145,7 +145,7 @@ lemma coprime_three_fieldSize_sub_one : Nat.Coprime 3 (fieldSize - 1)
 lemma twoAdicity_maximal : ¬ (2 ^ (twoAdicity + 1)) ∣ (fieldSize - 1)
 ```
 
-`KoalaBear.twoAdicGenerators_pow_twoPow_eq_one` (lemma, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L214))
+`KoalaBear.twoAdicGenerators_pow_twoPow_eq_one` (lemma, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L214))
 
 > The power `(twoAdicGenerators[bits])^(2^bits) = 1`.
 
@@ -154,7 +154,7 @@ lemma twoAdicGenerators_pow_twoPow_eq_one (bits : Fin (twoAdicity + 1)) :
     twoAdicGenerators[bits] ^ (2 ^ (bits : Nat)) = 1
 ```
 
-`KoalaBear.twoAdicGenerators_pow_twoPow_ne_one_of_lt` (lemma, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L249))
+`KoalaBear.twoAdicGenerators_pow_twoPow_ne_one_of_lt` (lemma, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L249))
 
 > If `m < bits`, then `(twoAdicGenerators[bits])^(2^m) ≠ 1`.
 
@@ -164,7 +164,7 @@ lemma twoAdicGenerators_pow_twoPow_ne_one_of_lt
     (twoAdicGenerators[bits]) ^ (2 ^ m) ≠ (1 : Field)
 ```
 
-`KoalaBear.isPrimitiveRoot_twoAdicGenerator` (lemma, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L256))
+`KoalaBear.isPrimitiveRoot_twoAdicGenerator` (lemma, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L256))
 
 > The precomputed element at index `bits` is a primitive `2^bits`-th root of unity.
 
@@ -173,7 +173,7 @@ lemma isPrimitiveRoot_twoAdicGenerator (n : Fin (twoAdicity + 1)) :
     IsPrimitiveRoot (twoAdicGenerators[n]) (2 ^ (n : Nat))
 ```
 
-`KoalaBear.twoAdicGenerator_unit_mem_rootsOfUnity` (lemma, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L276))
+`KoalaBear.twoAdicGenerator_unit_mem_rootsOfUnity` (lemma, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L276))
 
 > As a unit, the precomputed element is a member of `rootsOfUnity (2^bits)`.
 
@@ -183,7 +183,7 @@ lemma twoAdicGenerator_unit_mem_rootsOfUnity
     Units.mk0 (twoAdicGenerators[bits]) h ∈ rootsOfUnity (2 ^ (bits : Nat)) Field
 ```
 
-`KoalaBear.twoAdicGenerators_order` (lemma, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L285))
+`KoalaBear.twoAdicGenerators_order` (lemma, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L285))
 
 > The order of `twoAdicGenerators[bits]` equals `2^bits`.
 
@@ -192,7 +192,7 @@ lemma twoAdicGenerators_order (bits : Fin (twoAdicity + 1)) :
     orderOf (twoAdicGenerators[bits]) = 2 ^ (bits : Nat)
 ```
 
-`KoalaBear.primitiveRoot` (definition, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L296))
+`KoalaBear.primitiveRoot` (definition, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L296))
 
 > Primitive generator used by the smooth field-root splitter.
 
@@ -200,7 +200,7 @@ lemma twoAdicGenerators_order (bits : Fin (twoAdicity + 1)) :
 def primitiveRoot : Field
 ```
 
-`KoalaBear.primitiveRoot_order` (lemma, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L326))
+`KoalaBear.primitiveRoot_order` (lemma, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L326))
 
 > The smooth field-root splitter generator has full multiplicative order.
 
@@ -208,7 +208,7 @@ def primitiveRoot : Field
 lemma primitiveRoot_order : orderOf primitiveRoot = fieldSize - 1
 ```
 
-`KoalaBear.smoothRootSchedule` (definition, [line 346](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L346))
+`KoalaBear.smoothRootSchedule` (definition, [line 346](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L346))
 
 > Smooth subgroup refinement schedule for `fieldSize - 1 = 2^24 * 127`.
 
@@ -216,7 +216,7 @@ lemma primitiveRoot_order : orderOf primitiveRoot = fieldSize - 1
 def smoothRootSchedule : Array Nat
 ```
 
-`KoalaBear.smoothRootSchedule_fold_eq_one` (lemma, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean#L350))
+`KoalaBear.smoothRootSchedule_fold_eq_one` (lemma, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean#L350))
 
 > The KoalaBear smooth schedule refines the multiplicative group down to singleton cosets.
 
@@ -235,5 +235,5 @@ lemma smoothRootSchedule_fold_eq_one :
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Basic.lean)
+- [CompPoly/Fields/KoalaBear/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Basic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Basic.json)

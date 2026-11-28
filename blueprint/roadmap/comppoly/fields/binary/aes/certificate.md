@@ -7,7 +7,7 @@ proof: formalized
 
 # Rabin certificate data for `p = 2` (Certificate)
 
-`CompPoly.Fields.Binary.Aes.Certificate`, in [CompPoly/Fields/Binary/Aes/Certificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean), by CompPoly Contributors.
+`CompPoly.Fields.Binary.Aes.Certificate`, in [CompPoly/Fields/Binary/Aes/Certificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean), by CompPoly Contributors.
 
 > The modulus `f` has little-endian coefficients `[1, 1, 0, 1, 1, 0, 0, 0, 1]`.
 >
@@ -28,7 +28,7 @@ proof: formalized
 > `CompPoly.RabinCert.runChain` equations and certificate-soundness theorems for
 > their specified polynomial. Defining the lists alone establishes no such theorem.
 
-`AesField.Certificate.traceSteps` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L40))
+`AesField.Certificate.traceSteps` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L40))
 
 > Square-and-multiply chain for `X^(p^8) mod f` (8 steps).
 
@@ -38,7 +38,7 @@ def traceSteps : List Step
 
 > ### Coprimality with `X^(p^4) - X`, for the prime factor `2` of `d = 8`.
 
-`AesField.Certificate.cop4Steps` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L53))
+`AesField.Certificate.cop4Steps` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L53))
 
 > Square-and-multiply chain for `X^(p^4) mod f` (4 steps).
 
@@ -46,7 +46,7 @@ def traceSteps : List Step
 def cop4Steps : List Step
 ```
 
-`AesField.Certificate.cop4Rp` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L60))
+`AesField.Certificate.cop4Rp` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L60))
 
 > The residue `X^(p^4) mod f`.
 
@@ -54,7 +54,7 @@ def cop4Steps : List Step
 def cop4Rp : List ℕ
 ```
 
-`AesField.Certificate.cop4W` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L63))
+`AesField.Certificate.cop4W` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L63))
 
 > `cop4W = (X^(p^4) mod f) - X`, the reduced form of `X^(p^4) - X`.
 
@@ -62,7 +62,7 @@ def cop4Rp : List ℕ
 def cop4W : List ℕ
 ```
 
-`AesField.Certificate.cop4U` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L66))
+`AesField.Certificate.cop4U` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L66))
 
 > Bézout coefficient: `cop4U·f + cop4V·cop4W = 1`.
 
@@ -70,7 +70,7 @@ def cop4W : List ℕ
 def cop4U : List ℕ
 ```
 
-`AesField.Certificate.cop4V` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean#L69))
+`AesField.Certificate.cop4V` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean#L69))
 
 > Bézout coefficient: `cop4U·f + cop4V·cop4W = 1`.
 
@@ -84,5 +84,5 @@ def cop4V : List ℕ
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Aes/Certificate.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Certificate.lean)
+- [CompPoly/Fields/Binary/Aes/Certificate.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Aes/Certificate.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.Aes.Certificate.json)

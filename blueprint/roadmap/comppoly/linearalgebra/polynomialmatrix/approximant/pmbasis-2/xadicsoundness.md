@@ -7,7 +7,7 @@ proof: formalized
 
 # X-Adic Row Soundness Toolkit
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean), by Valerii Huhnin.
 
 > The `RowApproximates` predicate, its divisibility characterization, closure
 > under the row operations used by the leaf reduction and completion steps, and
@@ -20,7 +20,7 @@ proof: formalized
 > `X^order` divisibility of the `toPoly` image, which makes it closed under the
 > row operations used by the reduction, completion, and composition steps.
 
-`CompPoly.PolynomialMatrix.Approximant.RowApproximates` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L44))
+`CompPoly.PolynomialMatrix.Approximant.RowApproximates` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L44))
 
 > A row approximates an X-adic problem when every column product vanishes to
 > the required order.
@@ -30,7 +30,7 @@ def RowApproximates (mulCtx : CPolynomial.MulContext F)
     (problem : XAdicProblem F) (row : PolynomialRow F) : Prop
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.truncateX_eq_zero_iff_X_pow_dvd` (theorem, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L51))
+`CompPoly.PolynomialMatrix.Approximant.truncateX_eq_zero_iff_X_pow_dvd` (theorem, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L51))
 
 > Truncation vanishes exactly on `X^order`-multiples under `toPoly`.
 
@@ -39,7 +39,7 @@ theorem truncateX_eq_zero_iff_X_pow_dvd (order : Nat) (p : CPolynomial F) :
     truncateX order p = 0 ↔ (Polynomial.X : Polynomial F) ^ order ∣ p.toPoly
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.truncateX_zero_eq_zero` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L71))
+`CompPoly.PolynomialMatrix.Approximant.truncateX_zero_eq_zero` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L71))
 
 > Truncation of the zero polynomial is zero.
 
@@ -48,7 +48,7 @@ theorem truncateX_zero_eq_zero (order : Nat) :
     truncateX (F := F) order 0 = 0
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pm_toPoly_finset_sum` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L87))
+`CompPoly.PolynomialMatrix.Approximant.pm_toPoly_finset_sum` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L87))
 
 > `toPoly` commutes with finite range sums.
 
@@ -57,7 +57,7 @@ theorem pm_toPoly_finset_sum (f : Nat → CPolynomial F) (n : Nat) :
     (∑ k ∈ Finset.range n, f k).toPoly = ∑ k ∈ Finset.range n, (f k).toPoly
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowGet_rowMulMatrixWith_toPoly` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L110))
+`CompPoly.PolynomialMatrix.Approximant.rowGet_rowMulMatrixWith_toPoly` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L110))
 
 > Column entries of a row-by-matrix product as sums over the matrix height,
 > under `toPoly`.
@@ -71,7 +71,7 @@ theorem rowGet_rowMulMatrixWith_toPoly (mulCtx : CPolynomial.MulContext F)
         (rowGet row k).toPoly * (rowGet (M.getD k #[]) j).toPoly
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_iff` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L150))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_iff` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L150))
 
 > Divisibility form of the approximant condition, one column at a time.
 
@@ -86,7 +86,7 @@ theorem rowApproximates_iff (mulCtx : CPolynomial.MulContext F)
               (rowGet (problem.matrix.getD k #[]) j).toPoly
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_rowSub` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L173))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_rowSub` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L173))
 
 > Row subtraction preserves the approximant condition.
 
@@ -98,7 +98,7 @@ theorem rowApproximates_rowSub (mulCtx : CPolynomial.MulContext F)
     RowApproximates mulCtx problem (rowSub a b)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.polynomialScaleCoeffX_toPoly` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L201))
+`CompPoly.PolynomialMatrix.Approximant.polynomialScaleCoeffX_toPoly` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L201))
 
 > Coefficient-shift scaling under `toPoly`.
 
@@ -108,7 +108,7 @@ theorem polynomialScaleCoeffX_toPoly (c : F) (d : Nat) (p : CPolynomial F) :
       Polynomial.C c * Polynomial.X ^ d * p.toPoly
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_rowScaleCoeffX` (theorem, [line 269](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L269))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_rowScaleCoeffX` (theorem, [line 269](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L269))
 
 > Coefficient-shift row scaling preserves the approximant condition.
 
@@ -119,7 +119,7 @@ theorem rowApproximates_rowScaleCoeffX (mulCtx : CPolynomial.MulContext F)
     RowApproximates mulCtx problem (rowScaleCoeffX c d row)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_cancelKernelLeafLeadingTerm` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L288))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_cancelKernelLeafLeadingTerm` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L288))
 
 > Leading-term cancellation preserves the approximant condition.
 
@@ -133,7 +133,7 @@ theorem rowApproximates_cancelKernelLeafLeadingTerm
       (cancelKernelLeafLeadingTerm target reducer shift)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafPivotRowWithFuel_approximates` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L307))
+`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafPivotRowWithFuel_approximates` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L307))
 
 > Pivot-table insertion preserves the approximant condition of all stored
 > rows.
@@ -151,7 +151,7 @@ theorem insertKernelLeafPivotRowWithFuel_approximates
         RowApproximates mulCtx problem r
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotRows_approximates` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L383))
+`CompPoly.PolynomialMatrix.Approximant.pivotRows_approximates` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L383))
 
 > Rows extracted from a sound pivot table satisfy the approximant
 > condition.
@@ -165,7 +165,7 @@ theorem pivotRows_approximates (mulCtx : CPolynomial.MulContext F)
     RowApproximates mulCtx problem row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_approximates` (theorem, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L401))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_approximates` (theorem, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L401))
 
 > Pivot-table reduction preserves the approximant condition.
 
@@ -179,7 +179,7 @@ theorem reduceKernelLeafRowsByPivots_approximates
     RowApproximates mulCtx problem row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows_subset` (theorem, [line 446](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L446))
+`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows_subset` (theorem, [line 446](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L446))
 
 > Compaction preserves row membership soundness.
 
@@ -189,7 +189,7 @@ theorem compactNonzeroRows_subset {rows : PolynomialMatrix F}
     row ∈ MatrixRows rows
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows_nonzero` (theorem, [line 456](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L456))
+`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows_nonzero` (theorem, [line 456](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L456))
 
 > Compacted rows are nonzero.
 
@@ -199,7 +199,7 @@ theorem compactNonzeroRows_nonzero {rows : PolynomialMatrix F}
     rowIsZero row = false
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coeffXPower_toPoly` (theorem, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L464))
+`CompPoly.PolynomialMatrix.Approximant.coeffXPower_toPoly` (theorem, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L464))
 
 > The monomial `coeffXPower c d` under `toPoly`.
 
@@ -208,7 +208,7 @@ theorem coeffXPower_toPoly (c : F) (d : Nat) :
     (coeffXPower c d).toPoly = Polynomial.C c * Polynomial.X ^ d
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_monomialUnitRow` (theorem, [line 484](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L484))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_monomialUnitRow` (theorem, [line 484](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L484))
 
 > Monomial unit rows of sufficiently high degree satisfy every X-adic
 > condition.
@@ -221,7 +221,7 @@ theorem rowApproximates_monomialUnitRow (mulCtx : CPolynomial.MulContext F)
       (monomialUnitRow problem.matrix.size i d)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.getD_le_maxOrder` (theorem, [line 518](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L518))
+`CompPoly.PolynomialMatrix.Approximant.getD_le_maxOrder` (theorem, [line 518](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L518))
 
 > Every entry of the order vector is bounded by `maxOrder`.
 
@@ -231,7 +231,7 @@ theorem getD_le_maxOrder (problem : XAdicProblem F) {j : Nat}
     problem.orders.getD j 0 ≤ maxOrder problem
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.missingCompletionRows_approximates` (theorem, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L553))
+`CompPoly.PolynomialMatrix.Approximant.missingCompletionRows_approximates` (theorem, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L553))
 
 > Missing-pivot completion rows satisfy every X-adic condition.
 
@@ -243,7 +243,7 @@ theorem missingCompletionRows_approximates (mulCtx : CPolynomial.MulContext F)
     RowApproximates mulCtx problem row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows_approximates` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L568))
+`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows_approximates` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L568))
 
 > Pivot completion preserves the approximant condition.
 
@@ -258,7 +258,7 @@ theorem completeMissingPivotRows_approximates (mulCtx : CPolynomial.MulContext F
 
 > ## Composition soundness
 
-`CompPoly.PolynomialMatrix.Approximant.divXTrunc_coeff` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L582))
+`CompPoly.PolynomialMatrix.Approximant.divXTrunc_coeff` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L582))
 
 > Coefficients of the shifted truncation `divXTrunc`.
 
@@ -268,7 +268,7 @@ theorem divXTrunc_coeff (shift order : Nat) (p : CPolynomial F) (t : Nat) :
       if t < order then CPolynomial.coeff p (t + shift) else 0
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowMulMatrixWith_ctx` (theorem, [line 593](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L593))
+`CompPoly.PolynomialMatrix.Approximant.rowMulMatrixWith_ctx` (theorem, [line 593](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L593))
 
 > The row-by-matrix product does not depend on the multiplication context.
 
@@ -278,7 +278,7 @@ theorem rowMulMatrixWith_ctx (ctx₁ ctx₂ : CPolynomial.MulContext F)
     rowMulMatrixWith ctx₁ row M = rowMulMatrixWith ctx₂ row M
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.natArray_map_getD` (theorem, [line 604](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L604))
+`CompPoly.PolynomialMatrix.Approximant.natArray_map_getD` (theorem, [line 604](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L604))
 
 > `getD` of a mapped natural-number array at an in-bounds index.
 
@@ -288,7 +288,7 @@ theorem natArray_map_getD (f : Nat → Nat) (a : Array Nat) {j : Nat}
     (a.map f).getD j 0 = f (a.getD j 0)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.matrixWidth_eq_of_first_row` (theorem, [line 613](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L613))
+`CompPoly.PolynomialMatrix.Approximant.matrixWidth_eq_of_first_row` (theorem, [line 613](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L613))
 
 > A nonempty matrix with uniform row width `n` has `MatrixWidth` `n`.
 
@@ -299,7 +299,7 @@ theorem matrixWidth_eq_of_first_row {M : PolynomialMatrix F} {n : Nat}
     MatrixWidth M = n
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.getD_mem_matrixRows` (theorem, [line 622](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L622))
+`CompPoly.PolynomialMatrix.Approximant.getD_mem_matrixRows` (theorem, [line 622](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L622))
 
 > In-bounds `getD` rows are matrix rows.
 
@@ -308,7 +308,7 @@ theorem getD_mem_matrixRows {M : PolynomialMatrix F} {l : Nat}
     (hl : l < M.size) : M.getD l #[] ∈ MatrixRows M
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowApproximates_composed` (theorem, [line 677](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L677))
+`CompPoly.PolynomialMatrix.Approximant.rowApproximates_composed` (theorem, [line 677](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean#L677))
 
 > Soundness of one PM-basis composition step: a residual-approximant row
 > times a lower-approximant basis approximates the full problem.
@@ -347,5 +347,5 @@ theorem rowApproximates_composed (mulCtx : CPolynomial.MulContext F)
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/XAdicSoundness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness.json)

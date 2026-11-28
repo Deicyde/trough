@@ -7,14 +7,14 @@ proof: formalized
 
 # Concrete additive NTT instances
 
-`CompPoly.Fields.Binary.AdditiveNTT.Impl`, in [CompPoly/Fields/Binary/AdditiveNTT/Impl.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.AdditiveNTT.Impl`, in [CompPoly/Fields/Binary/AdditiveNTT/Impl.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Compatibility entry point for the generic executable additive NTT algorithms, together with
 > concrete binary tower bases, instances and the existing example. Generic algorithm clients can
 > import `CompPoly.Fields.Binary.AdditiveNTT.Executable`; generic correctness clients can import
 > `CompPoly.Fields.Binary.AdditiveNTT.Correctness`.
 
-`AdditiveNTT.computableBasisExplicit` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L37))
+`AdditiveNTT.computableBasisExplicit` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L37))
 
 > Computable basis for ConcreteBTField k over ConcreteBTField 0.
 > This is the explicit product of Z's.
@@ -23,7 +23,7 @@ proof: formalized
 def computableBasisExplicit (k : ℕ) (i : Fin (2 ^ k)) : ConcreteBTField k
 ```
 
-`AdditiveNTT.computableBasisExplicit_eq_multilinearBasis` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L46))
+`AdditiveNTT.computableBasisExplicit_eq_multilinearBasis` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L46))
 
 > The executable bit-indexed basis equals the multilinear tower basis over level zero.
 
@@ -32,7 +32,7 @@ theorem computableBasisExplicit_eq_multilinearBasis (k : ℕ) :
     computableBasisExplicit k = fun i => multilinearBasis 0 k (by omega) i
 ```
 
-`AdditiveNTT.hβ_lin_indep_concrete` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L63))
+`AdditiveNTT.hβ_lin_indep_concrete` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L63))
 
 ```lean
 theorem hβ_lin_indep_concrete (k : ℕ) :
@@ -41,13 +41,13 @@ theorem hβ_lin_indep_concrete (k : ℕ) :
       (v := computableBasisExplicit k)
 ```
 
-`AdditiveNTT.BTF₃` (abbreviation, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L71))
+`AdditiveNTT.BTF₃` (abbreviation, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L71))
 
 ```lean
 abbrev BTF₃
 ```
 
-`AdditiveNTT.testNTTBTF₃` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L87))
+`AdditiveNTT.testNTTBTF₃` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean#L87))
 
 > Test of the computable additive NTT over BTF₃ (an 8-bit binary tower field `BTF₃`).
 > **Input polynomial:** p(x) = x (novel coefficients [7, 1, 0, 0]) of size `2^ℓ` in `BTF₃`
@@ -69,5 +69,5 @@ def testNTTBTF₃ : Fin (2 ^ (2 + 2)) → BTF₃
 
 ## Sources
 
-- [CompPoly/Fields/Binary/AdditiveNTT/Impl.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean)
+- [CompPoly/Fields/Binary/AdditiveNTT/Impl.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/Impl.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.AdditiveNTT.Impl.json)

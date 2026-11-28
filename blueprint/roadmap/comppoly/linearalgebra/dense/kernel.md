@@ -7,12 +7,12 @@ proof: formalized
 
 # Dense Homogeneous Kernels
 
-`CompPoly.LinearAlgebra.Dense.Kernel`, in [CompPoly/LinearAlgebra/Dense/Kernel.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.Kernel`, in [CompPoly/LinearAlgebra/Dense/Kernel.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean), by Valerii Huhnin.
 
 > Executable homogeneous-kernel basis and witness extraction from row-reduced
 > dense matrices.
 
-`CompPoly.DenseMatrix.containsNat` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L26))
+`CompPoly.DenseMatrix.containsNat` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L26))
 
 > Boolean membership test for natural-number arrays.
 
@@ -20,7 +20,7 @@ proof: formalized
 def containsNat (xs : Array Nat) (x : Nat) : Bool
 ```
 
-`CompPoly.DenseMatrix.freeColumns` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L30))
+`CompPoly.DenseMatrix.freeColumns` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L30))
 
 > Free columns of a row-reduced matrix.
 
@@ -28,7 +28,7 @@ def containsNat (xs : Array Nat) (x : Nat) : Bool
 def freeColumns (cols : Nat) (pivots : Array Nat) : Array Nat
 ```
 
-`CompPoly.DenseMatrix.pivotRowOfColumn?` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L34))
+`CompPoly.DenseMatrix.pivotRowOfColumn?` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L34))
 
 > Pivot row for a pivot column, if the column is a pivot.
 
@@ -36,7 +36,7 @@ def freeColumns (cols : Nat) (pivots : Array Nat) : Array Nat
 def pivotRowOfColumn? (pivots : Array Nat) (col : Nat) : Option Nat
 ```
 
-`CompPoly.DenseMatrix.basisVectorForFreeColumn` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L38))
+`CompPoly.DenseMatrix.basisVectorForFreeColumn` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L38))
 
 > Kernel basis vector corresponding to one free column of an RREF matrix.
 
@@ -45,7 +45,7 @@ def basisVectorForFreeColumn [Field F] [BEq F] (A : DenseMatrix F)
     (pivots : Array Nat) (free : Nat) : Array F
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L49))
+`CompPoly.DenseMatrix.homogeneousKernelBasis` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L49))
 
 > Homogeneous kernel basis extracted from the RREF free columns.
 
@@ -54,7 +54,7 @@ def homogeneousKernelBasis [Field F] [BEq F] (M : DenseMatrix F) :
     Array (Array F)
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitness` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean#L56))
+`CompPoly.DenseMatrix.homogeneousWitness` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean#L56))
 
 > One nonzero homogeneous-kernel witness, if a free column exists.
 
@@ -68,5 +68,5 @@ def homogeneousWitness [Field F] [BEq F] (M : DenseMatrix F) : Option (Array F)
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/Kernel.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/Kernel.lean)
+- [CompPoly/LinearAlgebra/Dense/Kernel.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/Kernel.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.Kernel.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Irreducibility of binomials `X^d - W` over a finite field
 
-`CompPoly.Fields.Extension.Binomial`, in [CompPoly/Fields/Extension/Binomial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean), by Derek Sorensen.
+`CompPoly.Fields.Extension.Binomial`, in [CompPoly/Fields/Extension/Binomial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean), by Derek Sorensen.
 
 > Applying Rabin's test (`CompPoly/Data/Polynomial/Rabin.lean`) to a *binomial* defining
 > polynomial collapses both conditions into single exponentiations **in the base field**.
@@ -46,7 +46,7 @@ proof: formalized
 
 > ### Reducing powers of `X` modulo a binomial
 
-`Polynomial.X_pow_sub_C_dvd_X_pow_mul_sub_C_pow` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L63))
+`Polynomial.X_pow_sub_C_dvd_X_pow_mul_sub_C_pow` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L63))
 
 > `X^d - C W` divides `X^(d * k) - C (W ^ k)`.
 >
@@ -58,7 +58,7 @@ theorem X_pow_sub_C_dvd_X_pow_mul_sub_C_pow (W : F) (d k : ℕ) :
     (X ^ d - C W) ∣ X ^ (d * k) - C (W ^ k)
 ```
 
-`Polynomial.not_X_dvd_X_pow_sub_C` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L84))
+`Polynomial.not_X_dvd_X_pow_sub_C` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L84))
 
 > `X` does not divide `X^d - C W` when `W ≠ 0`: the constant coefficient is `-W`.
 
@@ -69,7 +69,7 @@ theorem not_X_dvd_X_pow_sub_C {W : F} {d : ℕ} (hd : 0 < d) (hW : W ≠ 0) :
 
 > ### The two collapsed Rabin conditions
 
-`Polynomial.X_pow_sub_C_dvd_X_pow_sub_X` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L96))
+`Polynomial.X_pow_sub_C_dvd_X_pow_sub_X` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L96))
 
 > **Rabin condition 1, collapsed.** If `d ∣ N - 1` and `W ^ ((N-1)/d) = 1`, then
 > `X^d - C W` divides `X^N - X`.
@@ -80,7 +80,7 @@ theorem X_pow_sub_C_dvd_X_pow_sub_X {W : F} {d N : ℕ} (hd : 0 < d) (hN : 1 ≤
     (X ^ d - C W) ∣ X ^ N - X
 ```
 
-`Polynomial.isCoprime_X_pow_sub_C_X_pow_sub_X` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L113))
+`Polynomial.isCoprime_X_pow_sub_C_X_pow_sub_X` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L113))
 
 > **Rabin condition 2, collapsed.** If `d ∣ N - 1`, `W ≠ 0` and `W ^ ((N-1)/d) ≠ 1`, then
 > `X^d - C W` is coprime to `X^N - X`.
@@ -94,7 +94,7 @@ theorem isCoprime_X_pow_sub_C_X_pow_sub_X {W : F} {d N : ℕ} (hd : 0 < d) (hW0 
     IsCoprime (X ^ d - C W) (X ^ N - X)
 ```
 
-`Polynomial.eq_one_of_X_pow_sub_C_dvd_X_pow_sub_X` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L132))
+`Polynomial.eq_one_of_X_pow_sub_C_dvd_X_pow_sub_X` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L132))
 
 > Converse of `X_pow_sub_C_dvd_X_pow_sub_X`: divisibility forces `W ^ ((N-1)/d) = 1`.
 
@@ -104,7 +104,7 @@ theorem eq_one_of_X_pow_sub_C_dvd_X_pow_sub_X {W : F} {d N : ℕ} (hd : 0 < d) (
     W ^ ((N - 1) / d) = 1
 ```
 
-`Polynomial.ne_one_of_isCoprime_X_pow_sub_C_X_pow_sub_X` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L140))
+`Polynomial.ne_one_of_isCoprime_X_pow_sub_C_X_pow_sub_X` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L140))
 
 > Converse of `isCoprime_X_pow_sub_C_X_pow_sub_X`: coprimality forces `W ^ ((N-1)/d) ≠ 1`.
 
@@ -120,7 +120,7 @@ theorem ne_one_of_isCoprime_X_pow_sub_C_X_pow_sub_X {W : F} {d N : ℕ} (hd : 0 
 > `Polynomial.irreducible_of_rabin`; a concrete field supplies `ZMod.card _` and a caller with no
 > numeral passes `rfl`. The section comment in `CompPoly/Data/Polynomial/Rabin.lean` says why.
 
-`Polynomial.irreducible_X_pow_sub_C_iff` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L167))
+`Polynomial.irreducible_X_pow_sub_C_iff` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L167))
 
 > **Irreducibility criterion for binomials.**
 >
@@ -140,7 +140,7 @@ theorem irreducible_X_pow_sub_C_iff {d q : ℕ} {W : F} (hcard : Fintype.card F 
         ∀ ℓ ∈ d.primeFactors, W ^ ((q ^ (d / ℓ) - 1) / d) ≠ 1)
 ```
 
-`Polynomial.irreducible_X_pow_sub_C` (theorem, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L188))
+`Polynomial.irreducible_X_pow_sub_C` (theorem, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L188))
 
 > The `mpr` direction of `irreducible_X_pow_sub_C_iff`, as a standalone lemma.
 
@@ -154,7 +154,7 @@ theorem irreducible_X_pow_sub_C {d q : ℕ} {W : F} (hcard : Fintype.card F = q)
     Irreducible ((X : F[X]) ^ d - C W)
 ```
 
-`Polynomial.irreducible_X_pow_four_sub_C_iff` (theorem, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L221))
+`Polynomial.irreducible_X_pow_four_sub_C_iff` (theorem, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L221))
 
 > **Irreducibility criterion for quartic binomials.**
 >
@@ -181,13 +181,13 @@ theorem irreducible_X_pow_four_sub_C_iff {q : ℕ} {W : F} (hcard : Fintype.card
       (W ^ ((q ^ 4 - 1) / 4) = 1 ∧ W ^ ((q ^ 2 - 1) / 4) ≠ 1)
 ```
 
-`Polynomial.irreducible_X_pow_four_sub_C_iff_of_card` (alias, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L233))
+`Polynomial.irreducible_X_pow_four_sub_C_iff_of_card` (alias, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L233))
 
 ```lean
 alias irreducible_X_pow_four_sub_C_iff_of_card
 ```
 
-`Polynomial.irreducible_X_pow_four_sub_C` (theorem, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L236))
+`Polynomial.irreducible_X_pow_four_sub_C` (theorem, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L236))
 
 > The `mpr` direction of `irreducible_X_pow_four_sub_C_iff`, as a standalone lemma.
 
@@ -199,7 +199,7 @@ theorem irreducible_X_pow_four_sub_C {q : ℕ} {W : F} (hcard : Fintype.card F =
     Irreducible ((X : F[X]) ^ 4 - C W)
 ```
 
-`Polynomial.irreducible_X_pow_four_sub_C_of_card` (alias, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean#L244))
+`Polynomial.irreducible_X_pow_four_sub_C_of_card` (alias, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean#L244))
 
 ```lean
 alias irreducible_X_pow_four_sub_C_of_card
@@ -215,5 +215,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/Extension/Binomial.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Binomial.lean)
+- [CompPoly/Fields/Extension/Binomial.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Binomial.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Extension.Binomial.json)

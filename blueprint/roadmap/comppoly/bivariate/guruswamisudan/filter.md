@@ -7,11 +7,11 @@ proof: formalized
 
 # Guruswami-Sudan Candidate Filtering
 
-`CompPoly.Bivariate.GuruswamiSudan.Filter`, in [CompPoly/Bivariate/GuruswamiSudan/Filter.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Filter`, in [CompPoly/Bivariate/GuruswamiSudan/Filter.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean), by Valerii Huhnin.
 
 > Generic packed-point filtering for algebraic `gsCore` outputs.
 
-`CompPoly.GuruswamiSudan.candidateMismatchCount` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L23))
+`CompPoly.GuruswamiSudan.candidateMismatchCount` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L23))
 
 > Number of packed points where `p(x)` differs from the supplied `y`.
 
@@ -20,7 +20,7 @@ def candidateMismatchCount {F : Type*} [Semiring F] [BEq F]
     (points : Array (Prod F F)) (p : CPolynomial F) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.matchingPointCount` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L31))
+`CompPoly.GuruswamiSudan.matchingPointCount` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L31))
 
 > Number of packed points where `p(x)` matches the supplied `y`.
 
@@ -29,7 +29,7 @@ def matchingPointCount {F : Type*} [Semiring F] [BEq F]
     (points : Array (Prod F F)) (p : CPolynomial F) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.passesCandidateDistance` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L39))
+`CompPoly.GuruswamiSudan.passesCandidateDistance` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L39))
 
 > Boolean distance predicate for packed candidate filtering.
 
@@ -38,7 +38,7 @@ def passesCandidateDistance {F : Type*} [Semiring F] [BEq F]
     (points : Array (Prod F F)) (radius : Nat) (p : CPolynomial F) : Bool
 ```
 
-`CompPoly.GuruswamiSudan.gsFilteredCore` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L45))
+`CompPoly.GuruswamiSudan.gsFilteredCore` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean#L45))
 
 > Run the algebraic GS core and keep only candidates within the packed
 > mismatch radius.
@@ -59,5 +59,5 @@ def gsFilteredCore {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Filter.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Filter.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Filter.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Filter.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Filter.json)

@@ -7,13 +7,13 @@ proof: formalized
 
 # Guruswami-Sudan Backend Contexts
 
-`CompPoly.Bivariate.GuruswamiSudan.Context`, in [CompPoly/Bivariate/GuruswamiSudan/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Context`, in [CompPoly/Bivariate/GuruswamiSudan/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean), by Valerii Huhnin.
 
 > Explicit executable contexts for the CompPoly Guruswami-Sudan core. The
 > contexts package replaceable operations together with the contracts used by the
 > public correctness theorems.
 
-`CompPoly.GuruswamiSudan.GSInterpParams` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L27))
+`CompPoly.GuruswamiSudan.GSInterpParams` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L27))
 
 > Parameters for the CompPoly interpolation step.
 
@@ -25,7 +25,7 @@ structure GSInterpParams where
 deriving Repr, BEq, DecidableEq
 ```
 
-`CompPoly.GuruswamiSudan.yWeight` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L34))
+`CompPoly.GuruswamiSudan.yWeight` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L34))
 
 > The GS weighted degree uses weights `(1, messageDegree - 1)`.
 
@@ -33,7 +33,7 @@ deriving Repr, BEq, DecidableEq
 def yWeight (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.degreeLt` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L38))
+`CompPoly.GuruswamiSudan.degreeLt` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L38))
 
 > `p.degree < k`, treating the zero polynomial as degree `bot`.
 
@@ -41,7 +41,7 @@ def yWeight (params : GSInterpParams) : Nat
 def degreeLt {F : Type*} [Zero F] (p : CPolynomial F) (k : Nat) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.DistinctXCoordinates` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L42))
+`CompPoly.GuruswamiSudan.DistinctXCoordinates` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L42))
 
 > Packed input points have no duplicate `x`-coordinates.
 
@@ -49,7 +49,7 @@ def degreeLt {F : Type*} [Zero F] (p : CPolynomial F) (k : Nat) : Prop
 def DistinctXCoordinates {F : Type*} (points : Array (Prod F F)) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.ValidInterpolationWitness` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L47))
+`CompPoly.GuruswamiSudan.ValidInterpolationWitness` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L47))
 
 > Semantic interpolation witness used by backend contracts and core
 > completeness statements.
@@ -60,7 +60,7 @@ def ValidInterpolationWitness {F : Type*}
     (points : Array (Prod F F)) (params : GSInterpParams) (Q : CBivariate F) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.LinearKernelContext` (structure, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L62))
+`CompPoly.GuruswamiSudan.LinearKernelContext` (structure, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L62))
 
 > A dense homogeneous linear-kernel backend.
 >
@@ -95,7 +95,7 @@ structure LinearKernelContext (F : Type*) [Field F] [BEq F] [LawfulBEq F] where
                 ¬ (DenseMatrix.NonzeroVector v)
 ```
 
-`CompPoly.GuruswamiSudan.denseLinearKernelContext` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L93))
+`CompPoly.GuruswamiSudan.denseLinearKernelContext` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L93))
 
 > The dense Gaussian-elimination homogeneous-kernel backend.
 >
@@ -110,7 +110,7 @@ def denseLinearKernelContext (F : Type*) [Field F] [BEq F] [LawfulBEq F] :
     LinearKernelContext F
 ```
 
-`CompPoly.GuruswamiSudan.GSInterpContext` (structure, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L119))
+`CompPoly.GuruswamiSudan.GSInterpContext` (structure, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L119))
 
 > Guruswami-Sudan-facing interpolation backend.
 >
@@ -133,7 +133,7 @@ structure GSInterpContext (F : Type*) [Field F] [BEq F] [LawfulBEq F]
         exists Q, interpolate points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.FieldRootContext` (structure, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L138))
+`CompPoly.GuruswamiSudan.FieldRootContext` (structure, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L138))
 
 > Executable root finder for univariate field polynomials.
 >
@@ -155,7 +155,7 @@ structure FieldRootContext (F : Type*) [Field F] [BEq F] [LawfulBEq F] where
         a ∈ (rootsInField p).toList
 ```
 
-`CompPoly.GuruswamiSudan.GSRootContext` (structure, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L156))
+`CompPoly.GuruswamiSudan.GSRootContext` (structure, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean#L156))
 
 > Guruswami-Sudan-facing bounded-degree root backend.
 >
@@ -192,5 +192,5 @@ structure GSRootContext (F : Type*) [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Context.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Context.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Context.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Context.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Context.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Evaluation of computable multivariate polynomials, bundled and over `Finset`s
 
-`CompPoly.Multivariate.Eval`, in [CompPoly/Multivariate/Eval.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean), by Pablo Martín Vinuelas.
+`CompPoly.Multivariate.Eval`, in [CompPoly/Multivariate/Eval.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean), by Pablo Martín Vinuelas.
 
 > CompPoly records that `CMvPolynomial.eval vals` respects each ring operation separately
 > (`eval_zero`, `eval_one`, `eval_add`, `eval_mul`, `eval_C`, …), which is what `simp`/`grind`
@@ -19,7 +19,7 @@ proof: formalized
 > lemmas are its immediate corollaries, stated in unbundled form so that call sites can rewrite
 > without unfolding.
 
-`CPoly.CMvPolynomial.evalHom` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L34))
+`CPoly.CMvPolynomial.evalHom` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L34))
 
 > Evaluation at a fixed point, bundled as a ring homomorphism — the identity-coefficient case
 > of `eval₂Hom`. This is what gives evaluation the `map_*` API of a `RingHom`.
@@ -28,72 +28,72 @@ proof: formalized
 def evalHom : CMvPolynomial n R →+* R
 ```
 
-`CPoly.CMvPolynomial.evalHom_apply` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L37))
+`CPoly.CMvPolynomial.evalHom_apply` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L37))
 
 ```lean
 theorem evalHom_apply (p : CMvPolynomial n R) : evalHom vals p = p.eval vals
 ```
 
-`CPoly.CMvPolynomial.eval_zero` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L40))
+`CPoly.CMvPolynomial.eval_zero` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L40))
 
 ```lean
 lemma eval_zero : (0 : CMvPolynomial n R).eval vals = 0
 ```
 
-`CPoly.CMvPolynomial.eval_one` (lemma, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L44))
+`CPoly.CMvPolynomial.eval_one` (lemma, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L44))
 
 ```lean
 lemma eval_one : (1 : CMvPolynomial n R).eval vals = 1
 ```
 
-`CPoly.CMvPolynomial.eval_C` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L48))
+`CPoly.CMvPolynomial.eval_C` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L48))
 
 ```lean
 lemma eval_C (c : R) : (CMvPolynomial.C c : CMvPolynomial n R).eval vals = c
 ```
 
-`CPoly.CMvPolynomial.eval_X` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L52))
+`CPoly.CMvPolynomial.eval_X` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L52))
 
 ```lean
 theorem eval_X (i : Fin n) : (X (R := R) i).eval vals = vals i
 ```
 
-`CPoly.CMvPolynomial.eval_add` (lemma, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L56))
+`CPoly.CMvPolynomial.eval_add` (lemma, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L56))
 
 ```lean
 lemma eval_add (p q : CMvPolynomial n R) :
     (p + q).eval vals = p.eval vals + q.eval vals
 ```
 
-`CPoly.CMvPolynomial.eval_mul` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L60))
+`CPoly.CMvPolynomial.eval_mul` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L60))
 
 ```lean
 lemma eval_mul (p q : CMvPolynomial n R) :
     (p * q).eval vals = p.eval vals * q.eval vals
 ```
 
-`CPoly.CMvPolynomial.eval_pow` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L64))
+`CPoly.CMvPolynomial.eval_pow` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L64))
 
 ```lean
 lemma eval_pow (p : CMvPolynomial n R) (k : ℕ) :
     (p ^ k).eval vals = (p.eval vals) ^ k
 ```
 
-`CPoly.CMvPolynomial.eval_neg` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L78))
+`CPoly.CMvPolynomial.eval_neg` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L78))
 
 ```lean
 lemma eval_neg (p : CMvPolynomial n R) :
     (-p).eval vals = -(p.eval vals)
 ```
 
-`CPoly.CMvPolynomial.eval_sub` (lemma, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L83))
+`CPoly.CMvPolynomial.eval_sub` (lemma, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L83))
 
 ```lean
 lemma eval_sub (p q : CMvPolynomial n R) :
     (p - q).eval vals = p.eval vals - q.eval vals
 ```
 
-`CPoly.CMvPolynomial.eval_sum` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L90))
+`CPoly.CMvPolynomial.eval_sum` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L90))
 
 > Evaluation commutes with a finite sum of polynomials.
 
@@ -102,7 +102,7 @@ theorem eval_sum {ι : Type*} (s : Finset ι) (f : ι → CMvPolynomial n R) :
     (∑ i ∈ s, f i).eval vals = ∑ i ∈ s, (f i).eval vals
 ```
 
-`CPoly.CMvPolynomial.eval_prod` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L95))
+`CPoly.CMvPolynomial.eval_prod` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L95))
 
 > Evaluation commutes with a finite product of polynomials.
 
@@ -119,7 +119,7 @@ theorem eval_prod {ι : Type*} (s : Finset ι) (f : ι → CMvPolynomial n R) :
 > `fromCMvPolynomial`. That map is the forward direction of `polyRingEquiv`, hence a ring
 > homomorphism, so it too commutes with `Finset.sum` and `Finset.prod`.
 
-`CPoly.CMvPolynomial.eval_ext_univariate` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean#L128))
+`CPoly.CMvPolynomial.eval_ext_univariate` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean#L128))
 
 > **Bridge from univariate eval-extensionality.** Two single-variable
 > `CMvPolynomial`s over an integral domain that agree on more than $d$ points
@@ -151,5 +151,5 @@ theorem eval_ext_univariate
 
 ## Sources
 
-- [CompPoly/Multivariate/Eval.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Eval.lean)
+- [CompPoly/Multivariate/Eval.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Eval.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.Eval.json)

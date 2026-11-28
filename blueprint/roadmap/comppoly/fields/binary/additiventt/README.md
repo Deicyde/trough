@@ -2,7 +2,7 @@
 
 10 modules under `CompPoly/Fields/Binary/AdditiveNTT/`, with 288 public declarations.
 
-This module declares nothing public by name, so it has no article: [`CompPoly.Fields.Binary.AdditiveNTT.AdditiveNTT`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/AdditiveNTT.lean).
+This module declares nothing public by name, so it has no article: [`CompPoly.Fields.Binary.AdditiveNTT.AdditiveNTT`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/AdditiveNTT/AdditiveNTT.lean).
 
 - [Additive NTT Algorithm](algorithm.md)
 - [Additive NTT Correctness](correctness.md)

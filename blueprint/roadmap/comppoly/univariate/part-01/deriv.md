@@ -7,12 +7,12 @@ proof: formalized
 
 # Formal Derivative and Taylor Shift of Computable Univariate Polynomials
 
-`CompPoly.Univariate.Deriv`, in [CompPoly/Univariate/Deriv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean), by Dimitris Mitsios.
+`CompPoly.Univariate.Deriv`, in [CompPoly/Univariate/Deriv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean), by Dimitris Mitsios.
 
 > Defines the formal derivative `CPolynomial.derivative` and the Taylor shift
 > `CPolynomial.taylor`, with proofs of their core properties.
 
-`CompPoly.CPolynomial.derivative` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L28))
+`CompPoly.CPolynomial.derivative` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L28))
 
 > The formal derivative of a computable polynomial.
 > Coefficient `n` of the result is `coeff p (n+1) * (n+1)`.
@@ -22,7 +22,7 @@ def derivative [Semiring R] [BEq R] [LawfulBEq R]
     (p : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.coeff_derivative` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L36))
+`CompPoly.CPolynomial.coeff_derivative` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L36))
 
 > Coefficient formula for the derivative.
 
@@ -32,7 +32,7 @@ theorem coeff_derivative [Semiring R] [BEq R] [LawfulBEq R]
     coeff (derivative p) n = coeff p (n + 1) * (↑(n + 1) : R)
 ```
 
-`CompPoly.CPolynomial.derivative_zero` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L56))
+`CompPoly.CPolynomial.derivative_zero` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L56))
 
 > The derivative of the zero polynomial is zero.
 
@@ -41,7 +41,7 @@ theorem derivative_zero [Semiring R] [BEq R] [LawfulBEq R] :
     derivative (0 : CPolynomial R) = 0
 ```
 
-`CompPoly.CPolynomial.derivative_C` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L64))
+`CompPoly.CPolynomial.derivative_C` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L64))
 
 > The derivative of a constant is zero.
 
@@ -50,7 +50,7 @@ theorem derivative_C [Semiring R] [BEq R] [LawfulBEq R] (r : R) :
     derivative (C r) = 0
 ```
 
-`CompPoly.CPolynomial.derivative_monomial` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L72))
+`CompPoly.CPolynomial.derivative_monomial` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L72))
 
 > The derivative of a monomial.
 
@@ -61,7 +61,7 @@ theorem derivative_monomial [Semiring R] [BEq R] [LawfulBEq R]
       monomial (n - 1) (r * (↑n : R))
 ```
 
-`CompPoly.CPolynomial.derivative_add` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L85))
+`CompPoly.CPolynomial.derivative_add` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L85))
 
 > The derivative distributes over addition.
 
@@ -71,7 +71,7 @@ theorem derivative_add [Semiring R] [BEq R] [LawfulBEq R] [DecidableEq R]
     derivative (p + q) = derivative p + derivative q
 ```
 
-`CompPoly.CPolynomial.derivative_toPoly` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L95))
+`CompPoly.CPolynomial.derivative_toPoly` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L95))
 
 > The computable derivative matches Mathlib's `Polynomial.derivative` under `toPoly`.
 
@@ -80,7 +80,7 @@ theorem derivative_toPoly [Semiring R] [BEq R] [LawfulBEq R] (p : CPolynomial R)
     (derivative p).toPoly = Polynomial.derivative (R := R) p.toPoly
 ```
 
-`CompPoly.CPolynomial.derivative_mul` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L103))
+`CompPoly.CPolynomial.derivative_mul` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L103))
 
 > The derivative satisfies the Leibniz product rule.
 
@@ -89,7 +89,7 @@ theorem derivative_mul [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] (p q : 
     derivative (p * q) = derivative p * q + p * derivative q
 ```
 
-`CompPoly.CPolynomial.taylor` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L111))
+`CompPoly.CPolynomial.taylor` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L111))
 
 > The Taylor shift `taylor a p = p(X + a)`.
 
@@ -98,7 +98,7 @@ def taylor [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [DecidableEq R]
     (a : R) (p : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.taylor_toPoly` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L116))
+`CompPoly.CPolynomial.taylor_toPoly` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L116))
 
 > The computable Taylor shift matches `Polynomial.taylor` under `toPoly`.
 
@@ -108,7 +108,7 @@ theorem taylor_toPoly [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [Decidab
     (taylor a p).toPoly = Polynomial.taylor a p.toPoly
 ```
 
-`CompPoly.CPolynomial.taylor_zero` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L127))
+`CompPoly.CPolynomial.taylor_zero` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L127))
 
 > The Taylor shift of zero is zero.
 
@@ -117,7 +117,7 @@ theorem taylor_zero [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [Decidable
     (a : R) : taylor a (0 : CPolynomial R) = 0
 ```
 
-`CompPoly.CPolynomial.taylor_coeff_zero` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean#L133))
+`CompPoly.CPolynomial.taylor_coeff_zero` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean#L133))
 
 > The constant coefficient of the Taylor shift is evaluation at the shift point.
 
@@ -136,5 +136,5 @@ theorem taylor_coeff_zero [Semiring R] [BEq R] [LawfulBEq R] [Nontrivial R] [Dec
 
 ## Sources
 
-- [CompPoly/Univariate/Deriv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Deriv.lean)
+- [CompPoly/Univariate/Deriv.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Deriv.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Deriv.json)

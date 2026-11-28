@@ -7,7 +7,7 @@ proof: formalized
 
 # Probability Surface for Characteristic-Two Trace Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace`, in [CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace`, in [CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean), by Valerii Huhnin.
 
 > Probability analysis of the characteristic-two trace split branch under
 > idealized uniform probes: trace power sums take only the values zero and one,
@@ -15,7 +15,7 @@ proof: formalized
 > distinct roots into different trace fibers with probability at least `1 / 2`
 > and one trace split attempt succeeds with probability at least `1 / 2`.
 
-`CompPoly.CPolynomial.Roots.FiniteField.EvenTraceUniformFieldModel` (structure, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L42))
+`CompPoly.CPolynomial.Roots.FiniteField.EvenTraceUniformFieldModel` (structure, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L42))
 
 > Probability-facing model for the characteristic-two trace splitter: the trace
 > context has base prime two and its cardinality matches both the uniform
@@ -31,7 +31,7 @@ structure EvenTraceUniformFieldModel (F : Type*) (q : Nat)
   card_eq : Fintype.card F = q
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_eq_zero_or_one` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L73))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_eq_zero_or_one` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L73))
 
 > Trace power sums over a binary field take only the values zero and one.
 
@@ -41,7 +41,7 @@ theorem tracePowerSum_eq_zero_or_one {F : Type*} [Field F] [Fintype F]
     tracePowerSum 2 k x = 0 ∨ tracePowerSum 2 k x = 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_pair_separated_probability_ge_half` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L155))
+`CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_pair_separated_probability_ge_half` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L155))
 
 > Two independent uniform field values land in different trace fibers with
 > probability at least `1 / 2`.
@@ -59,7 +59,7 @@ theorem tracePowerSum_pair_separated_probability_ge_half {F : Type*}
         {xy : F × F | tracePowerSum 2 k xy.1 ≠ tracePowerSum 2 k xy.2}
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrialPMF` (definition, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L177))
+`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrialPMF` (definition, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L177))
 
 > One characteristic-two trace split trial under a uniform probe distribution.
 
@@ -73,7 +73,7 @@ noncomputable def evenTraceTrialPMF {F : Type*}
     PMF (TrialResult F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half_of_two_le` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L197))
+`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half_of_two_le` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L197))
 
 > Uniform probe polynomials make one characteristic-two trace split attempt
 > succeed with probability at least `1 / 2`: probe values at two distinct roots
@@ -98,7 +98,7 @@ theorem evenTraceTrial_success_probability_ge_half_of_two_le {F : Type*}
           coefficientCount g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half` (theorem, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L286))
+`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half` (theorem, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L286))
 
 > Uniform probe polynomials make one characteristic-two trace split attempt
 > succeed with probability at least `1 / 2`.
@@ -119,7 +119,7 @@ theorem evenTraceTrial_success_probability_ge_half {F : Type*}
           (CPolynomial.natDegree g) g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.repeatedEvenTraceTrialsPMF` (definition, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L308))
+`CompPoly.CPolynomial.Roots.FiniteField.repeatedEvenTraceTrialsPMF` (definition, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L308))
 
 > Independent repeated trace split trials for one unresolved factor.
 
@@ -133,7 +133,7 @@ noncomputable def repeatedEvenTraceTrialsPMF {F : Type*}
     Nat → Nat → PMF (List (TrialResult F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttemptsProbability` (definition, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L323))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttemptsProbability` (definition, [line 323](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L323))
 
 > Probability that the trace branch reaches fallback after all attempts fail.
 
@@ -147,7 +147,7 @@ noncomputable def fallbackAfterEvenTraceAttemptsProbability {F : Type*}
     ℝ≥0∞
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric` (theorem, [line 390](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L390))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric` (theorem, [line 390](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L390))
 
 > If every trace trial succeeds with probability at least `1 / 2`, the
 > probability of using fallback after `attempts` trials is at most `2^-attempts`.
@@ -168,7 +168,7 @@ theorem fallbackAfterEvenTraceAttempts_probability_le_geometric {F : Type*}
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric_of_uniformProbe` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L436))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric_of_uniformProbe` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L436))
 
 > For a squarefree root product over a binary field, the uniform probe source
 > reaches enumeration fallback after `attempts` trace trials with probability at
@@ -189,7 +189,7 @@ theorem fallbackAfterEvenTraceAttempts_probability_le_geometric_of_uniformProbe 
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_uniformTable_none_le_geometric` (theorem, [line 459](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L459))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_uniformTable_none_le_geometric` (theorem, [line 459](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean#L459))
 
 > Bridge to the executable trace retry loop: the deterministic
 > `tryEvenTraceSplitAttemptsWith`, driven by a probe table whose entries are
@@ -223,5 +223,5 @@ theorem tryEvenTraceSplitAttemptsWith_uniformTable_none_le_geometric {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace.json)

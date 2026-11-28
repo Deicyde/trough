@@ -7,12 +7,12 @@ proof: formalized
 
 # Loop Correctness Surface for Las Vegas Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Correctness.Loop`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Correctness.Loop`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean), by Valerii Huhnin.
 
 > Completeness and packaging lemmas for the bounded Las Vegas splitter loop and
 > its enumeration fallback.
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith_complete` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L424))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith_complete` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L424))
 
 > Completeness surface for bounded Las Vegas splitting plus enumeration fallback.
 
@@ -31,7 +31,7 @@ theorem lasVegasSplitLinearFactorsWith_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace_complete` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L441))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace_complete` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L441))
 
 > Completeness surface for bounded Las Vegas splitting with characteristic-two trace metadata.
 
@@ -50,7 +50,7 @@ theorem lasVegasSplitLinearFactorsWithTrace_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWith` (definition, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L458))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWith` (definition, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L458))
 
 > Package bounded Las Vegas splitting as a finite-field linear-factor splitter.
 
@@ -63,7 +63,7 @@ def lasVegasLinearFactorProductSplitterWith {F : Type*}
     LinearFactorProductSplitter F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWithTrace` (definition, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L476))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWithTrace` (definition, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L476))
 
 > Package bounded Las Vegas trace splitting as a finite-field linear-factor splitter.
 
@@ -77,7 +77,7 @@ def lasVegasLinearFactorProductSplitterWithTrace {F : Type*}
     LinearFactorProductSplitter F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_lasVegasSplitterInput` (theorem, [line 495](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L495))
+`CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_lasVegasSplitterInput` (theorem, [line 495](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean#L495))
 
 > Alias emphasizing the root-product precondition used by Las Vegas completeness.
 
@@ -104,5 +104,5 @@ theorem rootProduct_satisfies_lasVegasSplitterInput {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Correctness.Loop.json)

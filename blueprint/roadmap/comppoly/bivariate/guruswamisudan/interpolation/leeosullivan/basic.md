@@ -7,9 +7,9 @@ proof: formalized
 
 # Lee-O'Sullivan Interpolation Basics
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean), by Valerii Huhnin.
 
-`CompPoly.GuruswamiSudan.leeOSullivanWidth` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L24))
+`CompPoly.GuruswamiSudan.leeOSullivanWidth` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L24))
 
 > Number of coefficient columns in the Lee-O'Sullivan module basis.
 
@@ -17,7 +17,7 @@ proof: formalized
 def leeOSullivanWidth (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.leeOSullivanShifts` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L28))
+`CompPoly.GuruswamiSudan.leeOSullivanShifts` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L28))
 
 > Lee-O'Sullivan shifted-degree shifts, `shift[j] = j * yWeight params`.
 
@@ -25,7 +25,7 @@ def leeOSullivanWidth (params : GSInterpParams) : Nat
 def leeOSullivanShifts (params : GSInterpParams) : Array Nat
 ```
 
-`CompPoly.GuruswamiSudan.leeOSullivanT` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L32))
+`CompPoly.GuruswamiSudan.leeOSullivanT` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L32))
 
 > Uniform exponent `t_i = min i s` in the Lee-O'Sullivan basis.
 
@@ -33,7 +33,7 @@ def leeOSullivanShifts (params : GSInterpParams) : Array Nat
 def leeOSullivanT (params : GSInterpParams) (i : Nat) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.leeOSullivanBasisPolynomial` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L36))
+`CompPoly.GuruswamiSudan.leeOSullivanBasisPolynomial` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L36))
 
 > The Lee-O'Sullivan basis polynomial `P_i`.
 
@@ -43,7 +43,7 @@ def leeOSullivanBasisPolynomial {F : Type*}
     (R G : CPolynomial F) (params : GSInterpParams) (i : Nat) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.leeOSullivanBasisRowsWithRG` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L45))
+`CompPoly.GuruswamiSudan.leeOSullivanBasisRowsWithRG` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L45))
 
 > Lee-O'Sullivan basis rows from already-built `R` and `G`.
 
@@ -53,7 +53,7 @@ def leeOSullivanBasisRowsWithRG {F : Type*}
     (R G : CPolynomial F) (params : GSInterpParams) : PolynomialMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.leeOSullivanBasisRows` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L54))
+`CompPoly.GuruswamiSudan.leeOSullivanBasisRows` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean#L54))
 
 > Lee-O'Sullivan basis rows from packed points.
 
@@ -72,5 +72,5 @@ def leeOSullivanBasisRows {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic.json)

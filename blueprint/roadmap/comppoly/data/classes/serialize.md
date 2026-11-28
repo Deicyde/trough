@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization and deserialization classes
 
-`CompPoly.Data.Classes.Serialize`, in [CompPoly/Data/Classes/Serialize.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean), by Quang Dao.
+`CompPoly.Data.Classes.Serialize`, in [CompPoly/Data/Classes/Serialize.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean), by Quang Dao.
 
 > Simple type classes for serializing a type into another type, most often `ByteArray` or a
 > fixed-length `Vector` of units, and for deserializing back, with or without failure.
@@ -17,7 +17,7 @@ proof: formalized
 > statistical-closeness class `Deserialize.CloseToUniform` stays in ArkLib, where the probability
 > theory it needs already lives; CompPoly proves the counting facts behind it in `Nat` terms.
 
-`Serialize` (class, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean#L28))
+`Serialize` (class, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean#L28))
 
 > Type class for types that can be serialized to another type (most often `ByteArray` or
 > `String`).
@@ -27,7 +27,7 @@ class Serialize (α : Type u) (β : Type v) where
   serialize : α → β
 ```
 
-`Serialize.IsInjective` (class, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean#L34))
+`Serialize.IsInjective` (class, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean#L34))
 
 > Type class for injective serialization.
 
@@ -36,7 +36,7 @@ class Serialize.IsInjective (α : Type u) (β : Type v) [inst : Serialize α β]
   serialize_inj : Function.Injective inst.serialize
 ```
 
-`Deserialize` (class, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean#L39))
+`Deserialize` (class, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean#L39))
 
 > Type class for types that can be deserialized from another type (most often `ByteArray` or
 > `String`), which _never_ fails.
@@ -46,7 +46,7 @@ class Deserialize (α : Type u) (β : Type v) where
   deserialize : β → α
 ```
 
-`DeserializeOption` (class, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean#L44))
+`DeserializeOption` (class, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean#L44))
 
 > Type class for types that can be deserialized from another type (most often `ByteArray` or
 > `String`), returning an `Option` if the deserialization fails.
@@ -56,7 +56,7 @@ class DeserializeOption (α : Type u) (β : Type v) where
   deserialize : β → Option α
 ```
 
-`Serde` (class, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean#L49))
+`Serde` (class, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean#L49))
 
 > Type class for types that can be serialized and deserialized (with potential failure) to/from
 > another type (most often `ByteArray` or `String`).
@@ -71,5 +71,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Classes/Serialize.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Classes/Serialize.lean)
+- [CompPoly/Data/Classes/Serialize.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Classes/Serialize.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Classes.Serialize.json)

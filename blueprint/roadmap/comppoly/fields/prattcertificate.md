@@ -7,7 +7,7 @@ proof: formalized
 
 # The Lucas test for primes
 
-`CompPoly.Fields.PrattCertificate`, in [CompPoly/Fields/PrattCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean), by Bolton Bailey.
+`CompPoly.Fields.PrattCertificate`, in [CompPoly/Fields/PrattCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean), by Bolton Bailey.
 
 > This file implements the Lucas test for primes (not to be confused with the Lucas-Lehmer test for
 > Mersenne primes). A number `a` witnesses that `n` is prime if `a` has order `n-1` in the
@@ -24,14 +24,14 @@ proof: formalized
 > cases, we can take `q` to be any prime and see that `hd` does not hold, since `a^((p-1)/q)` reduces
 > to `1`.
 
-`Nat.Prime.dvd_mul_list` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L40))
+`Nat.Prime.dvd_mul_list` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L40))
 
 ```lean
 lemma Nat.Prime.dvd_mul_list {p : ℕ} {l : List ℕ} (h : p.Prime) :
     p ∣ l.prod ↔ ∃ r ∈ l, p ∣ r
 ```
 
-`PrattPartList` (inductive type, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L66))
+`PrattPartList` (inductive type, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L66))
 
 > Recursive form of a Pratt certificate for `p`, which may take in Pratt certificates
 > for a list of prime powers `r` less than `p` whose product is equal to `p - 1`.
@@ -44,7 +44,7 @@ inductive PrattPartList : (p : ℕ) → (a : ZMod p) → ℕ → Prop
       (∀ r ∈ list, PrattPartList p a r) → list.prod = n → PrattPartList p a n
 ```
 
-`PrattCertificate'` (structure, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L74))
+`PrattCertificate'` (structure, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L74))
 
 > Alternative form of a Pratt certificate for `p`, which may take in Pratt certificates
 > for a list of prime powers `r` less than `p` whose product is equal to `p - 1`.
@@ -56,20 +56,20 @@ structure PrattCertificate' (p : ℕ) : Type where
   part : PrattPartList p a (p - 1)
 ```
 
-`PrattPartList.out` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L79))
+`PrattPartList.out` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L79))
 
 ```lean
 theorem PrattPartList.out {p : ℕ} {a : ZMod p} {n : ℕ} (h : PrattPartList p a n) :
     ∀ q : ℕ, q.Prime → q ∣ n → a ^ ((p - 1) / q) ≠ 1
 ```
 
-`PrattCertificate'.out` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L93))
+`PrattCertificate'.out` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L93))
 
 ```lean
 theorem PrattCertificate'.out {p : ℕ} (c : PrattCertificate' p) : p.Prime
 ```
 
-`PrattPart` (inductive type, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L99))
+`PrattPart` (inductive type, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L99))
 
 > The binary version of `PrattPartList`. This is the one in the original file.
 
@@ -81,7 +81,7 @@ inductive PrattPart : (p : ℕ) → (a : ZMod p) → ℕ → Prop
       PrattPart p a l → PrattPart p a r → l * r = n → PrattPart p a n
 ```
 
-`PrattCertificate` (structure, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L105))
+`PrattCertificate` (structure, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L105))
 
 ```lean
 structure PrattCertificate (p : ℕ) : Type where
@@ -90,122 +90,122 @@ structure PrattCertificate (p : ℕ) : Type where
   part : PrattPart p a (p - 1)
 ```
 
-`PrattPart.out` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L110))
+`PrattPart.out` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L110))
 
 ```lean
 theorem PrattPart.out {p : ℕ} {a : ZMod p} {n : ℕ} (h : PrattPart p a n) :
     ∀ q : ℕ, q.Prime → q ∣ n → a ^ ((p - 1) / q) ≠ 1
 ```
 
-`PrattCertificate.out` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L125))
+`PrattCertificate.out` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L125))
 
 ```lean
 theorem PrattCertificate.out {p : ℕ} (c : PrattCertificate p) : p.Prime
 ```
 
-`prime_2` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L130))
+`prime_2` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L130))
 
 ```lean
 theorem prime_2 : Nat.Prime 2
 ```
 
-`prime_3` (theorem, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L131))
+`prime_3` (theorem, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L131))
 
 ```lean
 theorem prime_3 : Nat.Prime 3
 ```
 
-`prime_5` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L132))
+`prime_5` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L132))
 
 ```lean
 theorem prime_5 : Nat.Prime 5
 ```
 
-`prime_7` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L135))
+`prime_7` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L135))
 
 ```lean
 theorem prime_7 : Nat.Prime 7
 ```
 
-`prime_11` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L140))
+`prime_11` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L140))
 
 ```lean
 theorem prime_11 : Nat.Prime 11
 ```
 
-`prime_13` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L145))
+`prime_13` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L145))
 
 ```lean
 theorem prime_13 : Nat.Prime 13
 ```
 
-`prime_17` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L150))
+`prime_17` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L150))
 
 ```lean
 theorem prime_17 : Nat.Prime 17
 ```
 
-`prime_19` (theorem, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L153))
+`prime_19` (theorem, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L153))
 
 ```lean
 theorem prime_19 : Nat.Prime 19
 ```
 
-`prime_23` (theorem, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L158))
+`prime_23` (theorem, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L158))
 
 ```lean
 theorem prime_23 : Nat.Prime 23
 ```
 
-`prime_29` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L163))
+`prime_29` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L163))
 
 ```lean
 theorem prime_29 : Nat.Prime 29
 ```
 
-`prime_31` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L168))
+`prime_31` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L168))
 
 ```lean
 theorem prime_31 : Nat.Prime 31
 ```
 
-`prime_37` (theorem, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L175))
+`prime_37` (theorem, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L175))
 
 ```lean
 theorem prime_37 : Nat.Prime 37
 ```
 
-`prime_41` (theorem, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L180))
+`prime_41` (theorem, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L180))
 
 ```lean
 theorem prime_41 : Nat.Prime 41
 ```
 
-`prime_43` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L185))
+`prime_43` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L185))
 
 ```lean
 theorem prime_43 : Nat.Prime 43
 ```
 
-`prime_47` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L192))
+`prime_47` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L192))
 
 ```lean
 theorem prime_47 : Nat.Prime 47
 ```
 
-`prime_101` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L198))
+`prime_101` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L198))
 
 ```lean
 theorem prime_101 : Nat.Prime 101
 ```
 
-`powMod` (definition, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L210))
+`powMod` (definition, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L210))
 
 ```lean
 meta def powMod (a b m : ℕ) : ℕ
 ```
 
-`PowTwoRepr` (structure, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L223))
+`PowTwoRepr` (structure, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L223))
 
 ```lean
 structure PowTwoRepr where
@@ -213,31 +213,31 @@ structure PowTwoRepr where
   odd_part : ℕ
 ```
 
-`factorOutTwos` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L227))
+`factorOutTwos` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L227))
 
 ```lean
 meta def factorOutTwos (n : ℕ) : PowTwoRepr
 ```
 
-`millerRabinBases` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L237))
+`millerRabinBases` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L237))
 
 ```lean
 meta def millerRabinBases : List ℕ
 ```
 
-`deterministicMillerRabin` (definition, [line 240](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L240))
+`deterministicMillerRabin` (definition, [line 240](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L240))
 
 ```lean
 meta def deterministicMillerRabin (n : ℕ) : Bool
 ```
 
-`g` (definition, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L262))
+`g` (definition, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L262))
 
 ```lean
 meta def g (n : ℕ) (c : ℕ) (x : ℕ)
 ```
 
-`rho'` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L265))
+`rho'` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L265))
 
 > Auxiliary function for `rho` that tries to find a factor of `n`
 
@@ -245,19 +245,19 @@ meta def g (n : ℕ) (c : ℕ) (x : ℕ)
 meta def rho' (n : ℕ) (start : ℕ) (c : ℕ) : Option ℕ
 ```
 
-`rho` (definition, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L283))
+`rho` (definition, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L283))
 
 ```lean
 meta def rho (n : ℕ) : Option ℕ
 ```
 
-`factor` (definition, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L291))
+`factor` (definition, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L291))
 
 ```lean
 meta partial def factor (n : ℕ) : Option (List ℕ)
 ```
 
-`PrimeWithMultiplicity` (structure, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L300))
+`PrimeWithMultiplicity` (structure, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L300))
 
 ```lean
 structure PrimeWithMultiplicity : Type where
@@ -266,7 +266,7 @@ structure PrimeWithMultiplicity : Type where
 deriving Repr
 ```
 
-`factor'` (definition, [line 306](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L306))
+`factor'` (definition, [line 306](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L306))
 
 > Factor `n` into a list of prime numbers with their multiplicities
 
@@ -274,7 +274,7 @@ deriving Repr
 meta def factor' (n : ℕ) : Option (List PrimeWithMultiplicity)
 ```
 
-`UnverifiedPrattPart` (inductive type, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L313))
+`UnverifiedPrattPart` (inductive type, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L313))
 
 ```lean
 inductive UnverifiedPrattPart : Type
@@ -283,7 +283,7 @@ inductive UnverifiedPrattPart : Type
 deriving Repr
 ```
 
-`UnverifiedPrattCertificate` (inductive type, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L318))
+`UnverifiedPrattCertificate` (inductive type, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L318))
 
 ```lean
 inductive UnverifiedPrattCertificate : ℕ → Type
@@ -292,26 +292,26 @@ inductive UnverifiedPrattCertificate : ℕ → Type
 deriving Repr
 ```
 
-`computePrattPart` (definition, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L331))
+`computePrattPart` (definition, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L331))
 
 ```lean
 meta partial def computePrattPart (l : List PrimeWithMultiplicity) :
     Option UnverifiedPrattPart
 ```
 
-`computePrattCertificate` (definition, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L342))
+`computePrattCertificate` (definition, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L342))
 
 ```lean
 meta partial def computePrattCertificate (n : ℕ) : Option (UnverifiedPrattCertificate n)
 ```
 
-`Tactic.verifySmallPrime` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L375))
+`Tactic.verifySmallPrime` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L375))
 
 ```lean
 meta def verifySmallPrime (n' : Q(ℕ)) : MetaM Q(Nat.Prime $n')
 ```
 
-`Tactic.ZMod.powEqOfPowMod` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L394))
+`Tactic.ZMod.powEqOfPowMod` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L394))
 
 ```lean
 theorem ZMod.powEqOfPowMod :
@@ -319,20 +319,20 @@ theorem ZMod.powEqOfPowMod :
       Nat.mod (Nat.pow a' (n - 1)) n = c → c = 1 → a ^ (n - 1) = 1
 ```
 
-`Tactic.ZMod.bla` (theorem, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L401))
+`Tactic.ZMod.bla` (theorem, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L401))
 
 ```lean
 theorem ZMod.bla : ∀ {n c : ℕ} (a : ZMod n), c = 1 → IsNat (a ^ (n - 1)) c → a ^ (n - 1) = 1
 ```
 
-`Tactic.verifyEqOne` (definition, [line 406](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L406))
+`Tactic.verifyEqOne` (definition, [line 406](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L406))
 
 ```lean
 meta def verifyEqOne (n a' : Q(ℕ)) (a : Q(ZMod $n)) (_ : Q(($a' : ZMod $n) = $a)) :
     MetaM Q($a ^ ($n - 1) = 1)
 ```
 
-`Tactic.ZMod.powNeOfPowMod` (theorem, [line 427](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L427))
+`Tactic.ZMod.powNeOfPowMod` (theorem, [line 427](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L427))
 
 ```lean
 theorem ZMod.powNeOfPowMod :
@@ -346,7 +346,7 @@ theorem ZMod.powNeOfPowMod :
     replace h
 ```
 
-`Tactic.ZMod.blub` (theorem, [line 444](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L444))
+`Tactic.ZMod.blub` (theorem, [line 444](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L444))
 
 ```lean
 theorem ZMod.blub :
@@ -354,14 +354,14 @@ theorem ZMod.blub :
       (decide (c ≠ 1) = true) → IsNat (a ^ ((n - 1) / q)) c → a ^ ((n - 1) / q) ≠ 1
 ```
 
-`Tactic.verifyNeOne` (definition, [line 456](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L456))
+`Tactic.verifyNeOne` (definition, [line 456](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L456))
 
 ```lean
 meta def verifyNeOne (n a' q : Q(ℕ)) (a : Q(ZMod $n)) (_ : Q(($a' : ZMod $n) = $a)) :
     MetaM Q($a ^ (($n - 1) / $q) ≠ 1)
 ```
 
-`Tactic.verifyCertificate` (definition, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L473))
+`Tactic.verifyCertificate` (definition, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L473))
 
 ```lean
 meta partial def verifyCertificate (n' : Q(ℕ)) (n : ℕ) :
@@ -372,7 +372,7 @@ meta partial def verifyCertificate (n' : Q(ℕ)) (n : ℕ) :
       return q(PrattCertificate.out $cert)
 ```
 
-`Tactic.Nat.Prime_of_isNat` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean#L507))
+`Tactic.Nat.Prime_of_isNat` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean#L507))
 
 ```lean
 theorem Nat.Prime_of_isNat : ∀ {n n' : ℕ}, IsNat n n' → n'.Prime → n.Prime
@@ -384,5 +384,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/PrattCertificate.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/PrattCertificate.lean)
+- [CompPoly/Fields/PrattCertificate.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/PrattCertificate.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Fields.PrattCertificate.json)

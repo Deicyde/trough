@@ -7,11 +7,11 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Reduction Invariants
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean), by Valerii Huhnin.
 
 > Shape, well-formedness, row-span, and weak-Popov correctness for the reducer.
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep_shape_preserved` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L24))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep_shape_preserved` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L24))
 
 ```lean
 theorem muldersStorjohannStep_shape_preserved
@@ -19,7 +19,7 @@ theorem muldersStorjohannStep_shape_preserved
     MatrixShape (muldersStorjohannStep M shift i j) = MatrixShape M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_subset` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L47))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_subset` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L47))
 
 ```lean
 theorem muldersStorjohannStep_rowSpan_subset
@@ -27,7 +27,7 @@ theorem muldersStorjohannStep_rowSpan_subset
     RowSpan (muldersStorjohannStep M shift i j) ⊆ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_superset` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L84))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_superset` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L84))
 
 ```lean
 theorem muldersStorjohannStep_rowSpan_superset
@@ -36,7 +36,7 @@ theorem muldersStorjohannStep_rowSpan_superset
     RowSpan M ⊆ RowSpan (muldersStorjohannStep M shift i j)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep_wellFormed` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L204))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep_wellFormed` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L204))
 
 ```lean
 theorem muldersStorjohannStep_wellFormed
@@ -44,7 +44,7 @@ theorem muldersStorjohannStep_wellFormed
     WellFormed (muldersStorjohannStep M shift i j)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_shape_preserved` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L227))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_shape_preserved` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L227))
 
 ```lean
 theorem muldersStorjohannReduceWithFuel_shape_preserved
@@ -52,7 +52,7 @@ theorem muldersStorjohannReduceWithFuel_shape_preserved
     MatrixShape (muldersStorjohannReduceWithFuel fuel M shift) = MatrixShape M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_wellFormed` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L242))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_wellFormed` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L242))
 
 ```lean
 theorem muldersStorjohannReduceWithFuel_wellFormed
@@ -60,7 +60,7 @@ theorem muldersStorjohannReduceWithFuel_wellFormed
     WellFormed (muldersStorjohannReduceWithFuel fuel M shift)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_wellFormed` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L256))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_wellFormed` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L256))
 
 ```lean
 theorem muldersStorjohannReduce_wellFormed
@@ -68,7 +68,7 @@ theorem muldersStorjohannReduce_wellFormed
     WellFormed (muldersStorjohannReduce M shift)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_no_conflict_of_measure_lt` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L262))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_no_conflict_of_measure_lt` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L262))
 
 ```lean
 theorem muldersStorjohannReduceWithFuel_no_conflict_of_measure_lt
@@ -78,7 +78,7 @@ theorem muldersStorjohannReduceWithFuel_no_conflict_of_measure_lt
     shiftedLeadingConflict? (muldersStorjohannReduceWithFuel fuel M shift) shift = none
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_no_conflict` (theorem, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L285))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_no_conflict` (theorem, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L285))
 
 ```lean
 theorem muldersStorjohannReduce_no_conflict
@@ -86,7 +86,7 @@ theorem muldersStorjohannReduce_no_conflict
     shiftedLeadingConflict? (muldersStorjohannReduce M shift) shift = none
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_eq_of_no_conflict` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L295))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_eq_of_no_conflict` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L295))
 
 > The fueled reducer is deterministic: two runs that both end without a
 > shifted leading conflict stopped at the same (first conflict-free) matrix of
@@ -103,7 +103,7 @@ theorem muldersStorjohannReduceWithFuel_eq_of_no_conflict :
         muldersStorjohannReduceWithFuel g M shift
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_subset` (theorem, [line 329](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L329))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_subset` (theorem, [line 329](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L329))
 
 ```lean
 theorem muldersStorjohannReduceWithFuel_rowSpan_subset
@@ -111,7 +111,7 @@ theorem muldersStorjohannReduceWithFuel_rowSpan_subset
     RowSpan (muldersStorjohannReduceWithFuel fuel M shift) ⊆ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_subset` (theorem, [line 347](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L347))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_subset` (theorem, [line 347](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L347))
 
 ```lean
 theorem muldersStorjohannReduce_rowSpan_subset
@@ -119,7 +119,7 @@ theorem muldersStorjohannReduce_rowSpan_subset
     RowSpan (muldersStorjohannReduce M shift) ⊆ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_superset` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L353))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_superset` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L353))
 
 ```lean
 theorem muldersStorjohannReduceWithFuel_rowSpan_superset
@@ -127,7 +127,7 @@ theorem muldersStorjohannReduceWithFuel_rowSpan_superset
     RowSpan M ⊆ RowSpan (muldersStorjohannReduceWithFuel fuel M shift)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_superset` (theorem, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L373))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_superset` (theorem, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L373))
 
 ```lean
 theorem muldersStorjohannReduce_rowSpan_superset
@@ -135,7 +135,7 @@ theorem muldersStorjohannReduce_rowSpan_superset
     RowSpan M ⊆ RowSpan (muldersStorjohannReduce M shift)
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_shape_preserved` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L379))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_shape_preserved` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L379))
 
 ```lean
 theorem muldersStorjohannReduce_shape_preserved
@@ -143,7 +143,7 @@ theorem muldersStorjohannReduce_shape_preserved
     MatrixShape (muldersStorjohannReduce M shift) = MatrixShape M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_eq` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L385))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_eq` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L385))
 
 ```lean
 theorem muldersStorjohannReduce_rowSpan_eq
@@ -151,7 +151,7 @@ theorem muldersStorjohannReduce_rowSpan_eq
     RowSpan (muldersStorjohannReduce M shift) = RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_weakPopov` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L392))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_weakPopov` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean#L392))
 
 ```lean
 theorem muldersStorjohannReduce_weakPopov
@@ -167,5 +167,5 @@ theorem muldersStorjohannReduce_weakPopov
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction.json)

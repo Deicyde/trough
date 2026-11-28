@@ -7,7 +7,7 @@ proof: formalized
 
 # Hybrid Guruswami-Sudan Interpolation
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean), by Valerii Huhnin.
 
 > Output-sensitive interpolation backend combining the adaptive Lee-O'Sullivan
 > route with the order-driven approximant-basis route through a ski-rental
@@ -37,7 +37,7 @@ proof: formalized
 > * [Karlin, A. R., Manasse, M. S., Rudolph, L., and Sleator, D. D.,
 >     *Competitive snoopy caching*][KMRS88]
 
-`CompPoly.GuruswamiSudan.Hybrid.hybridPositiveInterpolate` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean#L61))
+`CompPoly.GuruswamiSudan.Hybrid.hybridPositiveInterpolate` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean#L61))
 
 > Positive-`Y`-weight hybrid interpolation branch: reduce the
 > Lee-O'Sullivan basis with the budgeted fuel and keep the result when it
@@ -54,7 +54,7 @@ def hybridPositiveInterpolate
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.Hybrid.hybridInterpolate` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean#L96))
+`CompPoly.GuruswamiSudan.Hybrid.hybridInterpolate` (definition, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean#L96))
 
 > Hybrid interpolation with the shared low-message branch.
 
@@ -76,5 +76,5 @@ def hybridInterpolate
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm.json)

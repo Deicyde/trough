@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
+ "module": "CompPoly.Fields.Montgomery.Native64x4InvDefs",
+ "file": "CompPoly/Fields/Montgomery/Native64x4InvDefs.lean",
+ "public": [
+  {"name": "Montgomery.Native64x4.GcdData", "kind": "class", "line": 28},
+  {"name": "Montgomery.Native64x4.mulWord", "kind": "def", "line": 40},
+  {"name": "Montgomery.Native64x4.add5", "kind": "def", "line": 48},
+  {"name": "Montgomery.Native64x4.sub5", "kind": "def", "line": 58},
+  {"name": "Montgomery.Native64x4.gcdLinearCombDiv", "kind": "def", "line": 70},
+  {"name": "Montgomery.Native64x4.negMod", "kind": "def", "line": 99},
+  {"name": "Montgomery.Native64x4.lincombTail", "kind": "def", "line": 105},
+  {"name": "Montgomery.Native64x4.gcdLinearCombMontyRed", "kind": "def", "line": 116},
+  {"name": "Montgomery.Native64x4.gcdLimb", "kind": "def", "line": 124},
+  {"name": "Montgomery.Native64x4.gcdNumBits", "kind": "def", "line": 132},
+  {"name": "Montgomery.Native64x4.gcdApprox", "kind": "def", "line": 142},
+  {"name": "Montgomery.Native64x4.gcdMainLoop", "kind": "def", "line": 157},
+  {"name": "Montgomery.Native64x4.gcdFinalChunks", "kind": "def", "line": 177},
+  {"name": "Montgomery.Native64x4.gcdInvCandidate", "kind": "def", "line": 188},
+  {"name": "Montgomery.Native64x4.montPow", "kind": "def", "line": 196},
+  {"name": "Montgomery.Native64x4.invGcdRaw", "kind": "def", "line": 205}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

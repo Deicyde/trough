@@ -2,12 +2,12 @@
  "schema": "trough-ledger/v1",
  "library": "CompPoly",
  "repo": "Verified-zkEVM/CompPoly",
- "rev": "c72a765272497b4c52201be11be47af5718c7488",
- "module": "CompPoly.Fields.Montgomery.ScalarFft",
- "file": "CompPoly/Fields/Montgomery/ScalarFft.lean",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
+ "module": "CompPoly.Fields.Montgomery.DivstepDefs",
+ "file": "CompPoly/Fields/Montgomery/DivstepDefs.lean",
  "public": [
-  {"name": "Montgomery.ScalarFft.bitreverse", "kind": "def", "line": 35},
-  {"name": "Montgomery.ScalarFft.fft", "kind": "def", "line": 45}
+  {"name": "Montgomery.gcdBitLen", "kind": "def", "line": 25},
+  {"name": "Montgomery.gcdInner", "kind": "def", "line": 38}
  ],
  "private": [],
  "missing": [],

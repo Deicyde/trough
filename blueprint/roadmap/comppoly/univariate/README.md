@@ -2,13 +2,13 @@
 
 101 modules under `CompPoly/Univariate/`, with 1,508 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.BatchEval`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval.lean), [`CompPoly.Univariate.ManyEval`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval.lean), [`CompPoly.Univariate.Raw`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw.lean), [`CompPoly.Univariate.Roots`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots.lean) and [`CompPoly.Univariate.ToPoly`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ToPoly.lean).
+These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.BatchEval`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval.lean), [`CompPoly.Univariate.ManyEval`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ManyEval.lean), [`CompPoly.Univariate.Raw`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Raw.lean), [`CompPoly.Univariate.Roots`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots.lean) and [`CompPoly.Univariate.ToPoly`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ToPoly.lean).
 
-Its [README](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/README.md) opens:
+Its [README](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/README.md) opens:
 
-> Formally verified computable univariate polynomials for [CompPoly](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/README.md), built on array-backed coefficient representation.
+> Formally verified computable univariate polynomials for [CompPoly](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/README.md), built on array-backed coefficient representation.
 
-The docstrings, Lean statements and README text are quoted from [Verified-zkEVM/CompPoly](https://github.com/Verified-zkEVM/CompPoly) at commit [c72a7652](https://github.com/Verified-zkEVM/CompPoly/tree/c72a765272497b4c52201be11be47af5718c7488), under its Apache-2.0 license.
+The docstrings, Lean statements and README text are quoted from [Verified-zkEVM/CompPoly](https://github.com/Verified-zkEVM/CompPoly) at commit [bb05e501](https://github.com/Verified-zkEVM/CompPoly/tree/bb05e501d920b77a95e1621e6815a71ed007fd97), under its Apache-2.0 license.
 
 ## [Barycentric Interpolation to Reed-Solomon Codes](part-01/README.md)
 

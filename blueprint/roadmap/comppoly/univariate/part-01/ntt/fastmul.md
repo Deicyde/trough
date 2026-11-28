@@ -7,12 +7,12 @@ proof: formalized
 
 # Fast Multiplication via NTT
 
-`CompPoly.Univariate.NTT.FastMul`, in [CompPoly/Univariate/NTT/FastMul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean), by Salih Erdem Koçak, Doran Pamukçu.
+`CompPoly.Univariate.NTT.FastMul`, in [CompPoly/Univariate/NTT/FastMul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean), by Salih Erdem Koçak, Doran Pamukçu.
 
 > This file wires forward NTT, pointwise multiplication, and inverse NTT into a
 > spec/implementation pipeline.
 
-`CompPoly.CPolynomial.NTT.FastMul.pointwiseMul` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L33))
+`CompPoly.CPolynomial.NTT.FastMul.pointwiseMul` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L33))
 
 > Pointwise multiplication in evaluation form.
 
@@ -20,14 +20,14 @@ proof: formalized
 def pointwiseMul (D : Domain R) (a b : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.size_pointwiseMul` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L36))
+`CompPoly.CPolynomial.NTT.FastMul.size_pointwiseMul` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L36))
 
 ```lean
 theorem size_pointwiseMul (D : Domain R) (a b : Array R) :
     (pointwiseMul D a b).size = D.n
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L178))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L178))
 
 > Raw spec pipeline for NTT-based multiplication.
 >
@@ -38,7 +38,7 @@ theorem size_pointwiseMul (D : Domain R) (a b : Array R) :
 def fastMulSpec (D : Domain R) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl` (definition, [line 212](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L212))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl` (definition, [line 212](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L212))
 
 > Raw implementation pipeline for NTT-based multiplication.
 >
@@ -52,14 +52,14 @@ def fastMulSpec (D : Domain R) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 def fastMulImpl (D : Domain R) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_correct` (theorem, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L220))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_correct` (theorem, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L220))
 
 ```lean
 theorem fastMulImpl_correct (D : Domain R) (p q : CPolynomial.Raw R) :
     fastMulImpl D p q = fastMulSpec D p q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_coeff` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L224))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_coeff` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L224))
 
 ```lean
 theorem fastMulSpec_coeff (D : Domain R) (p q : CPolynomial.Raw R)
@@ -67,21 +67,21 @@ theorem fastMulSpec_coeff (D : Domain R) (p q : CPolynomial.Raw R)
     (fastMulSpec D p q).coeff i = (p * q).coeff i
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_trim_eq_mul` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L264))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_trim_eq_mul` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L264))
 
 ```lean
 theorem fastMulSpec_trim_eq_mul (D : Domain R) (p q : CPolynomial.Raw R)
     (hfit : Domain.fits D p q) : (fastMulSpec D p q).trim = p * q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L275))
+`CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_trim_eq_mul` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L275))
 
 ```lean
 theorem fastMulImpl_trim_eq_mul (D : Domain R) (p q : CPolynomial.Raw R)
     (hfit : Domain.fits D p q) : (fastMulImpl D p q).trim = p * q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.fastMulSpec` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L284))
+`CompPoly.CPolynomial.NTT.FastMul.fastMulSpec` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L284))
 
 > Spec pipeline for NTT-based multiplication as a canonical polynomial.
 
@@ -89,7 +89,7 @@ theorem fastMulImpl_trim_eq_mul (D : Domain R) (p q : CPolynomial.Raw R)
 def fastMulSpec (D : Domain R) (p q : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L295))
+`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L295))
 
 > Implementation pipeline for NTT-based multiplication as a canonical polynomial.
 >
@@ -101,7 +101,7 @@ def fastMulSpec (D : Domain R) (p q : CPolynomial R) : CPolynomial R
 def fastMulImpl (D : Domain R) (p q : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.safeFastMul` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L305))
+`CompPoly.CPolynomial.NTT.FastMul.safeFastMul` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L305))
 
 > Safe NTT-based multiplication wrapper.
 >
@@ -114,28 +114,28 @@ def safeFastMul
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_correct` (theorem, [line 310](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L310))
+`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_correct` (theorem, [line 310](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L310))
 
 ```lean
 theorem fastMulImpl_correct (D : Domain R) (p q : CPolynomial R) :
     fastMulImpl D p q = fastMulSpec D p q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.fastMulSpec_eq_mul` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L315))
+`CompPoly.CPolynomial.NTT.FastMul.fastMulSpec_eq_mul` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L315))
 
 ```lean
 theorem fastMulSpec_eq_mul (D : Domain R) (p q : CPolynomial R)
     (hfit : Domain.fits D p.val q.val) : fastMulSpec D p q = p * q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_eq_mul` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L320))
+`CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_eq_mul` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L320))
 
 ```lean
 theorem fastMulImpl_eq_mul (D : Domain R) (p q : CPolynomial R)
     (hfit : Domain.fits D p.val q.val) : fastMulImpl D p q = p * q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.safeFastMul_eq_mul` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L331))
+`CompPoly.CPolynomial.NTT.FastMul.safeFastMul_eq_mul` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L331))
 
 > The safe wrapper is equivalent to ordinary canonical polynomial multiplication.
 >
@@ -147,7 +147,7 @@ theorem safeFastMul_eq_mul (D : Domain R) (p q : CPolynomial R)
     (hfit : Domain.fits D p.val q.val) : safeFastMul D p q hfit = p * q
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.withFallback` (definition, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L342))
+`CompPoly.CPolynomial.NTT.FastMul.withFallback` (definition, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L342))
 
 > NTT-backed multiplication with canonical multiplication as a fallback.
 >
@@ -162,7 +162,7 @@ def withFallback
     (p q : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMul.withFallback_eq_mul` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean#L352))
+`CompPoly.CPolynomial.NTT.FastMul.withFallback_eq_mul` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean#L352))
 
 > `withFallback` agrees with canonical polynomial multiplication.
 
@@ -187,5 +187,5 @@ theorem withFallback_eq_mul
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/FastMul.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMul.lean)
+- [CompPoly/Univariate/NTT/FastMul.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/FastMul.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.FastMul.json)

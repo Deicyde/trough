@@ -7,11 +7,11 @@ proof: formalized
 
 # Binary Tower Irreducibility and Trace
 
-`CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty`, in [CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty`, in [CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Irreducibility and trace-map criteria for binary tower defining polynomials.
 
-`irreducible_quadratic_defining_poly_of_traceMap_eq_1` (theorem, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L28))
+`irreducible_quadratic_defining_poly_of_traceMap_eq_1` (theorem, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L28))
 
 > Generic irreducibility theorem for binary tower polynomials.
 > Proves that X² + s·X + 1 is irreducible when s satisfies the required properties.
@@ -25,7 +25,7 @@ theorem irreducible_quadratic_defining_poly_of_traceMap_eq_1
     Irreducible (definingPoly s)
 ```
 
-`traceMapProperty_of_quadratic_extension` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L128))
+`traceMapProperty_of_quadratic_extension` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L128))
 
 > Instance : The trace map property for a quadratic extension defined by a root u of X^2 + t1 * X + 1,
 > assuming the trace property for t1 at the previous level.
@@ -43,7 +43,7 @@ theorem traceMapProperty_of_quadratic_extension
     TraceMapProperty F_cur u (k + 1)
 ```
 
-`not_irreducible_of_isRoot_of_degree_gt_one` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L218))
+`not_irreducible_of_isRoot_of_degree_gt_one` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean#L218))
 
 > A polynomial with a degree greater than 1 is not irreducible if it has a root in `R`.
 
@@ -60,5 +60,5 @@ theorem not_irreducible_of_isRoot_of_degree_gt_one
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean)
+- [CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty.json)

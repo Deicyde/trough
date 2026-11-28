@@ -1,16 +1,17 @@
 # Montgomery
 
-12 modules under `CompPoly/Fields/Montgomery/`, with 292 public declarations.
+13 modules under `CompPoly/Fields/Montgomery/`, with 273 public declarations.
 
 - [Montgomery Reduction](basic.md)
+- [Word-sized divsteps: coefficient bounds](divstep.md)
+- [Word-sized divsteps: runtime definitions (zero-import)](divstepdefs.md)
 - [Native 32-bit Montgomery Reduction](native32.md)
 - [Serialization of the 32-bit Montgomery carrier](native32bytes.md)
 - [Fast 32-bit Montgomery Fields](native32field.md)
-- [Native Montgomery arithmetic over eight 32-bit limbs](native64x8.md)
-- [Serialization of the eight-limb Montgomery carrier](native64x8bytes.md)
-- [Eight-limb Montgomery arithmetic: runtime definitions (zero-import)](native64x8defs.md)
-- [Fast eight-limb Montgomery fields](native64x8field.md)
-- [Fast inversion for eight-limb Montgomery fields](native64x8inv.md)
-- [Eight-limb inversion: runtime definitions (Mathlib-free)](native64x8invdefs.md)
-- [Correctness of eight-limb CIOS Montgomery multiplication](native64x8mul.md)
-- [Radix-2 DIT FFT over eight-limb Montgomery elements (zero-import)](scalarfft.md)
+- [Native Montgomery arithmetic over four 64-bit limbs](native64x4.md)
+- [Serialization of the four-limb Montgomery carrier](native64x4bytes.md)
+- [Four-limb Montgomery arithmetic: runtime definitions (zero-import)](native64x4defs.md)
+- [Fast four-limb Montgomery fields](native64x4field.md)
+- [Fast inversion for four-limb Montgomery fields](native64x4inv.md)
+- [Four-limb inversion: runtime definitions (Mathlib-free)](native64x4invdefs.md)
+- [Correctness of four-limb CIOS Montgomery multiplication](native64x4mul.md)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Barycentric Interpolation
 
-`CompPoly.Univariate.Barycentric`, in [CompPoly/Univariate/Barycentric.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean), by Elias Judin, Aristotle (Harmonic).
+`CompPoly.Univariate.Barycentric`, in [CompPoly/Univariate/Barycentric.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean), by Elias Judin, Aristotle (Harmonic).
 
 > This file provides a **fixed-domain barycentric interpolation** structure and evaluator
 > for univariate computable polynomials.
@@ -31,7 +31,7 @@ proof: formalized
 > * `eval_eq_interpolate_eval` – variant in terms of `Lagrange.interpolate`.
 > * `ofPow_eval_eq_interpolatePow_eval` – specialization to `CLagrange.interpolatePow`.
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain` (structure, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L50))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain` (structure, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L50))
 
 > A fixed-domain barycentric interpolation structure.
 >
@@ -53,7 +53,7 @@ structure BarycentricDomain (R : Type*) [Field R] [DecidableEq R] (n : ℕ) wher
     ((Finset.univ : Finset (Fin n)).erase i).prod (fun j => (nodes i - nodes j)⁻¹)
 ```
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.mk'` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L66))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.mk'` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L66))
 
 > Construct a `BarycentricDomain` from nodes and an injectivity proof,
 > computing the weights automatically.
@@ -65,7 +65,7 @@ def BarycentricDomain.mk' (nodes : Fin n → R) (hinj : Function.Injective nodes
 
 > ### Weight correctness
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.weights_eq_nodalWeight` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L81))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.weights_eq_nodalWeight` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L81))
 
 > The stored weights are exactly `Lagrange.nodalWeight Finset.univ nodes`.
 
@@ -76,7 +76,7 @@ theorem BarycentricDomain.weights_eq_nodalWeight (dom : BarycentricDomain R n) (
 
 > ### The barycentric evaluator
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L94))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L94))
 
 > The standard second-form barycentric evaluator.
 >
@@ -92,7 +92,7 @@ def BarycentricDomain.eval (dom : BarycentricDomain R n) (y : Fin n → R) (z : 
 
 > ### One-inversion evaluation
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalStep` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L107))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalStep` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L107))
 
 > One step of the single-inversion barycentric fold.
 >
@@ -104,7 +104,7 @@ def BarycentricDomain.evalStep (dom : BarycentricDomain R n) (y : Fin n → R) (
     (acc : R × R × R) (i : Fin n) : R × R × R
 ```
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalFast` (definition, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L117))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalFast` (definition, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L117))
 
 > The barycentric evaluator with a single field division off the nodes.
 >
@@ -115,7 +115,7 @@ def BarycentricDomain.evalStep (dom : BarycentricDomain R n) (y : Fin n → R) (
 def BarycentricDomain.evalFast (dom : BarycentricDomain R n) (y : Fin n → R) (z : R) : R
 ```
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_evalFast` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L141))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_evalFast` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L141))
 
 > The single-division evaluator agrees with the two-sum evaluator.
 
@@ -126,7 +126,7 @@ theorem BarycentricDomain.eval_eq_evalFast :
 
 > ### Evaluation at a node
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_at_node` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L159))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_at_node` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L159))
 
 > At a node, the barycentric evaluator returns the corresponding value.
 
@@ -137,7 +137,7 @@ theorem BarycentricDomain.eval_at_node (dom : BarycentricDomain R n) (y : Fin n 
 
 > ### Equivalence with `Lagrange.interpolate`
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_interpolate_eval` (theorem, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L191))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_interpolate_eval` (theorem, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L191))
 
 ```lean
 theorem BarycentricDomain.eval_eq_interpolate_eval (dom : BarycentricDomain R n)
@@ -145,7 +145,7 @@ theorem BarycentricDomain.eval_eq_interpolate_eval (dom : BarycentricDomain R n)
     dom.eval y z = (Lagrange.interpolate Finset.univ dom.nodes y).eval z
 ```
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_cinterpolate_eval` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L208))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_cinterpolate_eval` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L208))
 
 > The barycentric evaluator equals
 > `(CLagrange.interpolate Finset.univ dom.nodes y).eval z`.
@@ -158,7 +158,7 @@ theorem BarycentricDomain.eval_eq_cinterpolate_eval [BEq R] [LawfulBEq R]
 
 > ### Specialization to `interpolatePow`
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L217))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L217))
 
 > Build a barycentric domain from a primitive root of unity `ω` with
 > `n ≤ orderOf ω`, so nodes are `ω^0, ω^1, …, ω^{n-1}`.
@@ -168,7 +168,7 @@ def BarycentricDomain.ofPow (ω : Rˣ) (hord : n ≤ orderOf ω) :
     BarycentricDomain R n
 ```
 
-`CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow_eval_eq_interpolatePow_eval` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean#L227))
+`CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow_eval_eq_interpolatePow_eval` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean#L227))
 
 > The barycentric evaluator on power-of-ω nodes agrees with
 > `(CLagrange.interpolatePow ω r).eval z`.
@@ -186,5 +186,5 @@ theorem BarycentricDomain.ofPow_eval_eq_interpolatePow_eval [BEq R] [LawfulBEq R
 
 ## Sources
 
-- [CompPoly/Univariate/Barycentric.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Barycentric.lean)
+- [CompPoly/Univariate/Barycentric.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Barycentric.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Barycentric.json)

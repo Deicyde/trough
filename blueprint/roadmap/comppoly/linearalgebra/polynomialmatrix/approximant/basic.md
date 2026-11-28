@@ -7,7 +7,7 @@ proof: formalized
 
 # X-Adic Approximant Problems
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean), by Valerii Huhnin.
 
 > Basic data structures for approximant-basis computations over polynomial
 > matrices.
@@ -19,7 +19,7 @@ proof: formalized
 > * [Giorgi, P., Jeannerod, C.-P., and Villard, G., *On the complexity of
 >     polynomial matrix computations*][GJV03]
 
-`CompPoly.PolynomialMatrix.Approximant.XAdicProblem` (structure, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L36))
+`CompPoly.PolynomialMatrix.Approximant.XAdicProblem` (structure, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L36))
 
 > A row approximant problem `p * matrix = 0 mod X^orders`.
 
@@ -29,7 +29,7 @@ structure XAdicProblem (F : Type*) [Zero F] where
   matrix : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.maxOrder` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L41))
+`CompPoly.PolynomialMatrix.Approximant.maxOrder` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L41))
 
 > Maximum X-adic order in a problem.
 
@@ -37,7 +37,7 @@ structure XAdicProblem (F : Type*) [Zero F] where
 def maxOrder [Zero F] (problem : XAdicProblem F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.totalOrder` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L45))
+`CompPoly.PolynomialMatrix.Approximant.totalOrder` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L45))
 
 > Sum of X-adic orders.
 
@@ -45,7 +45,7 @@ def maxOrder [Zero F] (problem : XAdicProblem F) : Nat
 def totalOrder [Zero F] (problem : XAdicProblem F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.lowerOrders` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L49))
+`CompPoly.PolynomialMatrix.Approximant.lowerOrders` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L49))
 
 > Truncate every problem order to at most `d`.
 
@@ -53,7 +53,7 @@ def totalOrder [Zero F] (problem : XAdicProblem F) : Nat
 def lowerOrders [Zero F] (problem : XAdicProblem F) (d : Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.residualOrders` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L53))
+`CompPoly.PolynomialMatrix.Approximant.residualOrders` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L53))
 
 > Remaining orders after the first `d` coefficients have been consumed.
 
@@ -61,7 +61,7 @@ def lowerOrders [Zero F] (problem : XAdicProblem F) (d : Nat) : Array Nat
 def residualOrders [Zero F] (problem : XAdicProblem F) (d : Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.updateShiftByRows` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L57))
+`CompPoly.PolynomialMatrix.Approximant.updateShiftByRows` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L57))
 
 > Shift update used by the second recursive PM-basis call.
 
@@ -70,7 +70,7 @@ def updateShiftByRows [Zero F] [BEq F]
     (basis : PolynomialMatrix F) (shift : Array Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.residualMatrixWithProduct` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L67))
+`CompPoly.PolynomialMatrix.Approximant.residualMatrixWithProduct` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L67))
 
 > Residual matrix `(P * A) div X^d`, using an explicit product kernel and
 > truncating to the requested residual orders columnwise.
@@ -83,7 +83,7 @@ def residualMatrixWithProduct [Semiring F] [BEq F] [LawfulBEq F]
     (d : Nat) (orders : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.residualMatrix` (definition, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L79))
+`CompPoly.PolynomialMatrix.Approximant.residualMatrix` (definition, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean#L79))
 
 > Residual matrix `(P * A) div X^d`, truncated to the requested residual
 > orders columnwise, using the direct low-product row-column kernel.
@@ -101,5 +101,5 @@ def residualMatrix [Semiring F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Basic.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic.json)

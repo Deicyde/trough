@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
+ "module": "CompPoly.Fields.Montgomery.Divstep",
+ "file": "CompPoly/Fields/Montgomery/Divstep.lean",
+ "public": [
+  {"name": "Montgomery.gcdInner_zero", "kind": "theorem", "line": 23},
+  {"name": "Montgomery.gcdInner_succ", "kind": "theorem", "line": 27},
+  {"name": "Montgomery.gcdInner_natAbs_le", "kind": "theorem", "line": 44},
+  {"name": "Montgomery.gcdInner_natAbs_le_31", "kind": "theorem", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -7,7 +7,7 @@ proof: formalized
 
 # Mulders-Storjohann Shifted Row Reduction
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean), by Valerii Huhnin.
 
 > Direct executable shifted row reduction over polynomial rows.
 >
@@ -16,7 +16,7 @@ proof: formalized
 > * [Mulders, T., and Storjohann, A., *On lattice reduction for polynomial
 >     matrices*][MS03]
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowStep?` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L30))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowStep?` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L30))
 
 > One inner-loop update for shifted-leading-position conflict search.
 
@@ -26,7 +26,7 @@ def shiftedLeadingConflictInRowStep?
     (found : Option (Nat × Nat)) (j : Nat) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L43))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L43))
 
 > Scan one row index `i` for a shifted-leading-position conflict.
 
@@ -36,7 +36,7 @@ def shiftedLeadingConflictInRow?
     (found : Option (Nat × Nat)) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromStep?` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L51))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromStep?` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L51))
 
 > One outer-loop update for shifted-leading-position conflict search.
 
@@ -46,7 +46,7 @@ def shiftedLeadingConflictFromStep?
     (found : Option (Nat × Nat)) (i : Nat) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L57))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L57))
 
 > Scan all row pairs for the first shifted-leading-position conflict.
 
@@ -56,7 +56,7 @@ def shiftedLeadingConflictFrom?
     (found : Option (Nat × Nat)) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflict?` (definition, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L65))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflict?` (definition, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L65))
 
 > First pair of nonzero rows with the same shifted leading position.
 
@@ -65,7 +65,7 @@ def shiftedLeadingConflict? (M : PolynomialMatrix F) (shift : Array Nat) :
     Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L70))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L70))
 
 > Cancel the shifted leading term of `target` using `reducer`, when possible.
 
@@ -74,7 +74,7 @@ def cancelShiftedLeadingTerm
     (target reducer : PolynomialRow F) (shift : Array Nat) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L85))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L85))
 
 > One Mulders-Storjohann cancellation step for a chosen conflicting pair.
 
@@ -83,7 +83,7 @@ def muldersStorjohannStep
     (M : PolynomialMatrix F) (shift : Array Nat) (i j : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L98))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L98))
 
 > Fuel-bounded Mulders-Storjohann reduction loop.
 
@@ -92,7 +92,7 @@ def muldersStorjohannReduceWithFuel :
     Nat → PolynomialMatrix F → Array Nat → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegree?` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L109))
+`CompPoly.PolynomialMatrix.matrixShiftedDegree?` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L109))
 
 > Maximum shifted row degree among the rows of a matrix.
 
@@ -100,7 +100,7 @@ def muldersStorjohannReduceWithFuel :
 def matrixShiftedDegree? (M : PolynomialMatrix F) (shift : Array Nat) : Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannFuel` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L118))
+`CompPoly.PolynomialMatrix.muldersStorjohannFuel` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L118))
 
 > Executable fuel used by the direct reducer.
 
@@ -108,7 +108,7 @@ def matrixShiftedDegree? (M : PolynomialMatrix F) (shift : Array Nat) : Option N
 def muldersStorjohannFuel (M : PolynomialMatrix F) (shift : Array Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L123))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L123))
 
 > Direct executable Mulders-Storjohann shifted row reducer.
 
@@ -126,7 +126,7 @@ def muldersStorjohannReduce (M : PolynomialMatrix F) (shift : Array Nat) :
 > They are proved extensionally equal to the direct definitions in
 > `MuldersStorjohannCorrectness/Fast.lean`, so all correctness results transfer.
 
-`CompPoly.PolynomialMatrix.rowLeadingPositions` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L139))
+`CompPoly.PolynomialMatrix.rowLeadingPositions` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L139))
 
 > Shifted leading positions of all rows, computed once per conflict scan.
 
@@ -135,7 +135,7 @@ def rowLeadingPositions
     (M : PolynomialMatrix F) (shift : Array Nat) : Array (Option Nat)
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L144))
+`CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L144))
 
 > One inner-loop update for cached shifted-leading-position conflict search.
 
@@ -145,7 +145,7 @@ def cachedLeadingConflictInRowStep?
     (found : Option (Nat × Nat)) (j : Nat) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L156))
+`CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L156))
 
 > Scan one row index `i` for a cached shifted-leading-position conflict.
 
@@ -155,7 +155,7 @@ def cachedLeadingConflictInRow?
     (found : Option (Nat × Nat)) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflict?` (definition, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L164))
+`CompPoly.PolynomialMatrix.cachedLeadingConflict?` (definition, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L164))
 
 > First pair of rows with the same cached shifted leading position.
 
@@ -164,7 +164,7 @@ def cachedLeadingConflict? (positions : Array (Option Nat)) :
     Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast` (definition, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L171))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast` (definition, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L171))
 
 > `cancelShiftedLeadingTerm` with the fused row update.
 
@@ -173,7 +173,7 @@ def cancelShiftedLeadingTermFast
     (target reducer : PolynomialRow F) (shift : Array Nat) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStepFast` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L185))
+`CompPoly.PolynomialMatrix.muldersStorjohannStepFast` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L185))
 
 > One fast Mulders-Storjohann cancellation step.
 
@@ -182,7 +182,7 @@ def muldersStorjohannStepFast
     (M : PolynomialMatrix F) (shift : Array Nat) (i j : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L198))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L198))
 
 > Fuel-bounded fast Mulders-Storjohann reduction loop.
 
@@ -191,7 +191,7 @@ def muldersStorjohannReduceWithFuelFast :
     Nat → PolynomialMatrix F → Array Nat → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceFast` (definition, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L210))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceFast` (definition, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean#L210))
 
 > Fast executable Mulders-Storjohann shifted row reducer. Agrees with
 > `muldersStorjohannReduce`; see `muldersStorjohannReduceFast_eq`.
@@ -207,5 +207,5 @@ def muldersStorjohannReduceFast (M : PolynomialMatrix F) (shift : Array Nat) :
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann.json)

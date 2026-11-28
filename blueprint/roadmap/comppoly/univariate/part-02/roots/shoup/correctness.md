@@ -7,14 +7,14 @@ proof: formalized
 
 # Correctness Surface for Shoup-Style Trace Splitting
 
-`CompPoly.Univariate.Roots.Shoup.Correctness`, in [CompPoly/Univariate/Roots/Shoup/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Shoup.Correctness`, in [CompPoly/Univariate/Roots/Shoup/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean), by Valerii Huhnin.
 
 > This file states the proof obligations for the executable Shoup trace splitter.
 > The main completeness contract is intentionally limited to valid root products:
 > nonzero divisors of `X^q - X`, as produced by the finite-field root-product
 > construction.
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_shoupModularXPowerWith_eq_pow` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L43))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_shoupModularXPowerWith_eq_pow` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L43))
 
 > Evaluation of a Shoup modular power at a root of the modulus.
 
@@ -27,7 +27,7 @@ theorem eval_shoupModularXPowerWith_eq_pow {F : Type*}
     CPolynomial.eval a (xPowModWith M D modulus (ctx.p ^ i)) = a ^ (ctx.p ^ i)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_traceCoordinatePolynomialWith` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L52))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_traceCoordinatePolynomialWith` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L52))
 
 > Trace-coordinate polynomial evaluation at a root of the modulus.
 
@@ -41,7 +41,7 @@ theorem eval_traceCoordinatePolynomialWith {F : Type*}
       ctx.traceValue (beta * a)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceValue_sub` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L104))
+`CompPoly.CPolynomial.Roots.FiniteField.traceValue_sub` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L104))
 
 > The trace power-sum is additive for subtraction.
 
@@ -52,7 +52,7 @@ theorem traceValue_sub {F : Type*}
     ctx.traceValue (x - y) = ctx.traceValue x - ctx.traceValue y
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.traceValue_mul_sub_eq_zero_of_eq` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L133))
+`CompPoly.CPolynomial.Roots.FiniteField.traceValue_mul_sub_eq_zero_of_eq` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L133))
 
 > Trace coordinates convert equal bucket values into zero trace on differences.
 
@@ -64,7 +64,7 @@ theorem traceValue_mul_sub_eq_zero_of_eq {F : Type*}
     ctx.traceValue (beta * (a - b)) = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eq_of_traceValue_eq_on_basis` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L141))
+`CompPoly.CPolynomial.Roots.FiniteField.eq_of_traceValue_eq_on_basis` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L141))
 
 > Matching every trace coordinate in the separating basis forces equality.
 
@@ -77,7 +77,7 @@ theorem eq_of_traceValue_eq_on_basis {F : Type*}
     a = b
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root` (theorem, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L152))
+`CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root` (theorem, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L152))
 
 > The trace-coordinate gcd bucket preserves roots whose trace coordinate matches the bucket.
 
@@ -94,7 +94,7 @@ theorem shoup_gcdBucket_root {F : Type*}
             (traceCoordinatePolynomialWith M D ctx u beta - CPolynomial.C c))) = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root_iff` (theorem, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L171))
+`CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root_iff` (theorem, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L171))
 
 > Roots of a trace-coordinate gcd bucket are roots of the parent in that bucket.
 
@@ -111,7 +111,7 @@ theorem shoup_gcdBucket_root_iff {F : Type*}
       CPolynomial.eval a u = 0 ∧ ctx.traceValue (beta * a) = c
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_root` (theorem, [line 806](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L806))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_root` (theorem, [line 806](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L806))
 
 ```lean
 theorem shoupSplitCandidatesWith_root {F : Type*}
@@ -125,7 +125,7 @@ theorem shoupSplitCandidatesWith_root {F : Type*}
         CPolynomial.eval a factor = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_dvd_input` (theorem, [line 837](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L837))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_dvd_input` (theorem, [line 837](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L837))
 
 ```lean
 theorem shoupSplitCandidatesWith_dvd_input {F : Type*}
@@ -136,7 +136,7 @@ theorem shoupSplitCandidatesWith_dvd_input {F : Type*}
     factor.toPoly ∣ p.toPoly
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith_complete` (theorem, [line 922](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L922))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith_complete` (theorem, [line 922](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L922))
 
 > The Shoup splitter is complete for valid root-product inputs.
 
@@ -152,7 +152,7 @@ theorem shoupSplitLinearFactorsWith_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith` (definition, [line 941](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L941))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith` (definition, [line 941](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L941))
 
 > Adapt the Shoup trace splitter to the generic linear-factor-product interface.
 
@@ -164,7 +164,7 @@ def shoupLinearFactorProductSplitterWith {F : Type*}
     LinearFactorProductSplitter F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitter` (definition, [line 956](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L956))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitter` (definition, [line 956](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L956))
 
 > Shoup trace splitter using the default raw multiplication and remainder backends.
 
@@ -175,7 +175,7 @@ def shoupLinearFactorProductSplitter {F : Type*}
     LinearFactorProductSplitter F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_sound` (theorem, [line 964](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L964))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_sound` (theorem, [line 964](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L964))
 
 > The Shoup splitter only emits represented linear factors.
 
@@ -189,7 +189,7 @@ theorem shoupLinearFactorProductSplitterWith_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_complete` (theorem, [line 974](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L974))
+`CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_complete` (theorem, [line 974](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L974))
 
 > The Shoup splitter is complete for valid root-product inputs.
 
@@ -206,7 +206,7 @@ theorem shoupLinearFactorProductSplitterWith_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_dvd_frobenius` (theorem, [line 1325](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1325))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_dvd_frobenius` (theorem, [line 1325](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1325))
 
 > The finite-field root product divides the finite-field Frobenius polynomial.
 >
@@ -222,7 +222,7 @@ theorem finiteFieldRootProductWith_dvd_frobenius {F : Type*}
       ((Polynomial.X : Polynomial F) ^ ctx.q - Polynomial.X)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_shoupSplitterInput` (theorem, [line 1379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1379))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_shoupSplitterInput` (theorem, [line 1379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1379))
 
 > Finite-field root products satisfy the Shoup splitter's valid-input predicate.
 
@@ -234,7 +234,7 @@ theorem finiteFieldRootProductWith_shoupSplitterInput {F : Type*}
     shoupSplitterInput ctx (finiteFieldRootProductWith M D ctx.toFiniteFieldContext p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_shoupSplitterInput` (theorem, [line 1388](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1388))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_shoupSplitterInput` (theorem, [line 1388](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1388))
 
 > Default-backend finite-field root products satisfy the Shoup valid-input predicate.
 
@@ -245,7 +245,7 @@ theorem finiteFieldRootProduct_shoupSplitterInput {F : Type*}
     shoupSplitterInput ctx (finiteFieldRootProduct ctx.toFiniteFieldContext p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_shoupSplitterInput` (theorem, [line 1396](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1396))
+`CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_shoupSplitterInput` (theorem, [line 1396](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean#L1396))
 
 > Alias emphasizing the root-product precondition used by Shoup completeness.
 
@@ -270,5 +270,5 @@ theorem rootProduct_satisfies_shoupSplitterInput {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Shoup/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Shoup/Correctness.lean)
+- [CompPoly/Univariate/Roots/Shoup/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Shoup/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.Roots.Shoup.Correctness.json)

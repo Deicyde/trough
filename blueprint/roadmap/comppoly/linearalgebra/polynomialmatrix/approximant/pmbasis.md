@@ -7,13 +7,13 @@ proof: formalized
 
 # Recursive PM-Basis
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean), by Valerii Huhnin.
 
 > Umbrella module for the divide-and-conquer PM-basis: executable definitions,
 > correctness development, and the production `PMBasisContext` instances backed
 > by the recursive driver with scalar dense-kernel leaves.
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContextWithLowAndCompose` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L31))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContextWithLowAndCompose` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L31))
 
 > PM-basis context backed by the recursive driver, scalar dense-kernel leaves,
 > and an independently tuned basis-composition cutoff.
@@ -24,7 +24,7 @@ def kernelLeafPMBasisContextWithLowAndCompose (mulCtx : CPolynomial.MulContext F
     (leafCutoff composeLeafCutoff : Nat) : PMBasisContext F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContextWithLow` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L53))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContextWithLow` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L53))
 
 > PM-basis context backed by the recursive driver and scalar dense-kernel
 > leaves.
@@ -35,7 +35,7 @@ def kernelLeafPMBasisContextWithLow (mulCtx : CPolynomial.MulContext F)
     (leafCutoff : Nat) : PMBasisContext F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContext` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L60))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafPMBasisContext` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean#L60))
 
 > PM-basis context whose low products are obtained by truncating full
 > products.
@@ -55,5 +55,5 @@ def kernelLeafPMBasisContext (mulCtx : CPolynomial.MulContext F)
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.json)

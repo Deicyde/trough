@@ -7,7 +7,7 @@ proof: formalized
 
 # Approximant-Basis Interpolation Correctness Surface
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean), by Valerii Huhnin.
 
 > Theorem statements for the modular-equation reduction and the public
 > `GSInterpContext` boundary.
@@ -16,7 +16,7 @@ proof: formalized
 
 > ## The modular-equation layer
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModularEquation_row_iff_multiplicity` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L189))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModularEquation_row_iff_multiplicity` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L189))
 
 > The executable GS modular row predicate is equivalent to packed
 > multiplicity constraints for the bivariate coefficient-row view, for distinct
@@ -40,7 +40,7 @@ theorem gsModularEquation_row_iff_multiplicity
 
 > ## Soundness
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate_sound` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L230))
+`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate_sound` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L230))
 
 > Soundness for executable approximant-basis interpolation.
 
@@ -57,7 +57,7 @@ theorem approximantBasisInterpolate_sound
 
 > ## Completeness
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate_complete` (theorem, [line 452](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L452))
+`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate_complete` (theorem, [line 452](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L452))
 
 > Completeness for executable approximant-basis interpolation on distinct
 > input `x`-coordinates.
@@ -73,7 +73,7 @@ theorem approximantBasisInterpolate_complete
     ∃ Q, approximantBasisInterpolate V E solver points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpContext` (definition, [line 630](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L630))
+`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpContext` (definition, [line 630](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean#L630))
 
 > Public approximant-basis interpolation backend context.
 
@@ -98,5 +98,5 @@ def approximantBasisInterpContext
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness.json)

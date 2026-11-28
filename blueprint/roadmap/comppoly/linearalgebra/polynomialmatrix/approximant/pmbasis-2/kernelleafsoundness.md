@@ -7,7 +7,7 @@ proof: formalized
 
 # Kernel-Leaf Basis Soundness
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean), by Valerii Huhnin.
 
 > Every row of the kernel-leaf basis satisfies the X-adic approximant
 > conditions and has the principal row width: kernel vectors reconstruct to
@@ -16,7 +16,7 @@ proof: formalized
 
 > ## Kernel-leaf basis soundness
 
-`CompPoly.PolynomialMatrix.Approximant.rowScaleCoeffX_size` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L41))
+`CompPoly.PolynomialMatrix.Approximant.rowScaleCoeffX_size` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L41))
 
 > Coefficient-shift row scaling preserves the row size.
 
@@ -25,7 +25,7 @@ theorem rowScaleCoeffX_size (c : F) (d : Nat) (row : PolynomialRow F) :
     (rowScaleCoeffX c d row).size = row.size
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotRows_invariant` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L114))
+`CompPoly.PolynomialMatrix.Approximant.pivotRows_invariant` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L114))
 
 > Any predicate holding for all stored pivot rows holds for all extracted rows.
 
@@ -37,7 +37,7 @@ theorem pivotRows_invariant (Q : PolynomialRow F → Prop)
     Q row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_invariant` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L130))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_invariant` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L130))
 
 > Any predicate closed under leading-term cancellation is preserved by the
 > pivot-table reduction.
@@ -53,7 +53,7 @@ theorem reduceKernelLeafRowsByPivots_invariant (Q : PolynomialRow F → Prop)
     Q row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.mem_matrixRows_push` (theorem, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L175))
+`CompPoly.PolynomialMatrix.Approximant.mem_matrixRows_push` (theorem, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L175))
 
 > A row of `rows.push row` is either a row of `rows` or `row` itself.
 
@@ -63,7 +63,7 @@ theorem mem_matrixRows_push {rows : PolynomialMatrix F}
     r ∈ MatrixRows rows ∨ r = row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental_invariant` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L185))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental_invariant` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L185))
 
 > Any predicate closed under leading-term cancellation is preserved by the
 > incremental pivot reduction.
@@ -80,7 +80,7 @@ theorem reduceKernelLeafRowsIncremental_invariant
     Q row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowGet_vectorToPolynomialRow_coeff` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L295))
+`CompPoly.PolynomialMatrix.Approximant.rowGet_vectorToPolynomialRow_coeff` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L295))
 
 > Coefficients of polynomial rows reconstructed from scalar vectors.
 
@@ -91,7 +91,7 @@ theorem rowGet_vectorToPolynomialRow_coeff (cap width : Nat)
       if k < width ∧ a < cap then v.getD (k * cap + a) 0 else 0
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_approximates` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L317))
+`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_approximates` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L317))
 
 > Polynomial rows reconstructed from scalar kernel vectors satisfy the
 > X-adic conditions of the bounded leaf problem.
@@ -105,7 +105,7 @@ theorem vectorToPolynomialRow_approximates (mulCtx : CPolynomial.MulContext F)
       (vectorToPolynomialRow (leafDegreeCap problem) problem.matrix.size v)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pm_pack_index` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L376))
+`CompPoly.PolynomialMatrix.Approximant.pm_pack_index` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L376))
 
 > Arithmetic of the packed index `k * cap + a`.
 
@@ -116,7 +116,7 @@ theorem pm_pack_index {cap : Nat} (hcap : 0 < cap) {size k a : Nat}
       (k * cap + a) % cap = a
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowToCoefficientVector` (definition, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L393))
+`CompPoly.PolynomialMatrix.Approximant.rowToCoefficientVector` (definition, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L393))
 
 > Pack the coefficients below the leaf degree cap of a polynomial row into
 > one flat scalar vector: coefficient `a` of coordinate `k` is stored at index
@@ -128,7 +128,7 @@ def rowToCoefficientVector (problem : XAdicProblem F) (row : PolynomialRow F) :
     Array F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_rowToCoefficientVector` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L414))
+`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_rowToCoefficientVector` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L414))
 
 > Reconstructing a polynomial row from its packed coefficient vector is the
 > identity on rows of the principal width whose coefficients respect the leaf
@@ -144,7 +144,7 @@ theorem vectorToPolynomialRow_rowToCoefficientVector
       (rowToCoefficientVector problem row) = row
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRows_dot_eq_zero_of_approximates` (theorem, [line 478](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L478))
+`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRows_dot_eq_zero_of_approximates` (theorem, [line 478](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L478))
 
 > **Converse coefficient bridge.**  A polynomial row of a well-formed
 > bounded leaf problem that satisfies the X-adic conditions yields a packed
@@ -161,7 +161,7 @@ theorem coefficientMatrixRows_dot_eq_zero_of_approximates
         r.getD c 0 * (rowToCoefficientVector problem row).getD c 0 = 0
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafBasis_rows` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L570))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafBasis_rows` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean#L570))
 
 > Every kernel-leaf basis row approximates the problem and has the principal
 > row width.
@@ -183,5 +183,5 @@ theorem kernelLeafBasis_rows (mulCtx : CPolynomial.MulContext F)
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness.json)

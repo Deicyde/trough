@@ -7,11 +7,11 @@ proof: formalized
 
 # Polynomial Rows and Matrices
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean), by Valerii Huhnin.
 
 > Minimal row-oriented polynomial-matrix infrastructure for shifted row reduction.
 
-`CompPoly.PolynomialRow` (abbreviation, [line 21](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L21))
+`CompPoly.PolynomialRow` (abbreviation, [line 21](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L21))
 
 > A polynomial row over `F[X]`.
 
@@ -19,7 +19,7 @@ proof: formalized
 abbrev PolynomialRow (F : Type*) [Zero F]
 ```
 
-`CompPoly.PolynomialMatrix` (abbreviation, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L24))
+`CompPoly.PolynomialMatrix` (abbreviation, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L24))
 
 > A polynomial matrix over `F[X]`, stored as an array of rows.
 
@@ -27,7 +27,7 @@ abbrev PolynomialRow (F : Type*) [Zero F]
 abbrev PolynomialMatrix (F : Type*) [Zero F]
 ```
 
-`CompPoly.PolynomialMatrixShape` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L27))
+`CompPoly.PolynomialMatrixShape` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L27))
 
 > Runtime rectangular shape of a polynomial matrix.
 
@@ -38,7 +38,7 @@ structure PolynomialMatrixShape where
 deriving Repr, BEq, DecidableEq
 ```
 
-`CompPoly.PolynomialMatrix.RowWidth` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L37))
+`CompPoly.PolynomialMatrix.RowWidth` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L37))
 
 > Width of a row.
 
@@ -46,7 +46,7 @@ deriving Repr, BEq, DecidableEq
 def RowWidth [Zero F] (row : PolynomialRow F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.MatrixWidth` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L41))
+`CompPoly.PolynomialMatrix.MatrixWidth` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L41))
 
 > Matrix width, using the first row and width `0` for an empty matrix.
 
@@ -54,7 +54,7 @@ def RowWidth [Zero F] (row : PolynomialRow F) : Nat
 def MatrixWidth [Zero F] (M : PolynomialMatrix F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.MatrixShape` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L47))
+`CompPoly.PolynomialMatrix.MatrixShape` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L47))
 
 > Runtime matrix shape.
 
@@ -62,7 +62,7 @@ def MatrixWidth [Zero F] (M : PolynomialMatrix F) : Nat
 def MatrixShape [Zero F] (M : PolynomialMatrix F) : PolynomialMatrixShape
 ```
 
-`CompPoly.PolynomialMatrix.MatrixRows` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L51))
+`CompPoly.PolynomialMatrix.MatrixRows` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L51))
 
 > Matrix rows as a list, for membership statements.
 
@@ -70,7 +70,7 @@ def MatrixShape [Zero F] (M : PolynomialMatrix F) : PolynomialMatrixShape
 def MatrixRows [Zero F] (M : PolynomialMatrix F) : List (PolynomialRow F)
 ```
 
-`CompPoly.PolynomialMatrix.WellFormed` (definition, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L55))
+`CompPoly.PolynomialMatrix.WellFormed` (definition, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L55))
 
 > A matrix is rectangular when every row has the matrix width.
 
@@ -78,7 +78,7 @@ def MatrixRows [Zero F] (M : PolynomialMatrix F) : List (PolynomialRow F)
 def WellFormed [Zero F] (M : PolynomialMatrix F) : Prop
 ```
 
-`CompPoly.PolynomialMatrix.rowGet` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L59))
+`CompPoly.PolynomialMatrix.rowGet` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L59))
 
 > Read a row coefficient with zero default.
 
@@ -86,7 +86,7 @@ def WellFormed [Zero F] (M : PolynomialMatrix F) : Prop
 def rowGet [Zero F] (row : PolynomialRow F) (j : Nat) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.zeroRow` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L63))
+`CompPoly.PolynomialMatrix.zeroRow` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L63))
 
 > The zero row of a fixed width.
 
@@ -94,7 +94,7 @@ def rowGet [Zero F] (row : PolynomialRow F) (j : Nat) : CPolynomial F
 def zeroRow [Zero F] (width : Nat) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L67))
+`CompPoly.PolynomialMatrix.rowAdd` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L67))
 
 > Pointwise row addition over the maximum input width.
 
@@ -103,7 +103,7 @@ def rowAdd [Semiring F] [BEq F] [LawfulBEq F]
     (a b : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowNeg` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L73))
+`CompPoly.PolynomialMatrix.rowNeg` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L73))
 
 > Pointwise row negation.
 
@@ -112,7 +112,7 @@ def rowNeg [Ring F] [BEq F] [LawfulBEq F] (row : PolynomialRow F) :
     PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowSub` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L78))
+`CompPoly.PolynomialMatrix.rowSub` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L78))
 
 > Pointwise row subtraction over the maximum input width.
 
@@ -121,7 +121,7 @@ def rowSub [Ring F] [BEq F] [LawfulBEq F]
     (a b : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L83))
+`CompPoly.PolynomialMatrix.rowScalePolynomial` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L83))
 
 > Multiply a row by a univariate polynomial.
 
@@ -130,7 +130,7 @@ def rowScalePolynomial [Semiring F] [BEq F] [LawfulBEq F]
     (c : CPolynomial F) (row : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowScaleMonomial` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L88))
+`CompPoly.PolynomialMatrix.rowScaleMonomial` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L88))
 
 > Multiply a row by `c * X^d`.
 
@@ -139,7 +139,7 @@ def rowScaleMonomial [Semiring F] [BEq F] [LawfulBEq F] [DecidableEq F]
     (c : F) (d : Nat) (row : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowSubScaledShift` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L95))
+`CompPoly.PolynomialMatrix.rowSubScaledShift` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L95))
 
 > Fused `a - c * X^d * b` over the maximum input width, entrywise via
 > `CPolynomial.subMulMonomial`. One call costs `O(deg + d)` per entry instead of
@@ -151,7 +151,7 @@ def rowSubScaledShift [Ring F] [BEq F] [LawfulBEq F]
     PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L102))
+`CompPoly.PolynomialMatrix.replaceRow` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean#L102))
 
 > Replace a row if the index is in bounds.
 
@@ -166,5 +166,5 @@ def replaceRow [Zero F] (M : PolynomialMatrix F) (idx : Nat) (row : PolynomialRo
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Basic.json)

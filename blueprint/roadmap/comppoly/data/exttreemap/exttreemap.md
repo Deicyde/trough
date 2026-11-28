@@ -7,7 +7,7 @@ proof: formalized
 
 # Auxiliary lemmas for `Std.ExtTreeMap`
 
-`CompPoly.Data.ExtTreeMap.ExtTreeMap`, in [CompPoly/Data/ExtTreeMap/ExtTreeMap.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean), by Markus Himmel.
+`CompPoly.Data.ExtTreeMap.ExtTreeMap`, in [CompPoly/Data/ExtTreeMap/ExtTreeMap.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean), by Markus Himmel.
 
 > `mergeWith` and `filter` lemmas for `Std.ExtTreeMap`, used by the multivariate
 > polynomial representation in `CompPoly.Multivariate.Unlawful`.
@@ -18,7 +18,7 @@ proof: formalized
 > imported `Mathlib.Tactic` wholesale; here we narrow to the specific tactic
 > modules actually needed by the proofs below.
 
-`Std.ExtTreeMap.getElem?_pfilter` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L39))
+`Std.ExtTreeMap.getElem?_pfilter` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L39))
 
 ```lean
 theorem getElem?_pfilter
@@ -30,14 +30,14 @@ theorem getElem?_pfilter
           (contains_eq_isSome_getElem?.trans (Option.isSome_of_eq_some h'))) v)
 ```
 
-`Std.ExtTreeMap.filter_empty` (lemma, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L54))
+`Std.ExtTreeMap.filter_empty` (lemma, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L54))
 
 ```lean
 lemma filter_empty {f : α → β → Bool} :
     filter f (∅ : Std.ExtTreeMap α β cmp) = ∅
 ```
 
-`Std.ExtTreeMap.getElem?_mergeWith_at` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L60))
+`Std.ExtTreeMap.getElem?_mergeWith_at` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L60))
 
 ```lean
 theorem getElem?_mergeWith_at
@@ -50,35 +50,35 @@ theorem getElem?_mergeWith_at
   | .none,    .none    => .none
 ```
 
-`Std.ExtTreeMap.mergeWith_of_mem_mem` (lemma, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L86))
+`Std.ExtTreeMap.mergeWith_of_mem_mem` (lemma, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L86))
 
 ```lean
 lemma mergeWith_of_mem_mem (h₁ : k ∈ m₁) (h₂ : k ∈ m₂) :
     (m₁.mergeWith f m₂)[k]? = .some (f k m₁[k] m₂[k])
 ```
 
-`Std.ExtTreeMap.mergeWith_of_mem_left` (lemma, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L94))
+`Std.ExtTreeMap.mergeWith_of_mem_left` (lemma, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L94))
 
 ```lean
 lemma mergeWith_of_mem_left (h₁ : k ∈ m₁) (h₂ : k ∉ m₂) :
     (m₁.mergeWith f m₂)[k]? = m₁[k]?
 ```
 
-`Std.ExtTreeMap.mergeWith_of_mem_right` (lemma, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L102))
+`Std.ExtTreeMap.mergeWith_of_mem_right` (lemma, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L102))
 
 ```lean
 lemma mergeWith_of_mem_right (h₁ : k ∉ m₁) (h₂ : k ∈ m₂) :
     (m₁.mergeWith f m₂)[k]? = m₂[k]?
 ```
 
-`Std.ExtTreeMap.mergeWith_of_not_mem` (lemma, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L110))
+`Std.ExtTreeMap.mergeWith_of_not_mem` (lemma, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L110))
 
 ```lean
 lemma mergeWith_of_not_mem (h₁ : k ∉ m₁) (h₂ : k ∉ m₂) :
     (m₁.mergeWith f m₂)[k]? = .none
 ```
 
-`Std.ExtTreeMap.mergeWith_empty` (lemma, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L124))
+`Std.ExtTreeMap.mergeWith_empty` (lemma, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L124))
 
 ```lean
 lemma mergeWith_empty {f : α → β → β → β}
@@ -87,39 +87,39 @@ lemma mergeWith_empty {f : α → β → β → β}
     mergeWith f t ∅ = t
 ```
 
-`Std.ExtTreeMap.mergeWith_of_comm` (lemma, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L130))
+`Std.ExtTreeMap.mergeWith_of_comm` (lemma, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L130))
 
 ```lean
 lemma mergeWith_of_comm (h : ∀ {x}, Std.Commutative (f x)) :
     m₁.mergeWith f m₂ = m₂.mergeWith f m₁
 ```
 
-`Std.ExtTreeMap.toList_ofList` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L138))
+`Std.ExtTreeMap.toList_ofList` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L138))
 
 ```lean
 lemma toList_ofList [BEq α] [LawfulBEq α] : ofList (toList m) cmp = m
 ```
 
-`Std.ExtTreeMap.getElem?_filter_with_getKey` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L142))
+`Std.ExtTreeMap.getElem?_filter_with_getKey` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L142))
 
 ```lean
 lemma getElem?_filter_with_getKey {f : α → β → Bool} {k : α} {m : ExtTreeMap α β cmp} :
     (m.filter f)[k]? = m[k]?.filter (f k)
 ```
 
-`Std.ExtTreeMap.filter_mem` (lemma, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L149))
+`Std.ExtTreeMap.filter_mem` (lemma, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L149))
 
 ```lean
 lemma filter_mem (h : k ∈ m) : f k m[k] → (filter f m)[k]? = .some m[k]
 ```
 
-`Std.ExtTreeMap.filter_not_mem` (lemma, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L154))
+`Std.ExtTreeMap.filter_not_mem` (lemma, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L154))
 
 ```lean
 lemma filter_not_mem (h : k ∉ m) : (filter f m)[k]? = .none
 ```
 
-`Std.ExtTreeMap.filter_not_pred` (lemma, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L158))
+`Std.ExtTreeMap.filter_not_pred` (lemma, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean#L158))
 
 ```lean
 lemma filter_not_pred (h : k ∈ m) : ¬ (f k m[k]) → (filter f m)[k]? = .none
@@ -136,5 +136,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/ExtTreeMap/ExtTreeMap.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean)
+- [CompPoly/Data/ExtTreeMap/ExtTreeMap.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/ExtTreeMap/ExtTreeMap.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.ExtTreeMap.ExtTreeMap.json)

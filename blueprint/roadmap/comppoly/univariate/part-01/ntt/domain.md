@@ -7,12 +7,12 @@ proof: formalized
 
 # NTT Domain
 
-`CompPoly.Univariate.NTT.Domain`, in [CompPoly/Univariate/NTT/Domain.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean), by Salih Erdem Koçak, Doran Pamukçu, Valerii Huhnin.
+`CompPoly.Univariate.NTT.Domain`, in [CompPoly/Univariate/NTT/Domain.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean), by Salih Erdem Koçak, Doran Pamukçu, Valerii Huhnin.
 
 > This file defines the radix-2 NTT domain parameters and basic raw-polynomial
 > shape helpers used by forward/inverse NTT.
 
-`CompPoly.CPolynomial.NTT.Domain` (structure, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L29))
+`CompPoly.CPolynomial.NTT.Domain` (structure, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L29))
 
 > Parameters for a radix-2 NTT domain of size `2 ^ logN`.
 
@@ -23,7 +23,7 @@ structure Domain (R : Type*) [Field R] where
   primitive : IsPrimitiveRoot omega (2 ^ logN)
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.n` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L37))
+`CompPoly.CPolynomial.NTT.Domain.n` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L37))
 
 > Domain size.
 
@@ -31,7 +31,7 @@ structure Domain (R : Type*) [Field R] where
 def n (D : Domain R) : Nat
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.Idx` (abbreviation, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L40))
+`CompPoly.CPolynomial.NTT.Domain.Idx` (abbreviation, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L40))
 
 > Index type for vectors over the domain.
 
@@ -39,7 +39,7 @@ def n (D : Domain R) : Nat
 abbrev Idx (D : Domain R)
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.node` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L43))
+`CompPoly.CPolynomial.NTT.Domain.node` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L43))
 
 > The `i`-th evaluation node `omega^i`.
 
@@ -47,7 +47,7 @@ abbrev Idx (D : Domain R)
 def node (D : Domain R) (i : D.Idx) : R
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.omegaInv` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L46))
+`CompPoly.CPolynomial.NTT.Domain.omegaInv` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L46))
 
 > Inverse root of unity.
 
@@ -55,7 +55,7 @@ def node (D : Domain R) (i : D.Idx) : R
 def omegaInv (D : Domain R) : R
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.inverse` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L49))
+`CompPoly.CPolynomial.NTT.Domain.inverse` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L49))
 
 > The domain with the inverse root, used by inverse NTT butterflies.
 
@@ -63,7 +63,7 @@ def omegaInv (D : Domain R) : R
 def inverse (D : Domain R) : Domain R
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.nInv` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L56))
+`CompPoly.CPolynomial.NTT.Domain.nInv` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L56))
 
 > Multiplicative inverse of the domain size in `R`.
 
@@ -71,19 +71,19 @@ def inverse (D : Domain R) : Domain R
 def nInv (D : Domain R) : R
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.n_pos` (lemma, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L58))
+`CompPoly.CPolynomial.NTT.Domain.n_pos` (lemma, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L58))
 
 ```lean
 lemma n_pos (D : Domain R) : 0 < D.n
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.n_ne_zero` (lemma, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L61))
+`CompPoly.CPolynomial.NTT.Domain.n_ne_zero` (lemma, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L61))
 
 ```lean
 lemma n_ne_zero (D : Domain R) : D.n ≠ 0
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.natCast_ne_zero` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L65))
+`CompPoly.CPolynomial.NTT.Domain.natCast_ne_zero` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L65))
 
 > The size of an NTT domain is nonzero in its coefficient field.
 
@@ -91,7 +91,7 @@ lemma n_ne_zero (D : Domain R) : D.n ≠ 0
 theorem natCast_ne_zero (D : Domain R) : ((D.n : Nat) : R) ≠ 0
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.requiredLength` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L74))
+`CompPoly.CPolynomial.NTT.Domain.requiredLength` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L74))
 
 > Required convolution length for multiplying `p` and `q`.
 
@@ -99,7 +99,7 @@ theorem natCast_ne_zero (D : Domain R) : ((D.n : Nat) : R) ≠ 0
 def requiredLength (p q : CPolynomial.Raw R) : Nat
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_zero_of_left_trim_size_zero` (theorem, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L80))
+`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_zero_of_left_trim_size_zero` (theorem, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L80))
 
 ```lean
 theorem requiredLength_eq_zero_of_left_trim_size_zero
@@ -107,7 +107,7 @@ theorem requiredLength_eq_zero_of_left_trim_size_zero
     requiredLength p q = 0
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_zero_of_right_trim_size_zero` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L85))
+`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_zero_of_right_trim_size_zero` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L85))
 
 ```lean
 theorem requiredLength_eq_zero_of_right_trim_size_zero
@@ -115,7 +115,7 @@ theorem requiredLength_eq_zero_of_right_trim_size_zero
     requiredLength p q = 0
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_of_trim_size_pos` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L90))
+`CompPoly.CPolynomial.NTT.Domain.requiredLength_eq_of_trim_size_pos` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L90))
 
 ```lean
 theorem requiredLength_eq_of_trim_size_pos
@@ -123,7 +123,7 @@ theorem requiredLength_eq_of_trim_size_pos
     requiredLength p q = p.trim.size + q.trim.size - 1
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.fits` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L98))
+`CompPoly.CPolynomial.NTT.Domain.fits` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L98))
 
 > Whether domain `D` is large enough for multiplying `p` and `q`.
 
@@ -131,7 +131,7 @@ theorem requiredLength_eq_of_trim_size_pos
 def fits (D : Domain R) (p q : CPolynomial.Raw R) : Prop
 ```
 
-`CompPoly.CPolynomial.NTT.Domain.truncate` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L102))
+`CompPoly.CPolynomial.NTT.Domain.truncate` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L102))
 
 > Truncate a polynomial to at most `m` coefficients.
 
@@ -139,7 +139,7 @@ def fits (D : Domain R) (p q : CPolynomial.Raw R) : Prop
 def truncate (m : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTT.bestLogN` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L109))
+`CompPoly.CPolynomial.NTT.bestLogN` (definition, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L109))
 
 > The smallest radix-2 exponent that can cover a requested convolution length.
 
@@ -147,7 +147,7 @@ def truncate (m : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R
 def bestLogN (requiredLen : Nat) : Nat
 ```
 
-`CompPoly.CPolynomial.NTT.loadNaturalArray` (definition, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L113))
+`CompPoly.CPolynomial.NTT.loadNaturalArray` (definition, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L113))
 
 > Load an array in natural order and pad it to a domain-sized array.
 
@@ -155,14 +155,14 @@ def bestLogN (requiredLen : Nat) : Nat
 def loadNaturalArray (D : Domain R) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.size_loadNaturalArray` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L116))
+`CompPoly.CPolynomial.NTT.size_loadNaturalArray` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L116))
 
 ```lean
 theorem size_loadNaturalArray (D : Domain R) (a : Array R) :
     (loadNaturalArray D a).size = D.n
 ```
 
-`CompPoly.CPolynomial.NTT.getElem_loadNaturalArray` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L120))
+`CompPoly.CPolynomial.NTT.getElem_loadNaturalArray` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L120))
 
 ```lean
 theorem getElem_loadNaturalArray (D : Domain R) (a : Array R) (i : Nat)
@@ -170,7 +170,7 @@ theorem getElem_loadNaturalArray (D : Domain R) (a : Array R) (i : Nat)
     (loadNaturalArray D a)[i] = a.getD i 0
 ```
 
-`CompPoly.CPolynomial.NTT.loadNaturalVector` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L126))
+`CompPoly.CPolynomial.NTT.loadNaturalVector` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L126))
 
 > Load an array in natural order and pad it to a domain-sized vector.
 
@@ -178,7 +178,7 @@ theorem getElem_loadNaturalArray (D : Domain R) (a : Array R) (i : Nat)
 def loadNaturalVector (D : Domain R) (a : Array R) : Vector R D.n
 ```
 
-`CompPoly.CPolynomial.NTT.FittingDomain` (abbreviation, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L130))
+`CompPoly.CPolynomial.NTT.FittingDomain` (abbreviation, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L130))
 
 > An NTT domain bundled with proof that it covers the requested convolution length.
 
@@ -186,7 +186,7 @@ def loadNaturalVector (D : Domain R) (a : Array R) : Vector R D.n
 abbrev FittingDomain (R : Type*) [Field R] (requiredLen : Nat)
 ```
 
-`CompPoly.CPolynomial.NTT.bestDomainForLength?` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean#L139))
+`CompPoly.CPolynomial.NTT.bestDomainForLength?` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean#L139))
 
 > Generic adapter from field-specific radix-2 domain tables to a best-fitting domain lookup.
 >
@@ -206,5 +206,5 @@ def bestDomainForLength?
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/Domain.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Domain.lean)
+- [CompPoly/Univariate/NTT/Domain.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTT/Domain.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.Domain.json)

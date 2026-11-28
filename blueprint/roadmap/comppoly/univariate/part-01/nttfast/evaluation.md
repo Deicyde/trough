@@ -7,12 +7,12 @@ proof: formalized
 
 # NTTFast and Evaluation
 
-`CompPoly.Univariate.NTTFast.Evaluation`, in [CompPoly/Univariate/NTTFast/Evaluation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Evaluation.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Evaluation`, in [CompPoly/Univariate/NTTFast/Evaluation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Evaluation.lean), by Valerii Huhnin.
 
 > Bridge theorem declarations deriving NTTFast evaluation facts from the shared NTT
 > specification layer.
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_eq_bitRevPermute_evalOnDomain` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Evaluation.lean#L33))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_eq_bitRevPermute_evalOnDomain` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Evaluation.lean#L33))
 
 > …
 
@@ -35,5 +35,5 @@ theorem forwardImpl_eq_bitRevPermute_evalOnDomain
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Evaluation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Evaluation.lean)
+- [CompPoly/Univariate/NTTFast/Evaluation.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/Evaluation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Evaluation.json)

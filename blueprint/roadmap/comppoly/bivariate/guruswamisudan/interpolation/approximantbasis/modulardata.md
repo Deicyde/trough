@@ -7,7 +7,7 @@ proof: formalized
 
 # Executable GS Modular-Data Bridges
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean), by Valerii Huhnin.
 
 > Semantic characterizations of the executable approximant-basis modular data:
 > the modulus array `gsModuli`, the incrementally built binomial relation matrix
@@ -18,7 +18,7 @@ proof: formalized
 
 > ## Generic helpers
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_rowGet` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L95))
+`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_rowGet` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L95))
 
 > Entry access for `PolynomialMatrix.ofFn`.
 
@@ -28,7 +28,7 @@ theorem ofFn_rowGet (rows width : Nat) (entry : Nat → Nat → CPolynomial F)
     rowGet ((PolynomialMatrix.ofFn rows width entry).getD i #[]) j = entry i j
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_size` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L107))
+`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_size` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L107))
 
 > Row count of `PolynomialMatrix.ofFn`.
 
@@ -37,7 +37,7 @@ theorem ofFn_size (rows width : Nat) (entry : Nat → Nat → CPolynomial F) :
     (PolynomialMatrix.ofFn rows width entry).size = rows
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_matrixWidth` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L113))
+`CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_matrixWidth` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L113))
 
 > Width of `PolynomialMatrix.ofFn` with at least one row.
 
@@ -49,7 +49,7 @@ theorem ofFn_matrixWidth (rows width : Nat) (entry : Nat → Nat → CPolynomial
 
 > ## Modular reduction semantics
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_toPoly` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L128))
+`CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_toPoly` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L128))
 
 > `modByMonicWith` computes the Mathlib monic remainder under `toPoly`.
 
@@ -59,7 +59,7 @@ theorem modByMonicWith_toPoly (modCtx : CPolynomial.ModContext F)
     (PolynomialMatrix.modByMonicWith modCtx p M).toPoly = p.toPoly %ₘ M.toPoly
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.dvd_modByMonicWith_sub` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L143))
+`CompPoly.GuruswamiSudan.ApproximantBasis.dvd_modByMonicWith_sub` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L143))
 
 > `modByMonicWith` is congruent to the identity modulo the modulus.
 
@@ -69,7 +69,7 @@ theorem dvd_modByMonicWith_sub (modCtx : CPolynomial.ModContext F)
     M.toPoly ∣ (PolynomialMatrix.modByMonicWith modCtx p M).toPoly - p.toPoly
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_eq_zero_iff_dvd` (theorem, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L153))
+`CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_eq_zero_iff_dvd` (theorem, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L153))
 
 > The executable remainder vanishes exactly on multiples of the modulus.
 
@@ -81,7 +81,7 @@ theorem modByMonicWith_eq_zero_iff_dvd (modCtx : CPolynomial.ModContext F)
 
 > ## The GS modulus array
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_eq` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L208))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_eq` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L208))
 
 > Closed form for the GS modulus array before reversal.
 
@@ -90,7 +90,7 @@ theorem gsModuli_eq (mulCtx : CPolynomial.MulContext F) (G : CPolynomial F) (s :
     gsModuli mulCtx G s = (((List.range s).map fun i ↦ G ^ (i + 1)).toArray).reverse
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_size` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L230))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_size` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L230))
 
 > The GS modulus array has one modulus per multiplicity level.
 
@@ -99,7 +99,7 @@ theorem gsModuli_size (mulCtx : CPolynomial.MulContext F) (G : CPolynomial F) (s
     (gsModuli mulCtx G s).size = s
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L237))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L237))
 
 > The `b`-th GS modulus is `G^(s-b)`.
 
@@ -111,7 +111,7 @@ theorem gsModuli_getD (mulCtx : CPolynomial.MulContext F) (G : CPolynomial F)
 
 > ## The GS relation column
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_size` (theorem, [line 411](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L411))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_size` (theorem, [line 411](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L411))
 
 > Size of the GS relation column.
 
@@ -121,7 +121,7 @@ theorem gsRelationColumn_size (mulCtx : CPolynomial.MulContext F)
     (gsRelationColumn mulCtx modCtx R modulus width b).size = width
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_of_lt` (theorem, [line 422](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L422))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_of_lt` (theorem, [line 422](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L422))
 
 > Entries of the GS relation column below the diagonal vanish.
 
@@ -132,7 +132,7 @@ theorem gsRelationColumn_getD_of_lt (mulCtx : CPolynomial.MulContext F)
     (gsRelationColumn mulCtx modCtx R modulus width b).getD j 0 = 0
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_congr` (theorem, [line 435](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L435))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_congr` (theorem, [line 435](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L435))
 
 > Entries of the GS relation column are congruent to the binomial powers.
 
@@ -148,7 +148,7 @@ theorem gsRelationColumn_getD_congr (mulCtx : CPolynomial.MulContext F)
 
 > ## The GS relation matrix and the modular row predicate
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD_one` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L454))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD_one` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L454))
 
 > The `b`-th GS modulus is `G^(s-b)`, with default value `1`.
 
@@ -158,7 +158,7 @@ theorem gsModuli_getD_one (mulCtx : CPolynomial.MulContext F) (G : CPolynomial F
     (gsModuli mulCtx G s).getD b 1 = G ^ (s - b)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_entry` (theorem, [line 465](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L465))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_entry` (theorem, [line 465](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L465))
 
 > Entry access for the GS relation matrix.
 
@@ -172,7 +172,7 @@ theorem gsRelationMatrixWithModuli_entry (mulCtx : CPolynomial.MulContext F)
         (interpolationWidth params) b).getD k 0
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_size` (theorem, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L479))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_size` (theorem, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L479))
 
 > The GS relation matrix has one row per interpolation coefficient.
 
@@ -184,7 +184,7 @@ theorem gsRelationMatrixWithModuli_size (mulCtx : CPolynomial.MulContext F)
       interpolationWidth params
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_matrixWidth` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L488))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_matrixWidth` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L488))
 
 > The GS relation matrix has one column per multiplicity level.
 
@@ -196,7 +196,7 @@ theorem gsRelationMatrixWithModuli_matrixWidth (mulCtx : CPolynomial.MulContext 
       params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.hasseDeriv_toPoly_ofCoeffRow_eval` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L520))
+`CompPoly.GuruswamiSudan.ApproximantBasis.hasseDeriv_toPoly_ofCoeffRow_eval` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L520))
 
 > Sheared coefficients of a coefficient row: the outer Hasse derivative of
 > `ofCoeffRow row` evaluated at `R` is the binomial-weighted power sum.
@@ -209,7 +209,7 @@ theorem hasseDeriv_toPoly_ofCoeffRow_eval (row : PolynomialRow F)
         Polynomial.C ((k.choose b : F)) * (row.getD k 0).toPoly * R ^ (k - b)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.rowMulMatrixWith_congr_of_agree` (theorem, [line 574](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L574))
+`CompPoly.GuruswamiSudan.ApproximantBasis.rowMulMatrixWith_congr_of_agree` (theorem, [line 574](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L574))
 
 > The row-by-matrix product only sees the first `M.size` row entries.
 
@@ -220,7 +220,7 @@ theorem rowMulMatrixWith_congr_of_agree (mulCtx : CPolynomial.MulContext F)
     rowMulMatrixWith mulCtx row M = rowMulMatrixWith mulCtx row' M
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_congr_of_agree` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L587))
+`CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_congr_of_agree` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L587))
 
 > The modular row predicate only sees the first `M.size` row entries.
 
@@ -233,7 +233,7 @@ theorem rowSatisfiesModularBool_congr_of_agree (mulCtx : CPolynomial.MulContext 
       rowSatisfiesModularBool mulCtx modCtx row' M moduli
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_gsRelationMatrix_iff` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L623))
+`CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_gsRelationMatrix_iff` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean#L623))
 
 > The executable GS modular row predicate over the relation matrix and
 > modulus array is exactly divisibility of every sheared coefficient
@@ -263,5 +263,5 @@ theorem rowSatisfiesModularBool_gsRelationMatrix_iff
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization of multivariate polynomials
 
-`CompPoly.Multivariate.Bytes`, in [CompPoly/Multivariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean), by Derek Sorensen.
+`CompPoly.Multivariate.Bytes`, in [CompPoly/Multivariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean), by Derek Sorensen.
 
 > A `CMvPolynomial n R` is a sorted map from exponent vectors to nonzero coefficients, so its
 > `toList` is already a canonical sequence of terms. It encodes as a `u64` term count followed
@@ -21,13 +21,13 @@ proof: formalized
 
 > ## Monomials: `n` exponents, no count
 
-`CPoly.CMvMonomial.instDelimitedCodec` (instance, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L34))
+`CPoly.CMvMonomial.instDelimitedCodec` (instance, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L34))
 
 ```lean
 instance CMvMonomial.instDelimitedCodec (n : ℕ) : DelimitedCodec (CMvMonomial n)
 ```
 
-`CPoly.CMvMonomial.instDelimitedCodecVector` (instance, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L39))
+`CPoly.CMvMonomial.instDelimitedCodecVector` (instance, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L39))
 
 > The same codec at `Vector ℕ n`, the underlying type of `CMvMonomial n`, for goals that
 > instance search sees only after unfolding (the `#m[…]` notation elaborates to a `Vector`).
@@ -36,14 +36,14 @@ instance CMvMonomial.instDelimitedCodec (n : ℕ) : DelimitedCodec (CMvMonomial 
 instance CMvMonomial.instDelimitedCodecVector (n : ℕ) : DelimitedCodec (Vector ℕ n)
 ```
 
-`CPoly.CMvMonomial.valid_iff` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L42))
+`CPoly.CMvMonomial.valid_iff` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L42))
 
 ```lean
 theorem CMvMonomial.valid_iff {n : ℕ} (m : CMvMonomial n) :
     Valid m ↔ ∀ e ∈ (m : Vector ℕ n).toList, e < 2 ^ 64
 ```
 
-`CPoly.CMvMonomial.encode_eq` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L45))
+`CPoly.CMvMonomial.encode_eq` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L45))
 
 ```lean
 theorem CMvMonomial.encode_eq {n : ℕ} (m : CMvMonomial n) :
@@ -52,7 +52,7 @@ theorem CMvMonomial.encode_eq {n : ℕ} (m : CMvMonomial n) :
 
 > ## Rebuilding a map from its own term list
 
-`CPoly.CMvMonomial.instLawfulBEqCmp` (instance, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L53))
+`CPoly.CMvMonomial.instLawfulBEqCmp` (instance, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L53))
 
 > `compare` and `==` agree on monomials: both decide equality. Built from `LawfulEqCmp` and
 > `LawfulBEq` rather than transported from `Vector.compareLex`, whose instance body is not
@@ -63,7 +63,7 @@ instance CMvMonomial.instLawfulBEqCmp (n : ℕ) :
     LawfulBEqCmp (Ord.compare (α := CMvMonomial n))
 ```
 
-`CPoly.Unlawful.ofList_toList` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L63))
+`CPoly.Unlawful.ofList_toList` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L63))
 
 > A tree map is the map of its own term list.
 
@@ -73,7 +73,7 @@ theorem Unlawful.ofList_toList (p : Unlawful n R) : Unlawful.ofList p.toList = p
 
 > ## Polynomials
 
-`CPoly.CMvPolynomial.instDelimitedCodec` (instance, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L87))
+`CPoly.CMvPolynomial.instDelimitedCodec` (instance, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L87))
 
 > A `u64` term count, then each term as `n` exponents and a coefficient.
 
@@ -82,7 +82,7 @@ instance CMvPolynomial.instDelimitedCodec [DelimitedCodec R] :
     DelimitedCodec (CMvPolynomial n R)
 ```
 
-`CPoly.CMvPolynomial.valid_iff` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L97))
+`CPoly.CMvPolynomial.valid_iff` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L97))
 
 ```lean
 theorem CMvPolynomial.valid_iff [DelimitedCodec R] (p : CMvPolynomial n R) :
@@ -90,7 +90,7 @@ theorem CMvPolynomial.valid_iff [DelimitedCodec R] (p : CMvPolynomial n R) :
       ∀ t ∈ p.1.toList, (∀ e ∈ (t.1 : Vector ℕ n).toList, e < 2 ^ 64) ∧ Valid t.2
 ```
 
-`CPoly.CMvPolynomial.encode_eq` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean#L101))
+`CPoly.CMvPolynomial.encode_eq` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean#L101))
 
 ```lean
 theorem CMvPolynomial.encode_eq [DelimitedCodec R] (p : CMvPolynomial n R) :
@@ -104,5 +104,5 @@ theorem CMvPolynomial.encode_eq [DelimitedCodec R] (p : CMvPolynomial n R) :
 
 ## Sources
 
-- [CompPoly/Multivariate/Bytes.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Bytes.lean)
+- [CompPoly/Multivariate/Bytes.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/Bytes.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.Bytes.json)

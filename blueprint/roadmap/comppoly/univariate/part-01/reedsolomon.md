@@ -7,7 +7,7 @@ proof: formalized
 
 # Reed-Solomon Codes
 
-`CompPoly.Univariate.ReedSolomon`, in [CompPoly/Univariate/ReedSolomon.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean), by Juan Conejero.
+`CompPoly.Univariate.ReedSolomon`, in [CompPoly/Univariate/ReedSolomon.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean), by Juan Conejero.
 
 > The Reed-Solomon code over a finite field: evaluation domain, message polynomial, and
 > encoder. Decoders live in their own files.
@@ -23,7 +23,7 @@ proof: formalized
 > * `messagePoly`, `encode`: the message polynomial of a coefficient vector and the encoder
 >   evaluating it on the domain.
 
-`CompPoly.ReedSolomon.Domain` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L38))
+`CompPoly.ReedSolomon.Domain` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L38))
 
 > Evaluation domain: an array of distinct points in `F`.
 
@@ -31,7 +31,7 @@ proof: formalized
 def Domain (F : Type*)
 ```
 
-`CompPoly.ReedSolomon.Domain.n` (abbreviation, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L43))
+`CompPoly.ReedSolomon.Domain.n` (abbreviation, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L43))
 
 > Block length.
 
@@ -39,7 +39,7 @@ def Domain (F : Type*)
 abbrev n (D : Domain F) : ℕ
 ```
 
-`CompPoly.ReedSolomon.Domain.node_injective` (lemma, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L46))
+`CompPoly.ReedSolomon.Domain.node_injective` (lemma, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L46))
 
 > Indexing into the (nodup) domain array is injective on `Fin D.n`.
 
@@ -48,7 +48,7 @@ lemma node_injective (D : Domain F) :
     Function.Injective (fun i : Fin D.n => D.val[i])
 ```
 
-`CompPoly.ReedSolomon.messagePoly` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L54))
+`CompPoly.ReedSolomon.messagePoly` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L54))
 
 > Message polynomial `m₀ + m₁ x + ... + mₖ₋₁ xᵏ⁻¹` from a length-`k`
 > coefficient vector `msg`.
@@ -58,7 +58,7 @@ def messagePoly [Zero F] [BEq F] [LawfulBEq F]
     {k : ℕ} (msg : Vector F k) : CPolynomial F
 ```
 
-`CompPoly.ReedSolomon.messagePoly_degree_lt` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L60))
+`CompPoly.ReedSolomon.messagePoly_degree_lt` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L60))
 
 > `(messagePoly msg).degree < k`.
 
@@ -67,7 +67,7 @@ lemma messagePoly_degree_lt [Zero F] [BEq F] [LawfulBEq F] {k : ℕ} (msg : Vect
     (messagePoly msg).degree < k
 ```
 
-`CompPoly.ReedSolomon.messagePoly_ofFn_coeff` (lemma, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L67))
+`CompPoly.ReedSolomon.messagePoly_ofFn_coeff` (lemma, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L67))
 
 > `messagePoly` recovers a `CPolynomial` of degree `< k` from its bounded coefficient vector.
 
@@ -76,7 +76,7 @@ lemma messagePoly_ofFn_coeff [Semiring F] [BEq F] [LawfulBEq F] (k : ℕ) (f : C
     (hf : f.degree < k) : messagePoly (Vector.ofFn fun i : Fin k => f.coeff i) = f
 ```
 
-`CompPoly.ReedSolomon.encode` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L78))
+`CompPoly.ReedSolomon.encode` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L78))
 
 > Encode: the message polynomial `messagePoly msg` evaluated at the domain `D`.
 
@@ -85,7 +85,7 @@ def encode [Semiring F] [BEq F] [LawfulBEq F]
     (D : Domain F) {k : ℕ} (msg : Vector F k) : Vector F D.n
 ```
 
-`CompPoly.ReedSolomon.encode_get` (lemma, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean#L83))
+`CompPoly.ReedSolomon.encode_get` (lemma, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean#L83))
 
 > The codeword entry at node `i` is `messagePoly msg` evaluated at `D.val[i]`.
 
@@ -105,5 +105,5 @@ lemma encode_get [Semiring F] [BEq F] [LawfulBEq F] (D : Domain F) {k : ℕ}
 
 ## Sources
 
-- [CompPoly/Univariate/ReedSolomon.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon.lean)
+- [CompPoly/Univariate/ReedSolomon.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.ReedSolomon.json)

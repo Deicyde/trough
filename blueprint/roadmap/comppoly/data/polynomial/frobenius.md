@@ -7,7 +7,7 @@ proof: formalized
 
 # Frobenius polynomial identities
 
-`CompPoly.Data.Polynomial.Frobenius`, in [CompPoly/Data/Polynomial/Frobenius.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Data.Polynomial.Frobenius`, in [CompPoly/Data/Polynomial/Frobenius.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean), by Chung Thai Nguyen, Quang Dao.
 
 > This file establishes fundamental identities involving the Frobenius endomorphism for polynomials
 > over finite fields. The main results include factorization identities, Frobenius polynomial
@@ -43,7 +43,7 @@ proof: formalized
 >
 > …
 
-`instExpCharOfAlgebra` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L61))
+`instExpCharOfAlgebra` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L61))
 
 > An algebra over a field of positive characteristic inherits its exponential characteristic:
 > if `ringChar Fq ≠ 0`, then `ExpChar K (ringChar Fq)` for any `Fq`-algebra `K` that is a field.
@@ -55,7 +55,7 @@ theorem instExpCharOfAlgebra {K : Type*} [Field K] [Algebra Fq K]
     {h_ringChar_Fq_pos : (ringChar Fq) ≠ 0} : ExpChar K (ringChar Fq)
 ```
 
-`Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L84))
+`Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L84))
 
 > The polynomial `X^q - X` factors into the product of `(X - c)` ∀ `c` ∈ `Fq`,
 > i.e. `∏_{c ∈ Fq} (X - c) = X^q - X`.
@@ -66,7 +66,7 @@ theorem prod_X_sub_C_eq_X_pow_card_sub_X :
     Polynomial.X^(Fintype.card Fq) - Polynomial.X
 ```
 
-`Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X_in_L` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L138))
+`Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X_in_L` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L138))
 
 > The identity `∏_{c ∈ Fq} (X - c) = X^q - X` also holds in the polynomial ring `L[X]`,
 > where `L` is any field extension of `Fq`.
@@ -77,7 +77,7 @@ theorem prod_X_sub_C_eq_X_pow_card_sub_X_in_L :
     Polynomial.X^(Fintype.card Fq) - Polynomial.X
 ```
 
-`Polynomial.prod_poly_sub_C_eq_poly_pow_card_sub_poly_in_L` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L161))
+`Polynomial.prod_poly_sub_C_eq_poly_pow_card_sub_poly_in_L` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L161))
 
 > The identity `∏_{c ∈ Fq} (X - c) = X^q - X` also holds in the polynomial ring `L[X]`,
 > where `L` is any field extension of `Fq`.
@@ -89,7 +89,7 @@ theorem prod_poly_sub_C_eq_poly_pow_card_sub_poly_in_L
     p^(Fintype.card Fq) - p
 ```
 
-`Polynomial.frobenius_identity_in_ground_field` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L192))
+`Polynomial.frobenius_identity_in_ground_field` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L192))
 
 > The Frobenius identity for polynomials in `Fq[X]`.
 > The `q`-th power of a sum of polynomials is the sum of their `q`-th powers.
@@ -100,7 +100,7 @@ theorem frobenius_identity_in_ground_field
     (f + g)^(Fintype.card Fq) = f^(Fintype.card Fq) + g^(Fintype.card Fq)
 ```
 
-`Polynomial.frobenius_identity_in_algebra` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L208))
+`Polynomial.frobenius_identity_in_algebra` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L208))
 
 > The lifted Frobenius identity for polynomials in `L[X]`, where `L` is an `Fq`-algebra.
 > The exponent `q` is the cardinality of the base field `Fq`.
@@ -110,7 +110,7 @@ theorem frobenius_identity_in_algebra [Fact (Nat.Prime (ringChar Fq))]
     (f g : L[X]) : (f + g)^(Fintype.card Fq) = f^(Fintype.card Fq) + g^(Fintype.card Fq)
 ```
 
-`Polynomial.linear_map_of_comp_to_linear_map_of_eval` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L229))
+`Polynomial.linear_map_of_comp_to_linear_map_of_eval` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L229))
 
 > Restricting a linear map on polynomial composition to a linear map on polynomial evaluation.
 
@@ -121,7 +121,7 @@ theorem linear_map_of_comp_to_linear_map_of_eval (f : L[X])
     IsLinearMap (R := Fq) (M := L) (M₂ := L) (f := fun x ↦ f.eval x)
 ```
 
-`Polynomial.aeval_pow_card_eq_aeval_pow_card` (theorem, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L257))
+`Polynomial.aeval_pow_card_eq_aeval_pow_card` (theorem, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L257))
 
 > Frobenius endomorphism interaction with polynomial evaluation.
 > (aeval x f)^|Fq| = aeval (x^|Fq|) f
@@ -133,7 +133,7 @@ theorem aeval_pow_card_eq_aeval_pow_card {Fq K : Type*} [Field Fq] [Fintype Fq]
     (aeval x f) ^ (Fintype.card Fq) = aeval (x ^ (Fintype.card Fq)) f
 ```
 
-`Polynomial.aeval_pow_card_pow_eq_aeval_pow_card_pow` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L287))
+`Polynomial.aeval_pow_card_pow_eq_aeval_pow_card_pow` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L287))
 
 > Iterated Frobenius endomorphism interaction with polynomial evaluation.
 > (aeval x f)^(|Fq|^n) = aeval (x^|Fq|^n) f
@@ -145,7 +145,7 @@ theorem aeval_pow_card_pow_eq_aeval_pow_card_pow {Fq K : Type*} [Field Fq] [Fint
     (aeval x f) ^ ((Fintype.card Fq) ^ n) = aeval (x ^ ((Fintype.card Fq) ^ n)) f
 ```
 
-`Polynomial.X_pow_sub_one_dvd_X_pow_sub_one_of_dvd` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L315))
+`Polynomial.X_pow_sub_one_dvd_X_pow_sub_one_of_dvd` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L315))
 
 > **Lemma 1: Polynomial Divisibility of Powers**
 > If `k` divides `n`, then `X^k - 1` divides `X^n - 1`.
@@ -156,7 +156,7 @@ theorem X_pow_sub_one_dvd_X_pow_sub_one_of_dvd (k n : ℕ) (h_dvd : k ∣ n) :
     (X ^ k - 1 : Fq[X]) ∣ (X ^ n - 1)
 ```
 
-`Polynomial.X_pow_card_pow_dvd_X_pow_card_pow_of_dvd` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L326))
+`Polynomial.X_pow_card_pow_dvd_X_pow_card_pow_of_dvd` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L326))
 
 > **Lemma 2: Frobenius Divisibility Transitivity**
 > If `d` divides `n`, then `X^(q^d) - X` divides `X^(q^n) - X`.
@@ -168,7 +168,7 @@ theorem X_pow_card_pow_dvd_X_pow_card_pow_of_dvd (d n : ℕ) (h_dvd : d ∣ n) :
     (X ^ (q ^ d) - X : Fq[X]) ∣ (X ^ (q ^ n) - X)
 ```
 
-`Polynomial.irreducible_dvd_X_pow_card_pow_sub_X` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L362))
+`Polynomial.irreducible_dvd_X_pow_card_pow_sub_X` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L362))
 
 > **Lemma 3: Irreducible Divides Own Frobenius (The Base Case)**
 > An irreducible polynomial `p` of degree `d` divides `X^(q^d) - X`.
@@ -187,7 +187,7 @@ theorem irreducible_dvd_X_pow_card_pow_sub_X (p : Fq[X]) (hp_irr : Irreducible p
     p ∣ (X ^ (q ^ d) - X)
 ```
 
-`Polynomial.degree_dvd_of_irreducible_dvd_X_pow_card_pow_sub_X` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L410))
+`Polynomial.degree_dvd_of_irreducible_dvd_X_pow_card_pow_sub_X` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L410))
 
 > **Theorem: The Rabin Condition (One Direction)**
 > If `p` is irreducible, and `p` divides `X^(q^n) - X`, then `deg(p)` divides `n`.
@@ -200,7 +200,7 @@ theorem degree_dvd_of_irreducible_dvd_X_pow_card_pow_sub_X
     p.natDegree ∣ n
 ```
 
-`Polynomial.irreducible_dvd_X_pow_sub_X_iff_natDegree_dvd` (lemma, [line 489](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L489))
+`Polynomial.irreducible_dvd_X_pow_sub_X_iff_natDegree_dvd` (lemma, [line 489](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L489))
 
 > **Fundamental Theorem of Irreducible Polynomials over Finite Fields:**
 > For an irreducible polynomial `q` over a finite field `R` with `c` elements:
@@ -220,7 +220,7 @@ lemma irreducible_dvd_X_pow_sub_X_iff_natDegree_dvd {R : Type*} [Field R]
     q ∣ (X ^ (c ^ n) - X) ↔ q.natDegree ∣ n
 ```
 
-`Polynomial.irreducible_dvd_X_pow_add_X_iff_natDegree_dvd` (lemma, [line 512](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean#L512))
+`Polynomial.irreducible_dvd_X_pow_add_X_iff_natDegree_dvd` (lemma, [line 512](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean#L512))
 
 > The characteristic-two form of `irreducible_dvd_X_pow_sub_X_iff_natDegree_dvd`, stated with `+ X`
 > as a binary field writes it: `q ∣ X^(c^n) + X ↔ deg q ∣ n`.
@@ -248,5 +248,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Polynomial/Frobenius.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Polynomial/Frobenius.lean)
+- [CompPoly/Data/Polynomial/Frobenius.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/Polynomial/Frobenius.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Polynomial.Frobenius.json)

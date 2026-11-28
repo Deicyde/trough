@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization of univariate polynomials
 
-`CompPoly.Univariate.Bytes`, in [CompPoly/Univariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean), by Derek Sorensen.
+`CompPoly.Univariate.Bytes`, in [CompPoly/Univariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean), by Derek Sorensen.
 
 > Two encodings of a `CPolynomial R`, and they agree.
 >
@@ -24,7 +24,7 @@ proof: formalized
 > `encode_eq_encodeU64_append_toBytes` ties the two: the self-delimiting encoding is the count
 > followed by the fixed-width encoding at `n = size`.
 
-`CompPoly.CPolynomial.ofArray_val` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L39))
+`CompPoly.CPolynomial.ofArray_val` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L39))
 
 > Rebuilding a canonical polynomial from its own coefficient array gives it back.
 
@@ -34,7 +34,7 @@ theorem ofArray_val (p : CPolynomial R) : ofArray p.val = p
 
 > ## Fixed width: `degreeLT n`
 
-`CompPoly.CPolynomial.coeffVector` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L45))
+`CompPoly.CPolynomial.coeffVector` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L45))
 
 > The coefficient vector of a polynomial of degree below `n`, zero-padded.
 
@@ -42,7 +42,7 @@ theorem ofArray_val (p : CPolynomial R) : ofArray p.val = p
 def coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) : Vector R n
 ```
 
-`CompPoly.CPolynomial.ofCoeffVector` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L49))
+`CompPoly.CPolynomial.ofCoeffVector` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L49))
 
 > The polynomial with the given `n` coefficients, as an element of `degreeLT n`.
 
@@ -50,7 +50,7 @@ def coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) : Vector R n
 def ofCoeffVector (n : ℕ) (v : Vector R n) : ↥(degreeLT (R := R) n)
 ```
 
-`CompPoly.CPolynomial.ofCoeffVector_eq_ofFnEquiv` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L53))
+`CompPoly.CPolynomial.ofCoeffVector_eq_ofFnEquiv` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L53))
 
 > Rebuilding from a vector agrees with applying `ofFnEquiv` to its entries.
 
@@ -59,7 +59,7 @@ theorem ofCoeffVector_eq_ofFnEquiv (n : ℕ) (v : Vector R n) :
     ofCoeffVector n v = ofFnEquiv n (fun i => v[i])
 ```
 
-`CompPoly.CPolynomial.ofCoeffVector_coeffVector` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L59))
+`CompPoly.CPolynomial.ofCoeffVector_coeffVector` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L59))
 
 > Reading the coefficients into a vector and rebuilding the polynomial recovers `p`.
 
@@ -68,7 +68,7 @@ theorem ofCoeffVector_coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) :
     ofCoeffVector n (coeffVector n p) = p
 ```
 
-`CompPoly.CPolynomial.instByteCodecDegreeLT` (instance, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L67))
+`CompPoly.CPolynomial.instByteCodecDegreeLT` (instance, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L67))
 
 > Degree below `n`: the `n` coefficients, `n * width R` bytes.
 
@@ -76,14 +76,14 @@ theorem ofCoeffVector_coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) :
 instance instByteCodecDegreeLT [ByteCodec R] (n : ℕ) : ByteCodec ↥(degreeLT (R := R) n)
 ```
 
-`CompPoly.CPolynomial.width_degreeLT` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L74))
+`CompPoly.CPolynomial.width_degreeLT` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L74))
 
 ```lean
 theorem width_degreeLT [ByteCodec R] (n : ℕ) :
     ByteCodec.width ↥(degreeLT (R := R) n) = n * ByteCodec.width R
 ```
 
-`CompPoly.CPolynomial.toBytes_degreeLT` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L77))
+`CompPoly.CPolynomial.toBytes_degreeLT` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L77))
 
 ```lean
 theorem toBytes_degreeLT [ByteCodec R] {n : ℕ} (p : ↥(degreeLT (R := R) n)) :
@@ -92,7 +92,7 @@ theorem toBytes_degreeLT [ByteCodec R] {n : ℕ} (p : ↥(degreeLT (R := R) n)) 
 
 > ## Self-delimiting: `CPolynomial R`
 
-`CompPoly.CPolynomial.instDelimitedCodec` (instance, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L84))
+`CompPoly.CPolynomial.instDelimitedCodec` (instance, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L84))
 
 > A `u64` coefficient count, then the coefficients.
 
@@ -100,14 +100,14 @@ theorem toBytes_degreeLT [ByteCodec R] {n : ℕ} (p : ↥(degreeLT (R := R) n)) 
 instance instDelimitedCodec [DelimitedCodec R] : DelimitedCodec (CPolynomial R)
 ```
 
-`CompPoly.CPolynomial.valid_iff` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L91))
+`CompPoly.CPolynomial.valid_iff` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L91))
 
 ```lean
 theorem valid_iff [DelimitedCodec R] (p : CPolynomial R) :
     DelimitedCodec.Valid p ↔ p.val.size < 2 ^ 64 ∧ ∀ c ∈ p.val.toList, DelimitedCodec.Valid c
 ```
 
-`CompPoly.CPolynomial.valid_iff_size_lt` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L97))
+`CompPoly.CPolynomial.valid_iff_size_lt` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L97))
 
 > Over a fixed-width coefficient type, a polynomial is valid exactly when its size fits.
 
@@ -116,7 +116,7 @@ theorem valid_iff_size_lt [ByteCodec R] (p : CPolynomial R) :
     DelimitedCodec.Valid p ↔ p.val.size < 2 ^ 64
 ```
 
-`CompPoly.CPolynomial.encode_eq` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L102))
+`CompPoly.CPolynomial.encode_eq` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L102))
 
 ```lean
 theorem encode_eq [DelimitedCodec R] (p : CPolynomial R) :
@@ -124,7 +124,7 @@ theorem encode_eq [DelimitedCodec R] (p : CPolynomial R) :
       = DelimitedCodec.encodeU64 p.val.size ++ DelimitedCodec.encodeList p.val.toList
 ```
 
-`CompPoly.CPolynomial.toList_val_eq_ofFn` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L110))
+`CompPoly.CPolynomial.toList_val_eq_ofFn` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L110))
 
 > The coefficient list of a polynomial is its coefficient function on `Fin p.val.size`.
 
@@ -133,7 +133,7 @@ theorem toList_val_eq_ofFn (p : CPolynomial R) :
     p.val.toList = List.ofFn fun i : Fin p.val.size => coeff p i
 ```
 
-`CompPoly.CPolynomial.encode_eq_encodeU64_append_toBytes` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean#L122))
+`CompPoly.CPolynomial.encode_eq_encodeU64_append_toBytes` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean#L122))
 
 > The self-delimiting encoding is the count followed by the fixed-width encoding at
 > `n = size`: the two formats agree on their common part.
@@ -154,5 +154,5 @@ theorem encode_eq_encodeU64_append_toBytes [ByteCodec R] (p : CPolynomial R) :
 
 ## Sources
 
-- [CompPoly/Univariate/Bytes.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Bytes.lean)
+- [CompPoly/Univariate/Bytes.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Bytes.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Bytes.json)

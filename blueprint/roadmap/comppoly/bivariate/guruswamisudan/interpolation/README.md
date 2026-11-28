@@ -2,7 +2,7 @@
 
 28 modules under `CompPoly/Bivariate/GuruswamiSudan/Interpolation/`, with 235 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis.lean), [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid.lean) and [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan.lean).
+These modules declare nothing public by name, so they have no article: [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis.lean), [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid.lean) and [`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan`](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan.lean).
 
 - [ApproximantBasis](approximantbasis/README.md)
 - [Guruswami-Sudan Interpolation Basics](basic.md)

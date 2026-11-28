@@ -84,7 +84,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | CSLib | `INVENTORIED` | [327 modules](../roadmap/cslib/README.md), one article each, with a block per public declaration. |
 | Batteries | `INVENTORIED` | [129 modules](../roadmap/batteries/README.md), one article each, with a block per public declaration; 69 modules that declare nothing public by name are listed on their folders' pages. |
 | Aesop | `INVENTORIED` | [128 modules](../roadmap/aesop/README.md), one article each, with a block per public declaration; 3 modules that declare nothing public by name are listed on their folders' pages, and 6 that did not build on the front page. |
-| CompPoly | `INVENTORIED` | [362 modules](../roadmap/comppoly/README.md), one article each, with a block per public declaration; 39 modules that declare nothing public by name are listed on their folders' pages. |
+| CompPoly | `INVENTORIED` | [363 modules](../roadmap/comppoly/README.md), one article each, with a block per public declaration; 39 modules that declare nothing public by name are listed on their folders' pages. |
 | Physlib: The Lean Physics Library | `DECOMPOSED` | [1,600 modules](../roadmap/physlib/README.md) with a declaration, one article each, with a block per declaration. |
 | Riemann Hypothesis (Alpöge) | `DECOMPOSED` | [5 claimed theorems](../roadmap/riemann-hypothesis/README.md), one article each, and 60,629 source files counted on a page per top-level folder and a part per large second-level folder. |
 | Foundation | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration; the Zoo's inclusion diagrams between logics as edges. |

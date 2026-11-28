@@ -7,11 +7,11 @@ proof: formalized
 
 # Batch Evaluation Correctness
 
-`CompPoly.Univariate.BatchEval.Correctness`, in [CompPoly/Univariate/BatchEval/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Univariate.BatchEval.Correctness`, in [CompPoly/Univariate/BatchEval/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Correctness.lean), by Valerii Huhnin.
 
 > Correctness theorems for univariate batch-evaluation implementations.
 
-`CompPoly.CPolynomial.evalBatchHorner_eq_evalBatch` (theorem, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Correctness.lean#L291))
+`CompPoly.CPolynomial.evalBatchHorner_eq_evalBatch` (theorem, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Correctness.lean#L291))
 
 > Batched Horner evaluation agrees with the direct batched evaluator.
 
@@ -20,7 +20,7 @@ theorem evalBatchHorner_eq_evalBatch [Semiring R] (p : CPolynomial R) (xs : Arra
     evalBatchHorner p xs = evalBatch p xs
 ```
 
-`CompPoly.CPolynomial.evalBatchSubproduct_eq_evalBatch` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Correctness.lean#L296))
+`CompPoly.CPolynomial.evalBatchSubproduct_eq_evalBatch` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Correctness.lean#L296))
 
 > Subproduct-tree batch evaluation agrees with the direct batched evaluator.
 
@@ -37,5 +37,5 @@ theorem evalBatchSubproduct_eq_evalBatch [Field R] [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/BatchEval/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Correctness.lean)
+- [CompPoly/Univariate/BatchEval/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Correctness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.BatchEval.Correctness.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Bases for the right scalar action on tensor products
 
-`CompPoly.LinearAlgebra.TensorProduct.Basis`, in [CompPoly/LinearAlgebra/TensorProduct/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/TensorProduct/Basis.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.LinearAlgebra.TensorProduct.Basis`, in [CompPoly/LinearAlgebra/TensorProduct/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/TensorProduct/Basis.lean), by Chung Thai Nguyen, Quang Dao.
 
 > `Module.Basis.baseChangeRight` lifts a basis of `Left` over `K` to a basis of
 > `Left ⊗[K] Right` over `Right`, with scalars acting on the right tensor factor.
@@ -26,7 +26,7 @@ proof: formalized
 > * [Lang, S., *Algebra*][Lan02]
 > * [Diamond, B. E. and Posen, J., *Polylogarithmic proofs for multilinears over binary towers*][DP24]
 
-`Module.Basis.baseChangeRight` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L43))
+`Module.Basis.baseChangeRight` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L43))
 
 > Lift a `K`-basis of `Left` to a `Right`-basis of `Left ⊗[K] Right`, using the
 > right-factor scalar action. This is the right-sided counterpart to `Basis.baseChange`.
@@ -38,7 +38,7 @@ noncomputable def baseChangeRight (b : Basis ι K Left) :
     Basis ι Right (Left ⊗[K] Right)
 ```
 
-`Module.Basis.baseChangeRight_repr_tmul` (lemma, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L53))
+`Module.Basis.baseChangeRight_repr_tmul` (lemma, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L53))
 
 > Coordinates of a pure tensor in the basis for the right-factor scalar action.
 
@@ -49,7 +49,7 @@ lemma baseChangeRight_repr_tmul (b : Basis ι K Left) (x : Left) (y : Right) (i 
     (b.baseChangeRight (Right := Right)).repr (x ⊗ₜ[K] y) i = b.repr x i • y
 ```
 
-`Module.Basis.baseChangeRight_apply` (lemma, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L65))
+`Module.Basis.baseChangeRight_apply` (lemma, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/TensorProduct/Basis.lean#L65))
 
 > The right-action basis vectors are the original basis vectors tensored with one.
 
@@ -66,5 +66,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/TensorProduct/Basis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/TensorProduct/Basis.lean)
+- [CompPoly/LinearAlgebra/TensorProduct/Basis.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/TensorProduct/Basis.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.TensorProduct.Basis.json)

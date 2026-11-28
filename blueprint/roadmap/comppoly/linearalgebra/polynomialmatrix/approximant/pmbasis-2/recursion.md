@@ -7,7 +7,7 @@ proof: formalized
 
 # Recursive PM-Basis Driver
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean), by Valerii Huhnin.
 
 > Runtime data for recursive PM-basis computation, the fuel-bounded
 > divide-and-conquer driver, root normalization, the `pmBasis` entry point, and
@@ -20,7 +20,7 @@ proof: formalized
 > * [Giorgi, P., Jeannerod, C.-P., and Villard, G., *On the complexity of
 >     polynomial matrix computations*][GJV03]
 
-`CompPoly.PolynomialMatrix.Approximant.PMBasisRuntime` (structure, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L37))
+`CompPoly.PolynomialMatrix.Approximant.PMBasisRuntime` (structure, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L37))
 
 > Runtime data for recursive PM-basis computation.
 
@@ -35,7 +35,7 @@ structure PMBasisRuntime (F : Type*) [Field F] [BEq F] [LawfulBEq F] where
   leafBasis : XAdicProblem F → Array Nat → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLowAndCompose` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L48))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLowAndCompose` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L48))
 
 > Recursive PM-basis runtime using the scalar dense-kernel routine as its
 > small-leaf solver and an independently tuned basis-composition cutoff.
@@ -47,7 +47,7 @@ def kernelLeafRuntimeWithLowAndCompose (mulCtx : CPolynomial.MulContext F)
     PMBasisRuntime F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLow` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L62))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLow` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L62))
 
 > Recursive PM-basis runtime using the scalar dense-kernel routine as its
 > small-leaf solver.
@@ -58,7 +58,7 @@ def kernelLeafRuntimeWithLow (mulCtx : CPolynomial.MulContext F)
     PMBasisRuntime F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntime` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L69))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntime` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L69))
 
 > Compatibility runtime whose low products are obtained by truncating full
 > products.
@@ -68,7 +68,7 @@ def kernelLeafRuntime (mulCtx : CPolynomial.MulContext F) (leafCutoff : Nat) :
     PMBasisRuntime F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuelCore` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L82))
+`CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuelCore` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L82))
 
 > Fuel-bounded recursive PM-basis driver, compacting zero rows after each
 > leaf and composition step.
@@ -84,7 +84,7 @@ def pmBasisWithFuelCore (runtime : PMBasisRuntime F) :
     Nat → XAdicProblem F → Array Nat → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L108))
+`CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L108))
 
 > Root normalization for a recursively composed approximant basis: one
 > weak-Popov reduction pass plus completion rows for any leading position that
@@ -97,7 +97,7 @@ def pmBasisNormalizeRoot (problem : XAdicProblem F) (shift : Array Nat)
     (basis : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuel` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L114))
+`CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuel` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L114))
 
 > Fuel-bounded recursive PM-basis driver with root normalization.
 
@@ -107,7 +107,7 @@ def pmBasisWithFuel (runtime : PMBasisRuntime F)
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasisFuel` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L121))
+`CompPoly.PolynomialMatrix.Approximant.pmBasisFuel` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L121))
 
 > Default fuel choice, large enough to split each positive order down to the
 > leaf cutoff.
@@ -116,7 +116,7 @@ def pmBasisWithFuel (runtime : PMBasisRuntime F)
 def pmBasisFuel (problem : XAdicProblem F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasis` (definition, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L125))
+`CompPoly.PolynomialMatrix.Approximant.pmBasis` (definition, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L125))
 
 > Recursive PM-basis entry point.
 
@@ -125,7 +125,7 @@ def pmBasis (runtime : PMBasisRuntime F)
     (problem : XAdicProblem F) (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows_size_pos` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L132))
+`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows_size_pos` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L132))
 
 > Monomial completion never returns an empty matrix for problems with at
 > least one module row: an empty candidate set is completed with one monomial
@@ -138,7 +138,7 @@ theorem completeMissingPivotRows_size_pos
     0 < (completeMissingPivotRows problem shift rows).size
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot_size_pos` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L148))
+`CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot_size_pos` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L148))
 
 > The root-normalized recursive PM-basis is nonempty for problems with at
 > least one module row.
@@ -150,7 +150,7 @@ theorem pmBasisNormalizeRoot_size_pos
     0 < (pmBasisNormalizeRoot problem shift basis).size
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.PMBasisContext` (structure, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L156))
+`CompPoly.PolynomialMatrix.Approximant.PMBasisContext` (structure, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean#L156))
 
 > Context packaging the executable PM-basis operation with theorem fields.
 
@@ -187,5 +187,5 @@ structure PMBasisContext (F : Type*) [Field F] [BEq F] [LawfulBEq F] where
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion.json)

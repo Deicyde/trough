@@ -7,7 +7,7 @@ proof: formalized
 
 # Dense Guruswami-Sudan Interpolation
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean), by Valerii Huhnin.
 
 > Executable interpolation backend for the Guruswami-Sudan decoder [GS99]. For
 > positive `Y` weight, it builds a Hasse-constraint matrix, computes one
@@ -19,7 +19,7 @@ proof: formalized
 > * [Guruswami, V., and Sudan, M., *Improved decoding of Reed-Solomon and
 >     algebraic-geometry codes*][GS99]
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithBasisAndKernel` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L31))
+`CompPoly.GuruswamiSudan.denseInterpolateWithBasisAndKernel` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L31))
 
 > Dense interpolation over an explicitly supplied finite monomial basis.
 
@@ -32,7 +32,7 @@ def denseInterpolateWithBasisAndKernel {F : Type*}
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithKernel` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L47))
+`CompPoly.GuruswamiSudan.denseInterpolateWithKernel` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L47))
 
 > Interpolation through an explicit homogeneous-kernel backend, with a
 > constructive low-message branch.
@@ -49,7 +49,7 @@ def denseInterpolateWithKernel {F : Type*}
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolate` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L59))
+`CompPoly.GuruswamiSudan.denseInterpolate` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean#L59))
 
 > Dense interpolation using the built-in Gaussian-elimination kernel backend.
 
@@ -66,5 +66,5 @@ def denseInterpolate {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Algorithm.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm.json)

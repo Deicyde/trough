@@ -7,11 +7,11 @@ proof: formalized
 
 # Abstract Binary Tower Split
 
-`CompPoly.Fields.Binary.Tower.Abstract.Split`, in [CompPoly/Fields/Binary/Tower/Abstract/Split.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Abstract.Split`, in [CompPoly/Fields/Binary/Tower/Abstract/Split.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Splitting and recombination lemmas for abstract binary tower extensions.
 
-`BinaryTower.BTField.Basis_cast_index_eq` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L27))
+`BinaryTower.BTField.Basis_cast_index_eq` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L27))
 
 ```lean
 theorem BTField.Basis_cast_index_eq (i j k n : ℕ) (h_le : k ≤ n) (h_eq : i = j) :
@@ -21,7 +21,7 @@ theorem BTField.Basis_cast_index_eq (i j k n : ℕ) (h_le : k ≤ n) (h_eq : i =
     (Basis (Fin (i)) (BTField k) (BTField n)) = (Basis (Fin (j)) (BTField k) (BTField n))
 ```
 
-`BinaryTower.BTField.Basis_cast_dest_eq` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L35))
+`BinaryTower.BTField.Basis_cast_dest_eq` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L35))
 
 ```lean
 theorem BTField.Basis_cast_dest_eq {ι : Type*} (k n m : ℕ) (h_k_le_n : k ≤ n)
@@ -32,7 +32,7 @@ theorem BTField.Basis_cast_dest_eq {ι : Type*} (k n m : ℕ) (h_k_le_n : k ≤ 
   @Basis ι (BTField k) (BTField n) _ _ instRightAlgebra.toModule
 ```
 
-`BinaryTower.BTField.PowerBasis_cast_dest_eq` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L44))
+`BinaryTower.BTField.PowerBasis_cast_dest_eq` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L44))
 
 ```lean
 theorem BTField.PowerBasis_cast_dest_eq (k n m : ℕ) (h_k_le_n : k ≤ n)
@@ -46,7 +46,7 @@ theorem BTField.PowerBasis_cast_dest_eq (k n m : ℕ) (h_k_le_n : k ≤ n)
 > The following two theorems are used to cast the basis of `BTField α` to `BTField β`
 > via changing in index type : `Fin (i)` to `Fin (j)` when `α ≤ β`.
 
-`BinaryTower.BTField.Basis_cast_index_apply` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L57))
+`BinaryTower.BTField.Basis_cast_index_apply` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L57))
 
 ```lean
 theorem BTField.Basis_cast_index_apply {α β i j : ℕ} {k : Fin j} (h_le : α ≤ β) (h_eq : i = j)
@@ -58,7 +58,7 @@ theorem BTField.Basis_cast_index_apply {α β i j : ℕ} {k : Fin j} (h_le : α 
   (castBasis k) = b (Fin.cast (h_eq.symm) k)
 ```
 
-`BinaryTower.BTField.Basis_cast_dest_apply` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L68))
+`BinaryTower.BTField.Basis_cast_dest_apply` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L68))
 
 ```lean
 theorem BTField.Basis_cast_dest_apply {ι : Type*} (α β γ : ℕ) (h_le1 : α ≤ β) (h_le2 : α ≤ γ)
@@ -74,63 +74,63 @@ theorem BTField.Basis_cast_dest_apply {ι : Type*} (α β γ : ℕ) (h_le1 : α 
 
 > The power basis for `BTField (k+1)` over `BTField k` is {1, Z (k+1)}
 
-`BinaryTower.powerBasisSucc` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L83))
+`BinaryTower.powerBasisSucc` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L83))
 
 ```lean
 def powerBasisSucc (k : ℕ) :
     PowerBasis (BTField k) (BTField (k+1))
 ```
 
-`BinaryTower.powerBasisSucc_gen` (lemma, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L93))
+`BinaryTower.powerBasisSucc_gen` (lemma, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L93))
 
 ```lean
 lemma powerBasisSucc_gen (k : ℕ) :
     (powerBasisSucc k).gen = (Z (k+1))
 ```
 
-`BinaryTower.powerBasisSucc_dim` (lemma, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L99))
+`BinaryTower.powerBasisSucc_dim` (lemma, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L99))
 
 ```lean
 lemma powerBasisSucc_dim (k : ℕ) :
     powerBasisSucc (k:=k).dim = 2
 ```
 
-`BinaryTower.join_via_add_smul` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L104))
+`BinaryTower.join_via_add_smul` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L104))
 
 ```lean
 def join_via_add_smul {k : ℕ} (h_pos : k > 0) (hi_btf lo_btf : BTField (k - 1)) :
     BTField k
 ```
 
-`BinaryTower.join_via_add_smul_zero` (lemma, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L111))
+`BinaryTower.join_via_add_smul_zero` (lemma, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L111))
 
 ```lean
 lemma join_via_add_smul_zero {k : ℕ} (h_pos : k > 0) :
     (⋘ 0, 0 ⋙ : BTField k) = 0
 ```
 
-`BinaryTower.join_via_add_smul_one_zero_eq_Z` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L118))
+`BinaryTower.join_via_add_smul_one_zero_eq_Z` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L118))
 
 ```lean
 lemma join_via_add_smul_one_zero_eq_Z {k : ℕ} (h_pos : k > 0) :
     ⋘ 1, 0 ⋙ = Z k
 ```
 
-`BinaryTower.join_via_add_smul_one` (lemma, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L124))
+`BinaryTower.join_via_add_smul_one` (lemma, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L124))
 
 ```lean
 lemma join_via_add_smul_one {k : ℕ} (h_pos : k > 0) :
     (⋘ 0, 1 ⋙ : BTField k) = 1
 ```
 
-`BinaryTower.sum_join_via_add_smul` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L130))
+`BinaryTower.sum_join_via_add_smul` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L130))
 
 ```lean
 theorem sum_join_via_add_smul (k : ℕ) (h_pos : k > 0) (a₁ a₀ b₁ b₀ : BTField (k - 1)) :
     ⋘ a₁, a₀ ⋙ + ⋘ b₁, b₀ ⋙ = ⋘ a₁ + b₁, a₀ + b₀ ⋙
 ```
 
-`BinaryTower.mul_join_via_add_smul` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L144))
+`BinaryTower.mul_join_via_add_smul` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L144))
 
 > (a₁ • Z k + a₀) * (b₁ • Z k + b₀)
 > = a₁ * b₁ • (Z k)^2 + (a₁ * b₀ + a₀ * b₁) • Z k + a₀ * b₀
@@ -142,7 +142,7 @@ theorem mul_join_via_add_smul (k : ℕ) (h_pos : k > 0) (a₁ a₀ b₁ b₀ : B
     ⋘ a₁, a₀ ⋙ * ⋘ b₁, b₀ ⋙ = ⋘ a₁ * b₁ * Z (k - 1) + a₁ * b₀ + a₀ * b₁, a₀ * b₀ + a₁ * b₁ ⋙
 ```
 
-`BinaryTower.unique_linear_decomposition_succ` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L194))
+`BinaryTower.unique_linear_decomposition_succ` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L194))
 
 ```lean
 theorem unique_linear_decomposition_succ (k : ℕ) :
@@ -150,7 +150,7 @@ theorem unique_linear_decomposition_succ (k : ℕ) :
     x = ⋘ p.1, p.2 ⋙
 ```
 
-`BinaryTower.split` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L227))
+`BinaryTower.split` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L227))
 
 ```lean
 def split (k : ℕ) (h_k : k > 0) (x : BTField k) : BTField (k-1) × BTField (k-1)
@@ -158,7 +158,7 @@ def split (k : ℕ) (h_k : k > 0) (x : BTField k) : BTField (k-1) × BTField (k-
 
 > Proofs that `split` is the inverse of `join_via_add_smul`
 
-`BinaryTower.eq_join_via_add_smul_eq_iff_split` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L237))
+`BinaryTower.eq_join_via_add_smul_eq_iff_split` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L237))
 
 ```lean
 theorem eq_join_via_add_smul_eq_iff_split (k : ℕ) (h_pos : k > 0)
@@ -167,7 +167,7 @@ theorem eq_join_via_add_smul_eq_iff_split (k : ℕ) (h_pos : k > 0)
   split (k:=k) (h_k:=h_pos) x = (hi_btf, lo_btf)
 ```
 
-`BinaryTower.split_join_via_add_smul_eq_iff_split` (lemma, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L276))
+`BinaryTower.split_join_via_add_smul_eq_iff_split` (lemma, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L276))
 
 ```lean
 lemma split_join_via_add_smul_eq_iff_split (k : ℕ) (h_pos : k > 0)
@@ -175,7 +175,7 @@ lemma split_join_via_add_smul_eq_iff_split (k : ℕ) (h_pos : k > 0)
     split (k:=k) (h_k:=h_pos) (⋘ hi_btf, lo_btf ⋙) = (hi_btf, lo_btf)
 ```
 
-`BinaryTower.join_eq_join_iff` (lemma, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L281))
+`BinaryTower.join_eq_join_iff` (lemma, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L281))
 
 ```lean
 lemma join_eq_join_iff (k : ℕ) (h_pos : k > 0) (hi₁ hi₀ lo₁ lo₀ : BTField (k - 1)) :
@@ -183,7 +183,7 @@ lemma join_eq_join_iff (k : ℕ) (h_pos : k > 0) (hi₁ hi₀ lo₁ lo₀ : BTFi
   hi₁ = hi₀ ∧ lo₁ = lo₀
 ```
 
-`BinaryTower.split_algebraMap_eq_zero_x` (lemma, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L297))
+`BinaryTower.split_algebraMap_eq_zero_x` (lemma, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L297))
 
 > An element `x` lifted from the base field `BTField (k-1)` has `(0, x)` as its
 > split representation in `BTField k`.
@@ -194,7 +194,7 @@ lemma split_algebraMap_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : BTField (k - 1))
   split (k:=k) (h_k:=h_pos) (algebraMap (BTField (k - 1)) (BTField k) x) = (0, x)
 ```
 
-`BinaryTower.algebraMap_succ_eq_zero_x` (lemma, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L338))
+`BinaryTower.algebraMap_succ_eq_zero_x` (lemma, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L338))
 
 ```lean
 lemma algebraMap_succ_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : BTField (k - 1)) :
@@ -202,7 +202,7 @@ lemma algebraMap_succ_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : BTField (k - 1)) 
   algebraMap (BTField (k - 1)) (BTField k) x = ⋘ 0, x ⋙
 ```
 
-`BinaryTower.algebraMap_eq_zero_x` (lemma, [line 347](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L347))
+`BinaryTower.algebraMap_eq_zero_x` (lemma, [line 347](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L347))
 
 ```lean
 lemma algebraMap_eq_zero_x {i j : ℕ} (h_le : i < j) (x : BTField i) :
@@ -212,7 +212,7 @@ lemma algebraMap_eq_zero_x {i j : ℕ} (h_le : i < j) (x : BTField i) :
       = ⋘ 0, algebraMap (BTField i) (BTField (j-1)) x ⋙
 ```
 
-`BinaryTower.minPoly_of_powerBasisSucc_generator` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L372))
+`BinaryTower.minPoly_of_powerBasisSucc_generator` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean#L372))
 
 ```lean
 theorem minPoly_of_powerBasisSucc_generator (k : ℕ) :
@@ -225,5 +225,5 @@ theorem minPoly_of_powerBasisSucc_generator (k : ℕ) :
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Abstract/Split.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Split.lean)
+- [CompPoly/Fields/Binary/Tower/Abstract/Split.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/Tower/Abstract/Split.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Abstract.Split.json)

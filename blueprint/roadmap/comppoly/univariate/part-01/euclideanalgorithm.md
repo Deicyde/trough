@@ -7,7 +7,7 @@ proof: formalized
 
 # Extended Euclidean Algorithm for `CPolynomial`
 
-`CompPoly.Univariate.EuclideanAlgorithm`, in [CompPoly/Univariate/EuclideanAlgorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean), by Juan Conejero, Valerii Huhnin.
+`CompPoly.Univariate.EuclideanAlgorithm`, in [CompPoly/Univariate/EuclideanAlgorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean), by Juan Conejero, Valerii Huhnin.
 
 > `xgcd p q` returns a triple `(r, s, t)` with `r = s * p + t * q`.
 > Early stop when `r.natDegree < threshold`.
@@ -17,7 +17,7 @@ proof: formalized
 > the Bézout identity together with the residue/cofactor degree bounds at the stopping point,
 > via the loop invariant `BezoutDegreeInvariant`.
 
-`CompPoly.CPolynomial.xgcdAux` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L42))
+`CompPoly.CPolynomial.xgcdAux` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L42))
 
 > Extended euclidean algorithm on `p, q`.
 >
@@ -34,7 +34,7 @@ def xgcdAux [Field R] [BEq R] [LawfulBEq R]
     CPolynomial R × CPolynomial R × CPolynomial R
 ```
 
-`CompPoly.CPolynomial.xgcd` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L66))
+`CompPoly.CPolynomial.xgcd` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L66))
 
 > Extended euclidean algorithm for `(p, q)`.
 >
@@ -53,7 +53,7 @@ def xgcd [Field R] [BEq R] [LawfulBEq R]
 
 > ### Bezout-identity correctness
 
-`CompPoly.CPolynomial.Bezout` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L74))
+`CompPoly.CPolynomial.Bezout` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L74))
 
 > Bezout predicate on a triple `(r, s, t)`: `r = s * p + t * q`.
 
@@ -62,7 +62,7 @@ def Bezout [Semiring R] [BEq R] [LawfulBEq R] (p q : CPolynomial R) :
     CPolynomial R × CPolynomial R × CPolynomial R → Prop
 ```
 
-`CompPoly.CPolynomial.xgcdAux_bezout` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L79))
+`CompPoly.CPolynomial.xgcdAux_bezout` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L79))
 
 > `xgcdAux` preserves the Bezout identity.
 
@@ -74,7 +74,7 @@ theorem xgcdAux_bezout [Field R] [BEq R] [LawfulBEq R]
     Bezout p q (xgcdAux threshold n r s t r' s' t')
 ```
 
-`CompPoly.CPolynomial.xgcd_bezout` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L92))
+`CompPoly.CPolynomial.xgcd_bezout` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L92))
 
 > The output of `xgcd` is a Bezout triple for `(p, q)`.
 
@@ -88,7 +88,7 @@ theorem xgcd_bezout [Field R] [BEq R] [LawfulBEq R]
 >
 > Correctness theorems for `xgcd` with the default threshold 0.
 
-`CompPoly.CPolynomial.xgcdAux_toPoly_eq_gcd` (lemma, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L111))
+`CompPoly.CPolynomial.xgcdAux_toPoly_eq_gcd` (lemma, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L111))
 
 > The gcd component of CompPoly's `xgcdAux` at threshold `0` coincides with
 > Mathlib's `EuclideanDomain.gcd`.
@@ -102,7 +102,7 @@ lemma xgcdAux_toPoly_eq_gcd
       EuclideanDomain.gcd r.toPoly r'.toPoly
 ```
 
-`CompPoly.CPolynomial.xgcd_toPoly_eq_gcd` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L133))
+`CompPoly.CPolynomial.xgcd_toPoly_eq_gcd` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L133))
 
 > The gcd component of CompPoly's `xgcd` at threshold `0`
 > coincides with Mathlib's `EuclideanDomain.gcd`.
@@ -112,7 +112,7 @@ theorem xgcd_toPoly_eq_gcd [Field R] [BEq R] [LawfulBEq R] [DecidableEq R] (p q 
     (xgcd p q).1.toPoly = EuclideanDomain.gcd p.toPoly q.toPoly
 ```
 
-`CompPoly.CPolynomial.xgcdAux_toPoly_eq_xgcdAux` (lemma, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L141))
+`CompPoly.CPolynomial.xgcdAux_toPoly_eq_xgcdAux` (lemma, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L141))
 
 > CompPoly's `xgcdAux` at threshold `0` coincides with
 > Mathlib's `EuclideanDomain.xgcdAux`.
@@ -127,7 +127,7 @@ lemma xgcdAux_toPoly_eq_xgcdAux
       EuclideanDomain.xgcdAux r.toPoly s.toPoly t.toPoly r'.toPoly s'.toPoly t'.toPoly
 ```
 
-`CompPoly.CPolynomial.xgcd_toPoly_eq_xgcd` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L167))
+`CompPoly.CPolynomial.xgcd_toPoly_eq_xgcd` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L167))
 
 > The Bezout component of CompPoly's `xgcd` coincides with
 > Mathlib's `EuclideanDomain.xgcd`.
@@ -142,7 +142,7 @@ theorem xgcd_toPoly_eq_xgcd
 
 > ### Normalized `xgcd`
 
-`CompPoly.CPolynomial.normXgcd` (definition, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L184))
+`CompPoly.CPolynomial.normXgcd` (definition, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L184))
 
 > CompPoly's `xgcd p q` scaled by the inverse leading coefficient
 > of the gcd component, normalizing it to monic.
@@ -153,7 +153,7 @@ def normXgcd [Field R] [BEq R] [LawfulBEq R]
     CPolynomial R × CPolynomial R × CPolynomial R
 ```
 
-`CompPoly.CPolynomial.normXgcd_bezout` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L192))
+`CompPoly.CPolynomial.normXgcd_bezout` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L192))
 
 > The normalized extended-gcd output satisfies the Bezout identity.
 
@@ -163,7 +163,7 @@ theorem normXgcd_bezout [Field R] [BEq R] [LawfulBEq R]
     Bezout p q (normXgcd p q threshold)
 ```
 
-`CompPoly.CPolynomial.normXgcd_fst_toPoly` (theorem, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L206))
+`CompPoly.CPolynomial.normXgcd_fst_toPoly` (theorem, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L206))
 
 > The gcd component of CompPoly's `normXgcd` is the normalization
 > of Mathlib's `EuclideanDomain.gcd`
@@ -175,7 +175,7 @@ theorem normXgcd_fst_toPoly
     (normXgcd p q).1.toPoly = normalize (EuclideanDomain.gcd p.toPoly q.toPoly)
 ```
 
-`CompPoly.CPolynomial.monicNormalize_toPoly_eq_normalize` (theorem, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L225))
+`CompPoly.CPolynomial.monicNormalize_toPoly_eq_normalize` (theorem, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L225))
 
 > Monic normalization of computable polynomials agrees with Mathlib normalization.
 
@@ -186,7 +186,7 @@ theorem monicNormalize_toPoly_eq_normalize
     (CPolynomial.monicNormalize p).toPoly = normalize p.toPoly
 ```
 
-`CompPoly.CPolynomial.gcdMonic_toPoly_eq_normalize_gcd` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L317))
+`CompPoly.CPolynomial.gcdMonic_toPoly_eq_normalize_gcd` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L317))
 
 > The specialized monic gcd has the normalized Mathlib gcd as its `toPoly`
 > image.
@@ -199,7 +199,7 @@ theorem gcdMonic_toPoly_eq_normalize_gcd
       normalize (EuclideanDomain.gcd p.toPoly q.toPoly)
 ```
 
-`CompPoly.CPolynomial.gcdMonic_eq_normXgcd_fst` (theorem, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L338))
+`CompPoly.CPolynomial.gcdMonic_eq_normXgcd_fst` (theorem, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L338))
 
 > The specialized monic gcd agrees with the gcd component of normalized
 > extended gcd.
@@ -211,7 +211,7 @@ theorem gcdMonic_eq_normXgcd_fst
     CPolynomial.gcdMonic p q = (CPolynomial.normXgcd p q).1
 ```
 
-`CompPoly.CPolynomial.normXgcd_snd_toPoly` (theorem, [line 349](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L349))
+`CompPoly.CPolynomial.normXgcd_snd_toPoly` (theorem, [line 349](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L349))
 
 > The Bezout component of `normXgcd` under `toPoly` is Mathlib's
 > `EuclideanDomain.xgcd` scaled by the inverse leading coefficient
@@ -226,7 +226,7 @@ theorem normXgcd_snd_toPoly
         EuclideanDomain.xgcd p.toPoly q.toPoly
 ```
 
-`CompPoly.CPolynomial.normXgcd_fst_comm` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L360))
+`CompPoly.CPolynomial.normXgcd_fst_comm` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L360))
 
 > `normXgcd` is commutative for the gcd component
 
@@ -247,7 +247,7 @@ theorem normXgcd_fst_comm
 > `deg t + deg r' = deg g₀` and the complementary cofactor bound at the stop — i.e. the
 > contract behind rational-function reconstruction and Reed-Solomon decoding.
 
-`CompPoly.BezoutDegreeInvariant` (structure, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L395))
+`CompPoly.BezoutDegreeInvariant` (structure, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L395))
 
 > Loop invariant of one partial-EEA (`xgcd`) step.
 
@@ -262,7 +262,7 @@ structure BezoutDegreeInvariant [Ring F] (g₀ g₁ : F[X]) (threshold : ℕ)
   thr : threshold ≤ r'.degree
 ```
 
-`CompPoly.BezoutDegreeInvariantOf` (abbreviation, [line 406](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L406))
+`CompPoly.BezoutDegreeInvariantOf` (abbreviation, [line 406](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L406))
 
 > `BezoutDegreeInvariant` on the `toPoly` images of a `CPolynomial` reference pair `g₀, g₁` and
 > the two state triples `(r, s, t)`, `(r', s', t')`.
@@ -272,7 +272,7 @@ abbrev BezoutDegreeInvariantOf [Ring F] (g₀ g₁ : CPolynomial F) (threshold :
     (r s t r' s' t' : CPolynomial F) : Prop
 ```
 
-`CompPoly.BezoutDegreeInvariant.degree_complement` (lemma, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L412))
+`CompPoly.BezoutDegreeInvariant.degree_complement` (lemma, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L412))
 
 > `BezoutDegreeInvariant` implies `deg t + deg r' = deg g₀`.
 
@@ -283,7 +283,7 @@ lemma BezoutDegreeInvariant.degree_complement [CommRing F] [NoZeroDivisors F] [N
     t.degree + r'.degree = g₀.degree
 ```
 
-`CompPoly.BezoutDegreeInvariant.step` (lemma, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L432))
+`CompPoly.BezoutDegreeInvariant.step` (lemma, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L432))
 
 > A non-stop Euclidean step preserves the invariant.
 
@@ -296,7 +296,7 @@ lemma BezoutDegreeInvariant.step [Field F]
       g₀ g₁ threshold (r' - r' / r * r) (s' - r' / r * s) (t' - r' / r * t) r s t
 ```
 
-`CompPoly.BezoutStopSpec` (structure, [line 446](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L446))
+`CompPoly.BezoutStopSpec` (structure, [line 446](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L446))
 
 > Stop spec of the partial EEA: `R = S g₀ + T g₁`, residue degree below `threshold`,
 > and the cofactor `T` nonzero with complementary degree `deg T + threshold ≤ deg g₀`.
@@ -309,7 +309,7 @@ structure BezoutStopSpec [Semiring F] (g₀ g₁ : F[X]) (threshold : ℕ) (R S 
   cofNe : T ≠ 0
 ```
 
-`CompPoly.BezoutStopSpecOf` (abbreviation, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L454))
+`CompPoly.BezoutStopSpecOf` (abbreviation, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L454))
 
 > `BezoutStopSpec` on the `toPoly` images of a `CPolynomial` reference pair `g₀, g₁` and
 > result triple.
@@ -319,7 +319,7 @@ abbrev BezoutStopSpecOf [Semiring F] (g₀ g₁ : CPolynomial F) (threshold : �
     (result : CPolynomial F × CPolynomial F × CPolynomial F) : Prop
 ```
 
-`CompPoly.xgcdAux_stopSpec_of_invariant` (lemma, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L460))
+`CompPoly.xgcdAux_stopSpec_of_invariant` (lemma, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L460))
 
 > `BezoutDegreeInvariant` implies `xgcdAux`'s output satisfies the stop spec.
 
@@ -333,7 +333,7 @@ lemma xgcdAux_stopSpec_of_invariant
       BezoutStopSpecOf g₀ g₁ threshold (xgcdAux threshold n r s t r' s' t')
 ```
 
-`CompPoly.xgcd_stopSpec` (lemma, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean#L488))
+`CompPoly.xgcd_stopSpec` (lemma, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean#L488))
 
 > `xgcd`'s output satisfies the stop spec.
 
@@ -356,5 +356,5 @@ lemma xgcd_stopSpec
 
 ## Sources
 
-- [CompPoly/Univariate/EuclideanAlgorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/EuclideanAlgorithm.lean)
+- [CompPoly/Univariate/EuclideanAlgorithm.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/EuclideanAlgorithm.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.EuclideanAlgorithm.json)

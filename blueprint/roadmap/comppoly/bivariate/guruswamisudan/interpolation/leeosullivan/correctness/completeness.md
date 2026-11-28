@@ -7,11 +7,11 @@ proof: formalized
 
 # Lee-O'Sullivan Interpolation Completeness
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean), by Valerii Huhnin.
 
 > Completeness theorems and public context wrapper for Lee-O'Sullivan interpolation.
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_row` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L30))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_row` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L30))
 
 ```lean
 theorem leeOSullivanPositiveInterpolate_complete_of_row
@@ -34,7 +34,7 @@ theorem leeOSullivanPositiveInterpolate_complete_of_row
     ∃ Q, leeOSullivanPositiveInterpolate V E reducer points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_span` (theorem, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L123))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_span` (theorem, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L123))
 
 ```lean
 theorem leeOSullivanPositiveInterpolate_complete_of_span
@@ -54,7 +54,7 @@ theorem leeOSullivanPositiveInterpolate_complete_of_span
     ∃ Q, leeOSullivanPositiveInterpolate V E reducer points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate_complete` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L379))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate_complete` (theorem, [line 379](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L379))
 
 > Distinct-input completeness for the executable Lee-O'Sullivan interpolation operation.
 
@@ -69,7 +69,7 @@ theorem leeOSullivanInterpolate_complete
     ∃ Q, leeOSullivanInterpolate V E reducer points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpContext` (definition, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L423))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpContext` (definition, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean#L423))
 
 > Public Lee-O'Sullivan interpolation backend context.
 
@@ -93,5 +93,5 @@ def leeOSullivanInterpContext
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness.json)

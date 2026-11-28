@@ -7,12 +7,12 @@ proof: formalized
 
 # Canonical Euclidean Domains
 
-`CompPoly.Data.RingTheory.CanonicalEuclideanDomain`, in [CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Data.RingTheory.CanonicalEuclideanDomain`, in [CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean), by Chung Thai Nguyen, Quang Dao.
 
 > This module defines `CanonicalEuclideanDomain` and provides instances for ℤ, `Polynomial F`,
 > and `Field`.
 
-`CanonicalEuclideanDomain` (class, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L96))
+`CanonicalEuclideanDomain` (class, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L96))
 
 > # Canonical Euclidean Domains
 >
@@ -97,34 +97,34 @@ class CanonicalEuclideanDomain (R : Type u) extends EuclideanDomain R where
     → q₁ = q₂ ∧ r₁ = r₂
 ```
 
-`Int.instCanonicalEuclideanDomainInt` (instance, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L109))
+`Int.instCanonicalEuclideanDomainInt` (instance, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L109))
 
 ```lean
 instance Int.instCanonicalEuclideanDomainInt : CanonicalEuclideanDomain ℤ
 ```
 
-`Polynomial.instCanonicalEuclideanDomainPoly` (instance, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L200))
+`Polynomial.instCanonicalEuclideanDomainPoly` (instance, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L200))
 
 ```lean
 noncomputable instance Polynomial.instCanonicalEuclideanDomainPoly {F : Type u} [Field F] :
     CanonicalEuclideanDomain (Polynomial F)
 ```
 
-`Field.mod_eq_zero` (lemma, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L250))
+`Field.mod_eq_zero` (lemma, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L250))
 
 ```lean
 lemma Field.mod_eq_zero {K : Type u} [Field K] (a b : K) (hb : b ≠ 0) :
     a % b = 0
 ```
 
-`Field.instCanonicalEuclideanDomainField` (instance, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L255))
+`Field.instCanonicalEuclideanDomainField` (instance, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L255))
 
 ```lean
 instance Field.instCanonicalEuclideanDomainField {K : Type u} [Field K] :
     CanonicalEuclideanDomain K
 ```
 
-`CanonicalEuclideanDomain.div_eq_of_canonical_eq_mul_add` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L290))
+`CanonicalEuclideanDomain.div_eq_of_canonical_eq_mul_add` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L290))
 
 > The Fundamental Theorem of Canonical Euclidean Domains.
 > If you find ANY pair (q, r) that satisfies the division equation
@@ -137,7 +137,7 @@ theorem div_eq_of_canonical_eq_mul_add {a b q r : R} (hb : b ≠ 0)
     a / b = q
 ```
 
-`CanonicalEuclideanDomain.div_eq_and_mod_eq_iff` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L317))
+`CanonicalEuclideanDomain.div_eq_and_mod_eq_iff` (theorem, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L317))
 
 > The Fundamental Theorem of CEDs:
 > Satisfying the division equation + size constraint is EQUIVALENT
@@ -150,7 +150,7 @@ theorem div_eq_and_mod_eq_iff {a b q r : R} (hn : b ≠ 0) :
 
 > # Division Properties
 
-`CanonicalEuclideanDomain.add_mul_div_right` (theorem, [line 349](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L349))
+`CanonicalEuclideanDomain.add_mul_div_right` (theorem, [line 349](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L349))
 
 > Generalized `add_mul_div_right`: `(a + b * r) / b = a / b + r`
 > In a standard ED, this isn't always true (the quotient is not unique).
@@ -161,7 +161,7 @@ theorem add_mul_div_right (a b r : R) (hb : b ≠ 0) :
     (a + b * r) / b = a / b + r
 ```
 
-`CanonicalEuclideanDomain.add_mul_mod_right` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L370))
+`CanonicalEuclideanDomain.add_mul_mod_right` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L370))
 
 > Generalized `add_mul_mod_right`: (a + b * r) % b = a % b
 > The remainder ignores multiples of the divisor.
@@ -171,7 +171,7 @@ theorem add_mul_mod_right (a b r : R) (hb : b ≠ 0) :
     (a + b * r) % b = a % b
 ```
 
-`CanonicalEuclideanDomain.add_mul_mod_left` (theorem, [line 388](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L388))
+`CanonicalEuclideanDomain.add_mul_mod_left` (theorem, [line 388](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L388))
 
 > Generalized `add_mul_mod_left`: (a * r + b) % a = b % a`
 > The remainder ignores multiples of the divisor.
@@ -181,7 +181,7 @@ theorem add_mul_mod_left (a b r : R) (hb : a ≠ 0) :
     (a * r + b) % a = b % a
 ```
 
-`CanonicalEuclideanDomain.mod_eq_of_eq_add_mul` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L394))
+`CanonicalEuclideanDomain.mod_eq_of_eq_add_mul` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L394))
 
 > `If a = b + n * r, then a % n = b % n.`
 
@@ -192,7 +192,7 @@ theorem mod_eq_of_eq_add_mul {a b n q : R} (h_eq_add_mul : a = b + n * q) (hn : 
 
 > # Arithmetic Modulo Properties
 
-`CanonicalEuclideanDomain.mul_mod_eq_mul_mod_left` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L402))
+`CanonicalEuclideanDomain.mul_mod_eq_mul_mod_left` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L402))
 
 > `(a * b) % n = ((a % n) * b) % n`
 
@@ -201,7 +201,7 @@ theorem mul_mod_eq_mul_mod_left (a b n : R) (hn : n ≠ 0) :
     (a * b) % n = ((a % n) * b) % n
 ```
 
-`CanonicalEuclideanDomain.mul_mod_eq_zero_of_mod_dvd` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L412))
+`CanonicalEuclideanDomain.mul_mod_eq_zero_of_mod_dvd` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L412))
 
 > `(a * b) % n = 0` if `a % n = 0`
 
@@ -210,7 +210,7 @@ theorem mul_mod_eq_zero_of_mod_dvd (a b n : R) (hn : n ≠ 0)
     (h_mod_eq_zero : a % n = 0) : (a * b) % n = 0
 ```
 
-`CanonicalEuclideanDomain.add_mod_eq_add_mod_left` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L421))
+`CanonicalEuclideanDomain.add_mod_eq_add_mod_left` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L421))
 
 > `(a + b) % n = ((a % n) + b) % n`
 
@@ -219,7 +219,7 @@ theorem add_mod_eq_add_mod_left (a b n : R) (hn : n ≠ 0) :
     (a + b) % n = ((a % n) + b) % n
 ```
 
-`CanonicalEuclideanDomain.add_mod_eq` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L428))
+`CanonicalEuclideanDomain.add_mod_eq` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L428))
 
 > `(a + b) % n = (a % n + b % n) % n`
 
@@ -228,7 +228,7 @@ theorem add_mod_eq (a b n : R) (hn : n ≠ 0) :
     (a + b) % n = (a % n + b % n) % n
 ```
 
-`CanonicalEuclideanDomain.mul_mod_eq` (theorem, [line 434](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L434))
+`CanonicalEuclideanDomain.mul_mod_eq` (theorem, [line 434](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L434))
 
 > `(a * b) % n = ((a % n) * (b % n)) % n`
 
@@ -237,7 +237,7 @@ theorem mul_mod_eq (a b n : R) (hn : n ≠ 0) :
     (a * b) % n = ((a % n) * (b % n)) % n
 ```
 
-`CanonicalEuclideanDomain.mod_mod_eq_mod` (theorem, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L442))
+`CanonicalEuclideanDomain.mod_mod_eq_mod` (theorem, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L442))
 
 > `(a % n) % n = a % n`
 
@@ -246,7 +246,7 @@ theorem mod_mod_eq_mod (a n : R) (hn : n ≠ 0) :
     (a % n) % n = a % n
 ```
 
-`CanonicalEuclideanDomain.dvd_sub_mod` (theorem, [line 449](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L449))
+`CanonicalEuclideanDomain.dvd_sub_mod` (theorem, [line 449](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean#L449))
 
 > `b | a - (a % b)`
 
@@ -261,5 +261,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean)
+- [CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.RingTheory.CanonicalEuclideanDomain.json)

@@ -7,11 +7,11 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Row Combination Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean), by Valerii Huhnin.
 
 > Row-linear-combination size, coefficient, and support lemmas.
 
-`CompPoly.PolynomialMatrix.rowLinearCombination_range_size` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L25))
+`CompPoly.PolynomialMatrix.rowLinearCombination_range_size` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L25))
 
 ```lean
 theorem rowLinearCombination_range_size
@@ -24,7 +24,7 @@ theorem rowLinearCombination_range_size
           (zeroRow (MatrixWidth M))).size = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.rowLinearCombination_size` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L47))
+`CompPoly.PolynomialMatrix.rowLinearCombination_size` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L47))
 
 ```lean
 theorem rowLinearCombination_size
@@ -32,7 +32,7 @@ theorem rowLinearCombination_size
     (rowLinearCombination coeffs M).size = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.rowCombinationTermSupport` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L53))
+`CompPoly.PolynomialMatrix.rowCombinationTermSupport` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L53))
 
 ```lean
 def rowCombinationTermSupport
@@ -40,7 +40,7 @@ def rowCombinationTermSupport
     Finset Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowCombinationTermDegree` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L60))
+`CompPoly.PolynomialMatrix.rowCombinationTermDegree` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L60))
 
 ```lean
 def rowCombinationTermDegree
@@ -48,14 +48,14 @@ def rowCombinationTermDegree
     (i : Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowCombinationTermPosition` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L67))
+`CompPoly.PolynomialMatrix.rowCombinationTermPosition` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L67))
 
 ```lean
 def rowCombinationTermPosition
     (M : PolynomialMatrix F) (shift : Array Nat) (i : Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_range_coeff` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L72))
+`CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_range_coeff` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L72))
 
 ```lean
 theorem rowGet_rowLinearCombination_range_coeff
@@ -72,7 +72,7 @@ theorem rowGet_rowLinearCombination_range_coeff
           ((coeffs.getD i 0) * rowGet (M.getD i #[]) j).coeff k
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_coeff` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L97))
+`CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_coeff` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L97))
 
 ```lean
 theorem rowGet_rowLinearCombination_coeff
@@ -83,7 +83,7 @@ theorem rowGet_rowLinearCombination_coeff
         ((coeffs.getD i 0) * rowGet (M.getD i #[]) j).coeff k
 ```
 
-`CompPoly.PolynomialMatrix.rowLinearCombination_range_eq_zeroRow_of_forall_zero_or_row_zero` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L107))
+`CompPoly.PolynomialMatrix.rowLinearCombination_range_eq_zeroRow_of_forall_zero_or_row_zero` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L107))
 
 ```lean
 theorem rowLinearCombination_range_eq_zeroRow_of_forall_zero_or_row_zero
@@ -100,7 +100,7 @@ theorem rowLinearCombination_range_eq_zeroRow_of_forall_zero_or_row_zero
         zeroRow (MatrixWidth M)
 ```
 
-`CompPoly.PolynomialMatrix.rowLinearCombination_eq_zeroRow_of_forall_zero_or_row_zero` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L140))
+`CompPoly.PolynomialMatrix.rowLinearCombination_eq_zeroRow_of_forall_zero_or_row_zero` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L140))
 
 ```lean
 theorem rowLinearCombination_eq_zeroRow_of_forall_zero_or_row_zero
@@ -111,7 +111,7 @@ theorem rowLinearCombination_eq_zeroRow_of_forall_zero_or_row_zero
     rowLinearCombination coeffs M = zeroRow (F := F) (MatrixWidth M)
 ```
 
-`CompPoly.PolynomialMatrix.rowCombinationTermSupport_nonempty_of_combination_degree_some` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L150))
+`CompPoly.PolynomialMatrix.rowCombinationTermSupport_nonempty_of_combination_degree_some` (theorem, [line 150](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean#L150))
 
 ```lean
 theorem rowCombinationTermSupport_nonempty_of_combination_degree_some
@@ -132,5 +132,5 @@ theorem rowCombinationTermSupport_nonempty_of_combination_degree_some
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations.json)

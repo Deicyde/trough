@@ -7,11 +7,11 @@ proof: formalized
 
 # Fast multiplication via NTT
 
-`CompPoly.Univariate.NTTFast.FastMul`, in [CompPoly/Univariate/NTTFast/FastMul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.FastMul`, in [CompPoly/Univariate/NTTFast/FastMul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean), by Valerii Huhnin.
 
 > This file exposes the one-shot `NTTFast` multiplication entry point. …
 
-`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean#L33))
+`CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean#L33))
 
 > Raw pipeline for NTT-based multiplication.
 >
@@ -23,7 +23,7 @@ def fastMulImpl [BEq R]
     (D : NTT.Domain R) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTTFast.fastMulImpl` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean#L41))
+`CompPoly.CPolynomial.NTTFast.fastMulImpl` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean#L41))
 
 > Pipeline for NTT-based multiplication as a canonical polynomial.
 
@@ -32,7 +32,7 @@ def fastMulImpl [BEq R] [LawfulBEq R]
     (D : NTT.Domain R) (p q : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTTFast.safeFastMul` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean#L52))
+`CompPoly.CPolynomial.NTTFast.safeFastMul` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean#L52))
 
 > Safe NTT-based multiplication wrapper.
 >
@@ -45,7 +45,7 @@ def safeFastMul [BEq R] [LawfulBEq R]
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTTFast.withFallback` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean#L64))
+`CompPoly.CPolynomial.NTTFast.withFallback` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean#L64))
 
 > NTTFast-backed multiplication with canonical multiplication as a fallback.
 >
@@ -66,5 +66,5 @@ def withFallback [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/FastMul.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/FastMul.lean)
+- [CompPoly/Univariate/NTTFast/FastMul.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/NTTFast/FastMul.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.FastMul.json)

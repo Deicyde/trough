@@ -7,7 +7,7 @@ proof: formalized
 
 # `finSuccEquiv` for `CMvPolynomial`
 
-`CompPoly.Multivariate.FinSuccEquiv`, in [CompPoly/Multivariate/FinSuccEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean), by Elias Judin, Aristotle (Harmonic), Dimitris Mitsios, Julian Sutherland.
+`CompPoly.Multivariate.FinSuccEquiv`, in [CompPoly/Multivariate/FinSuccEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean), by Elias Judin, Aristotle (Harmonic), Dimitris Mitsios, Julian Sutherland.
 
 > This file defines the computable multivariate polynomial equivalence for
 > splitting off one variable, mirroring `MvPolynomial.finSuccEquiv` from Mathlib.
@@ -45,7 +45,7 @@ proof: formalized
 
 > ### Polynomial-level ring equivalence
 
-`CPoly.polynomialCMvPolyEquiv` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L64))
+`CPoly.polynomialCMvPolyEquiv` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L64))
 
 > `Polynomial.mapEquiv` through the CMvPolynomial ↔ MvPolynomial bridge.
 
@@ -56,7 +56,7 @@ noncomputable def polynomialCMvPolyEquiv :
 
 > ### `finSuccEquiv`
 
-`CMvPolynomial.finSuccEquiv` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L80))
+`CMvPolynomial.finSuccEquiv` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L80))
 
 > Ring equivalence splitting off the first variable:
 > `CMvPolynomial (n+1) R ≃+* Polynomial (CMvPolynomial n R)`.
@@ -70,7 +70,7 @@ noncomputable def finSuccEquiv :
     CMvPolynomial (n + 1) R ≃+* Polynomial (CMvPolynomial n R)
 ```
 
-`CMvPolynomial.finSuccEquiv_symm_apply_apply` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L87))
+`CMvPolynomial.finSuccEquiv_symm_apply_apply` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L87))
 
 > The equivalence is a left inverse: applying the inverse then forward is the identity.
 
@@ -79,7 +79,7 @@ theorem finSuccEquiv_symm_apply_apply (p : CMvPolynomial (n + 1) R) :
     finSuccEquiv.symm (finSuccEquiv p) = p
 ```
 
-`CMvPolynomial.finSuccEquiv_apply_symm_apply` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L93))
+`CMvPolynomial.finSuccEquiv_apply_symm_apply` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L93))
 
 > The equivalence is a right inverse: applying forward then the inverse is the identity.
 
@@ -89,7 +89,7 @@ theorem finSuccEquiv_apply_symm_apply
     finSuccEquiv (finSuccEquiv.symm q) = q
 ```
 
-`CMvPolynomial.finSuccEquiv_add` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L99))
+`CMvPolynomial.finSuccEquiv_add` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L99))
 
 > `finSuccEquiv` preserves addition.
 
@@ -99,7 +99,7 @@ theorem finSuccEquiv_add (p q : CMvPolynomial (n + 1) R) :
       finSuccEquiv p + finSuccEquiv q
 ```
 
-`CMvPolynomial.finSuccEquiv_mul` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L105))
+`CMvPolynomial.finSuccEquiv_mul` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L105))
 
 > `finSuccEquiv` preserves multiplication.
 
@@ -109,7 +109,7 @@ theorem finSuccEquiv_mul (p q : CMvPolynomial (n + 1) R) :
       finSuccEquiv p * finSuccEquiv q
 ```
 
-`CMvPolynomial.finSuccEquiv_zero` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L112))
+`CMvPolynomial.finSuccEquiv_zero` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L112))
 
 > `finSuccEquiv` maps zero to zero.
 
@@ -118,7 +118,7 @@ theorem finSuccEquiv_zero :
     finSuccEquiv (0 : CMvPolynomial (n + 1) R) = 0
 ```
 
-`CMvPolynomial.finSuccEquiv_one` (theorem, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L118))
+`CMvPolynomial.finSuccEquiv_one` (theorem, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L118))
 
 > `finSuccEquiv` maps one to one.
 
@@ -132,7 +132,7 @@ theorem finSuccEquiv_one :
 > Unlike `finSuccEquiv` above, this stays inside the computable `CMvPolynomial` / `CPolynomial`
 > world and works for an arbitrary pivot `p`.
 
-`CPoly.CMvPolynomial.fseVars` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L137))
+`CPoly.CMvPolynomial.fseVars` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L137))
 
 > Assignment used by the forward direction: variable `p` goes to the univariate `X`, every
 > other variable `p.succAbove j` goes to the constant `C (X j)`.
@@ -141,21 +141,21 @@ theorem finSuccEquiv_one :
 def fseVars (p : Fin (n + 1)) : Fin (n + 1) → CPolynomial (CMvPolynomial n R)
 ```
 
-`CPoly.CMvPolynomial.fseVars_same` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L140))
+`CPoly.CMvPolynomial.fseVars_same` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L140))
 
 ```lean
 theorem fseVars_same (p : Fin (n + 1)) :
     fseVars (R := R) p p = CPolynomial.X
 ```
 
-`CPoly.CMvPolynomial.fseVars_succAbove` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L143))
+`CPoly.CMvPolynomial.fseVars_succAbove` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L143))
 
 ```lean
 theorem fseVars_succAbove (p : Fin (n + 1)) (j : Fin n) :
     fseVars (R := R) p (p.succAbove j) = CPolynomial.C (CMvPolynomial.X j)
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L148))
+`CPoly.CMvPolynomial.finSuccEquivNthHom` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L148))
 
 > Forward direction of `finSuccEquivNth`, as a `RingHom`.  Splits variable `p` off as the
 > univariate indeterminate over the other `n` variables.  Computable.
@@ -165,7 +165,7 @@ def finSuccEquivNthHom (p : Fin (n + 1)) :
     CMvPolynomial (n + 1) R →+* CPolynomial (CMvPolynomial n R)
 ```
 
-`CPoly.CMvPolynomial.insertVarHom` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L154))
+`CPoly.CMvPolynomial.insertVarHom` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L154))
 
 > "Insert a dummy variable at position `p`": the embedding `CMvPolynomial n R →+* CMvPolynomial
 > (n+1) R` sending `X j` to `X (p.succAbove j)`.  Computable.
@@ -174,7 +174,7 @@ def finSuccEquivNthHom (p : Fin (n + 1)) :
 def insertVarHom (p : Fin (n + 1)) : CMvPolynomial n R →+* CMvPolynomial (n + 1) R
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthInvHom` (definition, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L158))
+`CPoly.CMvPolynomial.finSuccEquivNthInvHom` (definition, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L158))
 
 > Inverse direction of `finSuccEquivNth`, as a `RingHom`.  Computable.
 
@@ -183,21 +183,21 @@ def finSuccEquivNthInvHom (p : Fin (n + 1)) :
     CPolynomial (CMvPolynomial n R) →+* CMvPolynomial (n + 1) R
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom_C` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L162))
+`CPoly.CMvPolynomial.finSuccEquivNthHom_C` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L162))
 
 ```lean
 theorem finSuccEquivNthHom_C (p : Fin (n + 1)) (c : R) :
     finSuccEquivNthHom (R := R) p (CMvPolynomial.C c) = CPolynomial.C (CMvPolynomial.C c)
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom_X_same` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L166))
+`CPoly.CMvPolynomial.finSuccEquivNthHom_X_same` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L166))
 
 ```lean
 theorem finSuccEquivNthHom_X_same (p : Fin (n + 1)) :
     finSuccEquivNthHom (R := R) p (CMvPolynomial.X p) = CPolynomial.X
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom_X_succAbove` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L170))
+`CPoly.CMvPolynomial.finSuccEquivNthHom_X_succAbove` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L170))
 
 ```lean
 theorem finSuccEquivNthHom_X_succAbove (p : Fin (n + 1)) (j : Fin n) :
@@ -205,35 +205,35 @@ theorem finSuccEquivNthHom_X_succAbove (p : Fin (n + 1)) (j : Fin n) :
       = CPolynomial.C (CMvPolynomial.X j)
 ```
 
-`CPoly.CMvPolynomial.insertVarHom_C` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L176))
+`CPoly.CMvPolynomial.insertVarHom_C` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L176))
 
 ```lean
 theorem insertVarHom_C (p : Fin (n + 1)) (c : R) :
     insertVarHom (R := R) p (CMvPolynomial.C c) = CMvPolynomial.C c
 ```
 
-`CPoly.CMvPolynomial.insertVarHom_X` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L181))
+`CPoly.CMvPolynomial.insertVarHom_X` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L181))
 
 ```lean
 theorem insertVarHom_X (p : Fin (n + 1)) (j : Fin n) :
     insertVarHom (R := R) p (CMvPolynomial.X j) = CMvPolynomial.X (p.succAbove j)
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthInvHom_C` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L185))
+`CPoly.CMvPolynomial.finSuccEquivNthInvHom_C` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L185))
 
 ```lean
 theorem finSuccEquivNthInvHom_C (p : Fin (n + 1)) (q : CMvPolynomial n R) :
     finSuccEquivNthInvHom (R := R) p (CPolynomial.C q) = insertVarHom p q
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthInvHom_X` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L189))
+`CPoly.CMvPolynomial.finSuccEquivNthInvHom_X` (theorem, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L189))
 
 ```lean
 theorem finSuccEquivNthInvHom_X (p : Fin (n + 1)) :
     finSuccEquivNthInvHom (R := R) p (CPolynomial.X) = CMvPolynomial.X p
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom_comp_insertVarHom` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L195))
+`CPoly.CMvPolynomial.finSuccEquivNthHom_comp_insertVarHom` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L195))
 
 > `finSuccEquivNthHom` composed with `insertVarHom` is the constant embedding
 > `CMvPolynomial n R →+* CPolynomial (CMvPolynomial n R)`.
@@ -243,7 +243,7 @@ theorem finSuccEquivNthHom_comp_insertVarHom (p : Fin (n + 1)) :
     (finSuccEquivNthHom (R := R) p).comp (insertVarHom p) = CPolynomial.CHom
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthHom_comp_inv` (theorem, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L202))
+`CPoly.CMvPolynomial.finSuccEquivNthHom_comp_inv` (theorem, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L202))
 
 ```lean
 theorem finSuccEquivNthHom_comp_inv (p : Fin (n + 1)) :
@@ -251,7 +251,7 @@ theorem finSuccEquivNthHom_comp_inv (p : Fin (n + 1)) :
       = RingHom.id (CPolynomial (CMvPolynomial n R))
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNthInvHom_comp_fwd` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L210))
+`CPoly.CMvPolynomial.finSuccEquivNthInvHom_comp_fwd` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L210))
 
 ```lean
 theorem finSuccEquivNthInvHom_comp_fwd (p : Fin (n + 1)) :
@@ -259,7 +259,7 @@ theorem finSuccEquivNthInvHom_comp_fwd (p : Fin (n + 1)) :
       = RingHom.id (CMvPolynomial (n + 1) R)
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNth` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L225))
+`CPoly.CMvPolynomial.finSuccEquivNth` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L225))
 
 > **The computable `finSuccEquivNth`**: a ring equivalence
 > `CMvPolynomial (n+1) R ≃+* CompPoly.CPolynomial (CMvPolynomial n R)` for an arbitrary pivot `p`.
@@ -270,14 +270,14 @@ def finSuccEquivNth (p : Fin (n + 1)) :
     CMvPolynomial (n + 1) R ≃+* CPolynomial (CMvPolynomial n R)
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNth_apply` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L230))
+`CPoly.CMvPolynomial.finSuccEquivNth_apply` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L230))
 
 ```lean
 theorem finSuccEquivNth_apply (p : Fin (n + 1)) (P : CMvPolynomial (n + 1) R) :
     finSuccEquivNth p P = finSuccEquivNthHom p P
 ```
 
-`CPoly.CMvPolynomial.finSuccEquivNth_symm_apply` (theorem, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L233))
+`CPoly.CMvPolynomial.finSuccEquivNth_symm_apply` (theorem, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L233))
 
 ```lean
 theorem finSuccEquivNth_symm_apply (p : Fin (n + 1))
@@ -287,7 +287,7 @@ theorem finSuccEquivNth_symm_apply (p : Fin (n + 1))
 
 > ### Compatibility with Mathlib's `MvPolynomial.finSuccEquivNth`
 
-`CPoly.CMvPolynomial.map_polyRingEquiv_toPoly_finSuccEquivNth` (theorem, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L241))
+`CPoly.CMvPolynomial.map_polyRingEquiv_toPoly_finSuccEquivNth` (theorem, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L241))
 
 > The computable `finSuccEquivNth`, transported to Mathlib's `MvPolynomial`/`Polynomial` world
 > along `polyRingEquiv` and `CPolynomial.toPoly`, is Mathlib's `MvPolynomial.finSuccEquivNth`.
@@ -299,7 +299,7 @@ theorem map_polyRingEquiv_toPoly_finSuccEquivNth (p : Fin (n + 1)) (P : CMvPolyn
       = MvPolynomial.finSuccEquivNth R p (CPoly.fromCMvPolynomial P)
 ```
 
-`CPoly.CMvPolynomial.natDegree_finSuccEquivNthHom` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L279))
+`CPoly.CMvPolynomial.natDegree_finSuccEquivNthHom` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L279))
 
 > The univariate degree of `finSuccEquivNth p P` is the degree of variable `p` in `P`.
 
@@ -308,7 +308,7 @@ theorem natDegree_finSuccEquivNthHom (p : Fin (n + 1)) (P : CMvPolynomial (n + 1
     (finSuccEquivNthHom p P).natDegree = P.degreeOf p
 ```
 
-`CPoly.CMvPolynomial.natDegree_finSuccEquivNthHom_le` (theorem, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean#L291))
+`CPoly.CMvPolynomial.natDegree_finSuccEquivNthHom_le` (theorem, [line 291](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean#L291))
 
 > `finSuccEquivNth p P` has univariate degree at most `d` whenever `P` has per-variable
 > degree at most `d`.
@@ -330,5 +330,5 @@ theorem natDegree_finSuccEquivNthHom_le {d : ℕ} (p : Fin (n + 1)) (P : CMvPoly
 
 ## Sources
 
-- [CompPoly/Multivariate/FinSuccEquiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/FinSuccEquiv.lean)
+- [CompPoly/Multivariate/FinSuccEquiv.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multivariate/FinSuccEquiv.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.FinSuccEquiv.json)

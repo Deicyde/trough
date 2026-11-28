@@ -1,6 +1,6 @@
 {
  "schema": "trough-comppoly/v1",
- "rev": "c72a765272497b4c52201be11be47af5718c7488",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
  "readme": [
   "A formally verified library for computable polynomial operations over finite fields and general rings, supporting univariate, multivariate, multilinear, and bivariate polynomials."
  ],
@@ -11434,7 +11434,7 @@
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
    "title": "Fast BLS12-377 Scalar Field",
-   "doc": "A native eight-limb Montgomery implementation of BLS12-377 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x8Field`). This module supplies the BLS12-377\nconstants.",
+   "doc": "A native four-limb Montgomery implementation of BLS12-377 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x4Field`). This module supplies the BLS12-377\nconstants.",
    "items": [
     {
      "line": 27,
@@ -11449,25 +11449,25 @@
      "sorry": false
     },
     {
-     "name": "BLS12_377.Fast.instMont64x8Field",
+     "name": "BLS12_377.Fast.instMont64x4Field",
      "kind": "instance",
-     "line": 38,
-     "doc": "The per-field data realizing BLS12-377's scalar field as a fast eight-limb\n(32-bit-limb) Montgomery field.",
-     "statement": "instance instMont64x8Field : Mont64x8Field BLS12_377.scalarFieldSize",
+     "line": 36,
+     "doc": "The per-field data realizing BLS12-377's scalar field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instMont64x4Field : Mont64x4Field BLS12_377.scalarFieldSize",
      "sorry": false
     },
     {
      "name": "BLS12_377.Fast.ScalarField",
      "kind": "abbrev",
-     "line": 52,
-     "doc": "The eight-limb BLS12-377 scalar field carrier, stored as a Montgomery residue.",
+     "line": 47,
+     "doc": "The four-limb BLS12-377 scalar field carrier, stored as a Montgomery residue.",
      "statement": "abbrev ScalarField : Type",
      "sorry": false
     },
     {
      "name": "BLS12_377.Fast.ofField",
      "kind": "def",
-     "line": 56,
+     "line": 51,
      "doc": "Convert from the canonical `BLS12_377.ScalarField` field into fast Montgomery form.",
      "statement": "def ofField (x : BLS12_377.ScalarField) : ScalarField",
      "sorry": false
@@ -11475,8 +11475,8 @@
     {
      "name": "BLS12_377.Fast.ringEquiv",
      "kind": "def",
-     "line": 61,
-     "doc": "Ring equivalence between the eight-limb representation and the canonical\n`BLS12_377.ScalarField`.",
+     "line": 56,
+     "doc": "Ring equivalence between the four-limb representation and the canonical\n`BLS12_377.ScalarField`.",
      "statement": "def ringEquiv : ScalarField ≃+* BLS12_377.ScalarField",
      "sorry": false
     }
@@ -11531,7 +11531,7 @@
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
    "title": "Fast BLS12-381 Scalar Field",
-   "doc": "A native eight-limb Montgomery implementation of BLS12-381 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x8Field`). This module supplies the BLS12-381\nconstants.",
+   "doc": "A native four-limb Montgomery implementation of BLS12-381 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x4Field`). This module supplies the BLS12-381\nconstants.",
    "items": [
     {
      "line": 27,
@@ -11546,25 +11546,25 @@
      "sorry": false
     },
     {
-     "name": "BLS12_381.Fast.instMont64x8Field",
+     "name": "BLS12_381.Fast.instMont64x4Field",
      "kind": "instance",
-     "line": 38,
-     "doc": "The per-field data realizing BLS12-381's scalar field as a fast eight-limb\n(32-bit-limb) Montgomery field.",
-     "statement": "instance instMont64x8Field : Mont64x8Field BLS12_381.scalarFieldSize",
+     "line": 36,
+     "doc": "The per-field data realizing BLS12-381's scalar field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instMont64x4Field : Mont64x4Field BLS12_381.scalarFieldSize",
      "sorry": false
     },
     {
      "name": "BLS12_381.Fast.ScalarField",
      "kind": "abbrev",
-     "line": 52,
-     "doc": "The eight-limb BLS12-381 scalar field carrier, stored as a Montgomery residue.",
+     "line": 47,
+     "doc": "The four-limb BLS12-381 scalar field carrier, stored as a Montgomery residue.",
      "statement": "abbrev ScalarField : Type",
      "sorry": false
     },
     {
      "name": "BLS12_381.Fast.ofField",
      "kind": "def",
-     "line": 56,
+     "line": 51,
      "doc": "Convert from the canonical `BLS12_381.ScalarField` field into fast Montgomery form.",
      "statement": "def ofField (x : BLS12_381.ScalarField) : ScalarField",
      "sorry": false
@@ -11572,8 +11572,8 @@
     {
      "name": "BLS12_381.Fast.ringEquiv",
      "kind": "def",
-     "line": 61,
-     "doc": "Ring equivalence between the eight-limb representation and the canonical\n`BLS12_381.ScalarField`.",
+     "line": 56,
+     "doc": "Ring equivalence between the four-limb representation and the canonical\n`BLS12_381.ScalarField`.",
      "statement": "def ringEquiv : ScalarField ≃+* BLS12_381.ScalarField",
      "sorry": false
     }
@@ -11628,7 +11628,7 @@
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
    "title": "Fast BN254 Scalar Field",
-   "doc": "A native eight-limb Montgomery implementation of BN254 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x8Field`). This module supplies the BN254 constants.",
+   "doc": "A native four-limb Montgomery implementation of BN254 scalar arithmetic\n(`CompPoly.Fields.Montgomery.Native64x4Field`). This module supplies the BN254 constants.",
    "items": [
     {
      "line": 26,
@@ -11643,25 +11643,25 @@
      "sorry": false
     },
     {
-     "name": "BN254.Fast.instMont64x8Field",
+     "name": "BN254.Fast.instMont64x4Field",
      "kind": "instance",
-     "line": 37,
-     "doc": "The per-field data realizing BN254's scalar field as a fast eight-limb (32-bit-limb)\nMontgomery field.",
-     "statement": "instance instMont64x8Field : Mont64x8Field BN254.scalarFieldSize",
+     "line": 35,
+     "doc": "The per-field data realizing BN254's scalar field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instMont64x4Field : Mont64x4Field BN254.scalarFieldSize",
      "sorry": false
     },
     {
      "name": "BN254.Fast.ScalarField",
      "kind": "abbrev",
-     "line": 51,
-     "doc": "The eight-limb BN254 scalar field carrier, stored as a Montgomery residue.",
+     "line": 46,
+     "doc": "The four-limb BN254 scalar field carrier, stored as a Montgomery residue.",
      "statement": "abbrev ScalarField : Type",
      "sorry": false
     },
     {
      "name": "BN254.Fast.ofField",
      "kind": "def",
-     "line": 55,
+     "line": 50,
      "doc": "Convert from the canonical `BN254.ScalarField` field into fast Montgomery form.",
      "statement": "def ofField (x : BN254.ScalarField) : ScalarField",
      "sorry": false
@@ -11669,8 +11669,8 @@
     {
      "name": "BN254.Fast.ringEquiv",
      "kind": "def",
-     "line": 60,
-     "doc": "Ring equivalence between the eight-limb representation and the canonical\n`BN254.ScalarField`.",
+     "line": 55,
+     "doc": "Ring equivalence between the four-limb representation and the canonical\n`BN254.ScalarField`.",
      "statement": "def ringEquiv : ScalarField ≃+* BN254.ScalarField",
      "sorry": false
     }
@@ -35982,6 +35982,74 @@
    ]
   },
   {
+   "module": "CompPoly.Fields.Montgomery.Divstep",
+   "file": "CompPoly/Fields/Montgomery/Divstep.lean",
+   "copyright": "CompPoly Contributors",
+   "authors": "Georgios Raikos",
+   "title": "Word-sized divsteps: coefficient bounds",
+   "doc": "Unfolding lemmas for `gcdInner` of `Montgomery/DivstepDefs`, and the bound on the entries of\nits transition matrix. A chunk of at most 31 divsteps keeps `|f| + |g| ≤ 2^31` in each row.\nThe linear combinations of the multi-limb inversion runtimes require that bound.",
+   "items": [
+    {
+     "name": "Montgomery.gcdInner_zero",
+     "kind": "theorem",
+     "line": 23,
+     "doc": "Unfolding of the empty divstep run.",
+     "statement": "theorem gcdInner_zero (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    gcdInner 0 a b f0 g0 f1 g1 = (a, b, f0, g0, f1, g1)",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.gcdInner_succ",
+     "kind": "theorem",
+     "line": 27,
+     "doc": "Unfolding of one divstep.",
+     "statement": "theorem gcdInner_succ (rounds : Nat) (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    gcdInner (rounds + 1) a b f0 g0 f1 g1 =\n      if a &&& 1 == 0 then\n        gcdInner rounds (a >>> 1) b f0 g0 (f1 * 2) (g1 * 2)\n      else if a < b then\n        gcdInner rounds ((b - a) >>> 1) a (f1 - f0) (g1 - g0) (f0 * 2) (g0 * 2)\n      else\n        gcdInner rounds ((a - b) >>> 1) b (f0 - f1) (g0 - g1) (f1 * 2) (g1 * 2)",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.gcdInner_natAbs_le",
+     "kind": "theorem",
+     "line": 44,
+     "doc": "Transition entries at most double per divstep.",
+     "statement": "theorem gcdInner_natAbs_le {rounds : Nat} {a b a' b' : UInt64}\n    {f0 g0 f1 g1 f0' g0' f1' g1' : Int} {n : Nat}\n    (h0 : f0.natAbs + g0.natAbs ≤ n) (h1 : f1.natAbs + g1.natAbs ≤ n)\n    (heq : gcdInner rounds a b f0 g0 f1 g1 = (a', b', f0', g0', f1', g1')) :\n    f0'.natAbs + g0'.natAbs ≤ 2 ^ rounds * n ∧\n      f1'.natAbs + g1'.natAbs ≤ 2 ^ rounds * n",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.gcdInner_natAbs_le_31",
+     "kind": "theorem",
+     "line": 74,
+     "doc": "Chunks of at most 31 divsteps satisfy the linear-combination bound.",
+     "statement": "theorem gcdInner_natAbs_le_31 {rounds : Nat} (h31 : rounds ≤ 31) {a b a' b' : UInt64}\n    {f0' g0' f1' g1' : Int}\n    (heq : gcdInner rounds a b 1 0 0 1 = (a', b', f0', g0', f1', g1')) :\n    f0'.natAbs + g0'.natAbs ≤ 2 ^ 31 ∧ f1'.natAbs + g1'.natAbs ≤ 2 ^ 31",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "module": "CompPoly.Fields.Montgomery.DivstepDefs",
+   "file": "CompPoly/Fields/Montgomery/DivstepDefs.lean",
+   "copyright": "CompPoly Contributors",
+   "authors": "Georgios Raikos",
+   "title": "Word-sized divsteps: runtime definitions (zero-import)",
+   "doc": "The word-sized divstep loop of the Pornin binary-GCD inversion\n([eprint 2020/972](https://eprint.iacr.org/2020/972)) and its bit-length helper. Both act on\nsingle `UInt64` words, so they do not depend on the limb count of a Montgomery carrier. The\nmulti-limb inversion runtimes call them on one-word approximations of their operands.\n\nThis module has zero imports, for `precompileModules` consumers. The proof side is\n`Montgomery/Divstep`.",
+   "items": [
+    {
+     "name": "Montgomery.gcdBitLen",
+     "kind": "def",
+     "line": 25,
+     "doc": "Bit length of a word.",
+     "statement": "def gcdBitLen (x : UInt64) : Nat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.gcdInner",
+     "kind": "def",
+     "line": 38,
+     "doc": "The word-sized divstep loop, accumulating the transition matrix; `b` must be odd.",
+     "statement": "def gcdInner (rounds : Nat) (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    UInt64 × UInt64 × Int × Int × Int × Int",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "module": "CompPoly.Fields.Montgomery.Native32",
    "file": "CompPoly/Fields/Montgomery/Native32.lean",
    "copyright": "CompPoly Contributors",
@@ -36776,373 +36844,253 @@
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8",
-   "file": "CompPoly/Fields/Montgomery/Native64x8.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4",
+   "file": "CompPoly/Fields/Montgomery/Native64x4.lean",
    "copyright": "CompPoly Contributors",
-   "authors": "Gregor Mitscha-Baude",
-   "title": "Native Montgomery arithmetic over eight 32-bit limbs",
-   "doc": "Raw word operations for prime moduli below `2 ^ 256`, represented as eight 32-bit limbs\ncarried in the low halves of `UInt64` words (`Limbs8`).  This is the multi-limb sibling of\n`Montgomery/Native32.lean`: every operation is a straight-line chain of `@[inline]` word\nhelpers, and each helper comes with an existential `toNat` specification that names its\noutputs as fresh naturals.  The definitions themselves live in the zero-import module\n`Montgomery/Native64x8Defs`; this module states and proves everything about them.\n\nThe limb helpers (`adcLo`/`adcCo`, `sbbLo`/`sbbBo`, `macLo`/`macHi`, `montM`) are combined by\nthe two telescoping lemmas `carry_chain_sum` and `borrow_chain_sum`, which turn an eight-step\ncarry or borrow chain into a single identity between recomposed values.  Every correctness\nstatement is generic in the modulus limbs; concrete fields supply their constants through\nthe `Mont64x8Field` class of `Montgomery/Native64x8Field`.\n\nConditional subtraction, addition, subtraction and negation are proved correct here.  The\nCIOS multiplication round `mulRound` is defined in `Montgomery/Native64x8Defs`; its state\ninvariant is proved in the sibling module that builds the field carrier.\n\n## Main results\n\n* `condSub_toNat`, `condSubWide_toNat`, `add_toNat`, `sub_toNat`, `neg_toNat` — correctness\n  of the raw operations\n* `addLimbs_spec`, `subLimbs_spec` — the underlying carry/borrow chains",
+   "authors": "Georgios Raikos",
+   "title": "Native Montgomery arithmetic over four 64-bit limbs",
+   "doc": "Raw word operations for prime moduli below `2 ^ 256`, represented as four 64-bit limbs\n(`Limbs4`); the definitions live in the zero-import module `Montgomery/Native64x4Defs`.  Each\nword helper's specification exhibits the pair it returns, so a chain of `let (s, c) := ...`\nbindings unfolds to a linear system over naturals that `omega` closes.\n\n## Main results\n\n* `condSub_toNat`, `condSubWide_toNat`, `add_toNat`, `sub_toNat`, `neg_toNat` — correctness\n  of the raw operations\n* `addLimbs_spec`, `subLimbs_spec` — the underlying carry/borrow chains\n* `mac_spec`, `mulHi_spec` — the widening multiply-accumulate",
    "items": [
     {
-     "line": 43,
+     "line": 32,
      "note": "## Word-level specifications"
     },
     {
-     "name": "Montgomery.Native64x8.adc_spec",
+     "name": "Montgomery.Native64x4.adc_spec",
      "kind": "theorem",
-     "line": 55,
-     "doc": "Add-with-carry, existential form: the low limb and the carry-out are named as fresh\nnaturals together with their defining equations, so that a chain of them is a linear system\nover plain variables.",
-     "statement": "theorem adc_spec (x y c : UInt64) (hx : x.toNat < 2 ^ 32) (hy : y.toNat < 2 ^ 32)\n    (hc : c.toNat ≤ 1) :\n    ∃ s co : ℕ, (adcLo x y c).toNat = s ∧ (adcCo x y c).toNat = co ∧\n      s + 2 ^ 32 * co = x.toNat + y.toNat + c.toNat ∧ co ≤ 1 ∧ s < 2 ^ 32",
+     "line": 72,
+     "doc": "Add-with-carry, existential form: the exact sum identity with a one-bit carry.",
+     "statement": "theorem adc_spec (x y c : UInt64) (hc : c.toNat ≤ 1) :\n    ∃ s co : UInt64, adc x y c = (s, co) ∧\n      s.toNat + 2 ^ 64 * co.toNat = x.toNat + y.toNat + c.toNat ∧ co.toNat ≤ 1",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.adc_spec_wide",
+     "name": "Montgomery.Native64x4.sbb_spec",
      "kind": "theorem",
-     "line": 65,
-     "doc": "Add-with-carry when the first summand is one bit wider than a limb.",
-     "statement": "theorem adc_spec_wide (x y c : UInt64) (hx : x.toNat < 2 ^ 33) (hy : y.toNat < 2 ^ 32)\n    (hc : c.toNat ≤ 1) :\n    ∃ s co : ℕ, (adcLo x y c).toNat = s ∧ (adcCo x y c).toNat = co ∧\n      s + 2 ^ 32 * co = x.toNat + y.toNat + c.toNat ∧ co ≤ 2 ∧ s < 2 ^ 32",
+     "line": 91,
+     "doc": "Subtract-with-borrow, existential form: the exact difference identity with a one-bit\nborrow.",
+     "statement": "theorem sbb_spec (x y b : UInt64) (hb : b.toNat ≤ 1) :\n    ∃ d bo : UInt64, sbb x y b = (d, bo) ∧\n      d.toNat + y.toNat + b.toNat = x.toNat + 2 ^ 64 * bo.toNat ∧ bo.toNat ≤ 1",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sbb_spec",
+     "name": "Montgomery.Native64x4.mulHi_spec",
      "kind": "theorem",
-     "line": 75,
-     "doc": "Subtract-with-borrow, existential form.",
-     "statement": "theorem sbb_spec (x y b : UInt64) (hx : x.toNat < 2 ^ 32) (hy : y.toNat < 2 ^ 32)\n    (hb : b.toNat ≤ 1) :\n    ∃ m bo : ℕ, (sbbLo x y b).toNat = m ∧ (sbbBo x y b).toNat = bo ∧\n      m + y.toNat + b.toNat = x.toNat + 2 ^ 32 * bo ∧ bo ≤ 1 ∧ m < 2 ^ 32",
+     "line": 117,
+     "doc": "The low and high words recompose the exact `64 × 64` product.",
+     "statement": "theorem mulHi_spec (a b : UInt64) :\n    (a * b).toNat + 2 ^ 64 * (mulHi a b).toNat = a.toNat * b.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mac_spec",
+     "name": "Montgomery.Native64x4.mac_spec",
      "kind": "theorem",
-     "line": 86,
-     "doc": "Multiply-accumulate, existential form.  The accumulator, both factors and the carry-in\nall fit in 32 bits, so `t + x * y + c` cannot overflow a 64-bit word.",
-     "statement": "theorem mac_spec (t x y c : UInt64) (ht : t.toNat < 2 ^ 32) (hx : x.toNat < 2 ^ 32)\n    (hy : y.toNat < 2 ^ 32) (hc : c.toNat < 2 ^ 32) :\n    ∃ lo hi : ℕ, (macLo t x y c).toNat = lo ∧ (macHi t x y c).toNat = hi ∧\n      lo + 2 ^ 32 * hi = t.toNat + x.toNat * y.toNat + c.toNat ∧ hi < 2 ^ 32 ∧\n      lo < 2 ^ 32",
+     "line": 186,
+     "doc": "Multiply-accumulate, existential form: `t + a * b + c` never overflows two words.",
+     "statement": "theorem mac_spec (t a b c : UInt64) :\n    ∃ lo hi : UInt64, mac t a b c = (lo, hi) ∧\n      lo.toNat + 2 ^ 64 * hi.toNat = t.toNat + a.toNat * b.toNat + c.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.montM_toNat",
+     "name": "Montgomery.Native64x4.montM_toNat",
      "kind": "theorem",
-     "line": 100,
+     "line": 213,
      "doc": "The Montgomery multiplier agrees with its natural-number specification.",
-     "statement": "theorem montM_toNat (s negInv : UInt64) (hs : s.toNat < 2 ^ 32) (hn : negInv.toNat < 2 ^ 32) :\n    (montM s negInv).toNat = s.toNat * negInv.toNat % 2 ^ 32",
+     "statement": "theorem montM_toNat (s negInv : UInt64) :\n    (montM s negInv).toNat = s.toNat * negInv.toNat % 2 ^ 64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.adcLo_lt",
-     "kind": "theorem",
-     "line": 110,
-     "doc": "",
-     "statement": "theorem adcLo_lt (x y c : UInt64) : (adcLo x y c).toNat < 2 ^ 32",
-     "sorry": false
+     "line": 217,
+     "note": "## Four-limb values"
     },
     {
-     "name": "Montgomery.Native64x8.sbbLo_lt",
+     "name": "Montgomery.Native64x4.Limbs4.zero_toNat",
      "kind": "theorem",
-     "line": 115,
-     "doc": "",
-     "statement": "theorem sbbLo_lt (x y b : UInt64) : (sbbLo x y b).toNat < 2 ^ 32",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.macLo_lt",
-     "kind": "theorem",
-     "line": 120,
-     "doc": "",
-     "statement": "theorem macLo_lt (t x y c : UInt64) : (macLo t x y c).toNat < 2 ^ 32",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.montM_lt",
-     "kind": "theorem",
-     "line": 125,
-     "doc": "",
-     "statement": "theorem montM_lt (s negInv : UInt64) : (montM s negInv).toNat < 2 ^ 32",
-     "sorry": false
-    },
-    {
-     "line": 130,
-     "note": "## Eight-limb values"
-    },
-    {
-     "name": "Montgomery.Native64x8.Limbs8.zero_bounded",
-     "kind": "theorem",
-     "line": 134,
-     "doc": "",
-     "statement": "theorem zero_bounded : zero.Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.Limbs8.zero_toNat",
-     "kind": "theorem",
-     "line": 138,
+     "line": 221,
      "doc": "",
      "statement": "theorem zero_toNat : zero.toNat = 0",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.one_bounded",
+     "name": "Montgomery.Native64x4.Limbs4.one_toNat",
      "kind": "theorem",
-     "line": 141,
-     "doc": "",
-     "statement": "theorem one_bounded : one.Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.Limbs8.one_toNat",
-     "kind": "theorem",
-     "line": 143,
+     "line": 223,
      "doc": "",
      "statement": "theorem one_toNat : one.toNat = 1",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.ofNat_bounded",
+     "name": "Montgomery.Native64x4.Limbs4.ofNat_toNat",
      "kind": "theorem",
-     "line": 145,
-     "doc": "",
-     "statement": "theorem ofNat_bounded (n : ℕ) : (ofNat n).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.Limbs8.ofNat_toNat",
-     "kind": "theorem",
-     "line": 149,
+     "line": 225,
      "doc": "",
      "statement": "theorem ofNat_toNat (n : ℕ) : (ofNat n).toNat = n % 2 ^ 256",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sum8_lt",
+     "name": "Montgomery.Native64x4.Limbs4.toNat_lt",
      "kind": "theorem",
-     "line": 156,
-     "doc": "A recomposed value with 32-bit limbs stays below `2 ^ 256`.",
-     "statement": "theorem sum8_lt {a0 a1 a2 a3 a4 a5 a6 a7 : ℕ} (h0 : a0 < 2 ^ 32) (h1 : a1 < 2 ^ 32)\n    (h2 : a2 < 2 ^ 32) (h3 : a3 < 2 ^ 32) (h4 : a4 < 2 ^ 32) (h5 : a5 < 2 ^ 32)\n    (h6 : a6 < 2 ^ 32) (h7 : a7 < 2 ^ 32) :\n    a0 + 2 ^ 32 * a1 + 2 ^ 64 * a2 + 2 ^ 96 * a3 + 2 ^ 128 * a4 + 2 ^ 160 * a5 + 2 ^ 192 * a6 +\n      2 ^ 224 * a7 < 2 ^ 256",
+     "line": 230,
+     "doc": "A four-limb value is below `2 ^ 256`.",
+     "statement": "theorem toNat_lt (x : Limbs4) : x.toNat < 2 ^ 256",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.ext_of_toNat",
+     "name": "Montgomery.Native64x4.Limbs4.toNat_mod",
      "kind": "theorem",
-     "line": 164,
-     "doc": "Bounded limb vectors are determined by their value.",
-     "statement": "theorem Limbs8.ext_of_toNat {x y : Limbs8} (hx : x.Bounded) (hy : y.Bounded)\n    (h : x.toNat = y.toNat) : x = y",
+     "line": 239,
+     "doc": "The low limb of a value is its residue modulo `2 ^ 64`.",
+     "statement": "theorem toNat_mod (x : Limbs4) : x.toNat % 2 ^ 64 = x.l0.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.toNat_lt",
+     "name": "Montgomery.Native64x4.Limbs4.ext_of_toNat",
      "kind": "theorem",
-     "line": 185,
-     "doc": "A bounded eight-limb value is below `2 ^ 256`.",
-     "statement": "theorem Limbs8.toNat_lt {x : Limbs8} (hx : x.Bounded) : x.toNat < 2 ^ 256",
+     "line": 245,
+     "doc": "Limb vectors are determined by their value.",
+     "statement": "theorem ext_of_toNat {x y : Limbs4} (h : x.toNat = y.toNat) : x = y",
      "sorry": false
     },
     {
-     "line": 189,
-     "note": "### Chain lemmas\n\nTelescoping identities for an eight-step carry or borrow chain.  They are stated over plain\nnaturals and the `y` slots are arbitrary, so `carry_chain_sum` serves both the\nadd-with-carry chains and the multiply-accumulate chains of CIOS, where `yᵢ` is a limb\nproduct."
+     "line": 267,
+     "note": "### Chain lemmas"
     },
     {
-     "name": "Montgomery.Native64x8.carry_chain_sum",
+     "name": "Montgomery.Native64x4.carry_chain_sum",
      "kind": "theorem",
-     "line": 197,
-     "doc": "Weighted telescoping of an eight-step carry chain.",
-     "statement": "theorem carry_chain_sum {x0 x1 x2 x3 x4 x5 x6 x7 y0 y1 y2 y3 y4 y5 y6 y7 : ℕ}\n    {s0 s1 s2 s3 s4 s5 s6 s7 cin c0 c1 c2 c3 c4 c5 c6 c7 : ℕ}\n    (e0 : s0 + 2 ^ 32 * c0 = x0 + y0 + cin)\n    (e1 : s1 + 2 ^ 32 * c1 = x1 + y1 + c0)\n    (e2 : s2 + 2 ^ 32 * c2 = x2 + y2 + c1)\n    (e3 : s3 + 2 ^ 32 * c3 = x3 + y3 + c2)\n    (e4 : s4 + 2 ^ 32 * c4 = x4 + y4 + c3)\n    (e5 : s5 + 2 ^ 32 * c5 = x5 + y5 + c4)\n    (e6 : s6 + 2 ^ 32 * c6 = x6 + y6 + c5)\n    (e7 : s7 + 2 ^ 32 * c7 = x7 + y7 + c6) :\n    s0 + 2 ^ 32 * s1 + 2 ^ 64 * s2 + 2 ^ 96 * s3 + 2 ^ 128 * s4 + 2 ^ 160 * s5 + 2 ^ 192 * s6 +\n      2 ^ 224 * s7 + 2 ^ 256 * c7 =\n    (x0 + 2 ^ 32 * x1 + 2 ^ 64 * x2 + 2 ^ 96 * x3 + 2 ^ 128 * x4 + 2 ^ 160 * x5 +\n      2 ^ 192 * x6 + 2 ^ 224 * x7) +\n      (y0 + 2 ^ 32 * y1 + 2 ^ 64 * y2 + 2 ^ 96 * y3 + 2 ^ 128 * y4 + 2 ^ 160 * y5 +\n      2 ^ 192 * y6 + 2 ^ 224 * y7) + cin",
+     "line": 270,
+     "doc": "Weighted telescoping of a four-step carry chain.",
+     "statement": "theorem carry_chain_sum {x0 x1 x2 x3 y0 y1 y2 y3 s0 s1 s2 s3 cin c0 c1 c2 c3 : ℕ}\n    (e0 : s0 + 2 ^ 64 * c0 = x0 + y0 + cin)\n    (e1 : s1 + 2 ^ 64 * c1 = x1 + y1 + c0)\n    (e2 : s2 + 2 ^ 64 * c2 = x2 + y2 + c1)\n    (e3 : s3 + 2 ^ 64 * c3 = x3 + y3 + c2) :\n    s0 + 2 ^ 64 * s1 + 2 ^ 128 * s2 + 2 ^ 192 * s3 + 2 ^ 256 * c3 =\n      (x0 + 2 ^ 64 * x1 + 2 ^ 128 * x2 + 2 ^ 192 * x3) +\n        (y0 + 2 ^ 64 * y1 + 2 ^ 128 * y2 + 2 ^ 192 * y3) + cin",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.borrow_chain_sum",
+     "name": "Montgomery.Native64x4.borrow_chain_sum",
      "kind": "theorem",
-     "line": 216,
-     "doc": "Weighted telescoping of an eight-step borrow chain.",
-     "statement": "theorem borrow_chain_sum {x0 x1 x2 x3 x4 x5 x6 x7 y0 y1 y2 y3 y4 y5 y6 y7 : ℕ}\n    {m0 m1 m2 m3 m4 m5 m6 m7 bin b0 b1 b2 b3 b4 b5 b6 b7 : ℕ}\n    (e0 : m0 + y0 + bin = x0 + 2 ^ 32 * b0)\n    (e1 : m1 + y1 + b0 = x1 + 2 ^ 32 * b1)\n    (e2 : m2 + y2 + b1 = x2 + 2 ^ 32 * b2)\n    (e3 : m3 + y3 + b2 = x3 + 2 ^ 32 * b3)\n    (e4 : m4 + y4 + b3 = x4 + 2 ^ 32 * b4)\n    (e5 : m5 + y5 + b4 = x5 + 2 ^ 32 * b5)\n    (e6 : m6 + y6 + b5 = x6 + 2 ^ 32 * b6)\n    (e7 : m7 + y7 + b6 = x7 + 2 ^ 32 * b7) :\n    (m0 + 2 ^ 32 * m1 + 2 ^ 64 * m2 + 2 ^ 96 * m3 + 2 ^ 128 * m4 + 2 ^ 160 * m5 +\n      2 ^ 192 * m6 + 2 ^ 224 * m7) +\n      (y0 + 2 ^ 32 * y1 + 2 ^ 64 * y2 + 2 ^ 96 * y3 + 2 ^ 128 * y4 + 2 ^ 160 * y5 +\n      2 ^ 192 * y6 + 2 ^ 224 * y7) + bin =\n      x0 + 2 ^ 32 * x1 + 2 ^ 64 * x2 + 2 ^ 96 * x3 + 2 ^ 128 * x4 + 2 ^ 160 * x5 + 2 ^ 192 * x6 +\n      2 ^ 224 * x7 + 2 ^ 256 * b7",
+     "line": 281,
+     "doc": "Weighted telescoping of a four-step borrow chain.",
+     "statement": "theorem borrow_chain_sum {x0 x1 x2 x3 y0 y1 y2 y3 m0 m1 m2 m3 bin b0 b1 b2 b3 : ℕ}\n    (e0 : m0 + y0 + bin = x0 + 2 ^ 64 * b0)\n    (e1 : m1 + y1 + b0 = x1 + 2 ^ 64 * b1)\n    (e2 : m2 + y2 + b1 = x2 + 2 ^ 64 * b2)\n    (e3 : m3 + y3 + b2 = x3 + 2 ^ 64 * b3) :\n    (m0 + 2 ^ 64 * m1 + 2 ^ 128 * m2 + 2 ^ 192 * m3) +\n        (y0 + 2 ^ 64 * y1 + 2 ^ 128 * y2 + 2 ^ 192 * y3) + bin =\n      x0 + 2 ^ 64 * x1 + 2 ^ 128 * x2 + 2 ^ 192 * x3 + 2 ^ 256 * b3",
      "sorry": false
     },
     {
-     "line": 234,
-     "note": "### Branch lemmas\n\nThe situations that a borrow chain can produce, each as a standalone linear problem over a\nhandful of naturals."
+     "line": 291,
+     "note": "### Branch lemmas"
     },
     {
-     "line": 278,
+     "line": 324,
      "note": "## Limbwise addition and subtraction"
     },
     {
-     "name": "Montgomery.Native64x8.addLimbs_bounded",
+     "name": "Montgomery.Native64x4.addLimbs_spec",
      "kind": "theorem",
-     "line": 280,
-     "doc": "",
-     "statement": "theorem addLimbs_bounded (a b : Limbs8) : (addLimbs a b).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.addLimbs_spec",
-     "kind": "theorem",
-     "line": 286,
+     "line": 327,
      "doc": "The limbwise sum and the top carry recompose the sum of the inputs.",
-     "statement": "theorem addLimbs_spec (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :\n    (addCarry a b).toNat ≤ 1 ∧\n      (addLimbs a b).toNat + 2 ^ 256 * (addCarry a b).toNat = a.toNat + b.toNat",
+     "statement": "theorem addLimbs_spec (a b : Limbs4) :\n    ∃ s0 s1 s2 s3 c : UInt64, addLimbs a b = (s0, s1, s2, s3, c) ∧ c.toNat ≤ 1 ∧\n      (⟨s0, s1, s2, s3⟩ : Limbs4).toNat + 2 ^ 256 * c.toNat = a.toNat + b.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.addLimbs_toNat",
+     "name": "Montgomery.Native64x4.subLimbs_spec",
      "kind": "theorem",
-     "line": 318,
-     "doc": "The limbwise sum and some top carry recompose the sum of the inputs.",
-     "statement": "theorem addLimbs_toNat (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :\n    ∃ c : ℕ, c ≤ 1 ∧ (addLimbs a b).toNat + 2 ^ 256 * c = a.toNat + b.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.subLimbs_bounded",
-     "kind": "theorem",
-     "line": 322,
-     "doc": "",
-     "statement": "theorem subLimbs_bounded (a b : Limbs8) : (subLimbs a b).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.subLimbs_spec",
-     "kind": "theorem",
-     "line": 328,
+     "line": 343,
      "doc": "The limbwise difference and the final borrow recompose the difference of the inputs.",
-     "statement": "theorem subLimbs_spec (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :\n    (subBorrow a b).toNat ≤ 1 ∧\n      (subLimbs a b).toNat + b.toNat = a.toNat + 2 ^ 256 * (subBorrow a b).toNat",
+     "statement": "theorem subLimbs_spec (a b : Limbs4) :\n    ∃ d0 d1 d2 d3 bo : UInt64, subLimbs a b = (d0, d1, d2, d3, bo) ∧ bo.toNat ≤ 1 ∧\n      (⟨d0, d1, d2, d3⟩ : Limbs4).toNat + b.toNat = a.toNat + 2 ^ 256 * bo.toNat",
      "sorry": false
     },
     {
-     "line": 359,
+     "line": 358,
      "note": "## Conditional subtraction"
     },
     {
-     "name": "Montgomery.Native64x8.condSub_bounded",
+     "name": "Montgomery.Native64x4.condSub_toNat",
      "kind": "theorem",
      "line": 361,
-     "doc": "",
-     "statement": "theorem condSub_bounded (q t : Limbs8) (ht : t.Bounded) : (condSub q t).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.condSub_toNat",
-     "kind": "theorem",
-     "line": 368,
      "doc": "`condSub` subtracts the modulus exactly when the input is at least the modulus.",
-     "statement": "theorem condSub_toNat (q t : Limbs8) (hq : q.Bounded) (ht : t.Bounded) :\n    (condSub q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat",
+     "statement": "theorem condSub_toNat (q t : Limbs4) :\n    (condSub q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.condSub_lt",
+     "name": "Montgomery.Native64x4.condSub_lt",
+     "kind": "theorem",
+     "line": 375,
+     "doc": "`condSub` returns a canonical representative for inputs below `2 * q`.",
+     "statement": "theorem condSub_lt (q t : Limbs4) (h : t.toNat < 2 * q.toNat) :\n    (condSub q t).toNat < q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.condSubWide_toNat",
      "kind": "theorem",
      "line": 382,
-     "doc": "`condSub` returns a canonical representative for inputs below `2 * q`.",
-     "statement": "theorem condSub_lt (q t : Limbs8) (hq : q.Bounded) (ht : t.Bounded)\n    (h : t.toNat < 2 * q.toNat) : (condSub q t).toNat < q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.condSubWide_bounded",
-     "kind": "theorem",
-     "line": 387,
-     "doc": "",
-     "statement": "theorem condSubWide_bounded (q : Limbs8) (t : State9) (ht : t.Bounded) :\n    (condSubWide q t).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.condSubWide_toNat",
-     "kind": "theorem",
-     "line": 396,
      "doc": "`condSubWide` subtracts the modulus exactly when an accumulator below `2 * q` is at least\nthe modulus.",
-     "statement": "theorem condSubWide_toNat (q : Limbs8) (t : State9) (hq : q.Bounded) (ht : t.Bounded)\n    (h : t.toNat < 2 * q.toNat) :\n    (condSubWide q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat",
+     "statement": "theorem condSubWide_toNat (q : Limbs4) (t : State5) (h : t.toNat < 2 * q.toNat) :\n    (condSubWide q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.condSubWide_lt",
+     "name": "Montgomery.Native64x4.condSubWide_lt",
      "kind": "theorem",
-     "line": 410,
+     "line": 405,
      "doc": "`condSubWide` returns a canonical representative for accumulators below `2 * q`.",
-     "statement": "theorem condSubWide_lt (q : Limbs8) (t : State9) (hq : q.Bounded) (ht : t.Bounded)\n    (h : t.toNat < 2 * q.toNat) : (condSubWide q t).toNat < q.toNat",
+     "statement": "theorem condSubWide_lt (q : Limbs4) (t : State5) (h : t.toNat < 2 * q.toNat) :\n    (condSubWide q t).toNat < q.toNat",
      "sorry": false
     },
     {
-     "line": 415,
+     "line": 410,
      "note": "## Field operations"
     },
     {
-     "name": "Montgomery.Native64x8.add_bounded",
+     "name": "Montgomery.Native64x4.add_toNat",
      "kind": "theorem",
-     "line": 417,
+     "line": 413,
+     "doc": "Modular addition is correct for canonical inputs of any modulus.",
+     "statement": "theorem add_toNat (q a b : Limbs4) (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (add q a b).toNat = (a.toNat + b.toNat) % q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.add_lt",
+     "kind": "theorem",
+     "line": 436,
      "doc": "",
-     "statement": "theorem add_bounded (q a b : Limbs8) : (add q a b).Bounded",
+     "statement": "theorem add_lt (q a b : Limbs4) (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (add q a b).toNat < q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sub_bounded",
+     "name": "Montgomery.Native64x4.sub_toNat",
      "kind": "theorem",
-     "line": 423,
+     "line": 442,
+     "doc": "Modular subtraction is correct for canonical inputs of any modulus.",
+     "statement": "theorem sub_toNat (q a b : Limbs4) (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (sub q a b).toNat = (a.toNat + (q.toNat - b.toNat)) % q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.sub_lt",
+     "kind": "theorem",
+     "line": 458,
      "doc": "",
-     "statement": "theorem sub_bounded (q a b : Limbs8) : (sub q a b).Bounded",
+     "statement": "theorem sub_lt (q a b : Limbs4) (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (sub q a b).toNat < q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.neg_bounded",
+     "name": "Montgomery.Native64x4.neg_toNat",
      "kind": "theorem",
-     "line": 429,
+     "line": 464,
+     "doc": "Modular negation is correct for canonical inputs of any modulus.",
+     "statement": "theorem neg_toNat (q a : Limbs4) (haq : a.toNat < q.toNat) :\n    (neg q a).toNat = (q.toNat - a.toNat) % q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.neg_lt",
+     "kind": "theorem",
+     "line": 470,
      "doc": "",
-     "statement": "theorem neg_bounded (q a : Limbs8) : (neg q a).Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.add_toNat",
-     "kind": "theorem",
-     "line": 432,
-     "doc": "Modular addition is correct for canonical inputs of any bounded modulus.",
-     "statement": "theorem add_toNat (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)\n    (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (add q a b).toNat = (a.toNat + b.toNat) % q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.add_lt",
-     "kind": "theorem",
-     "line": 448,
-     "doc": "",
-     "statement": "theorem add_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)\n    (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (add q a b).toNat < q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.sub_toNat",
-     "kind": "theorem",
-     "line": 455,
-     "doc": "Modular subtraction is correct for canonical inputs of any bounded modulus.",
-     "statement": "theorem sub_toNat (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)\n    (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (sub q a b).toNat = (a.toNat + (q.toNat - b.toNat)) % q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.sub_lt",
-     "kind": "theorem",
-     "line": 471,
-     "doc": "",
-     "statement": "theorem sub_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)\n    (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat) :\n    (sub q a b).toNat < q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.neg_toNat",
-     "kind": "theorem",
-     "line": 478,
-     "doc": "Modular negation is correct for canonical inputs of any bounded modulus.",
-     "statement": "theorem neg_toNat (q a : Limbs8) (hq : q.Bounded) (ha : a.Bounded)\n    (haq : a.toNat < q.toNat) :\n    (neg q a).toNat = (q.toNat - a.toNat) % q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.neg_lt",
-     "kind": "theorem",
-     "line": 485,
-     "doc": "",
-     "statement": "theorem neg_lt (q a : Limbs8) (hq : q.Bounded) (ha : a.Bounded)\n    (haq : a.toNat < q.toNat) : (neg q a).toNat < q.toNat",
+     "statement": "theorem neg_lt (q a : Limbs4) (haq : a.toNat < q.toNat) : (neg q a).toNat < q.toNat",
      "sorry": false
     }
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8Bytes",
-   "file": "CompPoly/Fields/Montgomery/Native64x8Bytes.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4Bytes",
+   "file": "CompPoly/Fields/Montgomery/Native64x4Bytes.lean",
    "copyright": "CompPoly Contributors",
-   "authors": "Derek Sorensen",
-   "title": "Serialization of the eight-limb Montgomery carrier",
-   "doc": "`Native64x8.FastField modulus` stores a Montgomery residue in eight 32-bit limbs. Its canonical\nnatural is the value after one Montgomery reduction, `FastField.toNat`, so the bytes agree with\nthe `ZMod modulus` codec (`toBytes_ofField`, `toNat_ofField`). Decoding converts through\n`ofField`.",
+   "authors": "Derek Sorensen, Georgios Raikos",
+   "title": "Serialization of the four-limb Montgomery carrier",
+   "doc": "`Native64x4.FastField modulus` stores a Montgomery residue in four 64-bit limbs.  Its canonical\nnatural is the value after one Montgomery reduction, `FastField.toNat`, so the bytes agree with\nthe `ZMod modulus` codec (`toBytes_ofField`, `toNat_ofField`).  Decoding converts through\n`ofField`.",
    "items": [
     {
-     "name": "Montgomery.Native64x8.FastField.toNat_eq_val_toField",
+     "name": "Montgomery.Native64x4.FastField.toNat_eq_val_toField",
      "kind": "theorem",
      "line": 31,
      "doc": "The canonical natural of a fast element is the residue of its canonical field value.",
@@ -37150,7 +37098,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toNat_ofField",
+     "name": "Montgomery.Native64x4.FastField.toNat_ofField",
      "kind": "theorem",
      "line": 35,
      "doc": "Carrier agreement: the canonical natural of `ofField n` is the residue `n.val`.",
@@ -37158,7 +37106,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofField_cast_toNat",
+     "name": "Montgomery.Native64x4.FastField.ofField_cast_toNat",
      "kind": "theorem",
      "line": 38,
      "doc": "",
@@ -37166,7 +37114,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.canonicalNat_bound",
+     "name": "Montgomery.Native64x4.FastField.canonicalNat_bound",
      "kind": "theorem",
      "line": 46,
      "doc": "",
@@ -37174,7 +37122,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.canonicalNat_toNat",
+     "name": "Montgomery.Native64x4.FastField.canonicalNat_toNat",
      "kind": "theorem",
      "line": 48,
      "doc": "",
@@ -37182,7 +37130,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.canonicalNat_ofNat",
+     "name": "Montgomery.Native64x4.FastField.canonicalNat_ofNat",
      "kind": "theorem",
      "line": 50,
      "doc": "",
@@ -37190,7 +37138,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.byteCodec_width",
+     "name": "Montgomery.Native64x4.FastField.byteCodec_width",
      "kind": "theorem",
      "line": 53,
      "doc": "",
@@ -37198,7 +37146,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toBytes_ofField",
+     "name": "Montgomery.Native64x4.FastField.toBytes_ofField",
      "kind": "theorem",
      "line": 57,
      "doc": "The fast carrier and `ZMod modulus` encode the same element identically.",
@@ -37206,7 +37154,7 @@
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toBytes_eq_toBytes_toField",
+     "name": "Montgomery.Native64x4.FastField.toBytes_eq_toBytes_toField",
      "kind": "theorem",
      "line": 63,
      "doc": "Encoding then converting to the spec field is encoding in the spec field.",
@@ -37216,1029 +37164,973 @@
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8Defs",
-   "file": "CompPoly/Fields/Montgomery/Native64x8Defs.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4Defs",
+   "file": "CompPoly/Fields/Montgomery/Native64x4Defs.lean",
    "copyright": "CompPoly Contributors",
-   "authors": "Gregor Mitscha-Baude",
-   "title": "Eight-limb Montgomery arithmetic: runtime definitions (zero-import)",
-   "doc": "The runtime definitions of the eight-limb Montgomery arithmetic, split out of\n`CompPoly.Fields.Montgomery.Native64x8` verbatim.  All correctness statements about them\nlive in that sibling module, which imports this one.\n\nThis module deliberately has **zero imports**: downstream consumers put it into\n`precompileModules` native-compilation lanes, and `precompileModules` compiles the\nentire import closure — so the runtime definitions must not pull in mathlib.",
+   "authors": "Georgios Raikos",
+   "title": "Four-limb Montgomery arithmetic: runtime definitions (zero-import)",
+   "doc": "The runtime definitions of the four-limb Montgomery arithmetic over 64-bit limbs; all\ncorrectness statements live in `CompPoly.Fields.Montgomery.Native64x4`, which imports this\none.  Products widen through `mulHi` (four 32-bit partial products) and every word helper\nreturns a pair the caller destructures, so nothing is boxed.\n\nThis module deliberately has **zero imports**, for `precompileModules` consumers.",
    "items": [
     {
-     "line": 25,
+     "line": 24,
      "note": "## Word helpers"
     },
     {
-     "name": "Montgomery.Native64x8.mask",
+     "name": "Montgomery.Native64x4.mulHi",
      "kind": "def",
-     "line": 28,
-     "doc": "Mask selecting the low 32 bits of a `UInt64`.",
-     "statement": "def mask : UInt64",
+     "line": 27,
+     "doc": "High word of the 64-bit product `a * b`, from four 32-bit partial products.",
+     "statement": "def mulHi (a b : UInt64) : UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.adcLo",
+     "name": "Montgomery.Native64x4.adc",
      "kind": "def",
-     "line": 31,
-     "doc": "Low limb of add-with-carry: `(x + y + c) mod 2 ^ 32`.",
-     "statement": "def adcLo (x y c : UInt64) : UInt64",
+     "line": 39,
+     "doc": "Add-with-carry: the low word and the carry-out of `x + y + c`, for `c ≤ 1`.",
+     "statement": "def adc (x y c : UInt64) : UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.adcCo",
+     "name": "Montgomery.Native64x4.sbb",
      "kind": "def",
-     "line": 34,
-     "doc": "Carry-out of add-with-carry: `(x + y + c) / 2 ^ 32`.",
-     "statement": "def adcCo (x y c : UInt64) : UInt64",
+     "line": 45,
+     "doc": "Subtract-with-borrow: the low word and the borrow-out of `x - y - b`, for `b ≤ 1`.",
+     "statement": "def sbb (x y b : UInt64) : UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sbbLo",
+     "name": "Montgomery.Native64x4.mac",
      "kind": "def",
-     "line": 37,
-     "doc": "Low limb of subtract-with-borrow: `(x - y - b) mod 2 ^ 32`.",
-     "statement": "def sbbLo (x y b : UInt64) : UInt64",
+     "line": 50,
+     "doc": "Multiply-accumulate: the low and high words of `t + a * b + c`.",
+     "statement": "def mac (t a b c : UInt64) : UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sbbBo",
+     "name": "Montgomery.Native64x4.montM",
      "kind": "def",
-     "line": 40,
-     "doc": "Borrow-out of subtract-with-borrow, read off the sign bit of the 64-bit difference.",
-     "statement": "def sbbBo (x y b : UInt64) : UInt64",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.macLo",
-     "kind": "def",
-     "line": 43,
-     "doc": "Low limb of multiply-accumulate: `(t + x * y + c) mod 2 ^ 32`.",
-     "statement": "def macLo (t x y c : UInt64) : UInt64",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.macHi",
-     "kind": "def",
-     "line": 46,
-     "doc": "High word of multiply-accumulate: `(t + x * y + c) / 2 ^ 32`.",
-     "statement": "def macHi (t x y c : UInt64) : UInt64",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.montM",
-     "kind": "def",
-     "line": 49,
-     "doc": "The Montgomery multiplier of a limb: `(s * negInv) mod 2 ^ 32`.",
+     "line": 56,
+     "doc": "The Montgomery multiplier of a limb: `(s * negInv) mod 2 ^ 64`.",
      "statement": "def montM (s negInv : UInt64) : UInt64",
      "sorry": false
     },
     {
-     "line": 51,
-     "note": "## Eight-limb values"
+     "line": 58,
+     "note": "## Four-limb values"
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8",
+     "name": "Montgomery.Native64x4.Limbs4",
      "kind": "structure",
-     "line": 54,
-     "doc": "A 256-bit value as eight little-endian 32-bit limbs, each stored in a `UInt64`.",
-     "statement": "structure Limbs8 where\n  /-- Limb of weight `2 ^ 0`. -/\n  l0 : UInt64\n  /-- Limb of weight `2 ^ 32`. -/\n  l1 : UInt64\n  /-- Limb of weight `2 ^ 64`. -/\n  l2 : UInt64\n  /-- Limb of weight `2 ^ 96`. -/\n  l3 : UInt64\n  /-- Limb of weight `2 ^ 128`. -/\n  l4 : UInt64\n  /-- Limb of weight `2 ^ 160`. -/\n  l5 : UInt64\n  /-- Limb of weight `2 ^ 192`. -/\n  l6 : UInt64\n  /-- Limb of weight `2 ^ 224`. -/\n  l7 : UInt64\nderiving DecidableEq, Repr, Inhabited",
+     "line": 61,
+     "doc": "A 256-bit value as four little-endian 64-bit limbs.",
+     "statement": "structure Limbs4 where\n  /-- Limb of weight `2 ^ 0`. -/\n  l0 : UInt64\n  /-- Limb of weight `2 ^ 64`. -/\n  l1 : UInt64\n  /-- Limb of weight `2 ^ 128`. -/\n  l2 : UInt64\n  /-- Limb of weight `2 ^ 192`. -/\n  l3 : UInt64\nderiving DecidableEq, Repr, Inhabited",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.zero",
+     "name": "Montgomery.Native64x4.Limbs4.zero",
      "kind": "def",
-     "line": 76,
+     "line": 75,
      "doc": "The zero value.",
-     "statement": "def zero : Limbs8",
+     "statement": "def zero : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.one",
+     "name": "Montgomery.Native64x4.Limbs4.one",
      "kind": "def",
-     "line": 79,
+     "line": 78,
      "doc": "The value one.",
-     "statement": "def one : Limbs8",
+     "statement": "def one : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.ofNat",
+     "name": "Montgomery.Native64x4.Limbs4.ofNat",
      "kind": "def",
-     "line": 82,
-     "doc": "Split a natural number into eight 32-bit limbs, discarding bits above `2 ^ 256`.",
-     "statement": "def ofNat (n : Nat) : Limbs8",
+     "line": 81,
+     "doc": "Split a natural number into four 64-bit limbs, discarding bits above `2 ^ 256`.",
+     "statement": "def ofNat (n : Nat) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.toNat",
+     "name": "Montgomery.Native64x4.Limbs4.toNat",
      "kind": "def",
-     "line": 89,
-     "doc": "The natural number represented by the limbs: `∑ lᵢ * 2 ^ (32 * i)`.",
-     "statement": "def toNat (x : Limbs8) : Nat",
+     "line": 85,
+     "doc": "The natural number represented by the limbs: `∑ lᵢ * 2 ^ (64 * i)`.",
+     "statement": "def toNat (x : Limbs4) : Nat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.Bounded",
+     "line": 90,
+     "note": "## Limbwise addition and subtraction\n\nChains return flat words and a `Limbs4` is built only inside a branch: one bound before the\nbranch is allocated whether or not that side runs."
+    },
+    {
+     "name": "Montgomery.Native64x4.addLimbs",
      "kind": "def",
-     "line": 94,
-     "doc": "Every limb holds at most 32 significant bits.",
-     "statement": "def Bounded (x : Limbs8) : Prop",
+     "line": 96,
+     "doc": "Limbwise add-with-carry: the four sum limbs and the carry out of the top limb.",
+     "statement": "def addLimbs (a b : Limbs4) : UInt64 × UInt64 × UInt64 × UInt64 × UInt64",
      "sorry": false
     },
     {
-     "line": 104,
-     "note": "## Limbwise addition and subtraction"
-    },
-    {
-     "name": "Montgomery.Native64x8.addLimbs",
+     "name": "Montgomery.Native64x4.subLimbs",
      "kind": "def",
-     "line": 107,
-     "doc": "Limbwise add-with-carry, discarding the carry out of the top limb.",
-     "statement": "def addLimbs (a b : Limbs8) : Limbs8",
+     "line": 105,
+     "doc": "Limbwise subtract-with-borrow: the four difference limbs and the borrow out of the top\nlimb.",
+     "statement": "def subLimbs (a b : Limbs4) : UInt64 × UInt64 × UInt64 × UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.addCarry",
-     "kind": "def",
-     "line": 119,
-     "doc": "Carry out of the top limb of `addLimbs`.",
-     "statement": "def addCarry (a b : Limbs8) : UInt64",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.subLimbs",
-     "kind": "def",
-     "line": 130,
-     "doc": "Limbwise subtract-with-borrow.",
-     "statement": "def subLimbs (a b : Limbs8) : Limbs8",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.subBorrow",
-     "kind": "def",
-     "line": 142,
-     "doc": "Borrow out of the top limb of `subLimbs`.",
-     "statement": "def subBorrow (a b : Limbs8) : UInt64",
-     "sorry": false
-    },
-    {
-     "line": 152,
+     "line": 112,
      "note": "## Conditional subtraction and field operations"
     },
     {
-     "name": "Montgomery.Native64x8.condSub",
+     "name": "Montgomery.Native64x4.condSub",
      "kind": "def",
-     "line": 156,
-     "doc": "Subtract the modulus once if the value is at least the modulus.  The borrow chain\ndecides the branch, so no comparison is needed.",
-     "statement": "def condSub (q t : Limbs8) : Limbs8",
+     "line": 115,
+     "doc": "Subtract the modulus once if the value is at least the modulus.",
+     "statement": "def condSub (q t : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.add",
+     "name": "Montgomery.Native64x4.add",
      "kind": "def",
-     "line": 161,
+     "line": 121,
      "doc": "Modular addition; a carry out of the top limb forces the (wrapping, exact) subtraction\nof the modulus, and never happens for a modulus below `2 ^ 255`.",
-     "statement": "def add (q a b : Limbs8) : Limbs8",
+     "statement": "def add (q a b : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.sub",
+     "name": "Montgomery.Native64x4.sub",
      "kind": "def",
-     "line": 166,
+     "line": 127,
      "doc": "Modular subtraction: on a borrow, the modulus is added back.",
-     "statement": "def sub (q a b : Limbs8) : Limbs8",
+     "statement": "def sub (q a b : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.neg",
+     "name": "Montgomery.Native64x4.neg",
      "kind": "def",
-     "line": 171,
+     "line": 135,
      "doc": "Modular negation.",
-     "statement": "def neg (q a : Limbs8) : Limbs8",
+     "statement": "def neg (q a : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "line": 173,
+     "line": 137,
      "note": "## CIOS multiplication"
     },
     {
-     "name": "Montgomery.Native64x8.State9",
+     "name": "Montgomery.Native64x4.State5",
      "kind": "structure",
-     "line": 176,
-     "doc": "The CIOS accumulator: eight limbs plus one head limb.",
-     "statement": "structure State9 where\n  /-- Limb of weight `2 ^ 0`. -/\n  t0 : UInt64\n  /-- Limb of weight `2 ^ 32`. -/\n  t1 : UInt64\n  /-- Limb of weight `2 ^ 64`. -/\n  t2 : UInt64\n  /-- Limb of weight `2 ^ 96`. -/\n  t3 : UInt64\n  /-- Limb of weight `2 ^ 128`. -/\n  t4 : UInt64\n  /-- Limb of weight `2 ^ 160`. -/\n  t5 : UInt64\n  /-- Limb of weight `2 ^ 192`. -/\n  t6 : UInt64\n  /-- Limb of weight `2 ^ 224`. -/\n  t7 : UInt64\n  /-- Head limb of weight `2 ^ 256`. -/\n  t8 : UInt64\nderiving DecidableEq, Repr, Inhabited",
+     "line": 140,
+     "doc": "The CIOS accumulator between rounds: four limbs plus one head limb.",
+     "statement": "structure State5 where\n  /-- Limb of weight `2 ^ 0`. -/\n  t0 : UInt64\n  /-- Limb of weight `2 ^ 64`. -/\n  t1 : UInt64\n  /-- Limb of weight `2 ^ 128`. -/\n  t2 : UInt64\n  /-- Limb of weight `2 ^ 192`. -/\n  t3 : UInt64\n  /-- Head limb of weight `2 ^ 256`. -/\n  t4 : UInt64\nderiving DecidableEq, Repr, Inhabited",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.State9.zero",
+     "name": "Montgomery.Native64x4.State6",
+     "kind": "structure",
+     "line": 154,
+     "doc": "The CIOS accumulator after the multiply half of a round: five limbs plus a carry limb.",
+     "statement": "structure State6 where\n  /-- Limb of weight `2 ^ 0`. -/\n  t0 : UInt64\n  /-- Limb of weight `2 ^ 64`. -/\n  t1 : UInt64\n  /-- Limb of weight `2 ^ 128`. -/\n  t2 : UInt64\n  /-- Limb of weight `2 ^ 192`. -/\n  t3 : UInt64\n  /-- Limb of weight `2 ^ 256`. -/\n  t4 : UInt64\n  /-- Carry limb of weight `2 ^ 320`. -/\n  t5 : UInt64\nderiving DecidableEq, Repr, Inhabited",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.State5.zero",
      "kind": "def",
-     "line": 200,
+     "line": 172,
      "doc": "The zero accumulator.",
-     "statement": "def zero : State9",
+     "statement": "def zero : State5",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.State9.toLimbs8",
+     "name": "Montgomery.Native64x4.State5.toLimbs4",
      "kind": "def",
-     "line": 203,
-     "doc": "The eight low limbs of the accumulator.",
-     "statement": "def toLimbs8 (t : State9) : Limbs8",
+     "line": 175,
+     "doc": "The four low limbs of the accumulator.",
+     "statement": "def toLimbs4 (t : State5) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.State9.toNat",
+     "name": "Montgomery.Native64x4.State5.toNat",
      "kind": "def",
-     "line": 206,
+     "line": 178,
      "doc": "The natural number represented by the accumulator.",
-     "statement": "def toNat (t : State9) : Nat",
+     "statement": "def toNat (t : State5) : Nat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.State9.Bounded",
+     "name": "Montgomery.Native64x4.State6.toNat",
      "kind": "def",
-     "line": 209,
-     "doc": "Every limb of the accumulator holds at most 32 significant bits.",
-     "statement": "def Bounded (t : State9) : Prop",
+     "line": 185,
+     "doc": "The natural number represented by the accumulator.",
+     "statement": "def toNat (t : State6) : Nat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mulAccum",
+     "name": "Montgomery.Native64x4.mulAccum",
      "kind": "def",
-     "line": 215,
-     "doc": "The multiply half of a CIOS round: accumulate `a * bi` into the accumulator.  The carry\nout of the top limb is kept in the head limb, so no information is lost.",
-     "statement": "def mulAccum (a : Limbs8) (bi : UInt64) (t : State9) : State9",
+     "line": 192,
+     "doc": "The multiply half of a CIOS round, `t + a * bi`, keeping the carry out of the head limb.",
+     "statement": "def mulAccum (a : Limbs4) (bi : UInt64) (t : State5) : State6",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mulReduce",
+     "name": "Montgomery.Native64x4.mulReduce",
      "kind": "def",
-     "line": 230,
-     "doc": "The reduce half of a CIOS round: add the multiple `montM s.t0 negInv` of the modulus that\ncancels the low limb, then drop that limb.  `negInv` has to be `-q⁻¹ mod 2 ^ 32`.",
-     "statement": "def mulReduce (q : Limbs8) (negInv : UInt64) (s : State9) : State9",
+     "line": 202,
+     "doc": "The reduce half of a CIOS round: add `montM s.t0 negInv * q`, which cancels the low limb,\nand drop that limb; `negInv` must be `-q⁻¹ mod 2 ^ 64`.",
+     "statement": "def mulReduce (q : Limbs4) (negInv : UInt64) (s : State6) : State5",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mulRound",
+     "name": "Montgomery.Native64x4.mulRound",
      "kind": "def",
-     "line": 246,
+     "line": 213,
      "doc": "One CIOS outer round: accumulate `a * bi` into the accumulator, then reduce away one\nlimb.",
-     "statement": "def mulRound (q : Limbs8) (negInv : UInt64) (a : Limbs8) (bi : UInt64)\n    (t : State9) : State9",
+     "statement": "def mulRound (q : Limbs4) (negInv : UInt64) (a : Limbs4) (bi : UInt64)\n    (t : State5) : State5",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.condSubWide",
+     "name": "Montgomery.Native64x4.condSubWide",
      "kind": "def",
-     "line": 252,
+     "line": 219,
      "doc": "`condSub` for an accumulator below `2 * q`; a set head limb forces the (wrapping, exact)\nsubtraction of the modulus, and never happens for a modulus below `2 ^ 255`.",
-     "statement": "def condSubWide (q : Limbs8) (t : State9) : Limbs8",
+     "statement": "def condSubWide (q : Limbs4) (t : State5) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mul",
+     "name": "Montgomery.Native64x4.mul",
      "kind": "def",
-     "line": 258,
-     "doc": "CIOS Montgomery multiplication: eight rounds followed by one conditional\nsubtraction.",
-     "statement": "def mul (q : Limbs8) (negInv : UInt64) (a b : Limbs8) : Limbs8",
+     "line": 225,
+     "doc": "CIOS Montgomery multiplication: four rounds followed by one conditional subtraction.",
+     "statement": "def mul (q : Limbs4) (negInv : UInt64) (a b : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.square",
+     "name": "Montgomery.Native64x4.square",
      "kind": "def",
-     "line": 270,
+     "line": 233,
      "doc": "Montgomery squaring.",
-     "statement": "def square (q : Limbs8) (negInv : UInt64) (a : Limbs8) : Limbs8",
+     "statement": "def square (q : Limbs4) (negInv : UInt64) (a : Limbs4) : Limbs4",
      "sorry": false
     }
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8Field",
-   "file": "CompPoly/Fields/Montgomery/Native64x8Field.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4Field",
+   "file": "CompPoly/Fields/Montgomery/Native64x4Field.lean",
    "copyright": "CompPoly Contributors",
-   "authors": "Gregor Mitscha-Baude",
-   "title": "Fast eight-limb Montgomery fields",
-   "doc": "The bounded carrier, conversions, arithmetic, and field instances built on the raw eight-limb\nMontgomery operations of `Montgomery/Native64x8`.  This is the multi-limb analogue of\n`Montgomery/Native32Field`, for any prime modulus below `2 ^ 256`.\n\nA carrier element stores the Montgomery residue `x * 2 ^ 256 mod q` as eight 32-bit limbs;\n`toField` divides that residue by `2 ^ 256` again and lands in `ZMod modulus`.  All arithmetic\nis transported along `toField`, which is a ring isomorphism onto `ZMod modulus`.\n\n## Main results\n\n* `FastField` — the carrier, `{ x : Limbs8 // x.Bounded ∧ x.toNat < modulus }`\n* `toField_add`, `toField_mul`, … — `@[simp]` equivalences with the canonical field\n* `Mont64x8Field` — the per-field constants class\n* `ringEquiv`, `instField` — the ring isomorphism and the transferred `Field` instance",
+   "authors": "Georgios Raikos",
+   "title": "Fast four-limb Montgomery fields",
+   "doc": "The carrier `{ x : Limbs4 // x.toNat < modulus }` stores the Montgomery residue\n`x * 2 ^ 256 mod modulus` for any prime modulus below `2 ^ 256`; `toField` divides by `2 ^ 256`\nand lands in `ZMod modulus`, and all arithmetic is transported along that ring isomorphism.\n\n## Main results\n\n* `FastField` — the carrier, `{ x : Limbs4 // x.toNat < modulus }`\n* `toField_add`, `toField_mul`, … — `@[simp]` equivalences with the canonical field\n* `Mont64x4Field` — the per-field constants class\n* `ringEquiv`, `instField` — the ring isomorphism and the transferred `Field` instance",
    "items": [
     {
-     "line": 37,
+     "line": 33,
      "note": "## Per-field constants"
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field",
+     "name": "Montgomery.Native64x4.Mont64x4Field",
      "kind": "class",
-     "line": 41,
-     "doc": "Per-field data for a fast eight-limb Montgomery field with radix `R = 2 ^ 256`.  All\nside conditions are concrete numeral facts, discharged by `decide` at instantiation.",
-     "statement": "class Mont64x8Field (modulus : ℕ) where\n  /-- `modulus` is prime. -/\n  prime : modulus.Prime\n  /-- The modulus in eight 32-bit limbs. -/\n  modulusLimbs : Limbs8\n  /-- `2 ^ 256 mod modulus`, the Montgomery representation of one. -/\n  rModModulus : Limbs8\n  /-- `(2 ^ 256) ^ 2 mod modulus`, used to enter Montgomery form. -/\n  r2ModModulus : Limbs8\n  /-- `-modulus⁻¹ mod 2 ^ 32`, used by Montgomery reduction. -/\n  montgomeryNegInv : UInt64\n  modulusLimbs_bounded : modulusLimbs.Bounded := by decide\n  modulusLimbs_toNat : modulusLimbs.toNat = modulus := by decide\n  two_lt_modulus : 2 < modulus := by decide\n  rModModulus_bounded : rModModulus.Bounded := by decide\n  rModModulus_toNat : rModModulus.toNat = 2 ^ 256 % modulus := by decide\n  r2ModModulus_bounded : r2ModModulus.Bounded := by decide\n  r2ModModulus_toNat : r2ModModulus.toNat = (2 ^ 256) ^ 2 % modulus := by decide\n  montgomeryNegInv_lt : montgomeryNegInv.toNat < 2 ^ 32 := by decide\n  montgomeryNegInv_mul_modulus_mod_two_pow_32 :\n    montgomeryNegInv.toNat * modulus % 2 ^ 32 = 2 ^ 32 - 1 := by decide",
+     "line": 37,
+     "doc": "Per-field data for a fast four-limb Montgomery field with radix `R = 2 ^ 256`.  All side\nconditions are concrete numeral facts, discharged by `decide` at instantiation.",
+     "statement": "class Mont64x4Field (modulus : ℕ) where\n  /-- `modulus` is prime. -/\n  prime : modulus.Prime\n  /-- The modulus in four 64-bit limbs. -/\n  modulusLimbs : Limbs4\n  /-- `2 ^ 256 mod modulus`, the Montgomery representation of one. -/\n  rModModulus : Limbs4\n  /-- `(2 ^ 256) ^ 2 mod modulus`, used to enter Montgomery form. -/\n  r2ModModulus : Limbs4\n  /-- `-modulus⁻¹ mod 2 ^ 64`, used by Montgomery reduction. -/\n  montgomeryNegInv : UInt64\n  modulusLimbs_toNat : modulusLimbs.toNat = modulus := by decide\n  two_lt_modulus : 2 < modulus := by decide\n  rModModulus_toNat : rModModulus.toNat = 2 ^ 256 % modulus := by decide\n  r2ModModulus_toNat : r2ModModulus.toNat = (2 ^ 256) ^ 2 % modulus := by decide\n  montgomeryNegInv_mul_modulus_mod_two_pow_64 :\n    montgomeryNegInv.toNat * modulus % 2 ^ 64 = 2 ^ 64 - 1 := by decide",
      "sorry": false
     },
     {
-     "line": 63,
+     "line": 55,
      "note": "## Modulus facts"
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.modulus_pos",
+     "name": "Montgomery.Native64x4.Mont64x4Field.modulus_pos",
      "kind": "theorem",
-     "line": 71,
+     "line": 63,
      "doc": "",
      "statement": "theorem modulus_pos : 0 < modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.modulus_lt",
+     "name": "Montgomery.Native64x4.Mont64x4Field.modulus_lt",
      "kind": "theorem",
-     "line": 73,
+     "line": 65,
      "doc": "",
      "statement": "theorem modulus_lt : modulus < 2 ^ 256",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.q_toNat",
+     "name": "Montgomery.Native64x4.Mont64x4Field.q_toNat",
      "kind": "theorem",
-     "line": 77,
+     "line": 69,
      "doc": "",
      "statement": "theorem q_toNat : P.modulusLimbs.toNat = modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.negInv_mul_q",
+     "name": "Montgomery.Native64x4.Mont64x4Field.negInv_mul_q",
      "kind": "theorem",
-     "line": 79,
+     "line": 71,
      "doc": "",
-     "statement": "theorem negInv_mul_q : P.montgomeryNegInv.toNat * P.modulusLimbs.toNat % 2 ^ 32 = 2 ^ 32 - 1",
+     "statement": "theorem negInv_mul_q : P.montgomeryNegInv.toNat * P.modulusLimbs.toNat % 2 ^ 64 = 2 ^ 64 - 1",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.two_ne_zero",
+     "name": "Montgomery.Native64x4.Mont64x4Field.two_ne_zero",
      "kind": "theorem",
-     "line": 85,
+     "line": 77,
      "doc": "",
      "statement": "theorem two_ne_zero : (2 : ZMod modulus) ≠ 0",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Mont64x8Field.r_ne_zero",
+     "name": "Montgomery.Native64x4.Mont64x4Field.r_ne_zero",
      "kind": "theorem",
-     "line": 90,
+     "line": 82,
      "doc": "",
      "statement": "theorem r_ne_zero : ((2 ^ 256 : ℕ) : ZMod modulus) ≠ 0",
      "sorry": false
     },
     {
-     "line": 96,
+     "line": 88,
      "note": "## The carrier"
     },
     {
-     "name": "Montgomery.Native64x8.FastField",
+     "name": "Montgomery.Native64x4.FastField",
      "kind": "def",
-     "line": 101,
-     "doc": "The fast carrier for a prime modulus: eight 32-bit limbs holding a value below `modulus`,\ninterpreted as a Montgomery residue.  At runtime this erases to `Limbs8`.",
-     "statement": "def FastField (modulus : ℕ) [Mont64x8Field modulus] : Type",
+     "line": 93,
+     "doc": "The fast carrier: four 64-bit limbs holding a Montgomery residue below `modulus`, erasing\nto `Limbs4` at runtime.",
+     "statement": "def FastField (modulus : ℕ) [Mont64x4Field modulus] : Type",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.val_bounded",
+     "name": "Montgomery.Native64x4.FastField.val_lt",
      "kind": "theorem",
-     "line": 113,
-     "doc": "",
-     "statement": "theorem val_bounded (x : FastField modulus) : x.val.Bounded",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.FastField.val_lt",
-     "kind": "theorem",
-     "line": 115,
+     "line": 105,
      "doc": "",
      "statement": "theorem val_lt (x : FastField modulus) : x.val.toNat < P.modulusLimbs.toNat",
      "sorry": false
     },
     {
-     "line": 119,
+     "line": 109,
      "note": "### Arithmetic"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.zero",
+     "name": "Montgomery.Native64x4.FastField.zero",
      "kind": "def",
-     "line": 122,
+     "line": 112,
      "doc": "The zero element.",
-     "statement": "def zero (modulus : ℕ) [P : Mont64x8Field modulus] : FastField modulus",
+     "statement": "def zero (modulus : ℕ) [P : Mont64x4Field modulus] : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.one",
+     "name": "Montgomery.Native64x4.FastField.one",
      "kind": "def",
-     "line": 128,
+     "line": 118,
      "doc": "The one element, the Montgomery residue `2 ^ 256 mod modulus`.",
-     "statement": "def one (modulus : ℕ) [P : Mont64x8Field modulus] : FastField modulus",
+     "statement": "def one (modulus : ℕ) [P : Mont64x4Field modulus] : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.add",
+     "name": "Montgomery.Native64x4.FastField.add",
      "kind": "def",
-     "line": 134,
+     "line": 124,
      "doc": "Fast modular addition in Montgomery form.",
      "statement": "def add (x y : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.sub",
+     "name": "Montgomery.Native64x4.FastField.sub",
      "kind": "def",
-     "line": 142,
+     "line": 130,
      "doc": "Fast modular subtraction in Montgomery form.",
      "statement": "def sub (x y : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.neg",
+     "name": "Montgomery.Native64x4.FastField.neg",
      "kind": "def",
-     "line": 150,
+     "line": 136,
      "doc": "Fast modular negation in Montgomery form.",
      "statement": "def neg (x : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.mul",
+     "name": "Montgomery.Native64x4.FastField.mul",
      "kind": "def",
-     "line": 157,
+     "line": 142,
      "doc": "Fast Montgomery multiplication.",
      "statement": "def mul (x y : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.square",
+     "name": "Montgomery.Native64x4.FastField.square",
      "kind": "def",
-     "line": 167,
+     "line": 149,
      "doc": "Fast squaring.",
      "statement": "def square (x : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.pow",
+     "name": "Montgomery.Native64x4.FastField.pow",
      "kind": "def",
-     "line": 170,
+     "line": 152,
      "doc": "Exponentiation by repeated squaring.",
      "statement": "def pow (x : FastField modulus) (n : ℕ) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.inv",
+     "name": "Montgomery.Native64x4.FastField.inv",
      "kind": "def",
-     "line": 174,
+     "line": 156,
      "doc": "Inversion by Fermat's little theorem, `x⁻¹ = x ^ (modulus - 2)`.",
      "statement": "def inv (x : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.div",
+     "name": "Montgomery.Native64x4.FastField.div",
      "kind": "def",
-     "line": 177,
+     "line": 159,
      "doc": "Division through inversion.",
      "statement": "def div (x y : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "line": 179,
+     "line": 161,
      "note": "### Conversions"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toLimbs8",
+     "name": "Montgomery.Native64x4.FastField.toLimbs4",
      "kind": "def",
-     "line": 182,
+     "line": 164,
      "doc": "The canonical limb representative of a fast element: one Montgomery reduction.",
-     "statement": "def toLimbs8 (x : FastField modulus) : Limbs8",
+     "statement": "def toLimbs4 (x : FastField modulus) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toNat",
+     "name": "Montgomery.Native64x4.FastField.toNat",
      "kind": "def",
-     "line": 186,
+     "line": 168,
      "doc": "The canonical natural representative of a fast element.",
      "statement": "def toNat (x : FastField modulus) : ℕ",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField",
+     "name": "Montgomery.Native64x4.FastField.toField",
      "kind": "def",
-     "line": 189,
+     "line": 171,
      "doc": "The canonical `ZMod` value of a fast element.",
      "statement": "def toField (x : FastField modulus) : ZMod modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofCanonicalNat",
+     "name": "Montgomery.Native64x4.FastField.ofCanonicalNat",
      "kind": "def",
-     "line": 192,
+     "line": 180,
      "doc": "Build a fast element from a canonical natural representative.",
      "statement": "def ofCanonicalNat (n : ℕ) (h : n < modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofNat",
+     "name": "Montgomery.Native64x4.FastField.ofNat",
      "kind": "def",
-     "line": 210,
+     "line": 187,
      "doc": "Convert a natural number into fast Montgomery form.",
-     "statement": "def ofNat (modulus : ℕ) [P : Mont64x8Field modulus] (n : ℕ) : FastField modulus",
+     "statement": "def ofNat (modulus : ℕ) [P : Mont64x4Field modulus] (n : ℕ) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofField",
+     "name": "Montgomery.Native64x4.FastField.ofField",
      "kind": "def",
-     "line": 214,
+     "line": 191,
      "doc": "Convert from the canonical field into fast Montgomery form.",
      "statement": "def ofField (x : ZMod modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofInt",
+     "name": "Montgomery.Native64x4.FastField.ofInt",
      "kind": "def",
-     "line": 218,
+     "line": 195,
      "doc": "Convert an integer into fast Montgomery form.",
-     "statement": "def ofInt (modulus : ℕ) [P : Mont64x8Field modulus] (n : Int) :\n    FastField modulus",
+     "statement": "def ofInt (modulus : ℕ) [P : Mont64x4Field modulus] (n : Int) :\n    FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.zero_def",
+     "name": "Montgomery.Native64x4.FastField.zero_def",
      "kind": "theorem",
-     "line": 246,
+     "line": 223,
      "doc": "",
      "statement": "theorem zero_def : (0 : FastField modulus) = FastField.zero modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.one_def",
+     "name": "Montgomery.Native64x4.FastField.one_def",
      "kind": "theorem",
-     "line": 247,
+     "line": 224,
      "doc": "",
      "statement": "theorem one_def : (1 : FastField modulus) = FastField.one modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.add_def",
+     "name": "Montgomery.Native64x4.FastField.add_def",
      "kind": "theorem",
-     "line": 248,
+     "line": 225,
      "doc": "",
      "statement": "theorem add_def (x y : FastField modulus) : x + y = FastField.add x y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.neg_def",
+     "name": "Montgomery.Native64x4.FastField.neg_def",
      "kind": "theorem",
-     "line": 249,
+     "line": 226,
      "doc": "",
      "statement": "theorem neg_def (x : FastField modulus) : -x = FastField.neg x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.sub_def",
+     "name": "Montgomery.Native64x4.FastField.sub_def",
      "kind": "theorem",
-     "line": 250,
+     "line": 227,
      "doc": "",
      "statement": "theorem sub_def (x y : FastField modulus) : x - y = FastField.sub x y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.mul_def",
+     "name": "Montgomery.Native64x4.FastField.mul_def",
      "kind": "theorem",
-     "line": 251,
+     "line": 228,
      "doc": "",
      "statement": "theorem mul_def (x y : FastField modulus) : x * y = FastField.mul x y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.inv_def",
+     "name": "Montgomery.Native64x4.FastField.inv_def",
      "kind": "theorem",
-     "line": 252,
+     "line": 229,
      "doc": "",
      "statement": "theorem inv_def (x : FastField modulus) : x⁻¹ = FastField.inv x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.div_def",
+     "name": "Montgomery.Native64x4.FastField.div_def",
      "kind": "theorem",
-     "line": 253,
+     "line": 230,
      "doc": "",
      "statement": "theorem div_def (x y : FastField modulus) : x / y = x * y⁻¹",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.square_def",
+     "name": "Montgomery.Native64x4.FastField.square_def",
      "kind": "theorem",
-     "line": 254,
+     "line": 231,
      "doc": "",
      "statement": "theorem square_def (x : FastField modulus) : FastField.square x = x * x",
      "sorry": false
     },
     {
-     "line": 256,
+     "name": "Montgomery.Native64x4.FastField.val_mul",
+     "kind": "theorem",
+     "line": 234,
+     "doc": "The limbs of a product.",
+     "statement": "theorem val_mul (x y : FastField modulus) :\n    (x * y).val = Native64x4.mul P.modulusLimbs P.montgomeryNegInv x.val y.val",
+     "sorry": false
+    },
+    {
+     "line": 238,
      "note": "## Correctness"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toNat_lt",
+     "name": "Montgomery.Native64x4.FastField.toNat_lt",
      "kind": "theorem",
-     "line": 297,
+     "line": 277,
      "doc": "",
      "statement": "theorem toNat_lt (x : FastField modulus) : toNat x < modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_ofCanonicalNat",
+     "name": "Montgomery.Native64x4.FastField.toField_ofCanonicalNat",
      "kind": "theorem",
-     "line": 316,
+     "line": 296,
      "doc": "",
      "statement": "theorem toField_ofCanonicalNat {n : ℕ} (h : n < modulus) :\n    toField (ofCanonicalNat n h) = (n : ZMod modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toNat_ofCanonicalNat",
+     "name": "Montgomery.Native64x4.FastField.toNat_ofCanonicalNat",
      "kind": "theorem",
-     "line": 322,
+     "line": 302,
      "doc": "",
      "statement": "theorem toNat_ofCanonicalNat {n : ℕ} (h : n < modulus) : toNat (ofCanonicalNat n h) = n",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_ofField",
+     "name": "Montgomery.Native64x4.FastField.toField_ofField",
      "kind": "theorem",
-     "line": 327,
+     "line": 307,
      "doc": "Converting from the canonical field to fast form and back is the identity.",
      "statement": "theorem toField_ofField (x : ZMod modulus) : toField (ofField x) = x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ofField_toField",
+     "name": "Montgomery.Native64x4.FastField.ofField_toField",
      "kind": "theorem",
-     "line": 332,
+     "line": 312,
      "doc": "Converting from fast form to the canonical field and back is the identity.",
      "statement": "theorem ofField_toField (x : FastField modulus) : ofField (toField x) = x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_injective",
+     "name": "Montgomery.Native64x4.FastField.toField_injective",
      "kind": "theorem",
-     "line": 343,
+     "line": 321,
      "doc": "The canonical-field interpretation distinguishes fast values.",
      "statement": "theorem toField_injective : Function.Injective (toField (modulus := modulus))",
      "sorry": false
     },
     {
-     "line": 346,
+     "line": 324,
      "note": "### Field operations"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_zero",
+     "name": "Montgomery.Native64x4.FastField.toField_zero",
      "kind": "theorem",
-     "line": 349,
+     "line": 327,
      "doc": "",
      "statement": "theorem toField_zero : toField (0 : FastField modulus) = 0",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_one",
+     "name": "Montgomery.Native64x4.FastField.toField_one",
      "kind": "theorem",
-     "line": 354,
+     "line": 332,
      "doc": "",
      "statement": "theorem toField_one : toField (1 : FastField modulus) = 1",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_add",
+     "name": "Montgomery.Native64x4.FastField.toField_add",
      "kind": "theorem",
-     "line": 360,
+     "line": 338,
      "doc": "",
      "statement": "theorem toField_add (x y : FastField modulus) : toField (x + y) = toField x + toField y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_sub",
+     "name": "Montgomery.Native64x4.FastField.toField_sub",
      "kind": "theorem",
-     "line": 368,
+     "line": 345,
      "doc": "",
      "statement": "theorem toField_sub (x y : FastField modulus) : toField (x - y) = toField x - toField y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_neg",
+     "name": "Montgomery.Native64x4.FastField.toField_neg",
      "kind": "theorem",
-     "line": 377,
+     "line": 353,
      "doc": "",
      "statement": "theorem toField_neg (x : FastField modulus) : toField (-x) = -toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_mul",
+     "name": "Montgomery.Native64x4.FastField.toField_mul",
      "kind": "theorem",
-     "line": 385,
+     "line": 361,
      "doc": "",
      "statement": "theorem toField_mul (x y : FastField modulus) : toField (x * y) = toField x * toField y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_square",
+     "name": "Montgomery.Native64x4.FastField.toField_square",
      "kind": "theorem",
-     "line": 401,
+     "line": 376,
      "doc": "",
      "statement": "theorem toField_square (x : FastField modulus) : toField (square x) = toField x * toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_pow",
+     "name": "Montgomery.Native64x4.FastField.toField_pow",
      "kind": "theorem",
-     "line": 405,
+     "line": 380,
      "doc": "",
      "statement": "theorem toField_pow (x : FastField modulus) (n : ℕ) : toField (pow x n) = toField x ^ n",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_inv",
+     "name": "Montgomery.Native64x4.FastField.toField_inv",
      "kind": "theorem",
-     "line": 431,
+     "line": 406,
      "doc": "",
      "statement": "theorem toField_inv (x : FastField modulus) : toField x⁻¹ = (toField x)⁻¹",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_div",
+     "name": "Montgomery.Native64x4.FastField.toField_div",
      "kind": "theorem",
-     "line": 440,
+     "line": 415,
      "doc": "",
      "statement": "theorem toField_div (x y : FastField modulus) : toField (x / y) = toField x / toField y",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_natCast",
+     "name": "Montgomery.Native64x4.FastField.toField_natCast",
      "kind": "theorem",
-     "line": 445,
+     "line": 420,
      "doc": "",
      "statement": "theorem toField_natCast (n : ℕ) : toField (n : FastField modulus) = (n : ZMod modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_intCast",
+     "name": "Montgomery.Native64x4.FastField.toField_intCast",
      "kind": "theorem",
-     "line": 451,
+     "line": 426,
      "doc": "",
      "statement": "theorem toField_intCast (n : Int) : toField (n : FastField modulus) = (n : ZMod modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_nsmul",
+     "name": "Montgomery.Native64x4.FastField.toField_nsmul",
      "kind": "theorem",
-     "line": 456,
+     "line": 431,
      "doc": "",
      "statement": "theorem toField_nsmul (n : ℕ) (x : FastField modulus) : toField (n • x) = n • toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_zsmul",
+     "name": "Montgomery.Native64x4.FastField.toField_zsmul",
      "kind": "theorem",
-     "line": 461,
+     "line": 436,
      "doc": "",
      "statement": "theorem toField_zsmul (n : Int) (x : FastField modulus) : toField (n • x) = n • toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_npow",
+     "name": "Montgomery.Native64x4.FastField.toField_npow",
      "kind": "theorem",
-     "line": 466,
+     "line": 441,
      "doc": "",
      "statement": "theorem toField_npow (x : FastField modulus) (n : ℕ) : toField (x ^ n) = toField x ^ n",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_zpow",
+     "name": "Montgomery.Native64x4.FastField.toField_zpow",
      "kind": "theorem",
-     "line": 471,
+     "line": 446,
      "doc": "",
      "statement": "theorem toField_zpow (x : FastField modulus) (n : Int) : toField (x ^ n) = toField x ^ n",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_nnratCast",
+     "name": "Montgomery.Native64x4.FastField.toField_nnratCast",
      "kind": "theorem",
-     "line": 485,
+     "line": 460,
      "doc": "",
      "statement": "theorem toField_nnratCast (q : ℚ≥0) : toField (q : FastField modulus) = (q : ZMod modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_ratCast",
+     "name": "Montgomery.Native64x4.FastField.toField_ratCast",
      "kind": "theorem",
-     "line": 490,
+     "line": 465,
      "doc": "",
      "statement": "theorem toField_ratCast (q : ℚ) : toField (q : FastField modulus) = (q : ZMod modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_nnqsmul",
+     "name": "Montgomery.Native64x4.FastField.toField_nnqsmul",
      "kind": "theorem",
-     "line": 495,
+     "line": 470,
      "doc": "",
      "statement": "theorem toField_nnqsmul (q : ℚ≥0) (x : FastField modulus) : toField (q • x) = q • toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.toField_qsmul",
+     "name": "Montgomery.Native64x4.FastField.toField_qsmul",
      "kind": "theorem",
-     "line": 500,
+     "line": 475,
      "doc": "",
      "statement": "theorem toField_qsmul (q : ℚ) (x : FastField modulus) : toField (q • x) = q • toField x",
      "sorry": false
     },
     {
-     "line": 504,
+     "line": 479,
      "note": "### Algebraic structure"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ringEquiv",
+     "name": "Montgomery.Native64x4.FastField.ringEquiv",
      "kind": "def",
-     "line": 507,
+     "line": 482,
      "doc": "Ring equivalence between the fast Montgomery representation and the canonical field.",
-     "statement": "def ringEquiv (modulus : ℕ) [P : Mont64x8Field modulus] :\n    FastField modulus ≃+* ZMod modulus",
+     "statement": "def ringEquiv (modulus : ℕ) [P : Mont64x4Field modulus] :\n    FastField modulus ≃+* ZMod modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ringEquiv_apply",
+     "name": "Montgomery.Native64x4.FastField.ringEquiv_apply",
      "kind": "theorem",
-     "line": 517,
+     "line": 492,
      "doc": "",
      "statement": "theorem ringEquiv_apply {x : FastField modulus} : ringEquiv modulus x = toField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.ringEquiv_symm_apply",
+     "name": "Montgomery.Native64x4.FastField.ringEquiv_symm_apply",
      "kind": "theorem",
-     "line": 520,
+     "line": 495,
      "doc": "",
      "statement": "theorem ringEquiv_symm_apply {x : ZMod modulus} : (ringEquiv modulus).symm x = ofField x",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.instField",
+     "name": "Montgomery.Native64x4.FastField.instField",
      "kind": "instance",
-     "line": 523,
+     "line": 498,
      "doc": "Field instance transferred from the canonical field through `toField`.",
      "statement": "instance instField : _root_.Field (FastField modulus)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.instNonBinaryField",
+     "name": "Montgomery.Native64x4.FastField.instNonBinaryField",
      "kind": "instance",
-     "line": 527,
-     "doc": "A fast eight-limb field is non-binary.",
+     "line": 502,
+     "doc": "A fast four-limb field is non-binary.",
      "statement": "instance instNonBinaryField : NonBinaryField (FastField modulus)",
      "sorry": false
     }
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8Inv",
-   "file": "CompPoly/Fields/Montgomery/Native64x8Inv.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4Inv",
+   "file": "CompPoly/Fields/Montgomery/Native64x4Inv.lean",
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
-   "title": "Fast inversion for eight-limb Montgomery fields",
-   "doc": "Correctness of the checked inversion of `Montgomery/Native64x8InvDefs`: `invGcdRaw`\ncomputes the field inverse and `FastField.invGcd` is its proof-carrying wrapper.  Also\nproves the divstep coefficient bound and the mac-width safety of the candidate.",
+   "title": "Fast inversion for four-limb Montgomery fields",
+   "doc": "Correctness of the checked inversion of `Montgomery/Native64x4InvDefs`: `invGcdRaw`\ncomputes the field inverse and `FastField.invGcd` is its proof-carrying wrapper.  The\ndivstep coefficient bound comes from `Montgomery/Divstep`.  This module proves the mac-width\nsafety of the candidate for the five-word linear combinations.",
    "items": [
     {
-     "line": 24,
-     "note": "## Divstep coefficient bounds"
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdInner_zero",
-     "kind": "theorem",
-     "line": 27,
-     "doc": "Unfolding of the empty divstep run.",
-     "statement": "theorem gcdInner_zero (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    gcdInner 0 a b f0 g0 f1 g1 = (a, b, f0, g0, f1, g1)",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdInner_succ",
-     "kind": "theorem",
-     "line": 31,
-     "doc": "Unfolding of one divstep.",
-     "statement": "theorem gcdInner_succ (rounds : ℕ) (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    gcdInner (rounds + 1) a b f0 g0 f1 g1 =\n      if a &&& 1 == 0 then\n        gcdInner rounds (a >>> 1) b f0 g0 (f1 * 2) (g1 * 2)\n      else if a < b then\n        gcdInner rounds ((b - a) >>> 1) a (f1 - f0) (g1 - g0) (f0 * 2) (g0 * 2)\n      else\n        gcdInner rounds ((a - b) >>> 1) b (f0 - f1) (g0 - g1) (f1 * 2) (g1 * 2)",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdInner_natAbs_le",
-     "kind": "theorem",
-     "line": 48,
-     "doc": "Transition entries at most double per divstep.",
-     "statement": "theorem gcdInner_natAbs_le {rounds : ℕ} {a b a' b' : UInt64}\n    {f0 g0 f1 g1 f0' g0' f1' g1' : Int} {n : ℕ}\n    (h0 : f0.natAbs + g0.natAbs ≤ n) (h1 : f1.natAbs + g1.natAbs ≤ n)\n    (heq : gcdInner rounds a b f0 g0 f1 g1 = (a', b', f0', g0', f1', g1')) :\n    f0'.natAbs + g0'.natAbs ≤ 2 ^ rounds * n ∧\n      f1'.natAbs + g1'.natAbs ≤ 2 ^ rounds * n",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdInner_natAbs_le_31",
-     "kind": "theorem",
-     "line": 78,
-     "doc": "Chunks of at most 31 divsteps satisfy the linear-combination bound.",
-     "statement": "theorem gcdInner_natAbs_le_31 {rounds : ℕ} (h31 : rounds ≤ 31) {a b a' b' : UInt64}\n    {f0' g0' f1' g1' : Int}\n    (heq : gcdInner rounds a b 1 0 0 1 = (a', b', f0', g0', f1', g1')) :\n    f0'.natAbs + g0'.natAbs ≤ 2 ^ 31 ∧ f1'.natAbs + g1'.natAbs ≤ 2 ^ 31",
-     "sorry": false
-    },
-    {
-     "line": 86,
+     "line": 26,
      "note": "## Order from the borrow chain"
     },
     {
-     "name": "Montgomery.Native64x8.subBorrow_eq_one_iff",
+     "name": "Montgomery.Native64x4.subLimbs_borrow_eq_one_iff",
      "kind": "theorem",
-     "line": 89,
+     "line": 29,
      "doc": "The final borrow decides the numeric order.",
-     "statement": "theorem subBorrow_eq_one_iff {a b : Limbs8} (ha : a.Bounded) (hb : b.Bounded) :\n    subBorrow a b = 1 ↔ a.toNat < b.toNat",
+     "statement": "theorem subLimbs_borrow_eq_one_iff {a b : Limbs4} {d0 d1 d2 d3 bo : UInt64}\n    (e : subLimbs a b = (d0, d1, d2, d3, bo)) : bo = 1 ↔ a.toNat < b.toNat",
      "sorry": false
     },
     {
-     "line": 96,
+     "line": 39,
+     "note": "## Five-word specifications"
+    },
+    {
+     "name": "Montgomery.Native64x4.mulWord_spec",
+     "kind": "theorem",
+     "line": 42,
+     "doc": "`mulWord` is the exact five-word product.",
+     "statement": "theorem mulWord_spec (x : Limbs4) (k : UInt64) :\n    ∃ w0 w1 w2 w3 w4 : UInt64, mulWord x k = (w0, w1, w2, w3, w4) ∧\n      w0.toNat + 2 ^ 64 * w1.toNat + 2 ^ 128 * w2.toNat + 2 ^ 192 * w3.toNat +\n        2 ^ 256 * w4.toNat = x.toNat * k.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.add5_spec",
+     "kind": "theorem",
+     "line": 56,
+     "doc": "`add5` is the exact five-word sum with a one-bit carry.",
+     "statement": "theorem add5_spec (a0 a1 a2 a3 a4 b0 b1 b2 b3 b4 : UInt64) :\n    ∃ s0 s1 s2 s3 s4 c : UInt64,\n      add5 a0 a1 a2 a3 a4 b0 b1 b2 b3 b4 = (s0, s1, s2, s3, s4, c) ∧ c.toNat ≤ 1 ∧\n      s0.toNat + 2 ^ 64 * s1.toNat + 2 ^ 128 * s2.toNat + 2 ^ 192 * s3.toNat +\n          2 ^ 256 * s4.toNat + 2 ^ 320 * c.toNat =\n        (a0.toNat + 2 ^ 64 * a1.toNat + 2 ^ 128 * a2.toNat + 2 ^ 192 * a3.toNat +\n          2 ^ 256 * a4.toNat) +\n        (b0.toNat + 2 ^ 64 * b1.toNat + 2 ^ 128 * b2.toNat + 2 ^ 192 * b3.toNat +\n          2 ^ 256 * b4.toNat)",
+     "sorry": false
+    },
+    {
+     "line": 74,
      "note": "## Mac-width safety of the candidate"
     },
     {
-     "name": "Montgomery.Native64x8.gcdLinearCombDiv_bounded",
+     "name": "Montgomery.Native64x4.lincombTail_lt",
      "kind": "theorem",
-     "line": 106,
-     "doc": "The division lincomb masks every output limb.",
-     "statement": "theorem gcdLinearCombDiv_bounded (a b : Limbs8) (f g : Int) :\n    (gcdLinearCombDiv a b f g).1.Bounded",
+     "line": 79,
+     "doc": "The Montgomery linear combination stays canonical for magnitudes below the modulus.",
+     "statement": "theorem lincombTail_lt {q uS vS : Limbs4} {negInv F G : UInt64} (hq0 : 0 < q.toNat)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1)\n    (huS : uS.toNat ≤ q.toNat) (hvS : vS.toNat ≤ q.toNat)\n    (hFG : F.toNat + G.toNat ≤ 2 ^ 31) :\n    (lincombTail q negInv uS vS F G).toNat < q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdLinearCombMontyRed_lt",
+     "name": "Montgomery.Native64x4.gcdLinearCombMontyRed_lt",
      "kind": "theorem",
-     "line": 151,
+     "line": 119,
      "doc": "The Montgomery lincomb stays canonical for canonical inputs.",
-     "statement": "theorem gcdLinearCombMontyRed_lt {q : Limbs8} {negInv : UInt64} {a b : Limbs8} {f g : Int}\n    (hq : q.Bounded) (hq0 : 0 < q.toNat)\n    (hn : negInv.toNat < 2 ^ 32) (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1)\n    (ha : a.Bounded) (hb : b.Bounded) (haq : a.toNat < q.toNat) (hbq : b.toNat < q.toNat)\n    (hfg : f.natAbs + g.natAbs ≤ 2 ^ 31) :\n    (gcdLinearCombMontyRed q negInv a b f g).Bounded ∧\n      (gcdLinearCombMontyRed q negInv a b f g).toNat < q.toNat",
+     "statement": "theorem gcdLinearCombMontyRed_lt {q : Limbs4} {negInv : UInt64} {u v : Limbs4} {f g : Int}\n    (hq0 : 0 < q.toNat) (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1)\n    (huq : u.toNat < q.toNat) (hvq : v.toNat < q.toNat)\n    (hfg : f.natAbs + g.natAbs ≤ 2 ^ 31) :\n    (gcdLinearCombMontyRed q negInv u v f g).toNat < q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdMainLoop_bounded",
+     "name": "Montgomery.Native64x4.gcdMainLoop_bounded",
      "kind": "theorem",
-     "line": 190,
-     "doc": "The main loop keeps both tracks at mac width and the Montgomery pair canonical.",
-     "statement": "theorem gcdMainLoop_bounded {q : Limbs8} {negInv : UInt64} {rounds : ℕ}\n    {a u b v A U B V : Limbs8}\n    (hq : q.Bounded) (hq0 : 0 < q.toNat)\n    (hn : negInv.toNat < 2 ^ 32) (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1)\n    (ha : a.Bounded) (hb : b.Bounded) (hu : u.Bounded) (huq : u.toNat < q.toNat)\n    (hv : v.Bounded) (hvq : v.toNat < q.toNat)\n    (heq : gcdMainLoop q negInv rounds a u b v = (A, U, B, V)) :\n    A.Bounded ∧ B.Bounded ∧ U.Bounded ∧ U.toNat < q.toNat ∧ V.Bounded ∧\n      V.toNat < q.toNat",
+     "line": 149,
+     "doc": "The main loop keeps the Montgomery pair canonical.",
+     "statement": "theorem gcdMainLoop_bounded {q : Limbs4} {negInv : UInt64} {rounds : ℕ}\n    {a u b v A U B V : Limbs4}\n    (hq0 : 0 < q.toNat) (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1)\n    (huq : u.toNat < q.toNat) (hvq : v.toNat < q.toNat)\n    (heq : gcdMainLoop q negInv rounds a u b v = (A, U, B, V)) :\n    U.toNat < q.toNat ∧ V.toNat < q.toNat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdFinalChunks_lt",
+     "name": "Montgomery.Native64x4.gcdFinalChunks_lt",
+     "kind": "theorem",
+     "line": 199,
+     "doc": "The final chunks stay canonical for canonical inputs.",
+     "statement": "theorem gcdFinalChunks_lt {q : Limbs4} {negInv : UInt64} {finalRounds : ℕ}\n    {a u b v : Limbs4} (hfr : finalRounds ≤ 62)\n    (hq0 : 0 < q.toNat) (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1)\n    (huq : u.toNat < q.toNat) (hvq : v.toNat < q.toNat) :\n    (gcdFinalChunks q negInv finalRounds a u b v).toNat < q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.gcdInvCandidate_lt",
+     "kind": "theorem",
+     "line": 227,
+     "doc": "The candidate is canonical.",
+     "statement": "theorem gcdInvCandidate_lt {modulus : ℕ} [P : GcdData modulus] {q x : Limbs4}\n    {negInv : UInt64} (hqm : q.toNat = modulus) (hq0 : 0 < q.toNat)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1) :\n    (gcdInvCandidate modulus q negInv x).toNat < q.toNat",
+     "sorry": false
+    },
+    {
+     "name": "Montgomery.Native64x4.gcdInvCandidate_lt_modulus",
      "kind": "theorem",
      "line": 251,
-     "doc": "The final chunks stay canonical for canonical inputs.",
-     "statement": "theorem gcdFinalChunks_lt {q : Limbs8} {negInv : UInt64} {finalRounds : ℕ}\n    {a u b v : Limbs8} (hfr : finalRounds ≤ 62)\n    (hq : q.Bounded) (hq0 : 0 < q.toNat)\n    (hn : negInv.toNat < 2 ^ 32) (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1)\n    (hu : u.Bounded) (huq : u.toNat < q.toNat) (hv : v.Bounded)\n    (hvq : v.toNat < q.toNat) :\n    (gcdFinalChunks q negInv finalRounds a u b v).Bounded ∧\n      (gcdFinalChunks q negInv finalRounds a u b v).toNat < q.toNat",
+     "doc": "With the class data, the candidate is canonical for any input.",
+     "statement": "theorem gcdInvCandidate_lt_modulus [GcdData modulus] (x : Limbs4) :\n    (gcdInvCandidate modulus P.modulusLimbs P.montgomeryNegInv x).toNat < modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdInvCandidate_lt",
-     "kind": "theorem",
-     "line": 286,
-     "doc": "The candidate stays at mac width and canonical.",
-     "statement": "theorem gcdInvCandidate_lt {modulus : ℕ} [P : GcdData modulus] {q x : Limbs8}\n    {negInv : UInt64}\n    (hq : q.Bounded) (hqm : q.toNat = modulus) (hq0 : 0 < q.toNat)\n    (hn : negInv.toNat < 2 ^ 32)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1) (hx : x.Bounded) :\n    (gcdInvCandidate modulus q negInv x).Bounded ∧\n      (gcdInvCandidate modulus q negInv x).toNat < q.toNat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdInvCandidate_lt_modulus",
-     "kind": "theorem",
-     "line": 313,
-     "doc": "With the class data, the candidate is bounded and canonical for any bounded input.",
-     "statement": "theorem gcdInvCandidate_lt_modulus [GcdData modulus] {x : Limbs8} (hx : x.Bounded) :\n    (gcdInvCandidate modulus P.modulusLimbs P.montgomeryNegInv x).Bounded ∧\n      (gcdInvCandidate modulus P.modulusLimbs P.montgomeryNegInv x).toNat < modulus",
-     "sorry": false
-    },
-    {
-     "line": 323,
+     "line": 260,
      "note": "## The Fermat fallback and the checked raw inversion"
     },
     {
-     "name": "Montgomery.Native64x8.montPow_eq_mul_pow",
+     "name": "Montgomery.Native64x4.montPow_eq_mul_pow",
      "kind": "theorem",
-     "line": 334,
+     "line": 271,
      "doc": "`montPow` computes `acc · xⁿ`.",
      "statement": "theorem montPow_eq_mul_pow (acc x : FastField modulus) (n : ℕ) :\n    montPow P.modulusLimbs P.montgomeryNegInv acc.val x.val n = (acc * x ^ n).val",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.montPow_eq_inv",
+     "name": "Montgomery.Native64x4.montPow_eq_inv",
      "kind": "theorem",
-     "line": 369,
+     "line": 298,
      "doc": "The `montPow` fallback computes the field inverse.",
      "statement": "theorem montPow_eq_inv (x : FastField modulus) :\n    montPow P.modulusLimbs P.montgomeryNegInv P.rModModulus x.val (modulus - 2)\n      = (x⁻¹).val",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.invGcdRaw_eq_inv",
+     "name": "Montgomery.Native64x4.invGcdRaw_eq_inv",
      "kind": "theorem",
-     "line": 399,
+     "line": 342,
      "doc": "`invGcdRaw` computes the field inverse.",
      "statement": "theorem invGcdRaw_eq_inv [GcdData modulus] (x : FastField modulus) :\n    invGcdRaw modulus P.modulusLimbs P.montgomeryNegInv P.rModModulus x.val\n      = (x⁻¹).val",
      "sorry": false
     },
     {
-     "line": 413,
+     "line": 350,
      "note": "## The proof-carrying wrapper"
     },
     {
-     "name": "Montgomery.Native64x8.FastField.invGcd",
+     "name": "Montgomery.Native64x4.FastField.invGcd",
      "kind": "def",
-     "line": 420,
+     "line": 357,
      "doc": "The proof-carrying wrapper of the checked inversion `invGcdRaw`.",
      "statement": "def invGcd [GcdData modulus] (x : FastField modulus) : FastField modulus",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.FastField.invGcd_eq_inv",
+     "name": "Montgomery.Native64x4.FastField.invGcd_eq_inv",
      "kind": "theorem",
-     "line": 427,
+     "line": 364,
      "doc": "`invGcd` agrees with the `Field` inverse.",
      "statement": "theorem invGcd_eq_inv [GcdData modulus] (x : FastField modulus) :\n    invGcd x = x⁻¹",
      "sorry": false
@@ -38246,295 +38138,261 @@
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8InvDefs",
-   "file": "CompPoly/Fields/Montgomery/Native64x8InvDefs.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4InvDefs",
+   "file": "CompPoly/Fields/Montgomery/Native64x4InvDefs.lean",
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
-   "title": "Eight-limb inversion: runtime definitions (Mathlib-free)",
-   "doc": "The Pornin binary-GCD inverse candidate over `Limbs8` and its checked wrapper\n(`invGcdRaw`), Mathlib-free for `precompileModules` consumers. The proof side is\n`Montgomery/Native64x8Inv`.",
+   "title": "Four-limb inversion: runtime definitions (Mathlib-free)",
+   "doc": "The Pornin binary-GCD inverse candidate over `Limbs4` and its checked wrapper\n(`invGcdRaw`), Mathlib-free for `precompileModules` consumers.  The word-sized divstep loop\nand bit-length helper come from `Montgomery/DivstepDefs`.  The proof side is\n`Montgomery/Native64x4Inv`.",
    "items": [
     {
-     "line": 22,
+     "line": 24,
      "note": "## Per-field schedule"
     },
     {
-     "name": "Montgomery.Native64x8.GcdData",
+     "name": "Montgomery.Native64x4.GcdData",
      "kind": "class",
-     "line": 26,
+     "line": 28,
      "doc": "Per-field schedule of the binary-GCD inverse candidate; every obligation defaults to\n`decide`.",
-     "statement": "class GcdData (modulus : Nat) where\n  /-- Divsteps in the final word-sized phase: `2·bits(p) - 2 - 15·31`. -/\n  finalRounds : Nat\n  /-- Initial `u`: the power of two that keeps the candidate in Montgomery form. -/\n  initU : Limbs8\n  initU_bounded : initU.Bounded := by decide\n  initU_toNat : initU.toNat = 2 ^ (591 - finalRounds) % modulus := by decide\n  /-- Final-phase chunks stay at mac width. -/\n  finalRounds_le : finalRounds ≤ 62 := by decide",
+     "statement": "class GcdData (modulus : Nat) where\n  /-- Divsteps in the final word-sized phase: `2·bits(p) - 2 - 15·31`. -/\n  finalRounds : Nat\n  /-- Initial `u`: the power of two that keeps the candidate in Montgomery form. -/\n  initU : Limbs4\n  initU_toNat : initU.toNat = 2 ^ (1135 - finalRounds) % modulus := by decide\n  /-- Final-phase chunks stay at mac width. -/\n  finalRounds_le : finalRounds ≤ 62 := by decide",
      "sorry": false
     },
     {
-     "line": 36,
-     "note": "## Word-sized divstep loop"
+     "line": 37,
+     "note": "## Five-word arithmetic"
     },
     {
-     "name": "Montgomery.Native64x8.gcdBitLen",
+     "name": "Montgomery.Native64x4.mulWord",
      "kind": "def",
-     "line": 39,
-     "doc": "Bit length of a word.",
-     "statement": "def gcdBitLen (x : UInt64) : Nat",
+     "line": 40,
+     "doc": "`x * k` as five words.",
+     "statement": "def mulWord (x : Limbs4) (k : UInt64) : UInt64 × UInt64 × UInt64 × UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdInner",
+     "name": "Montgomery.Native64x4.add5",
      "kind": "def",
-     "line": 52,
-     "doc": "The word-sized divstep loop, accumulating the transition matrix; `b` must be odd.",
-     "statement": "def gcdInner (rounds : Nat) (a b : UInt64) (f0 g0 f1 g1 : Int) :\n    UInt64 × UInt64 × Int × Int × Int × Int",
+     "line": 48,
+     "doc": "Five-word add: the sum words and the carry out.",
+     "statement": "def add5 (a0 a1 a2 a3 a4 b0 b1 b2 b3 b4 : UInt64) :\n    UInt64 × UInt64 × UInt64 × UInt64 × UInt64 × UInt64",
      "sorry": false
     },
     {
-     "line": 66,
-     "note": "## Approximation: 64-bit windows over 32-bit limbs"
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdLimb",
+     "name": "Montgomery.Native64x4.sub5",
      "kind": "def",
-     "line": 69,
-     "doc": "Read limb `i` (out-of-range indices read the top limb).",
-     "statement": "def gcdLimb (v : Limbs8) : Nat → UInt64",
+     "line": 58,
+     "doc": "Five-word subtract: the difference words and the borrow out.",
+     "statement": "def sub5 (a0 a1 a2 a3 a4 b0 b1 b2 b3 b4 : UInt64) :\n    UInt64 × UInt64 × UInt64 × UInt64 × UInt64 × UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdNumBits",
+     "line": 67,
+     "note": "## Linear combinations"
+    },
+    {
+     "name": "Montgomery.Native64x4.gcdLinearCombDiv",
      "kind": "def",
-     "line": 81,
-     "doc": "Highest nonzero limb index among limbs 1-7 of `a ||| b` and its bit length; `(1, 0)`\nwhen all are zero.",
-     "statement": "def gcdNumBits (a b : Limbs8) : Nat × Nat",
+     "line": 70,
+     "doc": "`(f·a + g·b) / 2^31` as magnitude and sign.  Requires `|f| + |g| ≤ 2^31`.",
+     "statement": "def gcdLinearCombDiv (a b : Limbs4) (f g : Int) : Limbs4 × Int",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdApprox",
+     "name": "Montgomery.Native64x4.negMod",
      "kind": "def",
-     "line": 98,
-     "doc": "One-word approximation: top 33 bits (at the shared bit length) above the bottom 31;\nexact once both values fit one 64-bit word.",
-     "statement": "def gcdApprox (val : Limbs8) (limbIdx bits : Nat) : UInt64",
+     "line": 99,
+     "doc": "`n - u` as limbs, for `u < n`.",
+     "statement": "def negMod (q u : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "line": 107,
-     "note": "## Nine-limb linear combinations over the native macs"
-    },
-    {
-     "name": "Montgomery.Native64x8.gcdAdd9",
+     "name": "Montgomery.Native64x4.lincombTail",
      "kind": "def",
-     "line": 110,
-     "doc": "9-limb ripple-carry add (top carry discarded).",
-     "statement": "def gcdAdd9 (p q : State9) : State9",
+     "line": 105,
+     "doc": "The Montgomery linear combination on magnitudes: `(F·uS + G·vS) · 2^-64 mod q`, reduced\nonce through `condSubWide`.  Requires `F + G ≤ 2^31` and `uS, vS ≤ q`.",
+     "statement": "def lincombTail (q : Limbs4) (negInv : UInt64) (uS vS : Limbs4) (F G : UInt64) :\n    Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdSub9",
+     "name": "Montgomery.Native64x4.gcdLinearCombMontyRed",
+     "kind": "def",
+     "line": 116,
+     "doc": "`(f·u + g·v) · 2^-64 mod q`, canonical.  Requires `|f| + |g| ≤ 2^31` and `u, v < q`.",
+     "statement": "def gcdLinearCombMontyRed (q : Limbs4) (negInv : UInt64) (u v : Limbs4)\n    (f g : Int) : Limbs4",
+     "sorry": false
+    },
+    {
+     "line": 121,
+     "note": "## Approximation: one word at the shared bit length"
+    },
+    {
+     "name": "Montgomery.Native64x4.gcdLimb",
      "kind": "def",
      "line": 124,
-     "doc": "9-limb subtract with borrow; the wrapped difference and the final borrow.",
-     "statement": "def gcdSub9 (p q : State9) : State9 × UInt64",
+     "doc": "Read limb `i` (out-of-range indices read the top limb).",
+     "statement": "def gcdLimb (v : Limbs4) : Nat → UInt64",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdLinearCombDiv",
+     "name": "Montgomery.Native64x4.gcdNumBits",
      "kind": "def",
-     "line": 139,
-     "doc": "`(f·a + g·b) / 2^31` as magnitude and sign. Requires `|f| + |g| ≤ 2^31`.",
-     "statement": "def gcdLinearCombDiv (a b : Limbs8) (f g : Int) : Limbs8 × Int",
+     "line": 132,
+     "doc": "Highest nonzero limb index among limbs 1-3 of `a ||| b` and its bit length; `(0, 0)`\nwhen all are zero.",
+     "statement": "def gcdNumBits (a b : Limbs4) : Nat × Nat",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdLinearCombMontyRed",
+     "name": "Montgomery.Native64x4.gcdApprox",
      "kind": "def",
-     "line": 162,
-     "doc": "`f·a + g·b` folded through one Montgomery reduction step. Requires\n`|f| + |g| ≤ 2^31`.",
-     "statement": "def gcdLinearCombMontyRed (q : Limbs8) (negInv : UInt64) (a b : Limbs8)\n    (f g : Int) : Limbs8",
+     "line": 142,
+     "doc": "One-word approximation: the top 33 bits at the shared bit length above the bottom 31;\nexact once both values fit one word.",
+     "statement": "def gcdApprox (val : Limbs4) (limbIdx bits : Nat) : UInt64",
      "sorry": false
     },
     {
-     "line": 170,
+     "line": 153,
      "note": "## Main loop and candidate"
     },
     {
-     "name": "Montgomery.Native64x8.gcdMainLoop",
+     "name": "Montgomery.Native64x4.gcdMainLoop",
      "kind": "def",
-     "line": 174,
+     "line": 157,
      "doc": "The outer rounds: 31 divsteps on one-word approximations, then the transition matrix\napplied to both tracks.",
-     "statement": "def gcdMainLoop (q : Limbs8) (negInv : UInt64) (rounds : Nat) (a u b v : Limbs8) :\n    Limbs8 × Limbs8 × Limbs8 × Limbs8",
+     "statement": "def gcdMainLoop (q : Limbs4) (negInv : UInt64) (rounds : Nat) (a u b v : Limbs4) :\n    Limbs4 × Limbs4 × Limbs4 × Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdFinalChunks",
+     "name": "Montgomery.Native64x4.gcdFinalChunks",
      "kind": "def",
-     "line": 194,
+     "line": 177,
      "doc": "The final divsteps as two mac-width chunks, folding the Montgomery pair.",
-     "statement": "def gcdFinalChunks (q : Limbs8) (negInv : UInt64) (finalRounds : Nat)\n    (a u b v : Limbs8) : Limbs8",
+     "statement": "def gcdFinalChunks (q : Limbs4) (negInv : UInt64) (finalRounds : Nat)\n    (a u b v : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.gcdInvCandidate",
+     "name": "Montgomery.Native64x4.gcdInvCandidate",
      "kind": "def",
-     "line": 207,
+     "line": 188,
      "doc": "Pornin binary-GCD candidate for the Montgomery inverse, canonical nonzero `x·R mod p`\nto `x⁻¹·R mod p`; proof-free, callers verify.",
-     "statement": "def gcdInvCandidate (modulus : Nat) [P : GcdData modulus] (q : Limbs8)\n    (negInv : UInt64) (x : Limbs8) : Limbs8",
+     "statement": "def gcdInvCandidate (modulus : Nat) [P : GcdData modulus] (q : Limbs4)\n    (negInv : UInt64) (x : Limbs4) : Limbs4",
      "sorry": false
     },
     {
-     "line": 212,
+     "line": 193,
      "note": "## Checked inversion over raw limbs"
     },
     {
-     "name": "Montgomery.Native64x8.montPow",
+     "name": "Montgomery.Native64x4.montPow",
      "kind": "def",
-     "line": 215,
+     "line": 196,
      "doc": "`acc · x^n` in Montgomery form by binary powering.",
-     "statement": "def montPow (q : Limbs8) (negInv : UInt64) (acc x : Limbs8) (n : Nat) : Limbs8",
+     "statement": "def montPow (q : Limbs4) (negInv : UInt64) (acc x : Limbs4) (n : Nat) : Limbs4",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.invGcdRaw",
+     "name": "Montgomery.Native64x4.invGcdRaw",
      "kind": "def",
-     "line": 224,
+     "line": 205,
      "doc": "The GCD candidate, accepted only if it verifies (`z · x = 1`); else Fermat `montPow`.",
-     "statement": "def invGcdRaw (modulus : Nat) [GcdData modulus] (q : Limbs8) (negInv : UInt64)\n    (rMod : Limbs8) (x : Limbs8) : Limbs8",
+     "statement": "def invGcdRaw (modulus : Nat) [GcdData modulus] (q : Limbs4) (negInv : UInt64)\n    (rMod : Limbs4) (x : Limbs4) : Limbs4",
      "sorry": false
     }
    ]
   },
   {
-   "module": "CompPoly.Fields.Montgomery.Native64x8Mul",
-   "file": "CompPoly/Fields/Montgomery/Native64x8Mul.lean",
+   "module": "CompPoly.Fields.Montgomery.Native64x4Mul",
+   "file": "CompPoly/Fields/Montgomery/Native64x4Mul.lean",
    "copyright": "CompPoly Contributors",
-   "authors": "Gregor Mitscha-Baude",
-   "title": "Correctness of eight-limb CIOS Montgomery multiplication",
-   "doc": "A CIOS round is the composition of an accumulation and a reduction step:\n\n* `mulAccum a bi t` accumulates `a * bi` into the accumulator without losing information,\n  `⟦mulAccum a bi t⟧ = ⟦t⟧ + ⟦a⟧ * bi`;\n* `mulReduce q negInv s` adds the multiple `m * q` of the modulus that cancels the low limb\n  and drops that limb, `2 ^ 32 * ⟦mulReduce q negInv s⟧ = ⟦s⟧ + m * q`.\n\nComposing them gives the round invariant `2 ^ 32 * ⟦mulRound⟧ = ⟦t⟧ + ⟦a⟧ * bi + m * q`, and\nfolding eight rounds gives `2 ^ 256 * ⟦t₈⟧ = ⟦a⟧ * ⟦b⟧ + M * q`, so the accumulator is the\nMontgomery product up to the final conditional subtraction.\n\n## Main results\n\n* `mulAccum_spec`, `mulReduce_spec` — the two halves of a round\n* `mulRound_spec` — the round invariant, with limb bounds and the `2 * q` bound\n* `mul_spec` — `mul` is canonical and satisfies `2 ^ 256 * ⟦mul a b⟧ ≡ ⟦a⟧ * ⟦b⟧ [MOD q]`",
+   "authors": "Georgios Raikos",
+   "title": "Correctness of four-limb CIOS Montgomery multiplication",
+   "doc": "A round accumulates `a * bi` exactly (`mulAccum_spec`) and cancels the low limb against a\nmultiple of the modulus (`mulReduce_spec`); folding four rounds gives\n`2 ^ 256 * ⟦t₄⟧ = ⟦a⟧ * ⟦b⟧ + M * q`, the Montgomery product up to the final conditional\nsubtraction.\n\n## Main results\n\n* `mulRound_spec` — the round invariant with the `2 * q` bound\n* `mul_spec` — `mul` is canonical and satisfies `2 ^ 256 * ⟦mul a b⟧ ≡ ⟦a⟧ * ⟦b⟧ [MOD q]`",
    "items": [
     {
-     "line": 37,
+     "line": 30,
      "note": "### Arithmetic helpers"
     },
     {
-     "name": "Montgomery.Native64x8.sum8_mul",
+     "name": "Montgomery.Native64x4.sum4_mul",
      "kind": "theorem",
-     "line": 40,
+     "line": 33,
      "doc": "Scalar multiplication distributes over a limb recomposition.",
-     "statement": "theorem sum8_mul (a0 a1 a2 a3 a4 a5 a6 a7 b : ℕ) :\n    (a0 + 2 ^ 32 * a1 + 2 ^ 64 * a2 + 2 ^ 96 * a3 + 2 ^ 128 * a4 + 2 ^ 160 * a5 +\n        2 ^ 192 * a6 + 2 ^ 224 * a7) * b =\n      a0 * b + 2 ^ 32 * (a1 * b) + 2 ^ 64 * (a2 * b) + 2 ^ 96 * (a3 * b) +\n        2 ^ 128 * (a4 * b) + 2 ^ 160 * (a5 * b) + 2 ^ 192 * (a6 * b) + 2 ^ 224 * (a7 * b)",
+     "statement": "theorem sum4_mul (a0 a1 a2 a3 b : ℕ) :\n    (a0 + 2 ^ 64 * a1 + 2 ^ 128 * a2 + 2 ^ 192 * a3) * b =\n      a0 * b + 2 ^ 64 * (a1 * b) + 2 ^ 128 * (a2 * b) + 2 ^ 192 * (a3 * b)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.mul_sum8",
+     "name": "Montgomery.Native64x4.mul_sum4",
      "kind": "theorem",
-     "line": 48,
+     "line": 39,
      "doc": "Scalar multiplication distributes over a limb recomposition, from the left.",
-     "statement": "theorem mul_sum8 (b a0 a1 a2 a3 a4 a5 a6 a7 : ℕ) :\n    b * (a0 + 2 ^ 32 * a1 + 2 ^ 64 * a2 + 2 ^ 96 * a3 + 2 ^ 128 * a4 + 2 ^ 160 * a5 +\n        2 ^ 192 * a6 + 2 ^ 224 * a7) =\n      b * a0 + 2 ^ 32 * (b * a1) + 2 ^ 64 * (b * a2) + 2 ^ 96 * (b * a3) +\n        2 ^ 128 * (b * a4) + 2 ^ 160 * (b * a5) + 2 ^ 192 * (b * a6) + 2 ^ 224 * (b * a7)",
+     "statement": "theorem mul_sum4 (b a0 a1 a2 a3 : ℕ) :\n    b * (a0 + 2 ^ 64 * a1 + 2 ^ 128 * a2 + 2 ^ 192 * a3) =\n      b * a0 + 2 ^ 64 * (b * a1) + 2 ^ 128 * (b * a2) + 2 ^ 192 * (b * a3)",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.Limbs8.toNat_mod",
-     "kind": "theorem",
-     "line": 56,
-     "doc": "The low limb of a bounded value is its residue modulo `2 ^ 32`.",
-     "statement": "theorem Limbs8.toNat_mod (x : Limbs8) (h : x.l0.toNat < 2 ^ 32) :\n    x.toNat % 2 ^ 32 = x.l0.toNat",
-     "sorry": false
-    },
-    {
-     "line": 93,
+     "line": 63,
      "note": "### The accumulator"
     },
     {
-     "name": "Montgomery.Native64x8.State9.zero_bounded",
+     "name": "Montgomery.Native64x4.State5.zero_toNat",
      "kind": "theorem",
-     "line": 95,
+     "line": 65,
      "doc": "",
-     "statement": "theorem State9.zero_bounded : State9.zero.Bounded",
+     "statement": "theorem State5.zero_toNat : State5.zero.toNat = 0",
      "sorry": false
     },
     {
-     "name": "Montgomery.Native64x8.State9.zero_toNat",
+     "name": "Montgomery.Native64x4.State5.toNat_eq",
      "kind": "theorem",
-     "line": 99,
-     "doc": "",
-     "statement": "theorem State9.zero_toNat : State9.zero.toNat = 0",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.Native64x8.State9.toNat_eq",
-     "kind": "theorem",
-     "line": 103,
+     "line": 69,
      "doc": "The value of an accumulator in terms of its limbs.",
-     "statement": "theorem State9.toNat_eq (t : State9) :\n    t.toNat = t.t0.toNat + 2 ^ 32 * t.t1.toNat + 2 ^ 64 * t.t2.toNat + 2 ^ 96 * t.t3.toNat +\n      2 ^ 128 * t.t4.toNat + 2 ^ 160 * t.t5.toNat + 2 ^ 192 * t.t6.toNat +\n      2 ^ 224 * t.t7.toNat + 2 ^ 256 * t.t8.toNat",
+     "statement": "theorem State5.toNat_eq (t : State5) :\n    t.toNat = t.t0.toNat + 2 ^ 64 * t.t1.toNat + 2 ^ 128 * t.t2.toNat + 2 ^ 192 * t.t3.toNat +\n      2 ^ 256 * t.t4.toNat",
      "sorry": false
     },
     {
-     "line": 109,
+     "line": 74,
      "note": "### The accumulation step"
     },
     {
-     "name": "Montgomery.Native64x8.mulAccum_spec",
+     "name": "Montgomery.Native64x4.mulAccum_spec",
      "kind": "theorem",
-     "line": 113,
-     "doc": "`mulAccum` adds `a * bi` to the accumulator exactly: the carry out of the top limb is\nretained in the head limb.",
-     "statement": "theorem mulAccum_spec (a : Limbs8) (bi : UInt64) (t : State9) (ha : a.Bounded)\n    (ht : t.Bounded) (hbi : bi.toNat < 2 ^ 32) :\n    (mulAccum a bi t).toLimbs8.Bounded ∧ (mulAccum a bi t).t8.toNat < 2 ^ 33 ∧\n      (mulAccum a bi t).toNat = t.toNat + a.toNat * bi.toNat",
+     "line": 77,
+     "doc": "`mulAccum` adds `a * bi` to the accumulator exactly, with a one-bit carry limb.",
+     "statement": "theorem mulAccum_spec (a : Limbs4) (bi : UInt64) (t : State5) :\n    (mulAccum a bi t).t5.toNat ≤ 1 ∧\n      (mulAccum a bi t).toNat = t.toNat + a.toNat * bi.toNat",
      "sorry": false
     },
     {
-     "line": 158,
+     "line": 94,
      "note": "### The reduction step"
     },
     {
-     "name": "Montgomery.Native64x8.mulReduce_spec",
+     "name": "Montgomery.Native64x4.mulReduce_spec",
      "kind": "theorem",
-     "line": 162,
-     "doc": "`mulReduce` adds the multiple of the modulus that cancels the low limb, and the division\nby `2 ^ 32` performed by dropping that limb is exact.",
-     "statement": "theorem mulReduce_spec (q : Limbs8) (negInv : UInt64) (s : State9) (hq : q.Bounded)\n    (hs : s.toLimbs8.Bounded) (hs8 : s.t8.toNat < 2 ^ 33) (hn : negInv.toNat < 2 ^ 32)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1) :\n    (mulReduce q negInv s).Bounded ∧\n      2 ^ 32 * (mulReduce q negInv s).toNat =\n        s.toNat + (montM s.t0 negInv).toNat * q.toNat",
+     "line": 98,
+     "doc": "`mulReduce` adds the multiple of the modulus that cancels the low limb, so dropping that\nlimb divides by `2 ^ 64` exactly.",
+     "statement": "theorem mulReduce_spec (q : Limbs4) (negInv : UInt64) (s : State6) (hs5 : s.t5.toNat ≤ 1)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1) :\n    2 ^ 64 * (mulReduce q negInv s).toNat =\n      s.toNat + (montM s.t0 negInv).toNat * q.toNat",
      "sorry": false
     },
     {
-     "line": 214,
+     "line": 124,
      "note": "### The round invariant"
     },
     {
-     "name": "Montgomery.Native64x8.mulRound_spec",
+     "name": "Montgomery.Native64x4.mulRound_spec",
      "kind": "theorem",
-     "line": 218,
-     "doc": "The CIOS round invariant: one round accumulates `a * bi` and cancels the low limb against\na multiple `m` of the modulus; the accumulator stays limbwise bounded and below `2 * q`.",
-     "statement": "theorem mulRound_spec (q a : Limbs8) (negInv bi : UInt64) (t : State9)\n    (hq : q.Bounded) (ha : a.Bounded) (ht : t.Bounded) (hbi : bi.toNat < 2 ^ 32)\n    (hn : negInv.toNat < 2 ^ 32) (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1)\n    (haq : a.toNat < q.toNat) (htq : t.toNat < 2 * q.toNat) :\n    (mulRound q negInv a bi t).Bounded ∧ (mulRound q negInv a bi t).toNat < 2 * q.toNat ∧\n      ∃ m : ℕ, m < 2 ^ 32 ∧\n        2 ^ 32 * (mulRound q negInv a bi t).toNat =\n          t.toNat + a.toNat * bi.toNat + m * q.toNat",
+     "line": 128,
+     "doc": "The CIOS round invariant: one round accumulates `a * bi` and cancels the low limb against\na multiple `m` of the modulus; the accumulator stays below `2 * q`.",
+     "statement": "theorem mulRound_spec (q a : Limbs4) (negInv bi : UInt64) (t : State5)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1)\n    (haq : a.toNat < q.toNat) (htq : t.toNat < 2 * q.toNat) :\n    (mulRound q negInv a bi t).toNat < 2 * q.toNat ∧\n      ∃ m : ℕ, m < 2 ^ 64 ∧\n        2 ^ 64 * (mulRound q negInv a bi t).toNat =\n          t.toNat + a.toNat * bi.toNat + m * q.toNat",
      "sorry": false
     },
     {
-     "line": 235,
-     "note": "### The eight-round fold"
+     "line": 145,
+     "note": "### The four-round fold"
     },
     {
-     "name": "Montgomery.Native64x8.mul_spec",
+     "name": "Montgomery.Native64x4.mul_spec",
      "kind": "theorem",
-     "line": 273,
+     "line": 174,
      "doc": "Montgomery multiplication is canonical and computes `a * b * (2 ^ 256)⁻¹ mod q`.",
-     "statement": "theorem mul_spec (q : Limbs8) (negInv : UInt64) (a b : Limbs8)\n    (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded) (hn : negInv.toNat < 2 ^ 32)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 32 = 2 ^ 32 - 1)\n    (haq : a.toNat < q.toNat) :\n    (mul q negInv a b).Bounded ∧ (mul q negInv a b).toNat < q.toNat ∧\n      2 ^ 256 * (mul q negInv a b).toNat ≡ a.toNat * b.toNat [MOD q.toNat]",
-     "sorry": false
-    }
-   ]
-  },
-  {
-   "module": "CompPoly.Fields.Montgomery.ScalarFft",
-   "file": "CompPoly/Fields/Montgomery/ScalarFft.lean",
-   "copyright": "CompPoly Contributors",
-   "authors": "Gregor Mitscha-Baude",
-   "title": "Radix-2 DIT FFT over eight-limb Montgomery elements (zero-import)",
-   "doc": "An in-place radix-2 decimation-in-time FFT over `Limbs8` Montgomery residues: a bit-reversal\npermutation followed by `logN` rounds of butterflies against a precomputed Montgomery-form\ntwiddle table.  Like the arithmetic in `CompPoly.Fields.Montgomery.Native64x8Defs`, the loop\nnest is generic over the modulus, taking `q` and `negInv` explicitly.\n\nAs explained in `CompPoly.Fields.Montgomery.Native64x8Defs`, this module deliberately imports\nnothing beyond that (itself zero-import) module: downstream consumers put it into\n`precompileModules` native-compilation lanes, and `precompileModules` compiles the\nentire import closure — so the runtime definitions must not pull in mathlib.\n\nThis module contains runtime definitions only; correctness specifications live downstream\nfor now.",
-   "items": [
-    {
-     "name": "Montgomery.ScalarFft.bitreverse",
-     "kind": "def",
-     "line": 35,
-     "doc": "Bit-reversal permutation index.",
-     "statement": "def bitreverse (n l : Nat) : Nat",
-     "sorry": false
-    },
-    {
-     "name": "Montgomery.ScalarFft.fft",
-     "kind": "def",
-     "line": 45,
-     "doc": "In-place radix-2 DIT FFT over eight-limb Montgomery residues modulo `q`: bit-reversal\npermutation, then `logN` rounds of butterflies against the Montgomery-form twiddles `tw`.",
-     "statement": "def fft (q : Limbs8) (negInv : UInt64) (a0 : Array Limbs8) (tw : Array Limbs8)\n    (logN : Nat) : Array Limbs8",
+     "statement": "theorem mul_spec (q : Limbs4) (negInv : UInt64) (a b : Limbs4)\n    (hnq : negInv.toNat * q.toNat % 2 ^ 64 = 2 ^ 64 - 1) (haq : a.toNat < q.toNat) :\n    (mul q negInv a b).toNat < q.toNat ∧\n      2 ^ 256 * (mul q negInv a b).toNat ≡ a.toNat * b.toNat [MOD q.toNat]",
      "sorry": false
     }
    ]
@@ -38545,7 +38403,7 @@
    "copyright": "CompPoly Contributors",
    "authors": "Gregor Mitscha-Baude",
    "title": "Pasta (Pallas / Vesta) fields",
-   "doc": "Facade module for the Pasta base fields.  It re-exports the canonical `ZMod` models with\ntheir primality certificates from `CompPoly.Fields.Pasta.Basic` and the native-word\neight-limb Montgomery implementations from `CompPoly.Fields.Pasta.Fast`.",
+   "doc": "Facade module for the Pasta base fields.  It re-exports the canonical `ZMod` models with\ntheir primality certificates from `CompPoly.Fields.Pasta.Basic` and the native-word\nfour-limb Montgomery implementations from `CompPoly.Fields.Pasta.Fast`.",
    "items": []
   },
   {
@@ -38644,92 +38502,92 @@
    "copyright": "CompPoly Contributors",
    "authors": "Gregor Mitscha-Baude",
    "title": "Fast Pasta base fields",
-   "doc": "Native-word Montgomery implementations of the Pallas and Vesta base field arithmetic.  The\nshared algorithms and proofs live in `CompPoly.Fields.Montgomery.Native64x8Field`; this module\nsupplies the two sets of constants and the concrete API.\n\nBoth Pasta primes are `1 mod 2 ^ 32`, so both have `montgomeryNegInv = 2 ^ 32 - 1`.",
+   "doc": "Native-word Montgomery implementations of the Pallas and Vesta base field arithmetic.  The\nshared algorithms and proofs live in `CompPoly.Fields.Montgomery.Native64x4Field`; this module\nsupplies the two sets of constants and the concrete API.",
    "items": [
     {
-     "line": 27,
+     "line": 25,
      "note": "## Parameters and carrier"
     },
     {
-     "name": "Pallas.Fast.instMont64x8Field",
+     "name": "Pallas.Fast.instMont64x4Field",
      "kind": "instance",
-     "line": 31,
-     "doc": "The per-field data realizing the Pallas base field as a fast eight-limb Montgomery\nfield.",
-     "statement": "instance instMont64x8Field : Mont64x8Field Pallas.baseFieldSize",
+     "line": 29,
+     "doc": "The per-field data realizing the Pallas base field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instMont64x4Field : Mont64x4Field Pallas.baseFieldSize",
      "sorry": false
     },
     {
      "name": "Pallas.Fast.Field",
      "kind": "abbrev",
-     "line": 42,
+     "line": 39,
      "doc": "The fast native-word Pallas base field carrier, stored as a Montgomery residue.",
      "statement": "abbrev Field : Type",
      "sorry": false
     },
     {
-     "line": 44,
+     "line": 41,
      "note": "## Conversions"
     },
     {
      "name": "Pallas.Fast.ofField",
      "kind": "def",
-     "line": 48,
+     "line": 45,
      "doc": "Convert from the canonical `ZMod` Pallas base field into fast Montgomery form.",
      "statement": "def ofField (x : Pallas.BaseField) : Field",
      "sorry": false
     },
     {
-     "line": 51,
+     "line": 48,
      "note": "## Canonical bridge"
     },
     {
      "name": "Pallas.Fast.ringEquiv",
      "kind": "def",
-     "line": 54,
+     "line": 51,
      "doc": "Ring equivalence between the fast Montgomery representation and `Pallas.BaseField`.",
      "statement": "def ringEquiv : Field ≃+* Pallas.BaseField",
      "sorry": false
     },
     {
-     "line": 63,
+     "line": 60,
      "note": "## Parameters and carrier"
     },
     {
-     "name": "Vesta.Fast.instMont64x8Field",
+     "name": "Vesta.Fast.instMont64x4Field",
      "kind": "instance",
-     "line": 67,
-     "doc": "The per-field data realizing the Vesta base field as a fast eight-limb Montgomery\nfield.",
-     "statement": "instance instMont64x8Field : Mont64x8Field Vesta.baseFieldSize",
+     "line": 64,
+     "doc": "The per-field data realizing the Vesta base field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instMont64x4Field : Mont64x4Field Vesta.baseFieldSize",
      "sorry": false
     },
     {
      "name": "Vesta.Fast.Field",
      "kind": "abbrev",
-     "line": 78,
+     "line": 74,
      "doc": "The fast native-word Vesta base field carrier, stored as a Montgomery residue.",
      "statement": "abbrev Field : Type",
      "sorry": false
     },
     {
-     "line": 80,
+     "line": 76,
      "note": "## Conversions"
     },
     {
      "name": "Vesta.Fast.ofField",
      "kind": "def",
-     "line": 84,
+     "line": 80,
      "doc": "Convert from the canonical `ZMod` Vesta base field into fast Montgomery form.",
      "statement": "def ofField (x : Vesta.BaseField) : Field",
      "sorry": false
     },
     {
-     "line": 87,
+     "line": 83,
      "note": "## Canonical bridge"
     },
     {
      "name": "Vesta.Fast.ringEquiv",
      "kind": "def",
-     "line": 90,
+     "line": 86,
      "doc": "Ring equivalence between the fast Montgomery representation and `Vesta.BaseField`.",
      "statement": "def ringEquiv : Field ≃+* Vesta.BaseField",
      "sorry": false
@@ -39211,7 +39069,7 @@
    "copyright": "CompPoly Contributors",
    "authors": "Georgios Raikos",
    "title": "Fast secp256k1 Fields",
-   "doc": "Native eight-limb Montgomery implementations of the secp256k1 scalar and base fields\n(`CompPoly.Fields.Montgomery.Native64x8Field`). This module supplies the constants.",
+   "doc": "Native four-limb Montgomery implementations of the secp256k1 scalar and base fields\n(`CompPoly.Fields.Montgomery.Native64x4Field`). This module supplies the constants.",
    "items": [
     {
      "line": 26,
@@ -39226,25 +39084,25 @@
      "sorry": false
     },
     {
-     "name": "Secp256k1.Fast.instScalarMont64x8Field",
+     "name": "Secp256k1.Fast.instScalarMont64x4Field",
      "kind": "instance",
-     "line": 37,
-     "doc": "The per-field data realizing the secp256k1 scalar field as a fast eight-limb Montgomery\nfield.",
-     "statement": "instance instScalarMont64x8Field : Mont64x8Field Secp256k1.scalarFieldSize",
+     "line": 35,
+     "doc": "The per-field data realizing the secp256k1 scalar field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instScalarMont64x4Field : Mont64x4Field Secp256k1.scalarFieldSize",
      "sorry": false
     },
     {
      "name": "Secp256k1.Fast.ScalarField",
      "kind": "abbrev",
-     "line": 50,
-     "doc": "The eight-limb secp256k1 scalar field carrier, stored as a Montgomery residue.",
+     "line": 45,
+     "doc": "The four-limb secp256k1 scalar field carrier, stored as a Montgomery residue.",
      "statement": "abbrev ScalarField : Type",
      "sorry": false
     },
     {
      "name": "Secp256k1.Fast.ofScalarField",
      "kind": "def",
-     "line": 54,
+     "line": 49,
      "doc": "Convert from the canonical `Secp256k1.ScalarField` into fast Montgomery form.",
      "statement": "def ofScalarField (x : Secp256k1.ScalarField) : ScalarField",
      "sorry": false
@@ -39252,43 +39110,43 @@
     {
      "name": "Secp256k1.Fast.scalarRingEquiv",
      "kind": "def",
-     "line": 59,
-     "doc": "Ring equivalence between the eight-limb representation and the canonical\n`Secp256k1.ScalarField`.",
+     "line": 54,
+     "doc": "Ring equivalence between the four-limb representation and the canonical\n`Secp256k1.ScalarField`.",
      "statement": "def scalarRingEquiv : ScalarField ≃+* Secp256k1.ScalarField",
      "sorry": false
     },
     {
-     "line": 62,
+     "line": 57,
      "note": "## Base field"
     },
     {
      "name": "Secp256k1.Fast.instBaseGcdData",
      "kind": "instance",
-     "line": 65,
+     "line": 60,
      "doc": "Divstep schedule of the binary-GCD inverse candidate over the base field.",
      "statement": "instance instBaseGcdData : GcdData Secp256k1.baseFieldSize",
      "sorry": false
     },
     {
-     "name": "Secp256k1.Fast.instBaseMont64x8Field",
+     "name": "Secp256k1.Fast.instBaseMont64x4Field",
      "kind": "instance",
-     "line": 71,
-     "doc": "The per-field data realizing the secp256k1 base field as a fast eight-limb Montgomery\nfield.",
-     "statement": "instance instBaseMont64x8Field : Mont64x8Field Secp256k1.baseFieldSize",
+     "line": 66,
+     "doc": "The per-field data realizing the secp256k1 base field as a fast four-limb Montgomery\nfield.",
+     "statement": "instance instBaseMont64x4Field : Mont64x4Field Secp256k1.baseFieldSize",
      "sorry": false
     },
     {
      "name": "Secp256k1.Fast.BaseField",
      "kind": "abbrev",
-     "line": 81,
-     "doc": "The eight-limb secp256k1 base field carrier, stored as a Montgomery residue.",
+     "line": 75,
+     "doc": "The four-limb secp256k1 base field carrier, stored as a Montgomery residue.",
      "statement": "abbrev BaseField : Type",
      "sorry": false
     },
     {
      "name": "Secp256k1.Fast.ofBaseField",
      "kind": "def",
-     "line": 85,
+     "line": 79,
      "doc": "Convert from the canonical `Secp256k1.BaseField` into fast Montgomery form.",
      "statement": "def ofBaseField (x : Secp256k1.BaseField) : BaseField",
      "sorry": false
@@ -39296,8 +39154,8 @@
     {
      "name": "Secp256k1.Fast.baseRingEquiv",
      "kind": "def",
-     "line": 90,
-     "doc": "Ring equivalence between the eight-limb representation and the canonical\n`Secp256k1.BaseField`.",
+     "line": 84,
+     "doc": "Ring equivalence between the four-limb representation and the canonical\n`Secp256k1.BaseField`.",
      "statement": "def baseRingEquiv : BaseField ≃+* Secp256k1.BaseField",
      "sorry": false
     }

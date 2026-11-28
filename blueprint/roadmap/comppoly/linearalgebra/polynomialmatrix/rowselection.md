@@ -7,19 +7,19 @@ proof: formalized
 
 # Least-Shifted-Degree Row Selection Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection`, in [CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection`, in [CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean), by Valerii Huhnin.
 
 > Correctness facts for the generic least-shifted-degree row scan in
 > `PolynomialMatrix.Operations`.
 
-`CompPoly.PolynomialMatrix.RowChoiceValid` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L30))
+`CompPoly.PolynomialMatrix.RowChoiceValid` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L30))
 
 ```lean
 def RowChoiceValid (M : PolynomialMatrix F) (shift : Array Nat)
     (choice : RowChoice F) : Prop
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_valid` (theorem, [line 333](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L333))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_valid` (theorem, [line 333](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L333))
 
 ```lean
 theorem leastShiftedDegreeChoice?_some_valid
@@ -28,7 +28,7 @@ theorem leastShiftedDegreeChoice?_some_valid
     RowChoiceValid M shift choice
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_degree_le` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L345))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_degree_le` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L345))
 
 ```lean
 theorem leastShiftedDegreeChoice?_degree_le
@@ -40,7 +40,7 @@ theorem leastShiftedDegreeChoice?_degree_le
     choice.degree ≤ d
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_of_degree` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L360))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_of_degree` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L360))
 
 ```lean
 theorem leastShiftedDegreeChoice?_some_of_degree
@@ -50,7 +50,7 @@ theorem leastShiftedDegreeChoice?_some_of_degree
     ∃ choice, leastShiftedDegreeChoice? M shift = some choice ∧ choice.degree ≤ d
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeRow?_some_valid` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L381))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeRow?_some_valid` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean#L381))
 
 ```lean
 theorem leastShiftedDegreeRow?_some_valid
@@ -67,5 +67,5 @@ theorem leastShiftedDegreeRow?_some_valid
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection.json)

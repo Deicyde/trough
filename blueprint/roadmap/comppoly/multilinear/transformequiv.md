@@ -7,7 +7,7 @@ proof: formalized
 
 # Fast ↔ Spec equivalence for the multilinear zeta / Möbius transforms
 
-`CompPoly.Multilinear.TransformEquiv`, in [CompPoly/Multilinear/TransformEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/TransformEquiv.lean), by Quang Dao, Chung Thai Nguyen, Natalie Klaus.
+`CompPoly.Multilinear.TransformEquiv`, in [CompPoly/Multilinear/TransformEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multilinear/TransformEquiv.lean), by Quang Dao, Chung Thai Nguyen, Natalie Klaus.
 
 > This file proves that the $O(n \cdot 2^n)$ butterfly transforms
 > `monoToLagrange` and `lagrangeToMono` (defined in `CompPoly.Multilinear.Basic`) coincide
@@ -33,7 +33,7 @@ proof: formalized
 > `lagrangeToMonoLevel (k - 1)` decrements the parameter by exactly one. Combined with the
 > base case we obtain the result by descending induction on `k`.
 
-`CompPoly.CMlPolynomial.lagrangeToMono_eq_lagrangeToMonoSpec` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/TransformEquiv.lean#L532))
+`CompPoly.CMlPolynomial.lagrangeToMono_eq_lagrangeToMonoSpec` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multilinear/TransformEquiv.lean#L532))
 
 > The fast Möbius transform `lagrangeToMono` is pointwise equal to the inclusion-exclusion
 > specification `lagrangeToMonoSpec`. Combines the fold lemma with the `k = 0` base case.
@@ -59,7 +59,7 @@ theorem lagrangeToMono_eq_lagrangeToMonoSpec
 > `k` by one. `monoToLagrange n` is a `foldl`, so applying the levels `0, 1, …, n-1`
 > transports us from `zetaPartial 0 = id` to `zetaPartial n = spec`.
 
-`CompPoly.CMlPolynomial.monoToLagrange_eq_monoToLagrangeSpec` (theorem, [line 785](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/TransformEquiv.lean#L785))
+`CompPoly.CMlPolynomial.monoToLagrange_eq_monoToLagrangeSpec` (theorem, [line 785](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multilinear/TransformEquiv.lean#L785))
 
 > The fast zeta transform `monoToLagrange` is pointwise equal to the naive
 > `monoToLagrangeSpec`. Mirror of `lagrangeToMono_eq_lagrangeToMonoSpec`.
@@ -76,5 +76,5 @@ theorem monoToLagrange_eq_monoToLagrangeSpec
 
 ## Sources
 
-- [CompPoly/Multilinear/TransformEquiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/TransformEquiv.lean)
+- [CompPoly/Multilinear/TransformEquiv.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Multilinear/TransformEquiv.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multilinear.TransformEquiv.json)

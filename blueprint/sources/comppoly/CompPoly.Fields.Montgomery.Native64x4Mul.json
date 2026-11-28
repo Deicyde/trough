@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
+ "module": "CompPoly.Fields.Montgomery.Native64x4Mul",
+ "file": "CompPoly/Fields/Montgomery/Native64x4Mul.lean",
+ "public": [
+  {"name": "Montgomery.Native64x4.sum4_mul", "kind": "theorem", "line": 33},
+  {"name": "Montgomery.Native64x4.mul_sum4", "kind": "theorem", "line": 39},
+  {"name": "Montgomery.Native64x4.State5.zero_toNat", "kind": "theorem", "line": 65},
+  {"name": "Montgomery.Native64x4.State5.toNat_eq", "kind": "theorem", "line": 69},
+  {"name": "Montgomery.Native64x4.mulAccum_spec", "kind": "theorem", "line": 77},
+  {"name": "Montgomery.Native64x4.mulReduce_spec", "kind": "theorem", "line": 98},
+  {"name": "Montgomery.Native64x4.mulRound_spec", "kind": "theorem", "line": 128},
+  {"name": "Montgomery.Native64x4.mul_spec", "kind": "theorem", "line": 174}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

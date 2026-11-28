@@ -7,11 +7,11 @@ proof: formalized
 
 # BabyBear Field `2^{31} - 2^{27} + 1`
 
-`CompPoly.Fields.BabyBear.Basic`, in [CompPoly/Fields/BabyBear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean), by Quang Dao, Valerii Huhnin.
+`CompPoly.Fields.BabyBear.Basic`, in [CompPoly/Fields/BabyBear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean), by Quang Dao, Valerii Huhnin.
 
 > This is the field used by Risc Zero.
 
-`BabyBear.fieldSize` (definition, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L25))
+`BabyBear.fieldSize` (definition, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L25))
 
 > The BabyBear field modulus, `2^31 - 2^27 + 1`.
 
@@ -19,7 +19,7 @@ proof: formalized
 def fieldSize : Nat
 ```
 
-`BabyBear.Field` (abbreviation, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L28))
+`BabyBear.Field` (abbreviation, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L28))
 
 > The BabyBear prime field as a `ZMod`.
 
@@ -27,7 +27,7 @@ def fieldSize : Nat
 abbrev Field
 ```
 
-`BabyBear.is_prime` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L31))
+`BabyBear.is_prime` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L31))
 
 > The BabyBear modulus is prime.
 
@@ -41,7 +41,7 @@ theorem is_prime : Nat.Prime fieldSize
 > - `pBits = 31`
 > - `twoAdicity = 27` with `fieldSize - 1 = 2^27 * 15`
 
-`BabyBear.pBits` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L45))
+`BabyBear.pBits` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L45))
 
 > Bit width of the BabyBear modulus.
 
@@ -49,7 +49,7 @@ theorem is_prime : Nat.Prime fieldSize
 def pBits : Nat
 ```
 
-`BabyBear.twoAdicity` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L49))
+`BabyBear.twoAdicity` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L49))
 
 > The largest supported power-of-two root-of-unity exponent for BabyBear.
 
@@ -57,7 +57,7 @@ def pBits : Nat
 def twoAdicity : Nat
 ```
 
-`BabyBear.inv_eq_pow` (lemma, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L59))
+`BabyBear.inv_eq_pow` (lemma, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L59))
 
 > Fermat-style inversion in `ZMod fieldSize`.
 
@@ -70,7 +70,7 @@ lemma inv_eq_pow (a : Field) (ha : a ≠ 0) : a⁻¹ = a ^ (fieldSize - 2)
 > We record the factorization of `fieldSize - 1` and provide a precomputed table
 > of `2^n`-th roots of unity for `0 ≤ n ≤ twoAdicity`.
 
-`BabyBear.fieldSize_sub_one_factorization` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L78))
+`BabyBear.fieldSize_sub_one_factorization` (lemma, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L78))
 
 > The factorization `fieldSize - 1 = 2^twoAdicity * 15`.
 
@@ -83,7 +83,7 @@ lemma fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 15
 >
 > The first entry n = 0 is 1.
 
-`BabyBear.twoAdicGenerators` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L89))
+`BabyBear.twoAdicGenerators` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L89))
 
 > Precomputed generators for the BabyBear two-adic subgroups.
 
@@ -91,7 +91,7 @@ lemma fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 15
 def twoAdicGenerators : List Field
 ```
 
-`BabyBear.twoAdicGenerators_length` (lemma, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L122))
+`BabyBear.twoAdicGenerators_length` (lemma, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L122))
 
 > The BabyBear two-adic generator table has one entry for each supported exponent.
 
@@ -99,7 +99,7 @@ def twoAdicGenerators : List Field
 lemma twoAdicGenerators_length : twoAdicGenerators.length = twoAdicity + 1
 ```
 
-`BabyBear.twoAdicGenerators_succ_square_eq'` (lemma, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L126))
+`BabyBear.twoAdicGenerators_succ_square_eq'` (lemma, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L126))
 
 > Consecutive BabyBear two-adic generators square to the previous generator.
 
@@ -108,7 +108,7 @@ lemma twoAdicGenerators_succ_square_eq' (idx : Fin twoAdicity) :
     twoAdicGenerators[idx.val + 1] ^ 2 = twoAdicGenerators[idx]
 ```
 
-`BabyBear.twoAdicGenerators_succ_square_eq` (lemma, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L132))
+`BabyBear.twoAdicGenerators_succ_square_eq` (lemma, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L132))
 
 > Consecutive BabyBear two-adic generators square to the previous generator.
 
@@ -118,7 +118,7 @@ lemma twoAdicGenerators_succ_square_eq (idx : Nat) (h : idx < twoAdicity) :
     twoAdicGenerators[idx + 1] ^ 2 = twoAdicGenerators[idx]
 ```
 
-`BabyBear.twoAdicity_maximal` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L138))
+`BabyBear.twoAdicity_maximal` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L138))
 
 > `twoAdicity` is maximal: `2^(twoAdicity+1)` does not divide `fieldSize - 1`.
 
@@ -126,7 +126,7 @@ lemma twoAdicGenerators_succ_square_eq (idx : Nat) (h : idx < twoAdicity) :
 lemma twoAdicity_maximal : ¬ (2 ^ (twoAdicity + 1)) ∣ (fieldSize - 1)
 ```
 
-`BabyBear.twoAdicGenerators_pow_twoPow_eq_one` (lemma, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L191))
+`BabyBear.twoAdicGenerators_pow_twoPow_eq_one` (lemma, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L191))
 
 > The power `(twoAdicGenerators[bits])^(2^bits) = 1`.
 
@@ -135,7 +135,7 @@ lemma twoAdicGenerators_pow_twoPow_eq_one (bits : Fin (twoAdicity + 1)) :
     twoAdicGenerators[bits] ^ (2 ^ (bits : Nat)) = 1
 ```
 
-`BabyBear.twoAdicGenerators_pow_twoPow_ne_one_of_lt` (lemma, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L226))
+`BabyBear.twoAdicGenerators_pow_twoPow_ne_one_of_lt` (lemma, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L226))
 
 > If `m < bits`, then `(twoAdicGenerators[bits])^(2^m) ≠ 1`.
 
@@ -145,7 +145,7 @@ lemma twoAdicGenerators_pow_twoPow_ne_one_of_lt
     (twoAdicGenerators[bits]) ^ (2 ^ m) ≠ (1 : Field)
 ```
 
-`BabyBear.isPrimitiveRoot_twoAdicGenerator` (lemma, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L233))
+`BabyBear.isPrimitiveRoot_twoAdicGenerator` (lemma, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L233))
 
 > The precomputed element at index `bits` is a primitive `2^bits`-th root of unity.
 
@@ -154,7 +154,7 @@ lemma isPrimitiveRoot_twoAdicGenerator (n : Fin (twoAdicity + 1)) :
     IsPrimitiveRoot (twoAdicGenerators[n]) (2 ^ (n : Nat))
 ```
 
-`BabyBear.twoAdicGenerator_unit_mem_rootsOfUnity` (lemma, [line 251](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L251))
+`BabyBear.twoAdicGenerator_unit_mem_rootsOfUnity` (lemma, [line 251](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L251))
 
 > As a unit, the precomputed element is a member of `rootsOfUnity (2^bits)`.
 
@@ -164,7 +164,7 @@ lemma twoAdicGenerator_unit_mem_rootsOfUnity
     Units.mk0 (twoAdicGenerators[bits]) h ∈ rootsOfUnity (2 ^ (bits : Nat)) Field
 ```
 
-`BabyBear.twoAdicGenerators_order` (lemma, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean#L260))
+`BabyBear.twoAdicGenerators_order` (lemma, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean#L260))
 
 > The order of `twoAdicGenerators[bits]` equals `2^bits`.
 
@@ -183,5 +183,5 @@ lemma twoAdicGenerators_order (bits : Fin (twoAdicity + 1)) :
 
 ## Sources
 
-- [CompPoly/Fields/BabyBear/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BabyBear/Basic.lean)
+- [CompPoly/Fields/BabyBear/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/BabyBear/Basic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.BabyBear.Basic.json)

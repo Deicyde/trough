@@ -7,7 +7,7 @@ proof: formalized
 
 # The degree-6 extension of KoalaBear
 
-`CompPoly.Fields.KoalaBear.Ext6`, in [CompPoly/Fields/KoalaBear/Ext6.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean), by Derek Sorensen.
+`CompPoly.Fields.KoalaBear.Ext6`, in [CompPoly/Fields/KoalaBear/Ext6.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean), by Derek Sorensen.
 
 > `KoalaBear[X] / (X^6 + X^3 + 1)`, a field of `p^6 ≈ 2^186` elements. The modulus is `Φ₉`, the
 > ninth cyclotomic polynomial, so the adjoined root `θ` is a primitive 9th root of unity.
@@ -36,7 +36,7 @@ proof: formalized
 > * `KoalaBear.ext6Params`: the `ExtensionParams` for `X^6 + X^3 + 1`.
 > * `KoalaBear.Ext6`: the extension field itself.
 
-`KoalaBear.ext6Params` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L50))
+`KoalaBear.ext6Params` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L50))
 
 > The parameters of the sextic extension `KoalaBear[X] / (X^6 + X^3 + 1)`: the lower
 > coefficients of the monic modulus are `(1, 0, 0, 1, 0, 0)`.
@@ -45,19 +45,19 @@ proof: formalized
 def ext6Params : ExtensionParams Field
 ```
 
-`KoalaBear.ext6Params_d` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L59))
+`KoalaBear.ext6Params_d` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L59))
 
 ```lean
 theorem ext6Params_d : ext6Params.d = 6
 ```
 
-`KoalaBear.ext6Params_q` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L60))
+`KoalaBear.ext6Params_q` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L60))
 
 ```lean
 theorem ext6Params_q : ext6Params.q = fieldSize
 ```
 
-`KoalaBear.ext6Params_poly` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L63))
+`KoalaBear.ext6Params_poly` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L63))
 
 > The defining polynomial of the parameters is the sextic `X^6 + X^3 + 1`.
 
@@ -65,7 +65,7 @@ theorem ext6Params_q : ext6Params.q = fieldSize
 theorem ext6Params_poly : ext6Params.poly = sexticPoly
 ```
 
-`KoalaBear.Ext6` (abbreviation, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L88))
+`KoalaBear.Ext6` (abbreviation, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L88))
 
 > The degree-6 extension field of KoalaBear.
 
@@ -73,7 +73,7 @@ theorem ext6Params_poly : ext6Params.poly = sexticPoly
 abbrev Ext6 : Type
 ```
 
-`KoalaBear.ext6Gen` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L92))
+`KoalaBear.ext6Gen` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L92))
 
 > The adjoined root of `X^6 + X^3 + 1`, a primitive 9th root of unity, as an element of
 > `Ext6`.
@@ -82,7 +82,7 @@ abbrev Ext6 : Type
 def ext6Gen : Ext6
 ```
 
-`KoalaBear.ext6Gen_eq_gen` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L100))
+`KoalaBear.ext6Gen_eq_gen` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L100))
 
 > `ext6Gen` is the framework's `Ext.gen`.
 >
@@ -93,7 +93,7 @@ def ext6Gen : Ext6
 theorem ext6Gen_eq_gen : ext6Gen = Ext.gen
 ```
 
-`KoalaBear.toQuot_ext6Gen` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L103))
+`KoalaBear.toQuot_ext6Gen` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L103))
 
 > `ext6Gen` maps to the adjoined root of the specification.
 
@@ -101,7 +101,7 @@ theorem ext6Gen_eq_gen : ext6Gen = Ext.gen
 theorem toQuot_ext6Gen : Ext.toQuot ext6Gen = Ext.rt ext6Params
 ```
 
-`KoalaBear.aeval_ext6Gen` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L106))
+`KoalaBear.aeval_ext6Gen` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L106))
 
 > `ext6Gen` is a root of `X^6 + X^3 + 1`, in the form `aeval` expects.
 
@@ -109,7 +109,7 @@ theorem toQuot_ext6Gen : Ext.toQuot ext6Gen = Ext.rt ext6Params
 theorem aeval_ext6Gen : aeval ext6Gen ext6Params.poly = 0
 ```
 
-`KoalaBear.ext6Gen_pow_six` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L110))
+`KoalaBear.ext6Gen_pow_six` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L110))
 
 > **The defining relation**: the adjoined root satisfies `θ^6 = -θ^3 - 1`. Every coefficient is
 > `±1`, which is what makes reduction multiplication-free.
@@ -119,7 +119,7 @@ theorem ext6Gen_pow_six :
     ext6Gen ^ 6 = -(ext6Gen ^ 3) - Ext.ofBase (1 : Field)
 ```
 
-`KoalaBear.ext6Gen_cubed_is_primitive_cube_root` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L120))
+`KoalaBear.ext6Gen_cubed_is_primitive_cube_root` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L120))
 
 > `θ^3` is a primitive cube root of unity: it satisfies `Y^2 + Y + 1 = 0`, which is irreducible
 > over KoalaBear because `3 ∤ p - 1`. So `F_p(θ^3)` is the `F_p²` subfield, and this is the
@@ -130,7 +130,7 @@ theorem ext6Gen_cubed_is_primitive_cube_root :
     (ext6Gen ^ 3) ^ 2 + ext6Gen ^ 3 + Ext.ofBase (1 : Field) = 0
 ```
 
-`KoalaBear.ext6Gen_pow_nine` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L126))
+`KoalaBear.ext6Gen_pow_nine` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L126))
 
 > **`θ` is a primitive 9th root of unity**: `θ^9 = 1`.
 
@@ -138,7 +138,7 @@ theorem ext6Gen_cubed_is_primitive_cube_root :
 theorem ext6Gen_pow_nine : ext6Gen ^ 9 = 1
 ```
 
-`KoalaBear.card_ext6` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean#L132))
+`KoalaBear.card_ext6` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean#L132))
 
 ```lean
 theorem card_ext6 : Fintype.card Ext6 = fieldSize ^ 6
@@ -152,5 +152,5 @@ theorem card_ext6 : Fintype.card Ext6 = fieldSize ^ 6
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Ext6.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext6.lean)
+- [CompPoly/Fields/KoalaBear/Ext6.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext6.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Ext6.json)

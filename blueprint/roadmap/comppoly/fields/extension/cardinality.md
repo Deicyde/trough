@@ -7,7 +7,7 @@ proof: formalized
 
 # Finiteness and cardinality of monic quotient presentations
 
-`CompPoly.Fields.Extension.Cardinality`, in [CompPoly/Fields/Extension/Cardinality.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean), by Derek Sorensen.
+`CompPoly.Fields.Extension.Cardinality`, in [CompPoly/Fields/Extension/Cardinality.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean), by Derek Sorensen.
 
 > The coordinate equivalence gives `Finite (Ext P)` from `Finite F`, and gives an optional
 > `Fintype (Ext P)` when an enumeration of the base is available. A separate certificate
@@ -18,7 +18,7 @@ proof: formalized
 > and cardinality assumptions used by field laws are propositions, so executable arithmetic
 > never receives an enumeration dictionary merely to use those laws.
 
-`CompPoly.Extension.ExtensionParams.card_eq` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L29))
+`CompPoly.Extension.ExtensionParams.card_eq` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L29))
 
 > The certified cardinality agrees with any enumeration of the base type.
 
@@ -27,7 +27,7 @@ theorem ExtensionParams.card_eq {F : Type*} [Fintype F] (P : ExtensionParams F)
     [Fact (Nat.card F = P.q)] : Fintype.card F = P.q
 ```
 
-`CompPoly.Extension.BinomialParams.card_eq` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L35))
+`CompPoly.Extension.BinomialParams.card_eq` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L35))
 
 > The certified binomial base cardinality agrees with any enumeration.
 
@@ -36,19 +36,19 @@ theorem BinomialParams.card_eq {F : Type*} [Fintype F] (P : BinomialParams F)
     [Fact (Nat.card F = P.q)] : Fintype.card F = P.q
 ```
 
-`CompPoly.Extension.Ext.instFinite` (instance, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L49))
+`CompPoly.Extension.Ext.instFinite` (instance, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L49))
 
 ```lean
 instance instFinite [Finite F] : Finite (Ext P)
 ```
 
-`CompPoly.Extension.Ext.instFintype` (instance, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L52))
+`CompPoly.Extension.Ext.instFintype` (instance, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L52))
 
 ```lean
 instance instFintype [Fintype F] : Fintype (Ext P)
 ```
 
-`CompPoly.Extension.Ext.card_ext` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L55))
+`CompPoly.Extension.Ext.card_ext` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L55))
 
 > The enumerated extension cardinality is the certified base cardinality to the degree.
 
@@ -56,7 +56,7 @@ instance instFintype [Fintype F] : Fintype (Ext P)
 theorem card_ext [Fintype F] [Fact (Nat.card F = P.q)] : Fintype.card (Ext P) = P.q ^ P.d
 ```
 
-`CompPoly.Extension.Ext.nat_card_ext` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean#L59))
+`CompPoly.Extension.Ext.nat_card_ext` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean#L59))
 
 > The extension has `q^d` elements, independently of any chosen enumeration.
 
@@ -71,5 +71,5 @@ theorem nat_card_ext [Finite F] [Fact (Nat.card F = P.q)] :
 
 ## Sources
 
-- [CompPoly/Fields/Extension/Cardinality.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Cardinality.lean)
+- [CompPoly/Fields/Extension/Cardinality.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Extension/Cardinality.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Extension.Cardinality.json)

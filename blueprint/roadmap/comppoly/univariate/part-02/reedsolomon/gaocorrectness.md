@@ -7,7 +7,7 @@ proof: formalized
 
 # Gao Decoder Correctness
 
-`CompPoly.Univariate.ReedSolomon.GaoCorrectness`, in [CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean), by Juan Conejero.
+`CompPoly.Univariate.ReedSolomon.GaoCorrectness`, in [CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean), by Juan Conejero.
 
 > Correctness of the computable `Gao.decode` decoder from `GaoDecoder.lean`, formalizing
 > [Gao02, Theorem 3.3]: `decode` succeeds exactly on received words within the decoding
@@ -30,7 +30,7 @@ proof: formalized
 > Two degree-bounded solutions of the Bézout identity cross-multiply
 > (`bezout_solutions_cross_mul`), so the quotient `G / V` is unique.
 
-`CompPoly.ReedSolomon.Gao.bezout_solutions_cross_mul` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L61))
+`CompPoly.ReedSolomon.Gao.bezout_solutions_cross_mul` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L61))
 
 > Two degree-bounded Bézout solutions `(U,V,G)`, `(U',V',G')` of `U g₀ + V g₁ = ·`
 > (with `deg G, deg G' < d₀` and `deg V + d₀, deg V' + d₀ ≤ deg g₀`) cross-multiply:
@@ -50,7 +50,7 @@ theorem bezout_solutions_cross_mul [CommRing F] [NoZeroDivisors F]
 > A nonzero error locator vanishes on every disagreement node, so its degree bounds the
 > Hamming distance between the received word and a candidate codeword.
 
-`CompPoly.ReedSolomon.Gao.disagreement_subset_error_locator_zeros` (lemma, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L80))
+`CompPoly.ReedSolomon.Gao.disagreement_subset_error_locator_zeros` (lemma, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L80))
 
 > If `V * (f₁ - g₁) = U * g₀` and `g₀` vanishes on aᵢ, then `V` vanishes at every
 > aᵢ where `f₁` and `g₁` disagree.
@@ -62,7 +62,7 @@ lemma disagreement_subset_error_locator_zeros [CommRing F] [NoZeroDivisors F]
     {i ∈ s | f₁.eval (a i) ≠ g₁.eval (a i)} ⊆ {i ∈ s | V.eval (a i) = 0}
 ```
 
-`CompPoly.ReedSolomon.Gao.disagreement_card_le_error_locator_natDegree` (lemma, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L92))
+`CompPoly.ReedSolomon.Gao.disagreement_card_le_error_locator_natDegree` (lemma, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L92))
 
 > From the Bézout identity `G = U g₀ + V g₁` and `G = f₁ V` (with `V ≠ 0`,
 > `g₀` rooted on the aᵢ), `f₁` disagrees with `g₁` at at most `V.natDegree` nodes.
@@ -75,7 +75,7 @@ lemma disagreement_card_le_error_locator_natDegree [CommRing F] [IsDomain F]
     {i ∈ s | f₁.eval (a i) ≠ g₁.eval (a i)}.card ≤ V.natDegree
 ```
 
-`CompPoly.ReedSolomon.Gao.hammingDist_le_error_locator_natDegree` (lemma, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L104))
+`CompPoly.ReedSolomon.Gao.hammingDist_le_error_locator_natDegree` (lemma, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L104))
 
 > From the Bézout identity `G = U g₀ + V g₁` and `G = f₁ V`
 > (with `V ≠ 0`, `g₀` rooted on the aᵢ), a word `b` with `g₁(aᵢ) = b i` satisfies
@@ -98,7 +98,7 @@ lemma hammingDist_le_error_locator_natDegree [CommRing F] [IsDomain F]
 > the received interpolant interpolates `r`, `nodalPoly = ∏ (X - aᵢ)` is monic of degree
 > `D.n`, and `partialGcd` meets the Bézout stop spec.
 
-`CompPoly.ReedSolomon.Gao.receivedInterpolant_eval_node` (lemma, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L126))
+`CompPoly.ReedSolomon.Gao.receivedInterpolant_eval_node` (lemma, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L126))
 
 > The received interpolant evaluates to `r i` at each domain node.
 
@@ -107,7 +107,7 @@ lemma receivedInterpolant_eval_node [Field F] (D : Domain F) (r : Vector F D.n) 
     (receivedInterpolant D r).toPoly.eval (D.val[i]) = r.get i
 ```
 
-`CompPoly.ReedSolomon.Gao.receivedInterpolant_degree_lt` (lemma, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L132))
+`CompPoly.ReedSolomon.Gao.receivedInterpolant_degree_lt` (lemma, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L132))
 
 > The received interpolant has degree `< D.n`.
 
@@ -116,7 +116,7 @@ lemma receivedInterpolant_degree_lt [Field F] (D : Domain F) (r : Vector F D.n) 
     (receivedInterpolant D r).toPoly.degree < D.n
 ```
 
-`CompPoly.ReedSolomon.Gao.toPoly_nodalPoly` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L138))
+`CompPoly.ReedSolomon.Gao.toPoly_nodalPoly` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L138))
 
 > `(nodalPoly D).toPoly = ∏ i, (X - C D.val[i])`.
 
@@ -125,7 +125,7 @@ lemma toPoly_nodalPoly [CommRing F] [Nontrivial F] (D : Domain F) :
     (nodalPoly D).toPoly = ∏ i : Fin D.n, (X - C (D.val[i]))
 ```
 
-`CompPoly.ReedSolomon.Gao.natDegree_nodalPoly` (lemma, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L147))
+`CompPoly.ReedSolomon.Gao.natDegree_nodalPoly` (lemma, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L147))
 
 > `(nodalPoly D).toPoly.natDegree = D.n`.
 
@@ -134,7 +134,7 @@ lemma natDegree_nodalPoly [CommRing F] [NoZeroDivisors F] [Nontrivial F] (D : Do
     (nodalPoly D).toPoly.natDegree = D.n
 ```
 
-`CompPoly.ReedSolomon.Gao.toPoly_nodalPoly_ne_zero` (lemma, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L154))
+`CompPoly.ReedSolomon.Gao.toPoly_nodalPoly_ne_zero` (lemma, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L154))
 
 > `(nodalPoly D).toPoly ≠ 0` (it is monic, a product of distinct linear factors).
 
@@ -143,7 +143,7 @@ lemma toPoly_nodalPoly_ne_zero [CommRing F] [Nontrivial F] (D : Domain F) :
     (nodalPoly D).toPoly ≠ 0
 ```
 
-`CompPoly.ReedSolomon.Gao.degree_nodalPoly` (lemma, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L159))
+`CompPoly.ReedSolomon.Gao.degree_nodalPoly` (lemma, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L159))
 
 > `(nodalPoly D).toPoly.degree = D.n`.
 
@@ -152,7 +152,7 @@ lemma degree_nodalPoly [CommRing F] [NoZeroDivisors F] [Nontrivial F] (D : Domai
     (nodalPoly D).toPoly.degree = D.n
 ```
 
-`CompPoly.ReedSolomon.Gao.nodalPoly_eval_node_eq_zero` (lemma, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L164))
+`CompPoly.ReedSolomon.Gao.nodalPoly_eval_node_eq_zero` (lemma, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L164))
 
 > `nodalPoly D` vanishes at every domain node.
 
@@ -161,7 +161,7 @@ lemma nodalPoly_eval_node_eq_zero [CommRing F] [Nontrivial F] (D : Domain F) (i 
     (nodalPoly D).toPoly.eval (D.val[i]) = 0
 ```
 
-`CompPoly.ReedSolomon.Gao.partialGcd_stopSpec` (lemma, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L173))
+`CompPoly.ReedSolomon.Gao.partialGcd_stopSpec` (lemma, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L173))
 
 > `partialGcd`'s output satisfies the stop spec for `(nodalPoly D, receivedInterpolant D r)` at
 > threshold `(D.n + k + 1) / 2`.
@@ -177,7 +177,7 @@ lemma partialGcd_stopSpec [Field F] (k : ℕ) (D : Domain F) (r : Vector F D.n) 
 > A decoder success comes from a codeword within the decoding radius `⌊(D.n - k) / 2⌋` of the
 > received word; `decode_eq_none` is the contrapositive.
 
-`CompPoly.ReedSolomon.Gao.decode_sound` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L218))
+`CompPoly.ReedSolomon.Gao.decode_sound` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L218))
 
 > Soundness: any success of `Gao.decode` returns `messagePoly msg` for
 > some `msg` whose codeword is within the decoding radius `⌊(D.n-k)/2⌋ = (d-1)/2` of `r`.
@@ -190,7 +190,7 @@ theorem decode_sound [Field F]
       hammingDist r.get (encode D msg).get ≤ (D.n - k) / 2
 ```
 
-`CompPoly.ReedSolomon.Gao.decode_eq_none` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L242))
+`CompPoly.ReedSolomon.Gao.decode_eq_none` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L242))
 
 > Failure: if `r` is beyond the decoding radius `⌊(D.n-k)/2⌋` of every message,
 > `Gao.decode` returns `none` (contrapositive of soundness).
@@ -208,7 +208,7 @@ theorem decode_eq_none [Field F]
 > Within the guaranteed-decoding radius `⌊(D.n-k)/2⌋` the decoder returns exactly
 > `messagePoly msg`, and that decoded word is unique (`decode_unique`).
 
-`CompPoly.ReedSolomon.Gao.decode_eq_some` (theorem, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L257))
+`CompPoly.ReedSolomon.Gao.decode_eq_some` (theorem, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L257))
 
 > Completeness: if `r` is within the guaranteed-decoding radius `⌊(D.n-k)/2⌋`
 > (`2 * (error count) ≤ D.n - k`) of `encode D msg`, then `Gao.decode` returns `messagePoly msg`.
@@ -221,7 +221,7 @@ theorem decode_eq_some [Field F]
     Gao.decode k D r = some (messagePoly msg)
 ```
 
-`CompPoly.ReedSolomon.Gao.decode_none_farness` (theorem, [line 310](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L310))
+`CompPoly.ReedSolomon.Gao.decode_none_farness` (theorem, [line 310](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L310))
 
 > **Decoder refusal is a farness certificate**: if the decoder returns `none`, the
 > received word is beyond the guaranteed radius `⌊(n-k)/2⌋` of *every* codeword — positive,
@@ -235,7 +235,7 @@ theorem decode_none_farness [Field F]
     ∀ msg : Vector F k, D.n - k < 2 * hammingDist r.get (encode D msg).get
 ```
 
-`CompPoly.ReedSolomon.Gao.decode_eq_none_iff` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L322))
+`CompPoly.ReedSolomon.Gao.decode_eq_none_iff` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L322))
 
 > Outcome characterization: `Gao.decode` returns `none` iff the received word is beyond
 > the guaranteed radius `⌊(n-k)/2⌋` of every codeword (combines `decode_eq_none` and
@@ -248,7 +248,7 @@ theorem decode_eq_none_iff [Field F]
       ∀ msg : Vector F k, D.n - k < 2 * hammingDist r.get (encode D msg).get
 ```
 
-`CompPoly.ReedSolomon.Gao.decode_unique` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L331))
+`CompPoly.ReedSolomon.Gao.decode_unique` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean#L331))
 
 > Uniqueness: within the guaranteed-decoding radius `⌊(D.n-k)/2⌋`, two messages
 > whose codewords lie within that radius of `r` decode to the same polynomial.
@@ -271,5 +271,5 @@ theorem decode_unique [Field F] (k : ℕ) (D : Domain F) (r : Vector F D.n)
 
 ## Sources
 
-- [CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean)
+- [CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ReedSolomon.GaoCorrectness.json)

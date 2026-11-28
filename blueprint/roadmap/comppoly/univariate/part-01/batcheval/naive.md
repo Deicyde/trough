@@ -7,11 +7,11 @@ proof: formalized
 
 # Naive Batch Evaluation
 
-`CompPoly.Univariate.BatchEval.Naive`, in [CompPoly/Univariate/BatchEval/Naive.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Naive.lean), by Valerii Huhnin.
+`CompPoly.Univariate.BatchEval.Naive`, in [CompPoly/Univariate/BatchEval/Naive.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Naive.lean), by Valerii Huhnin.
 
 > Specification-level batch evaluators for canonical univariate polynomials.
 
-`CompPoly.CPolynomial.evalBatch` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Naive.lean#L24))
+`CompPoly.CPolynomial.evalBatch` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Naive.lean#L24))
 
 > Evaluate a polynomial at every point using the direct sum-of-powers evaluator.
 
@@ -19,7 +19,7 @@ proof: formalized
 def evalBatch [Semiring R] (p : CPolynomial R) (xs : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.evalBatchHorner` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Naive.lean#L29))
+`CompPoly.CPolynomial.evalBatchHorner` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Naive.lean#L29))
 
 > Evaluate a polynomial at every point using Horner evaluation.
 
@@ -33,5 +33,5 @@ def evalBatchHorner [Semiring R] (p : CPolynomial R) (xs : Array R) : Array R
 
 ## Sources
 
-- [CompPoly/Univariate/BatchEval/Naive.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Naive.lean)
+- [CompPoly/Univariate/BatchEval/Naive.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/BatchEval/Naive.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.BatchEval.Naive.json)

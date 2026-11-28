@@ -2,15 +2,15 @@
  "schema": "trough-ledger/v1",
  "library": "CompPoly",
  "repo": "Verified-zkEVM/CompPoly",
- "rev": "c72a765272497b4c52201be11be47af5718c7488",
+ "rev": "bb05e501d920b77a95e1621e6815a71ed007fd97",
  "module": "CompPoly.Fields.BLS12_377.Fast",
  "file": "CompPoly/Fields/BLS12_377/Fast.lean",
  "public": [
   {"name": "BLS12_377.Fast.instGcdData", "kind": "instance", "line": 30},
-  {"name": "BLS12_377.Fast.instMont64x8Field", "kind": "instance", "line": 38},
-  {"name": "BLS12_377.Fast.ScalarField", "kind": "abbrev", "line": 52},
-  {"name": "BLS12_377.Fast.ofField", "kind": "def", "line": 56},
-  {"name": "BLS12_377.Fast.ringEquiv", "kind": "def", "line": 61}
+  {"name": "BLS12_377.Fast.instMont64x4Field", "kind": "instance", "line": 36},
+  {"name": "BLS12_377.Fast.ScalarField", "kind": "abbrev", "line": 47},
+  {"name": "BLS12_377.Fast.ofField", "kind": "def", "line": 51},
+  {"name": "BLS12_377.Fast.ringEquiv", "kind": "def", "line": 56}
  ],
  "private": [],
  "missing": [],

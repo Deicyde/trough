@@ -7,7 +7,7 @@ proof: formalized
 
 # `GF(2^64)` in a polynomial basis
 
-`CompPoly.Fields.Binary.BF64.Basic`, in [CompPoly/Fields/Binary/BF64/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean), by Nicolas Schleicher.
+`CompPoly.Fields.Binary.BF64.Basic`, in [CompPoly/Fields/Binary/BF64/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean), by Nicolas Schleicher.
 
 > The field
 >
@@ -57,7 +57,7 @@ proof: formalized
 > * [Rabin80] Michael O. Rabin. Probabilistic Algorithms in Finite Fields.
 >   SIAM Journal on Computing, 9(2):273-280, 1980. https://doi.org/10.1137/0209024
 
-`BF64.basePoly` (definition, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L76))
+`BF64.basePoly` (definition, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L76))
 
 > The modulus `x^64 + x^4 + x^3 + x + 1` over `GF(2)`. Part of the specification only;
 > it is never evaluated.
@@ -66,7 +66,7 @@ proof: formalized
 noncomputable def basePoly : Polynomial (ZMod 2)
 ```
 
-`BF64.toPoly_modulus` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L79))
+`BF64.toPoly_modulus` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L79))
 
 > The certificate's bitmask encoding of the modulus denotes `basePoly`.
 
@@ -74,7 +74,7 @@ noncomputable def basePoly : Polynomial (ZMod 2)
 theorem toPoly_modulus : toPoly modulus = basePoly
 ```
 
-`BF64.basePoly_natDegree` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L84))
+`BF64.basePoly_natDegree` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L84))
 
 > The modulus has degree `64`: the leading `X ^ 64` dominates the tail.
 
@@ -82,7 +82,7 @@ theorem toPoly_modulus : toPoly modulus = basePoly
 theorem basePoly_natDegree : basePoly.natDegree = 64
 ```
 
-`BF64.basePoly_degree` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L88))
+`BF64.basePoly_degree` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L88))
 
 > `basePoly_natDegree` in `degree` form, as the division lemmas expect.
 
@@ -90,7 +90,7 @@ theorem basePoly_natDegree : basePoly.natDegree = 64
 theorem basePoly_degree : basePoly.degree = (64 : ℕ)
 ```
 
-`BF64.basePoly_ne_zero` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L92))
+`BF64.basePoly_ne_zero` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L92))
 
 > The modulus is nonzero, so it can be divided by.
 
@@ -98,7 +98,7 @@ theorem basePoly_degree : basePoly.degree = (64 : ℕ)
 theorem basePoly_ne_zero : basePoly ≠ 0
 ```
 
-`BF64.basePoly_irreducible` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L112))
+`BF64.basePoly_irreducible` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L112))
 
 > `x^64 + x^4 + x^3 + x + 1` is irreducible over `GF(2)`, by Rabin's test against the
 > kernel-checked bitmask chains in `BF64.BaseCert`.
@@ -119,7 +119,7 @@ theorem basePoly_irreducible : Irreducible basePoly
 
 > ## The reduction identity
 
-`BF64.baseTail` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L127))
+`BF64.baseTail` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L127))
 
 > The modulus below its leading term: `x^4 + x^3 + x + 1`, denoted by the reduction
 > constant `0x1B`.
@@ -128,7 +128,7 @@ theorem basePoly_irreducible : Irreducible basePoly
 noncomputable def baseTail : Polynomial (ZMod 2)
 ```
 
-`BF64.baseTail_eq` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L130))
+`BF64.baseTail_eq` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L130))
 
 > The defining equation of `baseTail`, for rewriting.
 
@@ -136,7 +136,7 @@ noncomputable def baseTail : Polynomial (ZMod 2)
 theorem baseTail_eq : baseTail = X ^ 4 + X ^ 3 + X + 1
 ```
 
-`BF64.basePoly_eq` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L133))
+`BF64.basePoly_eq` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L133))
 
 > The defining equation of `basePoly`, for rewriting.
 
@@ -144,7 +144,7 @@ theorem baseTail_eq : baseTail = X ^ 4 + X ^ 3 + X + 1
 theorem basePoly_eq : basePoly = X ^ 64 + X ^ 4 + X ^ 3 + X + 1
 ```
 
-`BF64.basePoly_eq_add_tail` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L136))
+`BF64.basePoly_eq_add_tail` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L136))
 
 > The modulus split into its leading term and its tail.
 
@@ -152,7 +152,7 @@ theorem basePoly_eq : basePoly = X ^ 64 + X ^ 4 + X ^ 3 + X + 1
 theorem basePoly_eq_add_tail : basePoly = X ^ 64 + baseTail
 ```
 
-`BF64.mul_pow_reduce` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L141))
+`BF64.mul_pow_reduce` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L141))
 
 > `x^64 ≡ x^4 + x^3 + x + 1` modulo the modulus: multiplying by `X ^ 64` may be
 > replaced by multiplying by `baseTail`.
@@ -164,7 +164,7 @@ theorem mul_pow_reduce (A : Polynomial (ZMod 2)) :
 
 > ## The base field
 
-`BF64.BF64Quot` (abbreviation, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L154))
+`BF64.BF64Quot` (abbreviation, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L154))
 
 > `GF(2^64)` as the quotient `GF(2)[x] / (x^64 + x^4 + x^3 + x + 1)`.
 >
@@ -175,7 +175,7 @@ theorem mul_pow_reduce (A : Polynomial (ZMod 2)) :
 noncomputable abbrev BF64Quot : Type
 ```
 
-`BF64.card_bf64Quot` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean#L167))
+`BF64.card_bf64Quot` (theorem, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean#L167))
 
 > `BF64Quot` has `2^64` elements.
 
@@ -189,5 +189,5 @@ theorem card_bf64Quot : Fintype.card BF64Quot = 2 ^ 64
 
 ## Sources
 
-- [CompPoly/Fields/Binary/BF64/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Basic.lean)
+- [CompPoly/Fields/Binary/BF64/Basic.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/Binary/BF64/Basic.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.BF64.Basic.json)

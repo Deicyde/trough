@@ -7,7 +7,7 @@ proof: formalized
 
 # Tuple operations on maps `Fin n →₀ M`
 
-`CompPoly.ToMathlib.Finsupp.Fin`, in [CompPoly/ToMathlib/Finsupp/Fin.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean), by Ivan Sadofschi Costa, Quang Dao.
+`CompPoly.ToMathlib.Finsupp.Fin`, in [CompPoly/ToMathlib/Finsupp/Fin.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean), by Ivan Sadofschi Costa, Quang Dao.
 
 > We interpret maps `Fin n →₀ M` as `n`-tuples of elements of `M`, and define the following
 > operations:
@@ -21,7 +21,7 @@ proof: formalized
 > In this context, we prove some usual properties of these operations, analogous to those of
 > `Data.Fin.Tuple.Basic`.
 
-`Finsupp.init` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L42))
+`Finsupp.init` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L42))
 
 > `init` for maps `Fin n →₀ M`. See `Fin.init` for more details.
 
@@ -29,7 +29,7 @@ proof: formalized
 def init (s : Fin (n + 1) →₀ M) : Fin n →₀ M
 ```
 
-`Finsupp.removeNth` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L46))
+`Finsupp.removeNth` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L46))
 
 > `removeNth` for maps `Fin n →₀ M`. See `Fin.removeNth` for more details.
 
@@ -37,7 +37,7 @@ def init (s : Fin (n + 1) →₀ M) : Fin n →₀ M
 def removeNth (p : Fin (n + 1)) (s : Fin (n + 1) →₀ M) : Fin n →₀ M
 ```
 
-`Finsupp.snoc` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L54))
+`Finsupp.snoc` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L54))
 
 > `snoc` for maps `Fin n →₀ M`. See `Fin.snoc` for more details.
 
@@ -45,7 +45,7 @@ def removeNth (p : Fin (n + 1)) (s : Fin (n + 1) →₀ M) : Fin n →₀ M
 def snoc (s : Fin n →₀ M) (y : M) : Fin (n + 1) →₀ M
 ```
 
-`Finsupp.insertNth` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L58))
+`Finsupp.insertNth` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L58))
 
 > `insertNth` for maps `Fin n →₀ M`. See `Fin.insertNth` for more details.
 
@@ -53,25 +53,25 @@ def snoc (s : Fin n →₀ M) (y : M) : Fin (n + 1) →₀ M
 def insertNth (p : Fin (n + 1)) (y : M) (s : Fin n →₀ M) : Fin (n + 1) →₀ M
 ```
 
-`Finsupp.removeNth_apply` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L66))
+`Finsupp.removeNth_apply` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L66))
 
 ```lean
 theorem removeNth_apply : removeNth p s i = s (p.succAbove i)
 ```
 
-`Finsupp.removeNth_zero` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L69))
+`Finsupp.removeNth_zero` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L69))
 
 ```lean
 theorem removeNth_zero : removeNth 0 s = tail s
 ```
 
-`Finsupp.removeNth_last` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L72))
+`Finsupp.removeNth_last` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L72))
 
 ```lean
 theorem removeNth_last : removeNth (Fin.last n) s = init s
 ```
 
-`Finsupp.removeNth_update` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L76))
+`Finsupp.removeNth_update` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L76))
 
 > Updating the `i`-th entry does not affect removing the `i`-th entry.
 
@@ -79,173 +79,173 @@ theorem removeNth_last : removeNth (Fin.last n) s = init s
 theorem removeNth_update : removeNth p (update s p y) = removeNth p s
 ```
 
-`Finsupp.init_apply` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L88))
+`Finsupp.init_apply` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L88))
 
 ```lean
 theorem init_apply : init s i = s i.castSucc
 ```
 
-`Finsupp.init_update_last` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L91))
+`Finsupp.init_update_last` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L91))
 
 ```lean
 theorem init_update_last : init (update s (Fin.last n) y) = init s
 ```
 
-`Finsupp.init_update_castSucc` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L94))
+`Finsupp.init_update_castSucc` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L94))
 
 ```lean
 theorem init_update_castSucc : init (update s i.castSucc y) = update (init s) i y
 ```
 
-`Finsupp.tail_init_eq_init_tail` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L97))
+`Finsupp.tail_init_eq_init_tail` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L97))
 
 ```lean
 theorem tail_init_eq_init_tail (s : Fin (n + 2) →₀ M) : tail (init s) = init (tail s)
 ```
 
-`Finsupp.snoc_last` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L113))
+`Finsupp.snoc_last` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L113))
 
 ```lean
 theorem snoc_last : snoc s y (Fin.last n) = y
 ```
 
-`Finsupp.snoc_castSucc` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L116))
+`Finsupp.snoc_castSucc` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L116))
 
 ```lean
 theorem snoc_castSucc : snoc s y i.castSucc = s i
 ```
 
-`Finsupp.insertNth_zero` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L119))
+`Finsupp.insertNth_zero` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L119))
 
 ```lean
 theorem insertNth_zero : insertNth 0 y s = cons y s
 ```
 
-`Finsupp.insertNth_last` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L122))
+`Finsupp.insertNth_last` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L122))
 
 ```lean
 theorem insertNth_last : insertNth (Fin.last n) y s = snoc s y
 ```
 
-`Finsupp.insertNth_apply_same` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L125))
+`Finsupp.insertNth_apply_same` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L125))
 
 ```lean
 theorem insertNth_apply_same : insertNth p y s p = y
 ```
 
-`Finsupp.insertNth_apply_succAbove` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L128))
+`Finsupp.insertNth_apply_succAbove` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L128))
 
 ```lean
 theorem insertNth_apply_succAbove : insertNth p y s (p.succAbove i) = s i
 ```
 
-`Finsupp.init_snoc` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L142))
+`Finsupp.init_snoc` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L142))
 
 ```lean
 theorem init_snoc : init (snoc s y) = s
 ```
 
-`Finsupp.snoc_init_self` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L146))
+`Finsupp.snoc_init_self` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L146))
 
 ```lean
 theorem snoc_init_self : snoc (init t) (t (Fin.last n)) = t
 ```
 
-`Finsupp.insertNth_removeNth` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L151))
+`Finsupp.insertNth_removeNth` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L151))
 
 ```lean
 theorem insertNth_removeNth : insertNth p y (removeNth p t) = update t p y
 ```
 
-`Finsupp.insertNth_self_removeNth` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L156))
+`Finsupp.insertNth_self_removeNth` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L156))
 
 ```lean
 theorem insertNth_self_removeNth : insertNth p (t p) (removeNth p t) = t
 ```
 
-`Finsupp.snoc_zero_zero` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L168))
+`Finsupp.snoc_zero_zero` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L168))
 
 ```lean
 theorem snoc_zero_zero : snoc (0 : Fin n →₀ M) 0 = 0
 ```
 
-`Finsupp.insertNth_zero_zero` (theorem, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L174))
+`Finsupp.insertNth_zero_zero` (theorem, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L174))
 
 ```lean
 theorem insertNth_zero_zero : insertNth p 0 (0 : Fin n →₀ M) = 0
 ```
 
-`Finsupp.snoc_ne_zero_of_left` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L195))
+`Finsupp.snoc_ne_zero_of_left` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L195))
 
 ```lean
 theorem snoc_ne_zero_of_left (h : s ≠ 0) : snoc s y ≠ 0
 ```
 
-`Finsupp.snoc_ne_zero_of_right` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L200))
+`Finsupp.snoc_ne_zero_of_right` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L200))
 
 ```lean
 theorem snoc_ne_zero_of_right (h : y ≠ 0) : snoc s y ≠ 0
 ```
 
-`Finsupp.snoc_ne_zero_iff` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L204))
+`Finsupp.snoc_ne_zero_iff` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L204))
 
 ```lean
 theorem snoc_ne_zero_iff : snoc s y ≠ 0 ↔ s ≠ 0 ∨ y ≠ 0
 ```
 
-`Finsupp.insertNth_ne_zero_of_left` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L209))
+`Finsupp.insertNth_ne_zero_of_left` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L209))
 
 ```lean
 theorem insertNth_ne_zero_of_left (h : y ≠ 0) : insertNth p y s ≠ 0
 ```
 
-`Finsupp.insertNth_ne_zero_of_right` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L213))
+`Finsupp.insertNth_ne_zero_of_right` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L213))
 
 ```lean
 theorem insertNth_ne_zero_of_right (h : s ≠ 0) : insertNth p y s ≠ 0
 ```
 
-`Finsupp.insertNth_ne_zero_iff` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L218))
+`Finsupp.insertNth_ne_zero_iff` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L218))
 
 ```lean
 theorem insertNth_ne_zero_iff : insertNth p y s ≠ 0 ↔ y ≠ 0 ∨ s ≠ 0
 ```
 
-`Finsupp.snoc_support` (theorem, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L234))
+`Finsupp.snoc_support` (theorem, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L234))
 
 ```lean
 theorem snoc_support :
     (s.snoc y).support ⊆ insert (Fin.last n) (s.support.map Fin.castSuccEmb)
 ```
 
-`Finsupp.snoc_left_injective` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L242))
+`Finsupp.snoc_left_injective` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L242))
 
 ```lean
 theorem snoc_left_injective : Injective (Finsupp.snoc · y : (Fin n →₀ M) → Fin (n + 1) →₀ M)
 ```
 
-`Finsupp.insertNth_support` (theorem, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L246))
+`Finsupp.insertNth_support` (theorem, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L246))
 
 ```lean
 theorem insertNth_support :
     (insertNth p y s).support ⊆ insert p (s.support.map (Fin.succAboveEmb p))
 ```
 
-`Finsupp.insertNth_right_injective` (theorem, [line 254](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L254))
+`Finsupp.insertNth_right_injective` (theorem, [line 254](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L254))
 
 ```lean
 theorem insertNth_right_injective :
     Injective (Finsupp.insertNth p y : (Fin n →₀ M) → Fin (n + 1) →₀ M)
 ```
 
-`Finsupp.sum_insertNth` (lemma, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L265))
+`Finsupp.sum_insertNth` (lemma, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L265))
 
 ```lean
 lemma sum_insertNth [AddCommMonoid M] {n : ℕ} (σ : Fin n →₀ M) (i : M) (p : Fin (n + 1)) :
     (insertNth p i σ).sum (fun _ e ↦ e) = i + σ.sum (fun _ e ↦ e)
 ```
 
-`Finsupp.sum_insertNth'` (lemma, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean#L270))
+`Finsupp.sum_insertNth'` (lemma, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean#L270))
 
 ```lean
 lemma sum_insertNth' [AddCommMonoid M] [AddCommMonoid N] {n : ℕ} (σ : Fin n →₀ M) (i : M)
@@ -259,5 +259,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/ToMathlib/Finsupp/Fin.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Finsupp/Fin.lean)
+- [CompPoly/ToMathlib/Finsupp/Fin.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/ToMathlib/Finsupp/Fin.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.Finsupp.Fin.json)

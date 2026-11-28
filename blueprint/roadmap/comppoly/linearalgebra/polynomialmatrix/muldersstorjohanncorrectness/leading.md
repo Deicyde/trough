@@ -7,11 +7,11 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Shifted Leading Term Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean), by Valerii Huhnin.
 
 > Shifted leading-position data and cancellation degree bounds.
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_lt` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L26))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_lt` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L26))
 
 ```lean
 theorem rowShiftedLeadingPosition?_lt
@@ -20,7 +20,7 @@ theorem rowShiftedLeadingPosition?_lt
     pos < row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_no_larger_tie` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L44))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_no_larger_tie` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L44))
 
 ```lean
 theorem rowShiftedLeadingPosition?_no_larger_tie
@@ -31,7 +31,7 @@ theorem rowShiftedLeadingPosition?_no_larger_tie
     shiftedEntryDegree? row shift k ≠ some degree
 ```
 
-`CompPoly.PolynomialMatrix.list_find?_some_of_exists` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L95))
+`CompPoly.PolynomialMatrix.list_find?_some_of_exists` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L95))
 
 ```lean
 theorem list_find?_some_of_exists
@@ -40,7 +40,7 @@ theorem list_find?_some_of_exists
     ∃ x, xs.find? pred = some x
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_some_of_degree` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L116))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_some_of_degree` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L116))
 
 ```lean
 theorem rowShiftedLeadingPosition?_some_of_degree
@@ -49,7 +49,7 @@ theorem rowShiftedLeadingPosition?_some_of_degree
     ∃ pos, rowShiftedLeadingPosition? row shift = some pos
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_le_of_entry_eq_degree` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L137))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_le_of_entry_eq_degree` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L137))
 
 ```lean
 theorem rowShiftedLeadingPosition?_le_of_entry_eq_degree
@@ -61,7 +61,7 @@ theorem rowShiftedLeadingPosition?_le_of_entry_eq_degree
     k ≤ pos
 ```
 
-`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_of_rowGet_ne_zero` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L149))
+`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_of_rowGet_ne_zero` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L149))
 
 ```lean
 theorem shiftedEntryDegree?_eq_some_of_rowGet_ne_zero
@@ -71,7 +71,7 @@ theorem shiftedEntryDegree?_eq_some_of_rowGet_ne_zero
       some ((rowGet row j).natDegree + shift.getD j 0)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_iff_data` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L161))
+`CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_iff_data` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L161))
 
 ```lean
 theorem shiftedEntryDegree?_eq_some_iff_data
@@ -81,7 +81,7 @@ theorem shiftedEntryDegree?_eq_some_iff_data
         (rowGet row j).natDegree + shift.getD j 0 = d
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedDegree?_entry_bound` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L183))
+`CompPoly.PolynomialMatrix.rowShiftedDegree?_entry_bound` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L183))
 
 ```lean
 theorem rowShiftedDegree?_entry_bound
@@ -91,7 +91,7 @@ theorem rowShiftedDegree?_entry_bound
     (rowGet row j).natDegree + shift.getD j 0 ≤ degree
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_entry_eq` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L192))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?_entry_eq` (theorem, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L192))
 
 ```lean
 theorem rowShiftedLeadingPosition?_entry_eq
@@ -101,7 +101,7 @@ theorem rowShiftedLeadingPosition?_entry_eq
     shiftedEntryDegree? row shift pos = some degree
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_some_of_position` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L208))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_some_of_position` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L208))
 
 ```lean
 theorem rowShiftedLeadingTerm?_some_of_position
@@ -111,7 +111,7 @@ theorem rowShiftedLeadingTerm?_some_of_position
       rowShiftedLeadingTerm? row shift = some term ∧ term.position = pos
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_some_data` (theorem, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L235))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_some_data` (theorem, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L235))
 
 ```lean
 theorem rowShiftedLeadingTerm?_some_data
@@ -125,7 +125,7 @@ theorem rowShiftedLeadingTerm?_some_data
       term.coeff = (rowGet row term.position).coeff term.degree
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_coeff_ne_zero` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L264))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_coeff_ne_zero` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L264))
 
 ```lean
 theorem rowShiftedLeadingTerm?_coeff_ne_zero
@@ -134,7 +134,7 @@ theorem rowShiftedLeadingTerm?_coeff_ne_zero
     term.coeff ≠ 0
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_coeff_mul_natDegree_add_ne_zero` (theorem, [line 277](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L277))
+`CompPoly.PolynomialMatrix.cpoly_coeff_mul_natDegree_add_ne_zero` (theorem, [line 277](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L277))
 
 ```lean
 theorem cpoly_coeff_mul_natDegree_add_ne_zero
@@ -142,14 +142,14 @@ theorem cpoly_coeff_mul_natDegree_add_ne_zero
     (P * Q).coeff (P.natDegree + Q.natDegree) ≠ 0
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_natDegree_monomial_le` (theorem, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L293))
+`CompPoly.PolynomialMatrix.cpoly_natDegree_monomial_le` (theorem, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L293))
 
 ```lean
 theorem cpoly_natDegree_monomial_le (d : Nat) (c : F) :
     (CPolynomial.monomial d c).natDegree ≤ d
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_natDegree_monomial_mul_le` (theorem, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L300))
+`CompPoly.PolynomialMatrix.cpoly_natDegree_monomial_mul_le` (theorem, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L300))
 
 ```lean
 theorem cpoly_natDegree_monomial_mul_le
@@ -157,7 +157,7 @@ theorem cpoly_natDegree_monomial_mul_le
     (CPolynomial.monomial d c * P).natDegree ≤ d + P.natDegree
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_coeff_monomial_mul` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L307))
+`CompPoly.PolynomialMatrix.cpoly_coeff_monomial_mul` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L307))
 
 ```lean
 theorem cpoly_coeff_monomial_mul
@@ -166,7 +166,7 @@ theorem cpoly_coeff_monomial_mul
       c * P.coeff d
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_natDegree_sub_shift_le` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L320))
+`CompPoly.PolynomialMatrix.cpoly_natDegree_sub_shift_le` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L320))
 
 ```lean
 theorem cpoly_natDegree_sub_shift_le
@@ -177,7 +177,7 @@ theorem cpoly_natDegree_sub_shift_le
     (P - Q).natDegree + shiftDegree ≤ bound
 ```
 
-`CompPoly.PolynomialMatrix.cpoly_natDegree_sub_shift_lt` (theorem, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L342))
+`CompPoly.PolynomialMatrix.cpoly_natDegree_sub_shift_lt` (theorem, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L342))
 
 ```lean
 theorem cpoly_natDegree_sub_shift_lt
@@ -188,7 +188,7 @@ theorem cpoly_natDegree_sub_shift_lt
     (P - Q).natDegree + shiftDegree < bound
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedDegree?_le_of_entry_bound` (theorem, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L364))
+`CompPoly.PolynomialMatrix.rowShiftedDegree?_le_of_entry_bound` (theorem, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L364))
 
 ```lean
 theorem rowShiftedDegree?_le_of_entry_bound
@@ -199,7 +199,7 @@ theorem rowShiftedDegree?_le_of_entry_bound
     degree ≤ bound
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_entry_bound` (theorem, [line 377](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L377))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_entry_bound` (theorem, [line 377](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L377))
 
 ```lean
 theorem rowShiftedLeadingTerm?_entry_bound
@@ -209,7 +209,7 @@ theorem rowShiftedLeadingTerm?_entry_bound
     (rowGet row k).natDegree + shift.getD k 0 ≤ term.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_entry_strict_of_pos_lt` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L387))
+`CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?_entry_strict_of_pos_lt` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L387))
 
 ```lean
 theorem rowShiftedLeadingTerm?_entry_strict_of_pos_lt
@@ -220,7 +220,7 @@ theorem rowShiftedLeadingTerm?_entry_strict_of_pos_lt
     (rowGet row k).natDegree + shift.getD k 0 < term.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.rowScaleMonomial_entry_bound_of_leading_terms` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L408))
+`CompPoly.PolynomialMatrix.rowScaleMonomial_entry_bound_of_leading_terms` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L408))
 
 ```lean
 theorem rowScaleMonomial_entry_bound_of_leading_terms
@@ -238,7 +238,7 @@ theorem rowScaleMonomial_entry_bound_of_leading_terms
         shift.getD k 0 ≤ t.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.rowScaleMonomial_entry_strict_of_pos_lt` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L448))
+`CompPoly.PolynomialMatrix.rowScaleMonomial_entry_strict_of_pos_lt` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L448))
 
 ```lean
 theorem rowScaleMonomial_entry_strict_of_pos_lt
@@ -256,7 +256,7 @@ theorem rowScaleMonomial_entry_strict_of_pos_lt
         shift.getD k 0 < t.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_coeff_cancel` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L485))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_coeff_cancel` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L485))
 
 ```lean
 theorem cancelShiftedLeadingTerm_coeff_cancel
@@ -270,7 +270,7 @@ theorem cancelShiftedLeadingTerm_coeff_cancel
     (rowGet (cancelShiftedLeadingTerm target reducer shift) t.position).coeff t.degree = 0
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_no_target_shifted_entry` (theorem, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L536))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_no_target_shifted_entry` (theorem, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L536))
 
 ```lean
 theorem cancelShiftedLeadingTerm_no_target_shifted_entry
@@ -284,7 +284,7 @@ theorem cancelShiftedLeadingTerm_no_target_shifted_entry
       some t.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_entry_bound` (theorem, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L566))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_entry_bound` (theorem, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L566))
 
 ```lean
 theorem cancelShiftedLeadingTerm_entry_bound
@@ -301,7 +301,7 @@ theorem cancelShiftedLeadingTerm_entry_bound
         shift.getD k 0 ≤ t.shiftedDegree
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_entry_strict_of_pos_lt` (theorem, [line 604](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L604))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_entry_strict_of_pos_lt` (theorem, [line 604](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean#L604))
 
 ```lean
 theorem cancelShiftedLeadingTerm_entry_strict_of_pos_lt
@@ -329,5 +329,5 @@ theorem cancelShiftedLeadingTerm_entry_strict_of_pos_lt
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Leading.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading.json)

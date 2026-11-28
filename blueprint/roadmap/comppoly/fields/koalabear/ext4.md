@@ -7,7 +7,7 @@ proof: formalized
 
 # The degree-4 extension of KoalaBear
 
-`CompPoly.Fields.KoalaBear.Ext4`, in [CompPoly/Fields/KoalaBear/Ext4.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean), by Derek Sorensen.
+`CompPoly.Fields.KoalaBear.Ext4`, in [CompPoly/Fields/KoalaBear/Ext4.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean), by Derek Sorensen.
 
 > `KoalaBear[X] / (X^4 - 3)`, the challenge field used alongside the KoalaBear base field in
 > Plonky3-style STARKs.
@@ -23,7 +23,7 @@ proof: formalized
 > * `KoalaBear.ext4Params`: the `BinomialParams` for `X^4 - 3`.
 > * `KoalaBear.Ext4`: the extension field itself.
 
-`KoalaBear.ext4Params` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L48))
+`KoalaBear.ext4Params` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L48))
 
 > The parameters of the quartic extension `KoalaBear[X] / (X^4 - 3)`.
 
@@ -31,25 +31,25 @@ proof: formalized
 def ext4Params : BinomialParams Field
 ```
 
-`KoalaBear.ext4Params_d` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L57))
+`KoalaBear.ext4Params_d` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L57))
 
 ```lean
 theorem ext4Params_d : ext4Params.d = 4
 ```
 
-`KoalaBear.ext4Params_W` (theorem, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L58))
+`KoalaBear.ext4Params_W` (theorem, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L58))
 
 ```lean
 theorem ext4Params_W : ext4Params.W = 3
 ```
 
-`KoalaBear.ext4Params_q` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L59))
+`KoalaBear.ext4Params_q` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L59))
 
 ```lean
 theorem ext4Params_q : ext4Params.q = fieldSize
 ```
 
-`KoalaBear.ext4Params_poly_irreducible` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L62))
+`KoalaBear.ext4Params_poly_irreducible` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L62))
 
 > `X^4 - 3` is irreducible over KoalaBear, by the collapsed Rabin criterion.
 
@@ -57,7 +57,7 @@ theorem ext4Params_q : ext4Params.q = fieldSize
 theorem ext4Params_poly_irreducible : Irreducible ext4Params.poly
 ```
 
-`KoalaBear.Ext4` (abbreviation, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L79))
+`KoalaBear.Ext4` (abbreviation, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L79))
 
 > The degree-4 extension field of KoalaBear.
 
@@ -65,7 +65,7 @@ theorem ext4Params_poly_irreducible : Irreducible ext4Params.poly
 abbrev Ext4 : Type
 ```
 
-`KoalaBear.ext4Gen` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L82))
+`KoalaBear.ext4Gen` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L82))
 
 > The adjoined fourth root of `3`, as an element of `Ext4`.
 
@@ -73,7 +73,7 @@ abbrev Ext4 : Type
 def ext4Gen : Ext4
 ```
 
-`KoalaBear.ext4Gen_eq_gen` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L92))
+`KoalaBear.ext4Gen_eq_gen` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L92))
 
 > `ext4Gen` is the framework's `Ext.gen`.
 >
@@ -86,7 +86,7 @@ def ext4Gen : Ext4
 theorem ext4Gen_eq_gen : ext4Gen = Ext.gen
 ```
 
-`KoalaBear.toQuot_ext4Gen` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L95))
+`KoalaBear.toQuot_ext4Gen` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L95))
 
 > `ext4Gen` maps to the adjoined root of the specification.
 
@@ -94,7 +94,7 @@ theorem ext4Gen_eq_gen : ext4Gen = Ext.gen
 theorem toQuot_ext4Gen : Ext.toQuot ext4Gen = Ext.rt ext4Params.toExtensionParams
 ```
 
-`KoalaBear.ext4Gen_pow_four` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L99))
+`KoalaBear.ext4Gen_pow_four` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L99))
 
 > **The defining relation**, as a theorem rather than only an executable check.
 
@@ -102,7 +102,7 @@ theorem toQuot_ext4Gen : Ext.toQuot ext4Gen = Ext.rt ext4Params.toExtensionParam
 theorem ext4Gen_pow_four : ext4Gen ^ 4 = Ext.ofBase (3 : Field)
 ```
 
-`KoalaBear.aeval_ext4Gen` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L103))
+`KoalaBear.aeval_ext4Gen` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L103))
 
 > `ext4Gen` is a root of `X^4 - 3`, in the form `aeval` expects.
 
@@ -110,7 +110,7 @@ theorem ext4Gen_pow_four : ext4Gen ^ 4 = Ext.ofBase (3 : Field)
 theorem aeval_ext4Gen : aeval ext4Gen ext4Params.poly = 0
 ```
 
-`KoalaBear.card_ext4` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean#L106))
+`KoalaBear.card_ext4` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean#L106))
 
 ```lean
 theorem card_ext4 : Fintype.card Ext4 = fieldSize ^ 4
@@ -128,5 +128,5 @@ theorem card_ext4 : Fintype.card Ext4 = fieldSize ^ 4
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Ext4.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext4.lean)
+- [CompPoly/Fields/KoalaBear/Ext4.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Fields/KoalaBear/Ext4.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Ext4.json)

@@ -7,14 +7,14 @@ proof: formalized
 
 # Finite-Field Root Backend
 
-`CompPoly.Univariate.Roots.Backend`, in [CompPoly/Univariate/Roots/Backend.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Backend.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Backend`, in [CompPoly/Univariate/Roots/Backend.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Backend.lean), by Valerii Huhnin.
 
 > Executable field-root extraction over finite fields. The public operation
 > handles zero, constant, and linear cases explicitly, computes the finite-field
 > root product modulo the input polynomial, splits the product into linear
 > factors, then validates and deduplicates candidates against the original input.
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootsInFiniteFieldWith` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Backend.lean#L31))
+`CompPoly.CPolynomial.Roots.FiniteField.rootsInFiniteFieldWith` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Backend.lean#L31))
 
 > Executable roots of a univariate polynomial over a finite field.
 
@@ -25,7 +25,7 @@ def rootsInFiniteFieldWith {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (p : CPolynomial F) : Array F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootsInFiniteField` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Backend.lean#L47))
+`CompPoly.CPolynomial.Roots.FiniteField.rootsInFiniteField` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Backend.lean#L47))
 
 > Executable roots using the default raw multiplication and monic-remainder backends.
 
@@ -42,5 +42,5 @@ def rootsInFiniteField {F : Type*} [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Backend.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Backend.lean)
+- [CompPoly/Univariate/Roots/Backend.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/Backend.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Roots.Backend.json)

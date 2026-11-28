@@ -7,7 +7,7 @@ proof: formalized
 
 # Equivalence between `CPolynomial` and `CMvPolynomial 1`
 
-`CompPoly.Univariate.CMvEquiv`, in [CompPoly/Univariate/CMvEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CMvEquiv.lean), by Andrew Zitek-Estrada.
+`CompPoly.Univariate.CMvEquiv`, in [CompPoly/Univariate/CMvEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CMvEquiv.lean), by Andrew Zitek-Estrada.
 
 > This file establishes the ring equivalence
 > `CPolynomial.cmvEquiv : CPolynomial R ≃+* CMvPolynomial 1 R`.
@@ -19,7 +19,7 @@ proof: formalized
 > and degree, so one-variable results proved for `CPolynomial` can be transported
 > to callers that still use `CMvPolynomial 1`.
 
-`CompPoly.CPolynomial.cmvEquiv` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CMvEquiv.lean#L39))
+`CompPoly.CPolynomial.cmvEquiv` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CMvEquiv.lean#L39))
 
 > Ring equivalence between computable univariate polynomials and
 > single-variable computable multivariate polynomials.
@@ -30,7 +30,7 @@ noncomputable def cmvEquiv
     CPolynomial R ≃+* CMvPolynomial 1 R
 ```
 
-`CompPoly.CPolynomial.eval_cmvEquiv_symm` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CMvEquiv.lean#L135))
+`CompPoly.CPolynomial.eval_cmvEquiv_symm` (theorem, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CMvEquiv.lean#L135))
 
 > Evaluation after converting a single-variable `CMvPolynomial` back to
 > `CPolynomial` agrees with multivariate evaluation at the constant assignment.
@@ -42,7 +42,7 @@ theorem eval_cmvEquiv_symm
     ((cmvEquiv (R := R)).symm p).eval x = p.eval (fun _ ↦ x)
 ```
 
-`CompPoly.CPolynomial.natDegree_cmvEquiv_symm_sub` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CMvEquiv.lean#L142))
+`CompPoly.CPolynomial.natDegree_cmvEquiv_symm_sub` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CMvEquiv.lean#L142))
 
 > Degree transport for differences through the inverse of `cmvEquiv`.
 
@@ -60,5 +60,5 @@ theorem natDegree_cmvEquiv_symm_sub
 
 ## Sources
 
-- [CompPoly/Univariate/CMvEquiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/CMvEquiv.lean)
+- [CompPoly/Univariate/CMvEquiv.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/CMvEquiv.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.CMvEquiv.json)

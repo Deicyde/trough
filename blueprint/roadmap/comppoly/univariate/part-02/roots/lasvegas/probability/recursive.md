@@ -7,14 +7,14 @@ proof: formalized
 
 # Recursive Fallback Analysis for Las Vegas Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Probability.Recursive`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Probability.Recursive`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean), by Valerii Huhnin.
 
 > The abstract binomial-tail bound for recursive fallback, together with the
 > multi-factor splitting process that witnesses it: the process tracks the full
 > stack of unresolved factors, gives every splittable factor its own batch of
 > independent uniform probes, and records which factors fell back to enumeration.
 
-`CompPoly.CPolynomial.Roots.FiniteField.binomialFallbackTail` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L40))
+`CompPoly.CPolynomial.Roots.FiniteField.binomialFallbackTail` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L40))
 
 > …
 
@@ -22,7 +22,7 @@ proof: formalized
 noncomputable def binomialFallbackTail (attempts degree : Nat) : ℝ≥0∞
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.binomialTailCutoffPredicate` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L45))
+`CompPoly.CPolynomial.Roots.FiniteField.binomialTailCutoffPredicate` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L45))
 
 > A cutoff meets the binomial-tail target for field cardinality `q`.
 
@@ -30,7 +30,7 @@ noncomputable def binomialFallbackTail (attempts degree : Nat) : ℝ≥0∞
 def binomialTailCutoffPredicate (q degree attempts : Nat) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.RecursiveFallbackProbabilityModel` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L52))
+`CompPoly.CPolynomial.Roots.FiniteField.RecursiveFallbackProbabilityModel` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L52))
 
 > …
 
@@ -40,7 +40,7 @@ def RecursiveFallbackProbabilityModel {Ω : Type*}
     (attempts degree : Nat) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveFallback_probability_le_binomialTail` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L68))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveFallback_probability_le_binomialTail` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L68))
 
 > Target theorem for the full recursive splitter: under the independence and
 > root-product hypotheses represented by the future recursion model, fallback is
@@ -54,14 +54,14 @@ theorem recursiveFallback_probability_le_binomialTail {Ω : Type*}
     eventProbability process fallbackEvent ≤ binomialFallbackTail attempts degree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.toOuterMeasure_apply_le_one` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L104))
+`CompPoly.CPolynomial.Roots.FiniteField.toOuterMeasure_apply_le_one` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L104))
 
 ```lean
 theorem toOuterMeasure_apply_le_one {α : Type*} (p : PMF α) (s : Set α) :
     p.toOuterMeasure s ≤ 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L112))
+`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L112))
 
 > First successful split among independent trials, or `none` after exhaustion.
 
@@ -71,7 +71,7 @@ noncomputable def firstSuccessPMF {F : Type*} [Zero F]
     Nat → Nat → PMF (Option (Array (CPolynomial F)))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF_apply_none_le_geometric` (theorem, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L123))
+`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF_apply_none_le_geometric` (theorem, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L123))
 
 > Trials that succeed at rate one half are all survived with probability
 > at most `2 ^ -attempts`.
@@ -85,7 +85,7 @@ theorem firstSuccessPMF_apply_none_le_geometric {F : Type*} [Zero F]
       (firstSuccessPMF trial attempts offset) none ≤ ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF_support_some` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L155))
+`CompPoly.CPolynomial.Roots.FiniteField.firstSuccessPMF_support_some` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L155))
 
 > A successful batch outcome lies in the support of some individual trial.
 
@@ -97,7 +97,7 @@ theorem firstSuccessPMF_support_some {F : Type*} [Zero F]
       ∃ attempt, TrialResult.split children ∈ (trial attempt).support
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.IsSplitStep` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L185))
+`CompPoly.CPolynomial.Roots.FiniteField.IsSplitStep` (definition, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L185))
 
 > Facts a split trial guarantees about successful children: at least two of them,
 > each a nonzero nonconstant divisor of the parent, with total split work
@@ -108,7 +108,7 @@ def IsSplitStep {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (g : CPolynomial F) (children : Array (CPolynomial F)) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackSplitBudget` (definition, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L193))
+`CompPoly.CPolynomial.Roots.FiniteField.stackSplitBudget` (definition, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L193))
 
 > Number of splits a stack of unresolved factors can still require.
 
@@ -117,7 +117,7 @@ noncomputable def stackSplitBudget {F : Type*} [Field F] [BEq F] [LawfulBEq F] :
     List (CPolynomial F) → Nat
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackSplitBudget_append` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L198))
+`CompPoly.CPolynomial.Roots.FiniteField.stackSplitBudget_append` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L198))
 
 ```lean
 theorem stackSplitBudget_append {F : Type*} [Field F] [BEq F] [LawfulBEq F]
@@ -125,7 +125,7 @@ theorem stackSplitBudget_append {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     stackSplitBudget (xs ++ ys) = stackSplitBudget xs + stackSplitBudget ys
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eq_two_mul_budget_add_length` (theorem, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L207))
+`CompPoly.CPolynomial.Roots.FiniteField.stackWork_eq_two_mul_budget_add_length` (theorem, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L207))
 
 ```lean
 theorem stackWork_eq_two_mul_budget_add_length {F : Type*}
@@ -134,7 +134,7 @@ theorem stackWork_eq_two_mul_budget_add_length {F : Type*}
     stackWork l = 2 * stackSplitBudget l + l.length
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF` (definition, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L231))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF` (definition, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L231))
 
 > Multi-factor Las Vegas splitting process for an abstract per-factor trial
 > family.
@@ -153,7 +153,7 @@ noncomputable def recursiveSplitProcessPMF {F : Type*} [Field F] [BEq F] [Lawful
     Nat → List (CPolynomial F) → PMF (List Bool)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_support_length` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L248))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_support_length` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L248))
 
 > Process traces never exceed the split budget of the initial stack.
 
@@ -170,7 +170,7 @@ theorem recursiveSplitProcessPMF_support_length {F : Type*}
       tr2.length ≤ stackSplitBudget stack
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_rank_le_geometric` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L320))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_rank_le_geometric` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L320))
 
 > Each processed factor falls back with probability at most `2 ^ -attempts`:
 > the `j`-th entry of the process trace is `true` with at most that probability.
@@ -194,7 +194,7 @@ theorem recursiveSplitProcessPMF_rank_le_geometric {F : Type*}
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_rank_eq_zero_of_budget_le` (theorem, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L426))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_rank_eq_zero_of_budget_le` (theorem, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L426))
 
 > Trace entries beyond the split budget of the stack never appear.
 
@@ -213,7 +213,7 @@ theorem recursiveSplitProcessPMF_rank_eq_zero_of_budget_le {F : Type*}
       {tr2 : List Bool | tr2[j]? = some true} = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L451))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L451))
 
 > The multi-factor splitting process satisfies the recursive fallback model:
 > the `j`-th rank event is "the `j`-th processed splittable factor fell back",
@@ -240,7 +240,7 @@ theorem recursiveSplitProcessPMF_recursiveFallbackProbabilityModel {F : Type*}
       attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 499](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L499))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 499](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L499))
 
 > Generic recursive fallback bound: any per-factor trial family that succeeds at
 > rate one half on splitter-valid factors keeps the full recursion's fallback
@@ -266,7 +266,7 @@ theorem recursiveSplitProcessPMF_fallback_probability_le_binomialTail {F : Type*
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_isSplitStep` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L521))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_isSplitStep` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L521))
 
 > Successful odd split attempts are split steps.
 
@@ -280,7 +280,7 @@ theorem cantorZassenhausOddAttemptWith_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_isSplitStep` (theorem, [line 542](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L542))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_isSplitStep` (theorem, [line 542](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L542))
 
 > Successful retry-loop results are split steps.
 
@@ -294,7 +294,7 @@ theorem tryOddSplitAttemptsWith_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF_support_isSplitStep` (theorem, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L554))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF_support_isSplitStep` (theorem, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L554))
 
 > Successful odd split trials are split steps.
 
@@ -309,7 +309,7 @@ theorem oddSplitTrialPMF_support_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_isSplitStep` (theorem, [line 576](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L576))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_isSplitStep` (theorem, [line 576](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L576))
 
 > Successful trace split attempts are split steps.
 
@@ -325,7 +325,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_isSplitStep` (theorem, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L602))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_isSplitStep` (theorem, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L602))
 
 > Successful trace retry-loop results are split steps.
 
@@ -341,7 +341,7 @@ theorem tryEvenTraceSplitAttemptsWith_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrialPMF_support_isSplitStep` (theorem, [line 617](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L617))
+`CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrialPMF_support_isSplitStep` (theorem, [line 617](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L617))
 
 > Successful trace split trials are split steps.
 
@@ -358,7 +358,7 @@ theorem evenTraceTrialPMF_support_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF` (definition, [line 642](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L642))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF` (definition, [line 642](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L642))
 
 > Multi-factor odd Cantor-Zassenhaus splitting under uniform probes.
 
@@ -370,7 +370,7 @@ noncomputable def recursiveOddSplitProcessPMF {F : Type*}
     Nat → List (CPolynomial F) → PMF (List Bool)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L652))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 652](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L652))
 
 > The odd multi-factor process satisfies the recursive fallback model.
 
@@ -389,7 +389,7 @@ theorem recursiveOddSplitProcessPMF_recursiveFallbackProbabilityModel {F : Type*
       attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 678](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L678))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 678](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L678))
 
 > Full recursive fallback bound for the odd branch: starting from a root product
 > of degree `d`, the probability that any factor anywhere in the recursion falls
@@ -411,7 +411,7 @@ theorem recursiveOddSplitProcessPMF_fallback_probability_le_binomialTail {F : Ty
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF` (definition, [line 695](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L695))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF` (definition, [line 695](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L695))
 
 > Multi-factor characteristic-two trace splitting under uniform probes.
 
@@ -424,7 +424,7 @@ noncomputable def recursiveEvenTraceSplitProcessPMF {F : Type*}
     Nat → List (CPolynomial F) → PMF (List Bool)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 707](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L707))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF_recursiveFallbackProbabilityModel` (theorem, [line 707](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L707))
 
 > The trace multi-factor process satisfies the recursive fallback model.
 
@@ -445,7 +445,7 @@ theorem recursiveEvenTraceSplitProcessPMF_recursiveFallbackProbabilityModel {F :
       attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 734](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L734))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveEvenTraceSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 734](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L734))
 
 > Full recursive fallback bound for the characteristic-two trace branch.
 
@@ -466,7 +466,7 @@ theorem recursiveEvenTraceSplitProcessPMF_fallback_probability_le_binomialTail {
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF` (definition, [line 757](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L757))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF` (definition, [line 757](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L757))
 
 > Per-factor trial of the full Las Vegas backend: the odd Cantor-Zassenhaus
 > branch for odd `q`, the characteristic-two trace branch when trace metadata is
@@ -481,7 +481,7 @@ noncomputable def lasVegasSplitTrialPMF {F : Type*}
     (g : CPolynomial F) (attempt : Nat) : PMF (TrialResult F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.LasVegasUniformFieldModel` (inductive type, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L776))
+`CompPoly.CPolynomial.Roots.FiniteField.LasVegasUniformFieldModel` (inductive type, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L776))
 
 > Probability-facing model for the full Las Vegas backend: either the field has
 > odd cardinality, or it is a binary field presented with matching trace
@@ -498,7 +498,7 @@ inductive LasVegasUniformFieldModel (F : Type*) (q : Nat)
       (hfield : EvenTraceUniformFieldModel F q traceCtx enumeration)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.LasVegasUniformFieldModel.card_eq` (theorem, [line 785](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L785))
+`CompPoly.CPolynomial.Roots.FiniteField.LasVegasUniformFieldModel.card_eq` (theorem, [line 785](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L785))
 
 ```lean
 theorem LasVegasUniformFieldModel.card_eq {F : Type*} {q : Nat}
@@ -509,7 +509,7 @@ theorem LasVegasUniformFieldModel.card_eq {F : Type*} {q : Nat}
     Fintype.card F = q
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF_support_isSplitStep` (theorem, [line 796](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L796))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF_support_isSplitStep` (theorem, [line 796](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L796))
 
 > Successful backend trials are split steps.
 
@@ -525,7 +525,7 @@ theorem lasVegasSplitTrialPMF_support_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF_success_probability_ge_half` (theorem, [line 817](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L817))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitTrialPMF_success_probability_ge_half` (theorem, [line 817](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L817))
 
 > Backend trials on splitter-valid factors succeed at rate one half.
 
@@ -543,7 +543,7 @@ theorem lasVegasSplitTrialPMF_success_probability_ge_half {F : Type*}
         (lasVegasSplitTrialPMF M D traceCtx? enumeration.toFieldEnumeration q g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasRecursiveSplitProcessPMF` (definition, [line 858](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L858))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasRecursiveSplitProcessPMF` (definition, [line 858](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L858))
 
 > The full Las Vegas backend recursion under idealized uniform probes,
 > dispatching between the odd and trace branches by field characteristic.
@@ -557,7 +557,7 @@ noncomputable def lasVegasRecursiveSplitProcessPMF {F : Type*}
     Nat → List (CPolynomial F) → PMF (List Bool)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasRecursiveSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 872](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L872))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasRecursiveSplitProcessPMF_fallback_probability_le_binomialTail` (theorem, [line 872](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L872))
 
 > Backend-level recursive fallback bound: over any finite field — odd, or binary
 > with matching trace metadata — the full Las Vegas recursion on a splitter-valid
@@ -581,7 +581,7 @@ theorem lasVegasRecursiveSplitProcessPMF_fallback_probability_le_binomialTail {F
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_lasVegas_fallback_probability_le_binomialTail` (theorem, [line 901](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L901))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_lasVegas_fallback_probability_le_binomialTail` (theorem, [line 901](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean#L901))
 
 > Headline backend theorem: for any nonzero polynomial over a finite field — odd,
 > or binary with matching trace metadata — the Las Vegas backend run on its
@@ -614,5 +614,5 @@ theorem finiteFieldRootProductWith_lasVegas_fallback_probability_le_binomialTail
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Univariate/Roots/LasVegas/Probability/Recursive.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Probability.Recursive.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Dense Guruswami-Sudan Interpolation Correctness
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean), by Valerii Huhnin.
 
 > Correctness contracts for the dense interpolation path and its constructive
 > low-message branch.
 
-`CompPoly.GuruswamiSudan.normalizeVector?_some_data` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L84))
+`CompPoly.GuruswamiSudan.normalizeVector?_some_data` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L84))
 
 ```lean
 theorem normalizeVector?_some_data {F : Type*} [Field F] [BEq F] [LawfulBEq F]
@@ -22,7 +22,7 @@ theorem normalizeVector?_some_data {F : Type*} [Field F] [BEq F] [LawfulBEq F]
       w.size = v.size ∧ w.getD pivot 0 = 1
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_weightedDegree_le` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L488))
+`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_weightedDegree_le` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L488))
 
 ```lean
 theorem interpolationPolynomialOnBasis_weightedDegree_le {F : Type*}
@@ -35,7 +35,7 @@ theorem interpolationPolynomialOnBasis_weightedDegree_le {F : Type*}
       1 (yWeight params) ≤ params.weightedDegreeBound
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomial_weightedDegree_le` (theorem, [line 500](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L500))
+`CompPoly.GuruswamiSudan.interpolationPolynomial_weightedDegree_le` (theorem, [line 500](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L500))
 
 ```lean
 theorem interpolationPolynomial_weightedDegree_le {F : Type*}
@@ -45,7 +45,7 @@ theorem interpolationPolynomial_weightedDegree_le {F : Type*}
       1 (yWeight params) ≤ params.weightedDegreeBound
 ```
 
-`CompPoly.GuruswamiSudan.isHomogeneousSolution_map_div` (theorem, [line 539](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L539))
+`CompPoly.GuruswamiSudan.isHomogeneousSolution_map_div` (theorem, [line 539](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L539))
 
 ```lean
 theorem isHomogeneousSolution_map_div {F : Type*} [Field F]
@@ -54,7 +54,7 @@ theorem isHomogeneousSolution_map_div {F : Type*} [Field F]
     DenseMatrix.IsHomogeneousSolution M (v.map fun x ↦ x / a)
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_satisfies_of_solution` (theorem, [line 548](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L548))
+`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_satisfies_of_solution` (theorem, [line 548](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L548))
 
 ```lean
 theorem interpolationPolynomialOnBasis_satisfies_of_solution {F : Type*}
@@ -67,7 +67,7 @@ theorem interpolationPolynomialOnBasis_satisfies_of_solution {F : Type*}
       (interpolationPolynomialOnBasis basis coeffs) points params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomial_satisfies_of_solution` (theorem, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L573))
+`CompPoly.GuruswamiSudan.interpolationPolynomial_satisfies_of_solution` (theorem, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L573))
 
 ```lean
 theorem interpolationPolynomial_satisfies_of_solution {F : Type*}
@@ -78,7 +78,7 @@ theorem interpolationPolynomial_satisfies_of_solution {F : Type*}
       (interpolationPolynomial params coeffs) points params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_getD_of_lt` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L582))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_getD_of_lt` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L582))
 
 ```lean
 theorem interpolationCoefficientVectorOnBasis_getD_of_lt {F : Type*} [Zero F]
@@ -89,7 +89,7 @@ theorem interpolationCoefficientVectorOnBasis_getD_of_lt {F : Type*} [Zero F]
         (basis.getD k ⟨0, 0⟩).yDegree
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_size` (theorem, [line 591](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L591))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_size` (theorem, [line 591](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L591))
 
 ```lean
 theorem interpolationCoefficientVectorOnBasis_size {F : Type*} [Zero F]
@@ -97,7 +97,7 @@ theorem interpolationCoefficientVectorOnBasis_size {F : Type*} [Zero F]
     (interpolationCoefficientVectorOnBasis basis Q).size = basis.size
 ```
 
-`CompPoly.GuruswamiSudan.cbivariate_ne_zero_exists_coeff_ne_zero` (theorem, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L597))
+`CompPoly.GuruswamiSudan.cbivariate_ne_zero_exists_coeff_ne_zero` (theorem, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L597))
 
 ```lean
 theorem cbivariate_ne_zero_exists_coeff_ne_zero {F : Type*}
@@ -106,7 +106,7 @@ theorem cbivariate_ne_zero_exists_coeff_ne_zero {F : Type*}
     ∃ i j, CBivariate.coeff Q i j ≠ 0
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_nonzero_of_complete` (theorem, [line 609](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L609))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_nonzero_of_complete` (theorem, [line 609](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L609))
 
 ```lean
 theorem interpolationCoefficientVectorOnBasis_nonzero_of_complete {F : Type*}
@@ -118,7 +118,7 @@ theorem interpolationCoefficientVectorOnBasis_nonzero_of_complete {F : Type*}
     DenseMatrix.NonzeroVector (interpolationCoefficientVectorOnBasis basis Q)
 ```
 
-`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_eq_of_complete` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L627))
+`CompPoly.GuruswamiSudan.interpolationPolynomialOnBasis_eq_of_complete` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L627))
 
 ```lean
 theorem interpolationPolynomialOnBasis_eq_of_complete {F : Type*}
@@ -131,7 +131,7 @@ theorem interpolationPolynomialOnBasis_eq_of_complete {F : Type*}
         (interpolationCoefficientVectorOnBasis basis Q) = Q
 ```
 
-`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_solution_of_satisfies` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L671))
+`CompPoly.GuruswamiSudan.interpolationCoefficientVectorOnBasis_solution_of_satisfies` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L671))
 
 ```lean
 theorem interpolationCoefficientVectorOnBasis_solution_of_satisfies {F : Type*}
@@ -147,7 +147,7 @@ theorem interpolationCoefficientVectorOnBasis_solution_of_satisfies {F : Type*}
       (interpolationCoefficientVectorOnBasis basis Q)
 ```
 
-`CompPoly.GuruswamiSudan.normalizeVector?_some_of_nonzero` (theorem, [line 714](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L714))
+`CompPoly.GuruswamiSudan.normalizeVector?_some_of_nonzero` (theorem, [line 714](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L714))
 
 ```lean
 theorem normalizeVector?_some_of_nonzero {F : Type*} [Field F] [BEq F] [LawfulBEq F]
@@ -155,7 +155,7 @@ theorem normalizeVector?_some_of_nonzero {F : Type*} [Field F] [BEq F] [LawfulBE
     ∃ norm, normalizeVector? v = some norm
 ```
 
-`CompPoly.GuruswamiSudan.weightedDegreeBasis_sound` (theorem, [line 740](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L740))
+`CompPoly.GuruswamiSudan.weightedDegreeBasis_sound` (theorem, [line 740](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L740))
 
 > Soundness of the weighted-degree basis used by the public GS interpolation path.
 
@@ -166,7 +166,7 @@ theorem weightedDegreeBasis_sound (params : GSInterpParams) :
         params.weightedDegreeBound
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_sound` (theorem, [line 750](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L750))
+`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_sound` (theorem, [line 750](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L750))
 
 > Soundness for one returned basis-parametric dense witness.
 
@@ -183,7 +183,7 @@ theorem denseInterpolateWithBasis_sound {F : Type*}
         CBivariate.SatisfiesMultiplicityConstraints Q points params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_complete` (theorem, [line 803](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L803))
+`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_complete` (theorem, [line 803](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L803))
 
 > Basis-parametric dense completeness for finite homogeneous systems.
 
@@ -201,7 +201,7 @@ theorem denseInterpolateWithBasis_complete {F : Type*}
     ∃ Q, denseInterpolateWithBasisAndKernel kernelContext basis points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithBasisAndKernel_sound_of_bounded_basis` (theorem, [line 838](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L838))
+`CompPoly.GuruswamiSudan.denseInterpolateWithBasisAndKernel_sound_of_bounded_basis` (theorem, [line 838](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L838))
 
 > Basis-parametric dense soundness specialized to a bounded basis.
 
@@ -219,7 +219,7 @@ theorem denseInterpolateWithBasisAndKernel_sound_of_bounded_basis {F : Type*}
     ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithWeightedDegreeBasis_sound` (theorem, [line 859](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L859))
+`CompPoly.GuruswamiSudan.denseInterpolateWithWeightedDegreeBasis_sound` (theorem, [line 859](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L859))
 
 > Dense weighted-degree-basis soundness for the positive-message branch.
 
@@ -233,7 +233,7 @@ theorem denseInterpolateWithWeightedDegreeBasis_sound {F : Type*}
     ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolate_sound` (theorem, [line 874](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L874))
+`CompPoly.GuruswamiSudan.denseInterpolate_sound` (theorem, [line 874](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L874))
 
 > Soundness for one returned public interpolation witness.
 
@@ -246,7 +246,7 @@ theorem denseInterpolate_sound {F : Type*}
     ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_exists_of_dimension_slack` (theorem, [line 892](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L892))
+`CompPoly.GuruswamiSudan.denseInterpolateWithBasis_exists_of_dimension_slack` (theorem, [line 892](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L892))
 
 > If a basis-parametric dense interpolation matrix has more columns than rows,
 > the dense solver finds a nonzero homogeneous witness.
@@ -261,7 +261,7 @@ theorem denseInterpolateWithBasis_exists_of_dimension_slack {F : Type*}
       basis points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolate_exists_of_dimension_slack` (theorem, [line 918](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L918))
+`CompPoly.GuruswamiSudan.denseInterpolate_exists_of_dimension_slack` (theorem, [line 918](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L918))
 
 > Dimension slack for the public interpolation basis gives an interpolation
 > witness. The low-message branch is constructive; otherwise the witness comes
@@ -275,7 +275,7 @@ theorem denseInterpolate_exists_of_dimension_slack {F : Type*}
     ∃ Q, denseInterpolate points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.weightedDegreeBasis_complete_of_messageDegree_gt_one` (theorem, [line 933](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L933))
+`CompPoly.GuruswamiSudan.weightedDegreeBasis_complete_of_messageDegree_gt_one` (theorem, [line 933](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L933))
 
 > When `messageDegree > 1`, the weighted-degree basis is complete for the
 > semantic weighted-degree predicate.
@@ -293,7 +293,7 @@ theorem weightedDegreeBasis_complete_of_messageDegree_gt_one {F : Type*}
         (interpolationMonomials params).toList
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpolate_complete_of_messageDegree_gt_one` (theorem, [line 977](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L977))
+`CompPoly.GuruswamiSudan.denseInterpolate_complete_of_messageDegree_gt_one` (theorem, [line 977](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L977))
 
 > Dense interpolation completeness in the ordinary positive-`Y`-weight range.
 
@@ -306,7 +306,7 @@ theorem denseInterpolate_complete_of_messageDegree_gt_one {F : Type*}
       exists Q, denseInterpolate points params = some Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpContext` (definition, [line 1021](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1021))
+`CompPoly.GuruswamiSudan.denseInterpContext` (definition, [line 1021](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1021))
 
 > The executable interpolation path packaged as a certified GS interpolation backend.
 
@@ -315,7 +315,7 @@ def denseInterpContext (F : Type*) [Field F] [BEq F] [LawfulBEq F]
     [DecidableEq F] : GSInterpContext F
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpContext_correct` (theorem, [line 1036](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1036))
+`CompPoly.GuruswamiSudan.denseInterpContext_correct` (theorem, [line 1036](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1036))
 
 > Executable interpolation backend soundness.
 
@@ -327,7 +327,7 @@ theorem denseInterpContext_correct (F : Type*) [Field F] [BEq F] [LawfulBEq F]
         ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.denseInterpContext_complete` (theorem, [line 1044](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1044))
+`CompPoly.GuruswamiSudan.denseInterpContext_complete` (theorem, [line 1044](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean#L1044))
 
 > Executable interpolation backend completeness.
 
@@ -350,5 +350,5 @@ theorem denseInterpContext_complete (F : Type*) [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Dense/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness.json)

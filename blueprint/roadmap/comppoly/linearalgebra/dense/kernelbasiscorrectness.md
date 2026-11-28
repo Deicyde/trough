@@ -7,7 +7,7 @@ proof: formalized
 
 # Dense Homogeneous-Kernel Basis Correctness
 
-`CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness`, in [CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean), by Quang Dao.
+`CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness`, in [CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean), by Quang Dao.
 
 > `homogeneousKernelBasis M` coincides with the row-array kernel
 > `homogeneousKernelBasisRows (toRows M) M.cols` for every well-formed `M`: the
@@ -17,7 +17,7 @@ proof: formalized
 
 > ## Row representation
 
-`CompPoly.DenseMatrix.toRows_size` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L37))
+`CompPoly.DenseMatrix.toRows_size` (theorem, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L37))
 
 > The number of rows of `toRows M`.
 
@@ -25,7 +25,7 @@ proof: formalized
 theorem toRows_size [Zero F] (M : DenseMatrix F) : M.toRows.size = M.rows
 ```
 
-`CompPoly.DenseMatrix.toRows_getD` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L41))
+`CompPoly.DenseMatrix.toRows_getD` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L41))
 
 > Entries of `toRows M` below the matrix dimensions are the entries of `M`.
 
@@ -38,7 +38,7 @@ theorem toRows_getD [Zero F] (M : DenseMatrix F) {i j : Nat} (hi : i < M.rows)
 
 > ## Row operations
 
-`CompPoly.DenseMatrix.normalizeAndEliminate_get` (theorem, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L169))
+`CompPoly.DenseMatrix.normalizeAndEliminate_get` (theorem, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L169))
 
 > Entries of `normalizeAndEliminate` below the matrix dimensions: the pivot row
 > is divided by the pivot, and every other row loses its pivot-column multiple of
@@ -59,7 +59,7 @@ theorem normalizeAndEliminate_get [Field F] [BEq F] [LawfulBEq F]
 
 > ## Gauss-Jordan loop
 
-`CompPoly.DenseMatrix.rref_pivots_eq_scalarRrefRows` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L279))
+`CompPoly.DenseMatrix.rref_pivots_eq_scalarRrefRows` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L279))
 
 > For a well-formed matrix, `rref` records the same pivot columns as the
 > row-array reduction of its rows.
@@ -72,7 +72,7 @@ theorem rref_pivots_eq_scalarRrefRows [Field F] [BEq F] [LawfulBEq F]
 
 > ## The two kernel bases agree
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_eq_homogeneousKernelBasisRows` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L288))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_eq_homogeneousKernelBasisRows` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L288))
 
 > The dense homogeneous-kernel basis equals the row-array kernel basis of the
 > matrix rows.
@@ -85,7 +85,7 @@ theorem homogeneousKernelBasis_eq_homogeneousKernelBasisRows [Field F] [BEq F]
 
 > ## Soundness, completeness, and independence
 
-`CompPoly.DenseMatrix.dotRow_eq_sum` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L322))
+`CompPoly.DenseMatrix.dotRow_eq_sum` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L322))
 
 > `dotRow` is the finite sum of products over the columns.
 
@@ -94,7 +94,7 @@ theorem dotRow_eq_sum [Semiring F] (M : DenseMatrix F) (row : Nat) (v : Array F)
     dotRow M row v = ∑ k ∈ Finset.range M.cols, M.get row k * v.getD k 0
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_width` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L343))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_width` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L343))
 
 > Every vector of the dense homogeneous-kernel basis has the matrix column width.
 
@@ -104,7 +104,7 @@ theorem homogeneousKernelBasis_width [Field F] [BEq F] [LawfulBEq F]
     (hv : v ∈ (homogeneousKernelBasis M).toList) : VectorWidth M v
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_isHomogeneousSolution` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L351))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_isHomogeneousSolution` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L351))
 
 > **Soundness of the dense kernel basis.** Every emitted vector solves the
 > homogeneous system.
@@ -115,7 +115,7 @@ theorem homogeneousKernelBasis_isHomogeneousSolution [Field F] [BEq F] [LawfulBE
     (hv : v ∈ (homogeneousKernelBasis M).toList) : IsHomogeneousSolution M v
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_complete` (theorem, [line 365](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L365))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_complete` (theorem, [line 365](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L365))
 
 > **Completeness of the dense kernel basis.** Every homogeneous solution is,
 > below the column count, the linear combination of the basis vectors whose
@@ -132,7 +132,7 @@ theorem homogeneousKernelBasis_complete [Field F] [BEq F] [LawfulBEq F]
             ((homogeneousKernelBasis M).getD i #[]).getD k 0
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_size` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L381))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_size` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L381))
 
 > The number of dense kernel basis vectors is the number of free columns.
 
@@ -141,7 +141,7 @@ theorem homogeneousKernelBasis_size [Field F] [BEq F] (M : DenseMatrix F) :
     (homogeneousKernelBasis M).size = (freeColumns M.cols (rref M).pivots).size
 ```
 
-`CompPoly.DenseMatrix.freeColumns_size_add_pivots_size` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L398))
+`CompPoly.DenseMatrix.freeColumns_size_add_pivots_size` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L398))
 
 > Strictly increasing pivot columns below `cols` and the free columns partition
 > the columns `0, …, cols - 1`.
@@ -153,7 +153,7 @@ theorem freeColumns_size_add_pivots_size {cols : Nat} {pivots : Array Nat}
     (freeColumns cols pivots).size + pivots.size = cols
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_size_add_rank` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L431))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_size_add_rank` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L431))
 
 > **Rank-nullity for the dense kernel basis.** The basis has one vector per
 > non-pivot column of `rref M`.
@@ -163,7 +163,7 @@ theorem homogeneousKernelBasis_size_add_rank [Field F] [BEq F] (M : DenseMatrix 
     (homogeneousKernelBasis M).size + (rref M).pivots.size = M.cols
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_getD_freeColumn` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L439))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_getD_freeColumn` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L439))
 
 > The `i`-th dense kernel basis vector is one at the `i`-th free column and zero
 > at every other free column.
@@ -178,7 +178,7 @@ theorem homogeneousKernelBasis_getD_freeColumn [Field F] [BEq F] [LawfulBEq F]
       if j = i then 1 else 0
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasis_linearIndependent` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L454))
+`CompPoly.DenseMatrix.homogeneousKernelBasis_linearIndependent` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean#L454))
 
 > **Linear independence of the dense kernel basis.** A linear combination of
 > the basis vectors that vanishes below the column count has all coefficients
@@ -204,5 +204,5 @@ theorem homogeneousKernelBasis_linearIndependent [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean)
+- [CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean at bb05e501](https://github.com/Verified-zkEVM/CompPoly/blob/bb05e501d920b77a95e1621e6815a71ed007fd97/CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness.json)
